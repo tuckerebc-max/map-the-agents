@@ -1,12 +1,13 @@
 # agentlas-ai/agentlas-os
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
+Latest snapshot: commit dcd9dd800f65 @ 9dd257fdc1d230aa
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

@@ -1,12 +1,13 @@
 # agentmd/agent.md
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
+Latest snapshot: commit e86e5c8b57d5 @ d9bd0b2eecce1b16
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

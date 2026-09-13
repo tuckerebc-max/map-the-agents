@@ -2,7 +2,7 @@
 
 Status: snapshotted - Freshness: pending
 Catalog classes: none recorded
-Origins: none - Projects: none
+Origins: research-completed - Projects: navy-yard
 Latest snapshot: commit 6f39a47bb3b0 @ f03bff5911a3da7e
 
 ## Evidence
