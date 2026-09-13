@@ -1,15 +1,17 @@
-"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot}. JSON stdout, nonzero on error."""
+"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot,prepare,apply,audit}. JSON stdout, nonzero on error."""
 
 from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
-from . import collect, core, intake
+from . import collect, core, intake, wiki
 
 EXIT_EMPTY = 4
+EXIT_AUDIT_FAILED = 3  # mirrors the kernel's audit exit status
 
 
 def _emit(obj: object) -> None:
@@ -37,6 +39,13 @@ def build_parser() -> argparse.ArgumentParser:
     p_snap.add_argument("--max-files", type=int, default=12)
     p_snap.add_argument("--max-bytes", type=int, default=400_000)
     p_snap.add_argument("--path", action="append", default=[], help="explicit source file (repeatable)")
+    p_prep = sub.add_parser("prepare", help="prepare a real rcw ingest packet for a repository's active snapshot")
+    p_prep.add_argument("repo", help="owner/repo")
+    p_app = sub.add_parser("apply", help="validate a dossier proposal and apply it through the rcw kernel")
+    p_app.add_argument("packet", type=Path, help="packet JSON written by prepare")
+    p_app.add_argument("proposal", type=Path, help="dossier proposal JSON")
+    p_aud = sub.add_parser("audit", help="run the kernel audit and reconcile dossiers with records")
+    p_aud.add_argument("--level", choices=("working", "pr"), default="working")
     for sp in (p_cat, p_snap):
         sp.add_argument("--net-bytes", type=int, default=collect.Budget.max_bytes, help="network byte budget")
         sp.add_argument("--net-seconds", type=float, default=collect.Budget.max_seconds, help="network time budget")
@@ -75,11 +84,20 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "snapshot":
             budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
             _emit(collect.snapshot(args.root, args.repo, args.max_files, args.max_bytes, paths=args.path, budget=budget))
+        elif args.command == "prepare":
+            _emit(wiki.prepare(args.root, args.repo))
+        elif args.command == "apply":
+            _emit(wiki.apply(args.root, args.packet, args.proposal))
+        elif args.command == "audit":
+            result = wiki.audit(args.root, args.level)
+            _emit(result)
+            if not result["ok"]:
+                return EXIT_AUDIT_FAILED
     except core.WorkbenchError as exc:
         _emit({"error": type(exc).__name__, "code": exc.code, "message": str(exc)})
         return exc.code
-    except OSError as exc:
-        _emit({"error": "OSError", "code": 1, "message": str(exc)})
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        _emit({"error": type(exc).__name__, "code": 1, "message": str(exc)})
         return 1
     return 0
 
