@@ -8,7 +8,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import collect, core, intake, wiki
+from . import collect, core, intake, maps, wiki
 
 EXIT_EMPTY = 4
 EXIT_AUDIT_FAILED = 3  # mirrors the kernel's audit exit status
@@ -46,6 +46,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_app.add_argument("proposal", type=Path, help="dossier proposal JSON")
     p_aud = sub.add_parser("audit", help="run the kernel audit and reconcile dossiers with records")
     p_aud.add_argument("--level", choices=("working", "pr"), default="working")
+    sub.add_parser("build", help="render map/index.md, per-repo pages and AGENTS_CORPUS.md from the catalog and dossiers")
+    p_qry = sub.add_parser("query", help="search generated map/ and wiki/pages/ Markdown only")
+    p_qry.add_argument("text", help="search text")
+    p_qry.add_argument("--limit", type=int, default=10)
+    p_qry.add_argument("--max-chars", type=int, default=4000)
+    p_qry.add_argument("--include-archive", action="store_true", help="also search the kernel's wiki/pages/ archive")
     for sp in (p_cat, p_snap):
         sp.add_argument("--net-bytes", type=int, default=collect.Budget.max_bytes, help="network byte budget")
         sp.add_argument("--net-seconds", type=float, default=collect.Budget.max_seconds, help="network time budget")
@@ -93,6 +99,11 @@ def main(argv: list[str] | None = None) -> int:
             _emit(result)
             if not result["ok"]:
                 return EXIT_AUDIT_FAILED
+        elif args.command == "build":
+            _emit(maps.build(args.root))
+        elif args.command == "query":
+            _emit(maps.query(args.root, args.text, limit=args.limit, max_chars=args.max_chars,
+                              include_archive=args.include_archive))
     except core.WorkbenchError as exc:
         _emit({"error": type(exc).__name__, "code": exc.code, "message": str(exc)})
         return exc.code
