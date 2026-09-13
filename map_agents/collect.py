@@ -247,6 +247,8 @@ def _parse_catalog(raw: bytes) -> list[dict]:
             raise MalformedPayload(f"catalog entry {n} lacks required fields")
         if not isinstance(entry["slug"], str) or not entry["slug"] or not isinstance(entry["category"], str):
             raise MalformedPayload(f"catalog entry {n} has invalid slug/category")
+    if len({entry["slug"] for entry in data}) != len(data):
+        raise MalformedPayload("catalog contains duplicate entry slugs")
     return sorted(data, key=lambda e: e["slug"])
 
 
@@ -482,7 +484,9 @@ def _obtain_blob(root: Path, fetch: Fetcher, full_name: str, sha: str, path: str
 def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_bytes: int, explicit: list[str]) -> dict:
     owner, name = key.split("/")
     meta, branch, sha, date = _resolve_head(fetch, key)
-    full_name = meta.get("full_name") if isinstance(meta.get("full_name"), str) else key
+    full_name = meta.get("full_name", key)
+    if not isinstance(full_name, str) or full_name.lower() != key:
+        raise MalformedPayload("repository full_name differs from the requested identity")
     spdx = (meta.get("license") or {}).get("spdx_id") if isinstance(meta.get("license"), dict) else None
     tree = fetch.get_json(f"https://{API_HOST}/repos/{key}/git/trees/{sha}?recursive=1")
     if not isinstance(tree, dict) or not isinstance(tree.get("tree"), list):
@@ -514,6 +518,8 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
     # The selection identity is the exact inspected file set at this commit; a different set gets its
     # own package directory, so earlier packages keep their bytes and rcw evidence stays valid.
     selection = [{"path": p, "git_sha": blobs[p]["sha"]} for p, _d, _t in staged]
+    if not selection:
+        raise CollectError("no inspectable text files fit this selection; request explicit source paths or increase the budget")
     snapshot_id = _sha256(core.dump_json({"commit": sha, "files": selection}))[:16]
     snap_dir = commit_dir / snapshot_id
     _safe_storage(root, snap_dir)
@@ -559,7 +565,8 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
             {"complete": True, "title": f"{full_name} @ {sha} [{snapshot_id}]", "files": members}))
     if not prior:
         core.write_if_changed(snap_dir / SNAPSHOT_FILE, core.dump_json(manifest))
-    return {**manifest, "reused": bool(prior)}
+    return {**(prior or manifest), "reused": bool(prior),
+            "request": {"max_files": max_files, "max_bytes": max_bytes, "paths": explicit}}
 
 
 def snapshot(root: Path, repo: str, max_files: int, max_bytes: int, paths: list[str] | None = None,
@@ -603,4 +610,5 @@ def snapshot(root: Path, repo: str, max_files: int, max_bytes: int, paths: list[
             "package": manifest["package"], "files_stored": len(manifest["files"]), "omitted_count": manifest["omitted_count"],
             "omitted": manifest["omitted"], "selection": manifest["selection"], "repository": manifest["repository"],
             "reused": manifest["reused"], "license": manifest["license"], "status": record["status"],
+            "request": manifest["request"], "capture_budgets": manifest["budgets"],
             "freshness": record["freshness"], "changed": changed, "budget": fetch.budget.summary()}

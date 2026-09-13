@@ -20,7 +20,8 @@ GITHUB_HOSTS = {"github.com", "www.github.com"}
 RESERVED_OWNERS = set(
     "about account apps blog codespaces collections contact dashboard enterprise events explore "
     "features issues join login logout marketplace new notifications organizations orgs pricing "
-    "pulls search security sessions settings site sponsors topics trending users".split()
+    "pulls search security sessions settings site sponsors topics trending users "
+    "stars readme team discussions customer-stories nonprofit git-guides".split()
 )
 PRIVATE_PARAMS = re.compile(r"(?i)(^|[?&#])(token|access_token|auth|key|api_key|password|secret|private_token)=")
 SECRET_SHAPES = re.compile(r"(?i)(ghp_|gho_|ghu_|ghs_|github_pat_)")

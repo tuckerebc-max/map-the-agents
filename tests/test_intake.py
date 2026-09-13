@@ -17,6 +17,13 @@ from map_agents import core, intake
 ORIGIN = "whatsapp:design-chat"
 PROJECT = "navy-yard"
 
+
+@pytest.mark.parametrize("route", ["stars/someuser/lists/agents", "readme/guides/x", "customer-stories/acme",
+                                   "team/foo", "discussions/1", "nonprofit/x", "git-guides/install-git"])
+def test_marketing_and_star_list_routes_are_not_repositories(route: str) -> None:
+    key, _url, reason = intake.normalize("https://github.com/" + route)
+    assert key is None and reason
+
 SAMPLE = """
 Look at https://github.com/Owner-One/Agent-Repo/blob/main/README.md#usage and
 [the tree](https://github.com/owner-one/agent-repo/tree/dev/src?tab=readme).

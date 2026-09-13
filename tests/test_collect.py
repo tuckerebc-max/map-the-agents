@@ -507,3 +507,38 @@ def test_snapshot_rejects_redirected_sources_directory(tmp_path: Path) -> None:
     with pytest.raises(collect.InvalidPath):
         collect.snapshot(root, "org-a/alpha", 1, 100, transport=t)
     assert not list(outside.iterdir())
+
+
+def test_duplicate_catalog_slugs_fail_before_intake(tmp_path: Path) -> None:
+    rows = [entry("Alpha", "agent", "https://github.com/org-a/alpha"),
+            entry("Alpha", "agent-sdk", "https://github.com/org-z/zulu")]
+    t = FakeTransport(catalog_routes(SHA1, entries=rows))
+    with pytest.raises(collect.MalformedPayload, match="duplicate.*slug"):
+        collect.catalog(tmp_path, 10, transport=t)
+    assert not core.load_repos(tmp_path)
+    assert not (tmp_path / collect.CURSOR_FILE).exists()
+
+
+def test_server_repository_name_must_match_requested_identity(tmp_path: Path) -> None:
+    routes = repo_routes("org-a/alpha", SHA1, {"README.md": b"hello\n"})
+    routes[f"{API}/repos/org-a/alpha"] = js({"full_name": "../../escaped/repo", "private": False, "default_branch": "main"})
+    with pytest.raises(collect.MalformedPayload, match="full_name"):
+        collect.snapshot(tmp_path, "org-a/alpha", 1, 100, transport=FakeTransport(routes))
+    assert not (tmp_path / "escaped").exists()
+
+
+def test_empty_selection_is_blocked_without_a_dangling_package(tmp_path: Path) -> None:
+    with pytest.raises(collect.CollectError, match="no inspectable"):
+        collect.snapshot(tmp_path, "org-a/alpha", 1, 100,
+                         transport=FakeTransport(repo_routes("org-a/alpha", SHA1, {"main.py": b"x = 1\n"})))
+    record = core.load_repos(tmp_path)["org-a/alpha"]
+    assert record["status"] == "blocked" and not record.get("latest_snapshot")
+
+
+def test_reused_capture_reports_original_omissions_and_current_request(tmp_path: Path) -> None:
+    t = FakeTransport(repo_routes("org-a/alpha", SHA1, {"README.md": b"hello\n", "NOTES.md": b"notes\n"}))
+    first = collect.snapshot(tmp_path, "org-a/alpha", 1, 100, transport=t)
+    repeated = collect.snapshot(tmp_path, "org-a/alpha", 9, 6, transport=t)
+    assert repeated["snapshot_id"] == first["snapshot_id"]
+    assert repeated["omitted"] == first["omitted"]
+    assert repeated["request"]["max_files"] == 9 and repeated["request"]["max_bytes"] == 6
