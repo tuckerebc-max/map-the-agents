@@ -1,4 +1,4 @@
-"""CLI: python -m map_agents --root PATH {init,intake,status}. JSON on stdout, nonzero on error."""
+"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot}. JSON stdout, nonzero on error."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import json
 import sys
 from pathlib import Path
 
-from . import core, intake
+from . import collect, core, intake
 
 EXIT_EMPTY = 4
 
@@ -29,6 +29,17 @@ def build_parser() -> argparse.ArgumentParser:
     src.add_argument("--text", help="inline input text")
     p_in.add_argument("--max-bytes", type=int, default=intake.MAX_INPUT_BYTES)
     sub.add_parser("status", help="summarize catalog counts")
+    p_cat = sub.add_parser("catalog", help="process a bounded batch of the alltheagents.org backing feed")
+    p_cat.add_argument("--limit", type=int, default=50, help="entries to process this call")
+    p_cat.add_argument("--published", action="store_true", help="also record the published index digest/count")
+    p_snap = sub.add_parser("snapshot", help="store an immutable text snapshot of a public repository head")
+    p_snap.add_argument("repo", help="owner/repo")
+    p_snap.add_argument("--max-files", type=int, default=12)
+    p_snap.add_argument("--max-bytes", type=int, default=400_000)
+    p_snap.add_argument("--path", action="append", default=[], help="explicit source file (repeatable)")
+    for sp in (p_cat, p_snap):
+        sp.add_argument("--net-bytes", type=int, default=collect.Budget.max_bytes, help="network byte budget")
+        sp.add_argument("--net-seconds", type=float, default=collect.Budget.max_seconds, help="network time budget")
     return parser
 
 
@@ -55,6 +66,15 @@ def main(argv: list[str] | None = None) -> int:
             _emit(result)
             if result["empty"]:
                 return EXIT_EMPTY
+        elif args.command == "catalog":
+            budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
+            result = collect.catalog(args.root, args.limit, budget=budget, published=args.published)
+            _emit(result)
+            if args.published and not result["published"]["ok"]:
+                return result["published"]["code"]  # backing intake landed; the optional source did not
+        elif args.command == "snapshot":
+            budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
+            _emit(collect.snapshot(args.root, args.repo, args.max_files, args.max_bytes, paths=args.path, budget=budget))
     except core.WorkbenchError as exc:
         _emit({"error": type(exc).__name__, "code": exc.code, "message": str(exc)})
         return exc.code
