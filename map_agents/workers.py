@@ -493,7 +493,7 @@ def _finish_job(root: Path, key: str, record: dict, job: dict, job_path: Path, a
     try:
         wiki.validate_proposal(proposal, packet)
     except wiki.ProposalRejected as exc:
-        raise _fail(job_path, job, run, "model-rejected", f"proposal rejected: {exc}") from exc
+        raise _fail(job_path, job, run, "model-rejected", "proposal rejected; check the packet's output schema") from None
     proposal_path = root / wiki.PROPOSAL_DIR / f"{packet['operation_id']}.json"
     core.atomic_write_bytes(proposal_path, core.dump_json(proposal))  # exact bounded proposal kept for recovery
     job.update({"proposal": proposal_path.relative_to(root).as_posix(), "stage": "pending-apply"})

@@ -1,5 +1,6 @@
 import json
 import math
+import sys
 
 import pytest
 
@@ -67,3 +68,11 @@ def test_missing_executable_is_receipted_without_argv(clone):
     receipt = json.loads((clone / workers.QUEUE_FILE).read_text(encoding='utf-8'))
     assert receipt['runs'][-1]['outcome'] == 'failed'
     assert marker not in json.dumps(receipt)
+
+
+def test_rejected_model_payload_is_not_copied_to_receipts(clone):
+    marker = 'PRIVATE-MARKER-IN-MODEL-OUTPUT'
+    script = 'import json; print(json.dumps({' + repr(marker) + ': 1}))'
+    with pytest.raises(workers.WorkerFailed):
+        workers.run_worker(clone, [sys.executable, '-c', script], workers.Limits(build=False), repo='org-a/alpha')
+    assert marker not in (clone / workers.QUEUE_FILE).read_text(encoding='utf-8')
