@@ -1,4 +1,4 @@
-"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot,prepare,apply,audit,build,query,maintain,worker}."""
+"""CLI: python -m map_agents --root PATH {init,intake,receive,inbox,status,catalog,snapshot,prepare,apply,audit,build,query,maintain,worker}."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import collect, core, intake, maps, wiki, workers
+from . import automation, collect, core, intake, maps, wiki, workers
 
 EXIT_EMPTY = 4
 EXIT_AUDIT_FAILED = 3  # mirrors the kernel's audit exit status
@@ -31,6 +31,13 @@ def build_parser() -> argparse.ArgumentParser:
     src.add_argument("--text", help="inline input text")
     p_in.add_argument("--max-bytes", type=int, default=intake.MAX_INPUT_BYTES)
     sub.add_parser("status", help="summarize catalog counts")
+    p_ev = sub.add_parser("receive", help="ingest a GitHub research-completed event JSON file (data only, no shell)")
+    p_ev.add_argument("--event-path", type=Path, required=True, help="usually $GITHUB_EVENT_PATH")
+    p_ev.add_argument("--max-bytes", type=int, default=automation.MAX_EVENT_BYTES)
+    p_ib = sub.add_parser("inbox", help="ingest inbox/<lane>/<project>/<origin>.{md,txt,json} lead files by digest")
+    p_ib.add_argument("--lane", choices=automation.INBOX_LANES, default="public")
+    p_ib.add_argument("--max-files", type=int, default=automation.MAX_INBOX_FILES)
+    p_ib.add_argument("--max-file-bytes", type=int, default=automation.MAX_INBOX_FILE_BYTES)
     p_cat = sub.add_parser("catalog", help="process a bounded batch of the alltheagents.org backing feed")
     p_cat.add_argument("--limit", type=int, default=50, help="entries to process this call")
     p_cat.add_argument("--published", action="store_true", help="also record the published index digest/count")
@@ -99,6 +106,13 @@ def main(argv: list[str] | None = None) -> int:
             _emit(result)
             if result["empty"]:
                 return EXIT_EMPTY
+        elif args.command == "receive":
+            result = automation.receive_event(args.root, args.event_path, max_bytes=args.max_bytes)
+            _emit(result)
+            if result["empty"]:
+                return EXIT_EMPTY
+        elif args.command == "inbox":
+            _emit(automation.receive_inbox(args.root, args.lane, max_files=args.max_files, max_file_bytes=args.max_file_bytes))
         elif args.command == "catalog":
             budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
             result = collect.catalog(args.root, args.limit, budget=budget, published=args.published)
