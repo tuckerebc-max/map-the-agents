@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "Assertion": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "opposing_claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Opposing Claim Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "claim_ids"
+      ],
+      "title": "Assertion",
+      "type": "object"
+    },
+    "GapDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "question": {
+          "minLength": 1,
+          "title": "Question",
+          "type": "string"
+        },
+        "reason": {
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "suggested_source": {
+          "default": "Original primary evidence",
+          "title": "Suggested Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "question",
+        "reason"
+      ],
+      "title": "GapDraft",
+      "type": "object"
+    },
+    "PageDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "page_type": {
+          "enum": [
+            "concept",
+            "finding",
+            "debate",
+            "theme"
+          ],
+          "title": "Page Type",
+          "type": "string"
+        },
+        "assertions": {
+          "items": {
+            "$ref": "#/$defs/Assertion"
+          },
+          "minItems": 1,
+          "title": "Assertions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "key",
+        "title",
+        "page_type",
+        "assertions"
+      ],
+      "title": "PageDraft",
+      "type": "object"
+    },
+    "RelationshipDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "title": "Subject",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "supports",
+            "contradicts",
+            "qualifies",
+            "applies_to",
+            "duplicates",
+            "supersedes",
+            "mentions",
+            "measures",
+            "authored_by",
+            "issued_by",
+            "derived_from"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "object": {
+          "title": "Object",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "predicate",
+        "object",
+        "claim_ids",
+        "rationale"
+      ],
+      "title": "RelationshipDraft",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "operation_id": {
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "pages": {
+      "items": {
+        "$ref": "#/$defs/PageDraft"
+      },
+      "title": "Pages",
+      "type": "array"
+    },
+    "relationships": {
+      "items": {
+        "$ref": "#/$defs/RelationshipDraft"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "gaps": {
+      "items": {
+        "$ref": "#/$defs/GapDraft"
+      },
+      "title": "Gaps",
+      "type": "array"
+    }
+  },
+  "required": [
+    "operation_id",
+    "pages"
+  ],
+  "title": "AnalysisProposal",
+  "type": "object"
+}

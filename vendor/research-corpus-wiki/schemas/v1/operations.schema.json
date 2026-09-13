@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "operation",
+      "default": "operation",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "mode": {
+      "title": "Mode",
+      "type": "string"
+    },
+    "state": {
+      "const": "applied",
+      "default": "applied",
+      "title": "State",
+      "type": "string"
+    },
+    "base_digest": {
+      "title": "Base Digest",
+      "type": "string"
+    },
+    "inputs_digest": {
+      "title": "Inputs Digest",
+      "type": "string"
+    },
+    "proposal_digest": {
+      "title": "Proposal Digest",
+      "type": "string"
+    },
+    "output_paths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Paths",
+      "type": "array"
+    },
+    "skill_version": {
+      "default": "0.1.0",
+      "title": "Skill Version",
+      "type": "string"
+    },
+    "completed_at": {
+      "title": "Completed At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "mode",
+    "base_digest",
+    "inputs_digest",
+    "proposal_digest",
+    "output_paths",
+    "completed_at"
+  ],
+  "title": "Operation",
+  "type": "object"
+}

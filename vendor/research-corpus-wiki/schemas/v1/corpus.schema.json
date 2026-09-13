@@ -1,0 +1,99 @@
+{
+  "$defs": {
+    "SourceRoot": {
+      "additionalProperties": false,
+      "properties": {
+        "root_id": {
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "title": "Root Id",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "read_only": {
+          "const": true,
+          "default": true,
+          "title": "Read Only",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "root_id",
+        "path"
+      ],
+      "title": "SourceRoot",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "corpus_id": {
+      "title": "Corpus Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "profile": {
+      "default": "mixed",
+      "enum": [
+        "general",
+        "scholarly",
+        "policy-legal",
+        "organizational",
+        "interview",
+        "mixed"
+      ],
+      "title": "Profile",
+      "type": "string"
+    },
+    "default_access": {
+      "default": "internal",
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Default Access",
+      "type": "string"
+    },
+    "source_roots": {
+      "items": {
+        "$ref": "#/$defs/SourceRoot"
+      },
+      "minItems": 1,
+      "title": "Source Roots",
+      "type": "array"
+    },
+    "source_max_bytes": {
+      "default": 20000000,
+      "exclusiveMinimum": 0,
+      "title": "Source Max Bytes",
+      "type": "integer"
+    },
+    "quote_max_words": {
+      "default": 20,
+      "maximum": 1000,
+      "minimum": 0,
+      "title": "Quote Max Words",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "corpus_id",
+    "title",
+    "source_roots"
+  ],
+  "title": "CorpusConfig",
+  "type": "object"
+}

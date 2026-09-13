@@ -1,0 +1,111 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z]+_[0-9a-f]{32,64}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "extracted",
+        "mechanically_checked",
+        "human_reviewed",
+        "approved",
+        "disputed",
+        "superseded",
+        "unverified"
+      ],
+      "title": "Review State",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "created_by_operation": {
+      "title": "Created By Operation",
+      "type": "string"
+    },
+    "updated_by_operation": {
+      "title": "Updated By Operation",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "source_version",
+      "default": "source_version",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "package_id": {
+      "title": "Package Id",
+      "type": "string"
+    },
+    "digest": {
+      "title": "Digest",
+      "type": "string"
+    },
+    "metadata_digest": {
+      "title": "Metadata Digest",
+      "type": "string"
+    },
+    "root_id": {
+      "title": "Root Id",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "current",
+        "superseded"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "access",
+    "review_state",
+    "created_at",
+    "updated_at",
+    "created_by_operation",
+    "updated_by_operation",
+    "source_id",
+    "package_id",
+    "digest",
+    "metadata_digest",
+    "root_id",
+    "path",
+    "status"
+  ],
+  "title": "SourceVersion",
+  "type": "object"
+}

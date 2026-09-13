@@ -1,0 +1,79 @@
+{
+  "$defs": {
+    "Assertion": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "opposing_claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Opposing Claim Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "claim_ids"
+      ],
+      "title": "Assertion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "operation_id": {
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "answered",
+        "partially_answered",
+        "conflicted",
+        "insufficient_evidence"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "assertions": {
+      "items": {
+        "$ref": "#/$defs/Assertion"
+      },
+      "title": "Assertions",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "operation_id",
+    "status",
+    "assertions",
+    "limitations"
+  ],
+  "title": "AnswerProposal",
+  "type": "object"
+}

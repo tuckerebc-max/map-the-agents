@@ -1,0 +1,315 @@
+{
+  "$defs": {
+    "ClaimDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "minLength": 1,
+          "title": "Key",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "slice_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Slice Ids",
+          "type": "array"
+        },
+        "evidence_type": {
+          "enum": [
+            "empirical_result",
+            "legal_authority",
+            "policy_statement",
+            "implementation_guidance",
+            "organizational_statement",
+            "participant_report",
+            "method",
+            "definition",
+            "recommendation",
+            "contextual_fact"
+          ],
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "polarity": {
+          "default": "affirmed",
+          "enum": [
+            "affirmed",
+            "negated",
+            "mixed",
+            "not_applicable"
+          ],
+          "title": "Polarity",
+          "type": "string"
+        },
+        "extraction_confidence": {
+          "default": 0.5,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Extraction Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "key",
+        "text",
+        "slice_ids",
+        "evidence_type"
+      ],
+      "title": "ClaimDraft",
+      "type": "object"
+    },
+    "EntityDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "entity_type": {
+          "enum": [
+            "person",
+            "organization",
+            "jurisdiction",
+            "instrument",
+            "program",
+            "concept",
+            "method",
+            "population",
+            "dataset",
+            "event"
+          ],
+          "title": "Entity Type",
+          "type": "string"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        },
+        "external_ids": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "External Ids",
+          "type": "object"
+        },
+        "claim_keys": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Claim Keys",
+          "type": "array"
+        }
+      },
+      "required": [
+        "key",
+        "name",
+        "entity_type",
+        "claim_keys"
+      ],
+      "title": "EntityDraft",
+      "type": "object"
+    },
+    "RelationshipDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "title": "Subject",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "supports",
+            "contradicts",
+            "qualifies",
+            "applies_to",
+            "duplicates",
+            "supersedes",
+            "mentions",
+            "measures",
+            "authored_by",
+            "issued_by",
+            "derived_from"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "object": {
+          "title": "Object",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "predicate",
+        "object",
+        "claim_ids",
+        "rationale"
+      ],
+      "title": "RelationshipDraft",
+      "type": "object"
+    },
+    "Scope": {
+      "additionalProperties": false,
+      "properties": {
+        "population": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "jurisdiction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Jurisdiction"
+        },
+        "timeframe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timeframe"
+        },
+        "setting": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Setting"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "instrument_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Instrument Status"
+        },
+        "qualifiers": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifiers"
+        }
+      },
+      "title": "Scope",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "operation_id": {
+      "title": "Operation Id",
+      "type": "string"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/ClaimDraft"
+      },
+      "title": "Claims",
+      "type": "array"
+    },
+    "entities": {
+      "items": {
+        "$ref": "#/$defs/EntityDraft"
+      },
+      "title": "Entities",
+      "type": "array"
+    },
+    "relationships": {
+      "items": {
+        "$ref": "#/$defs/RelationshipDraft"
+      },
+      "title": "Relationships",
+      "type": "array"
+    }
+  },
+  "required": [
+    "operation_id",
+    "claims"
+  ],
+  "title": "IngestProposal",
+  "type": "object"
+}

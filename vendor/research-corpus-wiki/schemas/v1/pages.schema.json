@@ -1,0 +1,171 @@
+{
+  "$defs": {
+    "Assertion": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "opposing_claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Opposing Claim Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "claim_ids"
+      ],
+      "title": "Assertion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z]+_[0-9a-f]{32,64}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "extracted",
+        "mechanically_checked",
+        "human_reviewed",
+        "approved",
+        "disputed",
+        "superseded",
+        "unverified"
+      ],
+      "title": "Review State",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "created_by_operation": {
+      "title": "Created By Operation",
+      "type": "string"
+    },
+    "updated_by_operation": {
+      "title": "Updated By Operation",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "page",
+      "default": "page",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "page_type": {
+      "enum": [
+        "source",
+        "concept",
+        "entity",
+        "finding",
+        "debate",
+        "theme",
+        "gap",
+        "answer"
+      ],
+      "title": "Page Type",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Claim Ids",
+      "type": "array"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "assertions": {
+      "items": {
+        "$ref": "#/$defs/Assertion"
+      },
+      "title": "Assertions",
+      "type": "array"
+    },
+    "maturity": {
+      "default": "draft",
+      "enum": [
+        "stub",
+        "draft",
+        "reviewed",
+        "stable"
+      ],
+      "title": "Maturity",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "access",
+    "review_state",
+    "created_at",
+    "updated_at",
+    "created_by_operation",
+    "updated_by_operation",
+    "page_type",
+    "path",
+    "title",
+    "claim_ids",
+    "source_ids",
+    "assertions"
+  ],
+  "title": "Page",
+  "type": "object"
+}

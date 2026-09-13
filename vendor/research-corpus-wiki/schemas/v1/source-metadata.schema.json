@@ -1,0 +1,301 @@
+{
+  "$defs": {
+    "Consent": {
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": [
+            "granted",
+            "pending",
+            "denied"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "boolean"
+        },
+        "paraphrase": {
+          "title": "Paraphrase",
+          "type": "boolean"
+        },
+        "identify": {
+          "title": "Identify",
+          "type": "boolean"
+        },
+        "publish": {
+          "title": "Publish",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "state",
+        "quote",
+        "paraphrase",
+        "identify",
+        "publish"
+      ],
+      "title": "Consent",
+      "type": "object"
+    },
+    "Origin": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "identifier": {
+          "minLength": 1,
+          "title": "Identifier",
+          "type": "string"
+        },
+        "locator": {
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "identifier",
+        "locator"
+      ],
+      "title": "Origin",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "creator": {
+      "minLength": 1,
+      "title": "Creator",
+      "type": "string"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    },
+    "source_type": {
+      "enum": [
+        "scholarly_article",
+        "book",
+        "report",
+        "dataset",
+        "webpage",
+        "legislation",
+        "regulation",
+        "guidance",
+        "standard",
+        "organizational_record",
+        "interview",
+        "session",
+        "synthesis_report"
+      ],
+      "title": "Source Type",
+      "type": "string"
+    },
+    "access": {
+      "default": "internal",
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "identifiers": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Identifiers",
+      "type": "object"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "jurisdiction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Jurisdiction"
+    },
+    "legal_status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Legal Status"
+    },
+    "status_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Status Date"
+    },
+    "provision": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Provision"
+    },
+    "methodology": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Methodology"
+    },
+    "population": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Population"
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Venue"
+    },
+    "organization": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Organization"
+    },
+    "role": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Role"
+    },
+    "attribution": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Attribution"
+    },
+    "verified_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Verified Date"
+    },
+    "consent": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Consent"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "original_sources": {
+      "items": {
+        "$ref": "#/$defs/Origin"
+      },
+      "title": "Original Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "title",
+    "creator",
+    "source_type"
+  ],
+  "title": "Metadata",
+  "type": "object"
+}

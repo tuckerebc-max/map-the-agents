@@ -1,0 +1,127 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z]+_[0-9a-f]{32,64}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "extracted",
+        "mechanically_checked",
+        "human_reviewed",
+        "approved",
+        "disputed",
+        "superseded",
+        "unverified"
+      ],
+      "title": "Review State",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "created_by_operation": {
+      "title": "Created By Operation",
+      "type": "string"
+    },
+    "updated_by_operation": {
+      "title": "Updated By Operation",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "entity",
+      "default": "entity",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "entity_type": {
+      "enum": [
+        "person",
+        "organization",
+        "jurisdiction",
+        "instrument",
+        "program",
+        "concept",
+        "method",
+        "population",
+        "dataset",
+        "event"
+      ],
+      "title": "Entity Type",
+      "type": "string"
+    },
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "external_ids": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "External Ids",
+      "type": "object"
+    },
+    "claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Claim Ids",
+      "type": "array"
+    },
+    "identity_state": {
+      "default": "proposed",
+      "enum": [
+        "proposed",
+        "approved"
+      ],
+      "title": "Identity State",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "access",
+    "review_state",
+    "created_at",
+    "updated_at",
+    "created_by_operation",
+    "updated_by_operation",
+    "name",
+    "entity_type",
+    "aliases",
+    "external_ids",
+    "claim_ids"
+  ],
+  "title": "Entity",
+  "type": "object"
+}

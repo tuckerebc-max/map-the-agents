@@ -1,0 +1,83 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z]+_[0-9a-f]{32,64}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "extracted",
+        "mechanically_checked",
+        "human_reviewed",
+        "approved",
+        "disputed",
+        "superseded",
+        "unverified"
+      ],
+      "title": "Review State",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "created_by_operation": {
+      "title": "Created By Operation",
+      "type": "string"
+    },
+    "updated_by_operation": {
+      "title": "Updated By Operation",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "citation",
+      "default": "citation",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "csl": {
+      "additionalProperties": true,
+      "title": "Csl",
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "access",
+    "review_state",
+    "created_at",
+    "updated_at",
+    "created_by_operation",
+    "updated_by_operation",
+    "source_id",
+    "csl"
+  ],
+  "title": "Citation",
+  "type": "object"
+}

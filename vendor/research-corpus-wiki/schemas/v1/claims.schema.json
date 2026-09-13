@@ -1,0 +1,236 @@
+{
+  "$defs": {
+    "Scope": {
+      "additionalProperties": false,
+      "properties": {
+        "population": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "jurisdiction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Jurisdiction"
+        },
+        "timeframe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timeframe"
+        },
+        "setting": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Setting"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "instrument_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Instrument Status"
+        },
+        "qualifiers": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qualifiers"
+        }
+      },
+      "title": "Scope",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z]+_[0-9a-f]{32,64}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "internal",
+        "confidential",
+        "restricted"
+      ],
+      "title": "Access",
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "extracted",
+        "mechanically_checked",
+        "human_reviewed",
+        "approved",
+        "disputed",
+        "superseded",
+        "unverified"
+      ],
+      "title": "Review State",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "created_by_operation": {
+      "title": "Created By Operation",
+      "type": "string"
+    },
+    "updated_by_operation": {
+      "title": "Updated By Operation",
+      "type": "string"
+    },
+    "record_type": {
+      "const": "claim",
+      "default": "claim",
+      "title": "Record Type",
+      "type": "string"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "slice_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Slice Ids",
+      "type": "array"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "evidence_type": {
+      "enum": [
+        "empirical_result",
+        "legal_authority",
+        "policy_statement",
+        "implementation_guidance",
+        "organizational_statement",
+        "participant_report",
+        "method",
+        "definition",
+        "recommendation",
+        "contextual_fact"
+      ],
+      "title": "Evidence Type",
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "#/$defs/Scope"
+    },
+    "polarity": {
+      "enum": [
+        "affirmed",
+        "negated",
+        "mixed",
+        "not_applicable"
+      ],
+      "title": "Polarity",
+      "type": "string"
+    },
+    "extraction_confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Extraction Confidence",
+      "type": "number"
+    },
+    "lineage_status": {
+      "enum": [
+        "original_available",
+        "original_missing"
+      ],
+      "title": "Lineage Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "access",
+    "review_state",
+    "created_at",
+    "updated_at",
+    "created_by_operation",
+    "updated_by_operation",
+    "text",
+    "slice_ids",
+    "source_ids",
+    "evidence_type",
+    "scope",
+    "polarity",
+    "extraction_confidence",
+    "lineage_status"
+  ],
+  "title": "Claim",
+  "type": "object"
+}

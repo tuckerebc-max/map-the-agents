@@ -1,0 +1,32 @@
+name: Validate skill and corpus tools
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      # Hosted runners must exercise real symlinks instead of skipping protection checks.
+      RCW_REQUIRE_SYMLINKS: "1"
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install uv from PyPI
+        run: python -m pip install uv==0.9.21
+      - name: Reproduce locked environment
+        run: uv sync --locked --python 3.12
+      - name: Lint
+        run: uv run --locked ruff check --config pyproject.toml scripts tests
+      - name: Type check
+        run: uv run --locked mypy --config-file pyproject.toml scripts/rcw_core
+      - name: Check shared schemas
+        run: uv run --locked python scripts/export_schemas.py --check
+      - name: Exercise corpus behavior
+        run: uv run --locked pytest tests -q -ra
+      - name: Build synthetic research wiki
+        run: uv run --locked python scripts/demo.py --output "${{ runner.temp }}/rcw-demo"

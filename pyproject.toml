@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "map-agents"
+version = "0.1.0"
+description = "Observatory workbench: small source-linked maps of agent capabilities"
+requires-python = ">=3.12"
+# Runtime dependencies of the vendored research-corpus-wiki kernel are declared
+# here so CI needs no second private repository credential.
+dependencies = [
+  "pydantic>=2.10,<3",
+  "ruamel.yaml>=0.18,<0.19",
+  "markdown-it-py>=3,<4",
+  "typer>=0.16,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+include = ["map_agents*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
