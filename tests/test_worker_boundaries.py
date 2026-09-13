@@ -21,6 +21,7 @@ def test_zero_wall_budget_does_not_start_catalog(tmp_path):
     assert result['catalog'] is None
     assert result['snapshots'] == []
     assert result['stopped'] == 'time-budget'
+    assert result['status'] == 'stopped'
 
 
 def test_failure_attempts_respect_repository_limit(tmp_path, monkeypatch):

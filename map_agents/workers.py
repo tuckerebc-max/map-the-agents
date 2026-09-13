@@ -274,7 +274,7 @@ def maintain(root: Path, limits: Limits | None = None, transport=None, retry_par
         needs = sorted(k for k, r in repos.items() if _needs_distillation(r))
         run.update({"finished": _now(), "needs_distillation": needs, "timing": clock.summary(), "lease_reclaimed": lease.reclaimed})
         _save_queue(root, queue, run)
-    return {"root": str(root), "status": "degraded" if run["failures"] else "needs-distillation" if needs else "quiescent", **run, "budget": budget.summary(),
+    return {"root": str(root), "status": "degraded" if run["failures"] else "stopped" if run["stopped"] else "needs-distillation" if needs else "quiescent", **run, "budget": budget.summary(),
             "queue": {"cursor": queue["cursor"], "repos_known": len(repos)}, "limits": asdict(limits)}
 
 
