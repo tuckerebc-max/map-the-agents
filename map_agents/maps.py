@@ -467,7 +467,7 @@ def build(root: Path) -> dict:
             if record.get("freshness") in ("stale", "refresh-failed"):
                 stale_keys.append(key)
             dossier = None
-            if record.get("status") == "distilled" and record.get("dossier"):
+            if record.get("status") == "distilled":
                 try:
                     dossier = wiki.load_dossier(root, key)
                 except core.WorkbenchError as exc:

@@ -121,6 +121,16 @@ def test_missing_facets_are_explicit_unknown_and_counted_as_gaps(corpus: Path, t
     assert result["gaps"]["components"] == 1
 
 
+def test_missing_dossier_pointer_is_invalid_evidence(corpus: Path, tmp_path: Path) -> None:
+    root = clone(corpus, tmp_path)
+    records = core.load_repos(root)
+    del records['org-a/alpha']['dossier']
+    core.save_repos(root, records)
+    result = maps.build(root)
+    assert result['known'] == 1
+    assert result['invalid_dossiers'] == ['org-a/alpha']
+
+
 def test_stale_dossier_shown_with_reason_and_kept_evidence(corpus: Path, tmp_path: Path) -> None:
     root = clone(corpus, tmp_path)
     collect.snapshot(root, "org-b/bravo", 20, 50_000,
