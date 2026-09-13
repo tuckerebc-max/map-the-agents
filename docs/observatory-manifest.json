@@ -1,17 +1,20 @@
 {
   "workbench": "map-the-agents",
   "position": "Stargazer / Observatory > Map the Agents workbench",
-  "consumers": ["Navy Yard", "Tech Triangle"],
+  "consumers": [
+    "Navy Yard",
+    "Tech Triangle"
+  ],
   "role": "Accumulates external repository observations and evidence-linked design orientation.",
   "parent_repository": "https://github.com/tuckerebc-max/stargazer-observatory",
   "target_repository": "https://github.com/tuckerebc-max/map-the-agents",
-  "publication_status": "not yet created on GitHub; private after independent review",
+  "publication_status": "private repository; workbench publication",
   "handoff": "observation -> signal -> evaluation candidate",
   "producer_boundary": {
     "accepted_inputs": [
-      "local CLI intake (python -m map_agents intake)",
-      "file-based leads under inbox/public/ and inbox/private/ (python -m map_agents inbox)",
-      "GitHub repository_dispatch event_type=research-completed (python -m map_agents receive)"
+      "local CLI intake",
+      "corpus/inbox/public and corpus/inbox/private lead files",
+      "GitHub repository_dispatch event_type=research-completed"
     ],
     "not_connected": [
       "live WhatsApp or any other chat connector",
@@ -19,7 +22,7 @@
     ]
   },
   "notes": [
-    "This workbench does not adopt capabilities; it records observations and evaluation candidates only.",
+    "Intake creates observations; Observatory assessment may develop them into signals and evaluation candidates.",
     "A separate, small parent (stargazer-observatory) registration change can name this workbench without copying private corpus contents.",
     "Project relevance is an association and a qualified judgment, kept separate from the underlying observation."
   ]

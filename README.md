@@ -1,49 +1,49 @@
 # Map the Agents
 
-A small, private, GitHub-first workbench that keeps compact, source-linked maps of public agent
-repositories, so Navy Yard and Tech Triangle design work can check "has anyone already looked at
-this" before re-researching it. It records observations and evidence — it never adopts, installs,
-or executes anything it observes. A repository landing in the map is an **evaluation candidate**,
-not an adoption decision.
+An Observatory workbench for keeping small, source-linked Markdown maps of agent
+repositories. Navy Yard and Tech Triangle design work can find relevant components,
+specifications, workflows and design choices without opening every codebase again.
 
-## What is here
+Start with the [corpus map](corpus/AGENTS_CORPUS.md) or the
+[workbench skill](skills/map-the-agents/SKILL.md). A new repository is an observation;
+the Observatory can develop it into a signal and an evaluation candidate.
 
-| Path | What it is |
+| Part | Purpose |
 |---|---|
-| `map_agents/` | The package: intake, collection, the model-free maintainer, the model worker, wiki integration, map rendering, and the GitHub receivers. |
-| `skills/map-the-agents/SKILL.md` | The repo-owned, lookup-first skill for design tasks. Start here for day-to-day use. |
-| `vendor/research-corpus-wiki/` | Unmodified, pinned dependency that owns every canonical wiki write. See `vendor-pin.json`. |
-| `.github/workflows/` | Read-only CI and the scheduled/dispatchable maintenance job. |
-| `docs/` | Architecture and operations detail. |
-| `scripts/demo_synthetic.py` | Offline, two-class, fully fabricated end-to-end demonstration (no real research data). |
-| `scripts/verify_vendor.py` | Verifies every vendored file against its recorded Git blob and SHA-256. |
-| `corpus/` (generated, not in this checkout yet) | Catalog, immutable source snapshots, the wiki, and rendered maps. Created by `init`/any write command. |
+| [Map and indexes](corpus/map/index.md) | Compact orientations, classes, components, patterns, gaps and freshness. |
+| [Workbench skill](skills/map-the-agents/SKILL.md) | Lookup first; retain every public research lead; prepare bounded distillation. |
+| [Python package](map_agents/) | Intake, immutable collection, wiki integration, maps and resumable workers. |
+| [Existing wiki skill](vendor/research-corpus-wiki/SKILL.md) | Pinned Research Corpus Wiki kernel owns canonical evidence and writes. |
+| [Automation](.github/workflows/) | Windows/Linux CI and daily, manual, public-inbox or research-dispatch maintenance. |
+| [Operations](docs/operations.md) | Exact commands, budgets, partial failures and recovery. |
+| [Architecture](docs/architecture.md) | Data ownership and evidence contracts. |
 
-## Quickstart
+## Use locally
 
-```
-uv run --python 3.12 --extra dev python -m pytest tests -q
-uv run --python 3.12 python scripts/verify_vendor.py
+From this checkout, with Python 3.12 and uv:
+
+```sh
 uv run --python 3.12 python -m map_agents --root corpus status
+uv run --python 3.12 python -m map_agents --root corpus query "memory orchestration" --limit 5 --max-chars 2500
 ```
 
-Then read `skills/map-the-agents/SKILL.md` for the real lookup/intake/worker command recipes, and
-`docs/architecture.md` / `docs/operations.md` for how the pieces fit together and how automation
-runs. `AGENTS_CORPUS.md` at the repository root points into the generated map once `corpus/`
-exists.
+The initial live seed is deliberately small; see the map's counts for current coverage.
+Leads, collected snapshots and distilled dossiers have separate statuses. Full corpus
+population is the next campaign. The separate [synthetic demo](scripts/demo_synthetic.py)
+exercises two agent classes through the real wiki kernel without live network or models.
 
-## Current state (2026-09-13)
+## Connections
 
-- **Workbench build complete, full corpus population pending.** This checkout ships the pipeline,
-  tests, automation, docs and skill; it does not yet contain a populated `corpus/`. A real seed of
-  researched repositories is added separately after independent review.
-- **No live model configured.** `maintain` (metadata-only) works today; `worker` requires either a
-  small agent reading its packet or an explicitly configured trusted command — no provider SDK or
-  API key is wired up, so `needs_distillation` repositories stay pending until one is.
-- **Live WhatsApp is not connected.** The only supported inbound research paths are: the local CLI
-  (`intake`), file-based leads under `inbox/public/` and `inbox/private/` (`inbox` command), and the
-  GitHub `repository_dispatch` `research-completed` receiver (`receive` command). Anything else is
-  not wired up, regardless of what a caller's text claims.
-- **This repository is not yet created on GitHub.** See `docs/observatory-manifest.json` for the
-  planned registration under the Stargazer Observatory once independent review and publication are
-  complete.
+The [private GitHub workbench](https://github.com/tuckerebc-max/map-the-agents) receives
+`research-completed` dispatches and public inbox commits, and refreshes metadata daily.
+Research producers must call this receiver or the local intake command; this repository
+does not install account-wide research hooks or connect to live WhatsApp. Supplied chat
+exports can be processed locally; only public links and caller-supplied tags enter the map.
+
+No model provider is configured. A small agent can read a bounded worker envelope and
+submit a proposal, or an operator can configure a trusted command adapter. The same
+contract supports Gemini, Codex 5.3 and GLM Flash; metadata maintenance makes no model calls.
+
+The [Observatory manifest](docs/observatory-manifest.json) locates this workbench under
+[Stargazer Observatory](https://github.com/tuckerebc-max/stargazer-observatory).
+Source attribution and the existing wiki pin are in [third-party notices](THIRD_PARTY_NOTICES.md).

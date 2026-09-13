@@ -12,7 +12,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from . import core, intake
+from . import collect, core, intake, workers
 
 EVENT_TYPE = "research-completed"
 MAX_EVENT_BYTES = 200_000  # GitHub caps client_payload at 65,535 chars; the file also carries repo metadata
@@ -30,6 +30,10 @@ class EventRejected(core.WorkbenchError):
     code = 8
 
 
+class InvalidLimits(core.WorkbenchError):
+    code = 19
+
+
 def _bounded_file(path: Path, max_bytes: int, label: str) -> str:
     with open(path, "rb") as fh:
         return intake.read_bounded(fh, max_bytes, label)
@@ -45,7 +49,7 @@ def normalize_event(event: object) -> dict:
         raise EventRejected("event must be a JSON object")
     action = event.get("action")
     if action != EVENT_TYPE:
-        raise EventRejected(f"unsupported event_type {action!r}; expected {EVENT_TYPE!r}")
+        raise EventRejected(f"unsupported event_type; expected {EVENT_TYPE!r}")
     payload = event.get("client_payload")
     if not isinstance(payload, dict):
         raise EventRejected("client_payload must be a JSON object")
@@ -82,47 +86,97 @@ def receive_event(root: Path, event_path: Path, max_bytes: int = MAX_EVENT_BYTES
 def _load_inbox_state(root: Path) -> dict:
     path = root / INBOX_STATE
     if not path.exists():
-        return {"processed": {}}
+        return {"processed": {}, "cursor": {}}
     state = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(state, dict) or not isinstance(state.get("processed"), dict):
+    if (not isinstance(state, dict) or not isinstance(state.get("processed"), dict)
+            or not isinstance(state.get("cursor", {}), dict)):
         raise core.CorruptState(f"{INBOX_STATE} is malformed")
-    return state
+    return {"processed": state["processed"], "cursor": dict(state.get("cursor") or {})}
+
+
+def _positive_int(value: object, name: str) -> None:
+    if not isinstance(value, int) or isinstance(value, bool) or value <= 0:
+        raise InvalidLimits(f"{name} must be a positive integer")
+
+
+def _blocked_dir(path: Path) -> bool:
+    """A project directory that is itself, or sits behind, a symlink/junction is never descended into."""
+    return path.is_symlink() or path.is_junction()
+
+
+def _list_inbox_files(base: Path) -> list[Path]:
+    """inbox/<lane>/<project>/<origin>.<suffix> only: one project level, no deeper traversal.
+
+    Symlinked or junctioned project directories are skipped before their contents are ever listed,
+    and individual symlinked files are skipped too, so no read ever follows a link out of the lane.
+    """
+    if not base.is_dir() or _blocked_dir(base):
+        return []
+    files: list[Path] = []
+    for project_dir in base.iterdir():
+        if not project_dir.is_dir() or _blocked_dir(project_dir):
+            continue
+        for path in project_dir.iterdir():
+            if path.is_file() and not path.is_symlink() and path.suffix in INBOX_SUFFIXES:
+                files.append(path)
+    return files
+
+
+def _bounded_read(path: Path, rel: str, max_bytes: int) -> bytes:
+    """Read at most max_bytes+1 bytes; a file over budget is never allocated in full before hashing."""
+    with open(path, "rb") as fh:
+        data = fh.read(max_bytes + 1)
+    if len(data) > max_bytes:
+        raise intake.InputTooLarge(f"{rel} is over {max_bytes} bytes")
+    return data
 
 
 def receive_inbox(root: Path, lane: str = "public", max_files: int = MAX_INBOX_FILES,
                   max_file_bytes: int = MAX_INBOX_FILE_BYTES) -> dict:
     """Ingest inbox/<lane>/<project>/<origin>.{md,txt,json} files; tags come from the path, never the body.
 
-    Files are visited in sorted order, at most max_files per call; unchanged files (same sha256) are
-    skipped. Private-lane files stay out of Git (.gitignore) and only their normalized links persist.
+    A persistent per-lane cursor makes the visit order fair: every file visited this call (skipped or
+    failed included) advances the cursor, so the next call resumes right after it and wraps around, and
+    unchanged files no longer starve files past the first max_files forever. Private-lane files stay out
+    of Git (.gitignore) and only their normalized links persist.
     """
     root = Path(root)
     if lane not in INBOX_LANES:
         raise EventRejected(f"lane must be one of {INBOX_LANES}")
+    _positive_int(max_files, "max_files")
+    _positive_int(max_file_bytes, "max_file_bytes")
     base = root / "inbox" / lane
-    files = sorted(p for p in base.rglob("*") if p.is_file() and p.suffix in INBOX_SUFFIXES
-                   and p.parent != base and not p.is_symlink()) if base.is_dir() else []
-    state = _load_inbox_state(root)
+    collect._safe_storage(root, base)
+    collect._safe_storage(root, root / INBOX_STATE)
+    by_rel = {p.relative_to(base).as_posix(): p for p in _list_inbox_files(base)}
+    rels = sorted(by_rel)
     out = {"root": str(root), "lane": lane, "processed": [], "skipped": [], "failed": [],
-           "deferred": max(0, len(files) - max_files)}
-    for path in files[:max_files]:
-        rel = path.relative_to(base).as_posix()
-        project, origin = path.relative_to(base).parts[0], path.stem
-        try:
-            data = path.read_bytes()
-            digest = hashlib.sha256(data).hexdigest()
-            if state["processed"].get(rel) == digest:
-                out["skipped"].append(rel)
+           "deferred": max(0, len(rels) - max_files)}
+    with workers.Lease(root, "inbox"):
+        with core.writer_lock(root):
+            core.init_locked(root)
+        state = _load_inbox_state(root)
+        processed = state["processed"].setdefault(lane, {})
+        order = workers._fair_order(rels, state["cursor"].get(lane))
+        visited = order[:max_files]
+        for rel in visited:
+            path = by_rel[rel]
+            project, origin = rel.split("/", 1)[0], path.stem
+            state["cursor"][lane] = rel
+            try:
+                collect._safe_storage(root, path)
+                data = _bounded_read(path, rel, max_file_bytes)
+                digest = hashlib.sha256(data).hexdigest()
+                if processed.get(rel) == digest:
+                    out["skipped"].append(rel)
+                    continue
+                result = intake.ingest(root, data.decode("utf-8"), origin, project, max_bytes=max_file_bytes)
+            except (core.WorkbenchError, UnicodeDecodeError, OSError) as exc:
+                out["failed"].append({"file": rel, "error": type(exc).__name__})
                 continue
-            if len(data) > max_file_bytes:
-                raise intake.InputTooLarge(f"{rel} is {len(data)} bytes; limit is {max_file_bytes}")
-            result = intake.ingest(root, data.decode("utf-8"), origin, project, max_bytes=max_file_bytes)
-        except (core.WorkbenchError, UnicodeDecodeError) as exc:
-            out["failed"].append({"file": rel, "error": type(exc).__name__, "message": str(exc)[:300]})
-            continue
-        state["processed"][rel] = digest
-        out["processed"].append({"file": rel, "origin": origin, "project": project, "accepted": result["accepted"],
-                                 "rejected": len(result["rejected"]), "new_repos": result["new_repos"]})
-    if out["processed"]:
-        core.atomic_write_bytes(root / INBOX_STATE, core.dump_json(state))
+            processed[rel] = digest
+            out["processed"].append({"file": rel, "origin": origin, "project": project, "accepted": result["accepted"],
+                                     "rejected": len(result["rejected"]), "new_repos": result["new_repos"]})
+        if visited:
+            core.atomic_write_bytes(root / INBOX_STATE, core.dump_json(state))
     return out

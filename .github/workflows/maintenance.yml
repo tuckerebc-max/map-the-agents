@@ -1,16 +1,14 @@
 name: Maintenance
 
-# Scheduled bounded metadata refresh, manual dispatch, and the research-completed
-# receiver. Serialized (one run at a time), least write (contents only), no
-# pull_request_target, no shell interpolation of event/payload text: the event
-# JSON is read from GITHUB_EVENT_PATH by map_agents itself. Publishes only after
-# build + audit pass; a failed audit or maintain step blocks the commit/push.
 on:
   schedule:
-    - cron: "17 9 * * *" # daily, fixed off-hour UTC; GitHub may delay/drop under load
+    - cron: "17 9 * * *"
   workflow_dispatch: {}
   repository_dispatch:
     types: [research-completed]
+  push:
+    branches: [main]
+    paths: ["corpus/inbox/public/**"]
 
 permissions:
   contents: write
@@ -21,58 +19,54 @@ concurrency:
 
 jobs:
   maintain:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15 # hard deployment ceiling; the cooperative --max-seconds below stays under it
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
       - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
         with:
           python-version: "3.12"
-      - name: Verify vendored wiki kernel against pinned Git blob identity
+      - name: Verify pinned wiki kernel
         run: uv run --python 3.12 python scripts/verify_vendor.py
-
-      # GITHUB_EVENT_PATH is a runner-provided file path, not text from the sender;
-      # map_agents parses that file itself and only ever extracts normalized public
-      # repository links and caller-supplied tags. Nothing from the payload is ever
-      # substituted into a shell command or workflow expression.
-      - name: Ingest a research-completed dispatch payload, if this run was triggered by one
-        if: github.event_name == 'repository_dispatch'
-        run: |
-          set +e
-          uv run --python 3.12 python -m map_agents --root corpus receive --event-path "$GITHUB_EVENT_PATH"
-          code=$?
-          set -e
-          if [ "$code" -ne 0 ] && [ "$code" -ne 4 ]; then exit "$code"; fi # 4 = accepted nothing, not a failure
-
-      - name: Ingest queued public inbox lead files (inbox/public/<project>/<origin>.*)
-        run: uv run --python 3.12 python -m map_agents --root corpus inbox --lane public
-
-      - name: Bounded metadata-only refresh (catalog leads, fair snapshot queue, needs-distillation)
-        run: uv run --python 3.12 python -m map_agents --root corpus maintain --max-seconds 480 --max-repos 5
-
-      - name: Rebuild generated maps from the current catalog and any sealed dossiers
-        run: uv run --python 3.12 python -m map_agents --root corpus build
-
-      - name: Validate kernel records before publishing anything
-        run: uv run --python 3.12 python -m map_agents --root corpus audit --level working
-
-      - name: Commit and push only if validated data changed (normal, non-forced push)
+      - name: Receive public leads, refresh within budgets, build and audit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run --python 3.12 python scripts/run_maintenance.py
+      # The pipeline exits nonzero on fatal receive/build/audit errors. A valid
+      # partial refresh may publish its cursor and retained evidence before the
+      # final report marks this run partial. The next run advances fairly.
+      - name: Publish validated corpus changes
+        shell: bash
         run: |
           git config user.name "map-the-agents-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add corpus AGENTS_CORPUS.md
-          if git diff --cached --quiet; then
-            echo "no validated changes to publish"
-          else
-            git commit -m "Scheduled maintenance: catalog/snapshot/state refresh (run ${{ github.run_id }})"
-            git push origin HEAD:${{ github.ref_name }}
+          paths=(corpus/catalog corpus/sources corpus/wiki corpus/map corpus/AGENTS_CORPUS.md
+                 corpus/state/catalog-cursor.json corpus/state/catalog-published.json
+                 corpus/state/maintenance.json corpus/state/inbox.json)
+          for path in "${paths[@]}"; do
+            if [ -e "$path" ] || [ -n "$(git ls-files -- "$path")" ]; then
+              git add -A -- "$path"
+            fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh validated agent corpus"
+            git push origin HEAD:main
           fi
-
-      - name: Upload failure artifacts (state and receipts only; never packets/proposals/private inbox)
-        if: failure()
+      - name: Save bounded maintenance evidence
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: maintenance-failure-${{ github.run_id }}
-          path: corpus/state
+          name: maintenance-evidence-${{ github.run_id }}
+          path: |
+            work/maintenance-summary.json
+            corpus/state/catalog-cursor.json
+            corpus/state/maintenance.json
+            corpus/state/inbox.json
           if-no-files-found: ignore
           retention-days: 14
+      - name: Report complete or partial refresh truthfully
+        if: always()
+        run: uv run --python 3.12 python scripts/run_maintenance.py --report

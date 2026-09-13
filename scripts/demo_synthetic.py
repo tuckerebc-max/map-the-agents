@@ -12,7 +12,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -106,8 +105,8 @@ def main() -> int:
     parser.add_argument("--root", type=Path, default=Path("work/demo-synthetic"))
     args = parser.parse_args()
     root = args.root
-    if root.exists():
-        shutil.rmtree(root)
+    if root.exists() and (not root.is_dir() or any(root.iterdir())):
+        parser.error("demo root must be new or empty; existing content is never removed")
     transport = Transport()
     report: dict = {"synthetic": True, "root": str(root), "steps": []}
     limits = workers.Limits(max_repos=0, max_files=6, max_bytes=20_000, catalog_entries=10, net_bytes=200_000, net_requests=40, max_seconds=120)

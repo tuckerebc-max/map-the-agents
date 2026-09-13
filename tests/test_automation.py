@@ -104,3 +104,82 @@ def test_inbox_lanes_take_tags_from_paths_skip_processed_files_and_receipt_failu
     assert "Alice" not in persisted and "tonight" not in persisted
     limited = automation.receive_inbox(tmp_path, "public", max_files=1, max_file_bytes=200)
     assert limited["deferred"] == 3 and limited["processed"] == []
+
+
+def test_inbox_cursor_is_fair_across_calls_and_lanes_do_not_collide(tmp_path: Path) -> None:
+    pub = tmp_path / "inbox" / "public" / "proj"
+    pub.mkdir(parents=True)
+    (pub / "a.md").write_text("https://github.com/org/aaa\n", encoding="utf-8")
+    (pub / "b.md").write_text("https://github.com/org/bbb\n", encoding="utf-8")
+    (pub / "c.md").write_text("https://github.com/org/ccc\n", encoding="utf-8")
+    seen: list[str] = []
+    for _ in range(6):
+        res = automation.receive_inbox(tmp_path, "public", max_files=1)
+        seen += [p["file"] for p in res["processed"]] + res["skipped"]
+    # every visited slot is spent on a file, unchanged repeats included, so 3 files over 6 calls of 1
+    # each visit every file at least twice instead of starving b.md/c.md behind a.md forever.
+    assert set(seen) == {"proj/a.md", "proj/b.md", "proj/c.md"}
+    assert seen[:3] == ["proj/a.md", "proj/b.md", "proj/c.md"]  # first cycle in sorted order
+    assert seen[3:6] == ["proj/a.md", "proj/b.md", "proj/c.md"]  # wraps and repeats (all now unchanged)
+
+    priv = tmp_path / "inbox" / "private" / "proj"
+    priv.mkdir(parents=True)
+    (priv / "a.md").write_text("https://github.com/org/private-aaa\n", encoding="utf-8")  # same rel path, different bytes
+    pub_state_before = automation._load_inbox_state(tmp_path)["cursor"]["public"]
+    res = automation.receive_inbox(tmp_path, "private", max_files=1)
+    assert res["processed"][0]["accepted"] == ["org/private-aaa"]
+    state = automation._load_inbox_state(tmp_path)
+    assert state["cursor"]["public"] == pub_state_before  # the private-lane call never touched public's cursor
+    # both lanes keep an entry under the identical relative path "proj/a.md" with different digests: the
+    # lane-scoped processed map means neither lane's record shadows or is skipped because of the other's.
+    assert state["processed"]["private"]["proj/a.md"] != state["processed"]["public"]["proj/a.md"]
+    again = automation.receive_inbox(tmp_path, "private", max_files=1)
+    assert again["skipped"] == ["proj/a.md"]  # private's own record, unaffected by public sharing the same rel
+
+
+def test_bounded_read_never_allocates_the_whole_oversized_file(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    pub = tmp_path / "inbox" / "public" / "proj"
+    pub.mkdir(parents=True)
+    (pub / "big.md").write_bytes(b"x" * 10_000)
+    monkeypatch.setattr(Path, "read_bytes", lambda self: (_ for _ in ()).throw(AssertionError("whole-file read used")))
+    res = automation.receive_inbox(tmp_path, "public", max_file_bytes=100)
+    assert res["failed"] == [{"file": "proj/big.md", "error": "InputTooLarge"}]
+
+
+@pytest.mark.parametrize("kwargs", [{"max_files": 0}, {"max_files": -1}, {"max_file_bytes": 0}, {"max_file_bytes": -5}])
+def test_invalid_inbox_limits_are_rejected_before_any_mutation(tmp_path: Path, kwargs: dict) -> None:
+    pub = tmp_path / "inbox" / "public" / "proj"
+    pub.mkdir(parents=True)
+    (pub / "a.md").write_text("https://github.com/org/aaa\n", encoding="utf-8")
+    with pytest.raises(automation.InvalidLimits):
+        automation.receive_inbox(tmp_path, "public", **kwargs)
+    assert not (tmp_path / core.REPOS_FILE).exists()
+    assert not (tmp_path / automation.INBOX_STATE).exists()
+
+
+def test_symlinked_project_directory_is_not_read(tmp_path: Path) -> None:
+    pub = tmp_path / "inbox" / "public"
+    real = tmp_path / "outside-project"
+    real.mkdir()
+    (real / "a.md").write_text("https://github.com/org/outside\n", encoding="utf-8")
+    pub.mkdir(parents=True)
+    link = pub / "linked"
+    try:
+        link.symlink_to(real, target_is_directory=True)
+    except OSError:
+        pytest.skip("creating a directory symlink requires elevated privilege on this host")
+    res = automation.receive_inbox(tmp_path, "public")
+    assert res["processed"] == [] and res["failed"] == [] and res["skipped"] == []
+    assert not core.load_repos(tmp_path)
+
+
+def test_held_orchestrator_lease_blocks_inbox_receiver(tmp_path: Path) -> None:
+    pub = tmp_path / "inbox" / "public" / "proj"
+    pub.mkdir(parents=True)
+    (pub / "a.md").write_text("https://github.com/org/aaa\n", encoding="utf-8")
+    from map_agents import workers
+
+    with workers.Lease(tmp_path, "maintain"):
+        with pytest.raises(workers.LeaseHeld):
+            automation.receive_inbox(tmp_path, "public")
+    assert not (tmp_path / core.REPOS_FILE).exists()

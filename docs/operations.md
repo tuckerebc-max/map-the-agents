@@ -1,116 +1,97 @@
 # Operations
 
-## Local development
+Run commands from the repository checkout. All corpus paths use `--root corpus`.
 
-```
+## Check a checkout
+
+```sh
+uv run --python 3.12 python -c "from pathlib import Path; Path('work').mkdir(exist_ok=True)"
 uv run --python 3.12 --extra dev python -m pytest tests -q --basetemp=work/pt
 uv run --python 3.12 python scripts/verify_vendor.py
 uv run --python 3.12 python scripts/demo_synthetic.py --root work/demo-synthetic
 ```
 
-`verify_vendor.py` recomputes the Git blob SHA-1 and SHA-256 of every file recorded in
-`vendor-pin.json` and flags anything unexpected under `vendor/research-corpus-wiki/` (ignoring only
-runtime caches). It must report `"ok": true` before any release; it is also the first step of both
-GitHub workflows.
+Use a new or empty demo root. The demo refuses to remove existing data. It uses fabricated
+repositories, two classes, actual kernel writes and a rejected unsupported proposal; its
+output must stay separate from the live corpus. The vendor verifier checks all 72 recorded
+Git blob and SHA-256 identities against [the pin](../vendor-pin.json).
 
-## GitHub automation
+## GitHub maintenance
 
-Two workflows, both pinning every action to a full commit SHA (see the comment on each `uses:`
-line) rather than a floating tag:
+[CI](../.github/workflows/ci.yml) runs offline tests, vendor verification and the synthetic
+demo on Ubuntu and Windows for pushes to main and pull requests, with read-only permissions.
 
-- **`ci.yml`** — `pull_request` and `push` to `main`. Read-only (`permissions: contents: read`).
-  Runs the offline test suite and the synthetic demo on Ubuntu and Windows. No writes, no
-  `pull_request_target`.
-- **`maintenance.yml`** — `schedule` (one fixed daily UTC cron; GitHub may delay or drop a
-  scheduled run under load, so this is not a real-time poller), `workflow_dispatch` (manual), and
-  `repository_dispatch` with `types: [research-completed]`. `permissions: contents: write` only.
-  Serialized via a single `concurrency` group (`cancel-in-progress: false`) so runs queue instead
-  of overlapping or clobbering each other. A 15-minute job timeout is the hard deployment ceiling
-  that every cooperative `--max-seconds` budget stays under.
+[Maintenance](../.github/workflows/maintenance.yml) runs daily at 09:17 UTC, by manual dispatch,
+on `research-completed` repository dispatch, and on main-branch pushes under
+`corpus/inbox/public/**`. Schedules can be delayed or dropped by GitHub. The writer checks out
+main, serializes runs, has only contents write permission, and has a 15-minute job ceiling.
+Its token is used for public GitHub API requests; source and payload text never become commands.
 
-  Steps: verify vendor → (if `repository_dispatch`) ingest the event JSON from `$GITHUB_EVENT_PATH`
-  → ingest queued `inbox/public/` files → bounded `maintain` → `build` → `audit` → commit+push only
-  if `git diff --cached` is non-empty, using a normal (non-forced) push. **The event file is read by
-  `map_agents` itself; nothing from the payload is ever substituted into a shell command or a
-  workflow expression.** A failing `audit` or `maintain` step stops the job before any commit; on
-  any failure, `corpus/state` (never `packets/`, `proposals/`, or `inbox/private/`) is uploaded as an
-  artifact so the fair cursor and failure counts are inspectable without another run.
+The trusted [runner](../scripts/run_maintenance.py) reads a dispatch event from GitHub's event
+file, ingests the public inbox, refreshes at most five repositories and 50 catalog entries,
+builds the map and audits the wiki. Its metadata deadline is 480 seconds, with default
+12 MB/120-request aggregate network ceilings and 12 files/400 KB per snapshot.
 
-### `research-completed` payload
+Fatal receive/build/audit errors prevent publication. Valid partial refreshes publish their
+fair cursor, failure counts and retained older evidence, then report a failing partial run.
+This prevents one inaccessible repository from forcing every future run to restart at it.
+The workflow stages only the named data directories and queue files, pushes normally to main,
+and retains a summary and narrow state artifacts for 14 days. Inspect those artifacts after
+a partial run. A concurrent main change may reject the push; retry from the new main normally.
 
-```json
-{
-  "event_type": "research-completed",
-  "client_payload": {
-    "project": "navy-yard",
-    "origin": "research-completed",
-    "urls": ["https://github.com/org-a/alpha"],
-    "text": "optional free text also scanned for links"
-  }
-}
+GitHub token pushes do not trigger another push CI run. Maintenance therefore validates its own
+generated data before committing. Actions are pinned to full commits; see their version comments.
+
+## Research and inbox intake
+
+Every researched public GitHub candidate should reach intake, including candidates omitted from
+a final top-ten recommendation. Project tags retain the research context alongside the shared map.
+
+```sh
+uv run --python 3.12 python -m map_agents --root corpus intake --file work/research-links.md --origin research --project navy-yard
+uv run --python 3.12 python -m map_agents --root corpus inbox --lane private --max-files 20
+gh api repos/tuckerebc-max/map-the-agents/dispatches --input samples/research-dispatch.json
 ```
 
-Send it with `gh api repos/OWNER/REPO/dispatches -f event_type=research-completed -f 'client_payload[project]=navy-yard' ...`
-or the REST API directly. `project` is required; `origin` defaults to `research-completed`; at
-least one of `urls`/`text` is required. GitHub itself bounds `client_payload` to 10 top-level keys
-and 65,535 characters and `event_type` to 100 characters — `map_agents.automation` enforces its own
-smaller limits (`MAX_URLS`, `MAX_URL_CHARS`, `MAX_TEXT_CHARS`) inside that envelope and rejects
-anything outside its supported shape with `EventRejected` before any write. See
-`samples/research-completed.json` for a runnable fixture (used by `tests/test_automation.py`).
+The first command needs a supplied research file. Inbox paths have exactly this shape:
+`corpus/inbox/<public|private>/<project>/<origin>.md` (also `.txt` or `.json`). Public files
+may be committed; private exports stay local and ignored. Use neutral tags because tags persist.
+Only normalized public links and associations enter canonical intake; raw conversations do not.
+Per-lane digests and persistent cursors bound each call and avoid starvation by unchanged files.
+Files are read at most the byte limit plus one and linked directories are rejected or skipped.
 
-## Bounded limits, in practice
+[research-dispatch.json](../samples/research-dispatch.json) is a runnable API request body using
+a real public repository. GitHub delivers `event_type` as `action` in its event file. The separate
+[research-completed.json](../samples/research-completed.json) is a synthetic received-event test
+fixture. The receiver allows up to 200 URLs and a 200 KB event file; unsupported payloads are data
+errors. Research producers must invoke this contract. No global hook or live chat connector is installed.
 
-Every `maintain`/`worker` limit is a finite ceiling, not a target — the CLI validates them
-(`InvalidLimits`) as finite, non-negative, and typed before any stage runs. A small, deliberately
-tight recipe, safe to run against any corpus:
+## Bounded collection and model work
 
+```sh
+uv run --python 3.12 python -m map_agents --root corpus maintain --max-repos 2 --max-files 4 --max-bytes 60000 --catalog-entries 10 --max-seconds 60 --net-bytes 5000000 --net-requests 40
 ```
-uv run --python 3.12 python -m map_agents --root corpus maintain \
-  --max-repos 2 --max-files 4 --max-bytes 60000 --catalog-entries 10 \
-  --max-seconds 60 --net-bytes 500000 --net-requests 40
-```
 
-This requires real network access (it fetches the live `alltheagents.org` backing feed) and is
-verified to enforce its own ceiling honestly: run against the actual feed, the tight
-`--net-bytes 500000` example above hits `BudgetExceeded` on the feed fetch itself and reports
-`status: degraded`, `stopped: network-budget` rather than silently truncating or fabricating a
-partial catalog. Raise `--net-bytes` (the feed is bounded at 8,000,000 bytes server-side) for a
-recipe that completes a catalog pass; for a guaranteed fully offline run of the equivalent
-pipeline, use `scripts/demo_synthetic.py` instead. That is at most 2 repository attempts, 4 files and 60,000 bytes of snapshot per repository, 10
-catalog feed entries, a 60-second cooperative deadline, and a 500,000-byte/40-request network
-ceiling for the whole run. **These are storage/network byte ceilings, not model tokens.** A
-too-large packet or worker envelope means "narrow the snapshot selection" (fewer files, an explicit
-`--path`, a smaller `--max-bytes`), not "use a model with a bigger context window." The default
-`worker_seconds` (180s) and `max_seconds` (600s) are themselves clamped to whatever time remains in
-the cooperative deadline; individual kernel calls (`prepare`/`apply`) each carry their own 300-second
-hard timeout regardless of the run's remaining budget.
+These are byte and attempt ceilings, not model token counts or completion guarantees. The backing
+feed itself must fit the aggregate allowance. Default collection reads README/docs; inspect selected
+code only through explicit `snapshot --path` requests. A reduced budget or removed explicit path
+retains old valid evidence and reports the gap. `--max-seconds` is cooperative: no new stage starts
+past its deadline. Model/network waits are clamped, each kernel call has a 300-second timeout, and
+local map building has no hard time kill. Use the outer job timeout for a hard deployment ceiling.
 
-`maintain` records per-repository failures in `failures[]` and still exits 0 — inspect `status`
-(`quiescent` / `needs-distillation` / `degraded` / `stopped`) and `failures`/`stopped` yourself; a
-zero exit code alone does not mean nothing went wrong. A repository that fails `max_failures`
-consecutive times is parked (skipped) until `--retry-parked`; the fair cursor and parked/failure
-counts persist in `state/` across runs specifically so one bad repository never starves the rest of
-the rotation, and a shrinking budget or a since-removed path degrades to a `refresh-failed`,
-old-snapshot-retained receipt rather than dropping evidence.
+Inspect `maintain` JSON: status may be `quiescent`, `needs-distillation`, `degraded` or `stopped` even
+when the CLI returns zero. Repeatedly failed repositories park after three consecutive failures;
+`--retry-parked` explicitly retries them. There is no automatic timed backoff or model provider setup.
+See the [skill](../skills/map-the-agents/SKILL.md) for bounded worker and proposal instructions.
 
-## Attribution and vendor integrity
+## Recover interrupted work
 
-`vendor/research-corpus-wiki/` is vendored unmodified, Apache-2.0 licensed, pinned to the commit
-recorded in `vendor-pin.json` (`repository`, `commit`, and a per-file Git blob SHA-1 + SHA-256).
-Its upstream PR 1 is reviewed with passing CI but intentionally left open — do not merge it here.
-Run `scripts/verify_vendor.py` after any change that touches `vendor/` or before trusting a
-checkout; CI runs it on every push and PR. See `docs/observatory-manifest.json` for this
-workbench's registration under the Stargazer Observatory, and `vendor/research-corpus-wiki/LICENSE`
-/ `THIRD_PARTY_NOTICES.md` for the dependency's own attribution.
+Keep one writer per corpus. Leases from a confirmed dead local process can be reclaimed; an active
+or uncertain owner blocks another orchestrator. Verify the owning process before manually removing
+a lock. After an interrupted apply, rerun the same trusted worker command against the same corpus;
+the worker reconciles its saved packet and proposal before another model call.
 
-## What is not yet connected
-
-- No live model or provider SDK is configured. `worker` without a small agent or an explicitly
-  configured trusted command only returns manual envelopes; nothing is distilled automatically.
-- No live WhatsApp or other chat connector exists. Private leads only ever reach this workbench as
-  files under `inbox/private/` that a human or agent places there deliberately.
-- The full corpus campaign (researching and seeding a broad set of real agent repositories) is
-  separate follow-on work; this build ships the pipeline and a small, clearly synthetic
-  demonstration, not a populated map.
-- Publication to GitHub, independent review of this code, and enabling the scheduled workflow on a
-  live repository are coordinator-side steps that happen after this unit is accepted.
+Back up the complete local corpus for pending model jobs: ignored packets, envelopes, proposals,
+packet seals, worker job records and kernel operation state must travel together. Git alone omits
+these recovery files. Do not copy isolated job pointers into a new clone and expect recovery.
+Published metadata-only maintenance needs only its tracked cursor/state; it creates no model jobs.

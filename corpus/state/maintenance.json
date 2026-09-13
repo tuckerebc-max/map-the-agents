@@ -1,0 +1,73 @@
+{
+  "cursor": "21st-dev/1code",
+  "repos": {
+    "21st-dev/1code": {
+      "failures": 0,
+      "last_at": "2026-09-13T21:53:55+00:00",
+      "last_outcome": "snapshotted"
+    }
+  },
+  "runs": [
+    {
+      "attempted": [
+        "21st-dev/1code"
+      ],
+      "catalog": {
+        "backlog": 1344,
+        "changed": true,
+        "commit": "0709cccb49aff08a4b10beb95a214005a810a363",
+        "processed": 3,
+        "slugs": [
+          "9remote",
+          "a0dev",
+          "a11yresolver"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-13T21:53:55+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "21st-dev/1code",
+        "openai/codex"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "9f1bc76fa4372c18c565b5a4f8daf38ae3595f0e",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "pending",
+          "omitted_count": 2,
+          "repo": "21st-dev/1code",
+          "reused": false,
+          "snapshot_id": "c3640a31234c9ce0"
+        }
+      ],
+      "started": "2026-09-13T21:53:52+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 3.016,
+        "max_seconds": 60.0,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 45.0
+        },
+        "stages": {
+          "catalog": 1.031,
+          "snapshots": 1.969
+        }
+      }
+    }
+  ],
+  "schema_version": "map-agents.maintenance/1",
+  "worker_cursor": null
+}

@@ -68,7 +68,8 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("--retry-parked", action="store_true", help="retry repositories parked after repeated failures")
         for name, fld in (("max-repos", "max_repos"), ("max-files", "max_files"), ("max-bytes", "max_bytes"),
                           ("catalog-entries", "catalog_entries"), ("net-bytes", "net_bytes"), ("net-requests", "net_requests"),
-                          ("max-failures", "max_failures"), ("max-proposal-bytes", "max_proposal_bytes")):
+                          ("max-failures", "max_failures"), ("max-proposal-bytes", "max_proposal_bytes"),
+                          ("max-envelope-bytes", "max_envelope_bytes")):
             sp.add_argument(f"--{name}", dest=fld, type=int, default=getattr(workers.Limits, fld))
         for name, fld in (("net-seconds", "net_seconds"), ("max-seconds", "max_seconds"), ("worker-seconds", "worker_seconds")):
             sp.add_argument(f"--{name}", dest=fld, type=float, default=getattr(workers.Limits, fld))

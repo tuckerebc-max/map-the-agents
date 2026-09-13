@@ -1,136 +1,77 @@
 ---
 name: map-the-agents
-description: Look up prior agent-capability research in the Observatory's map before or during Navy Yard or Tech Triangle design work, and record every public GitHub repository lead you encounter (adopted or not) so the map keeps growing. Not for adopting or executing any discovered code.
+description: Look up agent designs in the Observatory Markdown map, retain public GitHub research leads, and run bounded evidence-backed collection or distillation for Navy Yard and Tech Triangle.
 ---
 
 # Map the Agents
 
-The Observatory keeps small, source-linked maps of public agent repositories: what they claim to
-do, which facets are still gaps, and how fresh each snapshot is. It answers "has anyone already
-looked at this class of agent?" cheaply, before you re-research it. It never runs, imports, or
-recommends installing anything it observes; a repository landing in the map is an **evaluation
-candidate**, not an adoption decision.
+Use this repo-owned skill for design lookup or corpus maintenance. Work from the repository
+checkout with Python 3.12 and uv; default corpus is `corpus/`. The existing
+[Research Corpus Wiki skill](../../vendor/research-corpus-wiki/SKILL.md) governs canonical wiki
+operations. Read its relevant prepare/apply instructions before performing distillation.
 
-This skill is repo-owned and not globally installed. Run it from a checkout of this repository. It
-does not read this repo's `.coordination/` (coordinator-only working notes) or any run receipts.
+## Lookup first
 
-## Preflight (once per session)
+Open [the corpus pointer](../../corpus/AGENTS_CORPUS.md), then the linked class, component,
+pattern, gap or freshness index. For a bounded text lookup:
 
-```
-uv run --python 3.12 python -m map_agents --root corpus status
-```
-
-If the root is missing, `status` still returns `initialized: false`; running any command
-(`intake`, `receive`, `inbox`) creates the layout on first write. Do not hand-create files under
-`corpus/`.
-
-## Look something up first
-
-```
-uv run --python 3.12 python -m map_agents --root corpus query "planning loop sandbox tool runner" --limit 5
+```sh
+uv run --python 3.12 python -m map_agents --root corpus query "memory orchestration" --limit 5 --max-chars 2500
 ```
 
-Searches generated `map/` Markdown only (specifications, components, design-choices, workflows,
-skills-patterns, interfaces, memory-state, orchestration, tools-permissions, dependencies,
-evaluation, limitations, relevance and gaps). Add `--include-archive` to also search the wiki
-kernel's own historical pages. A result's `freshness` is `pending`, `fresh`, `stale`, or
-`refresh-failed`; treat `pending` and `refresh-failed` claims as **unknown**, not confirmed. If
-`complete` is `false` in the response, the corpus exceeded the safety scan ceiling; narrow the
-query rather than trusting an empty result as full coverage.
+Default query reads current generated Markdown, with no source-code crawl. Inspect `complete`,
+`stale_view`, status and freshness (`current`, `pending`, `stale`, `refresh-failed`). Incomplete
+means missing/truncated files or a scan ceiling; rebuild or inspect the reported coverage and
+linked pages. Narrower query terms alone do not repair coverage. `--include-archive` adds
+historical kernel pages explicitly. Cite the map's immutable source links; keep inferences and
+unknowns visible. A discovered lead is an observation, not an assessed evaluation candidate.
 
-To browse without searching, start at `map/index.md` (classes, agents, components, patterns, gaps,
-freshness) or a specific repository's page under `map/repos/<owner>/<repo>.md`.
+## Retain every research lead
 
-## Record a lead you found
+When researching repositories, collect all public GitHub candidates, including those omitted
+from a final shortlist. Preserve the project association in the shared corpus:
 
-Every public GitHub repository you notice during design work should be recorded, whether or not
-you end up using it. `origin` and `project` are plain tags (no URLs, no secrets); duplicates are
-free (`ingest` and `receive` are no-ops on an unchanged catalog).
-
-```
-# One or more URLs/text, straight from the shell:
-uv run --python 3.12 python -m map_agents --root corpus intake --origin "design-session" --project "navy-yard" \
-  --text "https://github.com/some-org/some-agent looks relevant to the bosun redesign"
-
-# A file instead of --text:
-uv run --python 3.12 python -m map_agents --root corpus intake --origin "design-session" --project "tech-triangle" --file notes.md
-```
-
-Only normalized `owner/repo` links and your two tags persist; the source text itself is discarded
-after link extraction, and private hosts, tokens, and GitHub-secret shapes are rejected before any
-write.
-
-### File-based private leads (chat exports, meeting notes)
-
-Do not paste raw private conversations into `--text`. Instead drop a file at
-`inbox/private/<project>/<origin>.md` (or `.txt`/`.json`) — the path itself supplies both tags — and
-run:
-
-```
-uv run --python 3.12 python -m map_agents --root corpus inbox --lane private
-```
-
-`inbox/private/` is git-ignored; only the normalized public links extracted from each file reach
-`catalog/`, keyed by the file's sha256 so a repeat run is a no-op. Use `--lane public` for files
-that are themselves fine to commit under `inbox/public/`.
-
-### Incoming automated research (GitHub Actions)
-
-A `repository_dispatch` event of type `research-completed` (payload: `{project, origin?, urls?,
-text?}`) lands the same way through `receive --event-path $GITHUB_EVENT_PATH`; see
-`.github/workflows/maintenance.yml`. There is no live WhatsApp connector — that data path does not
-exist yet, only file-based inbox leads and this explicit dispatch receiver.
-
-## Refresh snapshots and flag what needs a closer look (no model required)
-
-```
-uv run --python 3.12 python -m map_agents --root corpus maintain --max-repos 2 --max-files 4 \
-  --max-bytes 60000 --catalog-entries 10 --max-seconds 60
-```
-
-This is metadata-only: it advances the public catalog feed, takes bounded README/docs snapshots of
-a fair rotation of repositories, and lists which now `needs_distillation`. It never calls a model.
-Bytes are storage/network ceilings, not model tokens — if a snapshot or worker envelope is too
-large, narrow the selection (fewer files, an explicit `--path`, or a smaller `--max-bytes`), don't
-assume a small agent can read more just because its context window is larger.
-
-## Turn a snapshot into a dossier (small-agent or trusted-command recipe)
-
-Either a small agent reading the packet directly, or an explicitly configured trusted command, can
-distill one repository. No provider SDK or paid model is required to exercise the mechanics:
-
-```
-# 1) Get the bounded envelope (packet + exact instructions) for one queued repository.
-#    max-files/max-bytes below bound the underlying snapshot, which bounds the packet the
-#    envelope wraps; there is no separate envelope-bytes flag, so narrow the snapshot instead:
-uv run --python 3.12 python -m map_agents --root corpus worker --max-files 4 --max-bytes 60000
-
-# 2) Read corpus/packets/<operation_id>.json yourself, write a proposal JSON that matches
-#    packet["proposal_schema"] (facets/kinds/bases/bounds are in the packet), citing only
-#    packet slice_ids, then apply it through the real kernel — never hand-edit the wiki:
-uv run --python 3.12 python -m map_agents --root corpus prepare owner/repo   # if you need a fresh packet
-uv run --python 3.12 python -m map_agents --root corpus apply corpus/packets/OP.json corpus/proposals/OP.json
+```sh
+uv run --python 3.12 python -m map_agents --root corpus intake --text "https://github.com/openai/codex" --origin research --project navy-yard
 uv run --python 3.12 python -m map_agents --root corpus build
 ```
 
-A schema-valid proposal is not proof of a correctness claim — it only means the claim cites real
-evidence in the shape the kernel requires. `basis: code-inspected` requires citing an actual
-code/config slice, not documentation alone. An explicitly configured trusted command instead of a
-manual read can be run with `worker -- <exe> <args...>`; the command line is fixed at invocation
-time and nothing from source text or the model's own output is ever appended to it.
+Use `--file work/research-links.md` for supplied research text. Put supplied private chat exports
+under `corpus/inbox/private/<project>/<origin>.txt`, then run `inbox --lane private`. Use neutral
+tags; only public links and tags persist. Public inbox commits and the research-dispatch receiver
+are described in [operations](../../docs/operations.md). Producers must call these paths; live
+WhatsApp and account-wide research hooks are not connected.
 
-`worker` returns `outcome: no-op` when nothing currently needs distillation (for example a fresh
-corpus with no snapshot yet); run `maintain` first. For a fully offline, runnable walk through this
-whole prepare/proposal/apply/build/query shape on fixture data, run
-`python scripts/demo_synthetic.py` from the repository root.
+## Collect, then distill one repository
 
-## Boundaries
+Start with a small immutable snapshot. Add a specific `--path` when a design question needs code:
 
-- This skill never installs, executes, or recommends adopting discovered code; it only records and
-  organizes evidence about what a public repository claims and shows.
-- Canonical wiki writes go through the vendored kernel's `prepare`/`apply` only (see
-  `vendor/research-corpus-wiki/SKILL.md`); never hand-edit `corpus/wiki/`.
-- One writer owns a given `corpus/` checkout at a time; do not run `maintain`/`worker`/`inbox`
-  concurrently against the same root from two sessions.
-- Full corpus population is a separate, larger effort; this skill's job is small, resumable
-  contributions to it, not a bulk crawl.
+```sh
+uv run --python 3.12 python -m map_agents --root corpus snapshot openai/codex --max-files 4 --max-bytes 60000
+uv run --python 3.12 python -m map_agents --root corpus worker --repo openai/codex --max-envelope-bytes 128000 --max-proposal-bytes 32000
+```
+
+`worker` does not collect or shrink source snapshots. These separate snapshot and envelope byte
+ceilings bound the input; they are not token counts. An oversized envelope requires a narrower
+snapshot selection. With no command adapter, the worker returns packet/envelope paths relative
+to `corpus/`. Read that envelope, preserve its binding fields and write one proposal using the
+exact included schema. Use only supplied slice IDs, supported claims and honest evidence bases.
+Missing facets stay unknown; a documentation citation cannot establish code-inspected behavior.
+
+Apply using the exact returned packet path and the proposal you wrote:
+
+```text
+python -m map_agents --root corpus apply corpus/packets/RETURNED-ID.json corpus/proposals/YOUR-PROPOSAL.json
+```
+
+The uppercase names above denote paths from this operation, not literal filenames. Then run
+`audit --level working` and `build`. Do not prepare a replacement packet between reading the
+envelope and applying its proposal. Canonical writes go through the pinned kernel, and structural
+validation establishes linkage rather than semantic truth.
+
+A trusted configured executable can instead receive the envelope on stdin and return one JSON
+proposal on stdout via `worker ... -- executable args`. No provider is configured here; Gemini,
+Codex 5.3 and GLM Flash can use this same contract. Never derive commands from collected text.
+Use finite budgets, inspect failure receipts, and reconcile saved pending applies before retrying.
+Local recovery requires the complete ignored worker payloads as well as published state; see
+[operations](../../docs/operations.md). Full corpus population is a separate execution campaign.
