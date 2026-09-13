@@ -1,9 +1,34 @@
 {
-  "cursor": "21st-dev/1code",
+  "cursor": "aetherstudio-cn/aetherstudio",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
       "last_at": "2026-09-13T21:53:55+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "5dive-ai/5dive": {
+      "failures": 0,
+      "last_at": "2026-09-13T22:45:08+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "777genius/agent-teams-ai": {
+      "failures": 0,
+      "last_at": "2026-09-13T22:45:12+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "abacusai/abacusai-desktop": {
+      "failures": 0,
+      "last_at": "2026-09-13T22:45:13+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aeonfun/aeon": {
+      "failures": 0,
+      "last_at": "2026-09-13T22:45:16+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "aetherstudio-cn/aetherstudio": {
+      "failures": 0,
+      "last_at": "2026-09-13T22:45:18+00:00",
       "last_outcome": "snapshotted"
     }
   },
@@ -64,6 +89,161 @@
         "stages": {
           "catalog": 1.031,
           "snapshots": 1.969
+        }
+      }
+    },
+    {
+      "attempted": [
+        "5dive-ai/5dive",
+        "777genius/agent-teams-ai",
+        "abacusai/abacusai-desktop",
+        "aeonfun/aeon",
+        "aetherstudio-cn/aetherstudio"
+      ],
+      "catalog": {
+        "backlog": 1294,
+        "changed": true,
+        "commit": "0709cccb49aff08a4b10beb95a214005a810a363",
+        "processed": 50,
+        "slugs": [
+          "abacus-ai-agent",
+          "acp-client",
+          "adal-cli",
+          "ade",
+          "ade-cli",
+          "aeon",
+          "aetherstudio",
+          "aft",
+          "agena",
+          "agency-agents-zh",
+          "agent-blackbox",
+          "agent-deck",
+          "agent-fm",
+          "agent-gui",
+          "agent-harness-kit",
+          "agent-manager",
+          "agent-md",
+          "agent-of-empires",
+          "agent-orchestrator",
+          "agent-orchestrator-ao",
+          "agent-os",
+          "agent-repoguardian",
+          "agent-sandbox",
+          "agent-sh",
+          "agent-teams-ai",
+          "agentbox",
+          "agentbridge",
+          "agentcoder",
+          "agentcookie",
+          "agentellij",
+          "agentflow",
+          "agentforce-for-developers",
+          "agentforce-vibes",
+          "agenthub",
+          "agentic-ai",
+          "agentic-code",
+          "agentic-coding-basic",
+          "agentic-coding-intro",
+          "agentic-coding-quickstart",
+          "agentic-coding-tool-eval",
+          "agentic-coding-with-claude-code",
+          "agentic-engineering-framework",
+          "agentic-platform",
+          "agenticai",
+          "agentlas-os",
+          "agentless",
+          "agentmd",
+          "agentnotch",
+          "agentpack",
+          "agentplane"
+        ],
+        "version_changed": false
+      },
+      "failures": [],
+      "finished": "2026-09-13T22:45:18+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "21st-dev/1code",
+        "5dive-ai/5dive",
+        "777genius/agent-teams-ai",
+        "abacusai/abacusai-desktop",
+        "aeonfun/aeon",
+        "aetherstudio-cn/aetherstudio",
+        "openai/codex"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "pending",
+          "omitted_count": 7,
+          "repo": "5dive-ai/5dive",
+          "reused": false,
+          "snapshot_id": "00021c2ed875dd28"
+        },
+        {
+          "commit": "43764e1df31fccb3a8ba793e7d8637af15aa10ea",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "pending",
+          "omitted_count": 161,
+          "repo": "777genius/agent-teams-ai",
+          "reused": false,
+          "snapshot_id": "771d7e3404fa9a61"
+        },
+        {
+          "commit": "b4f988ce556ddde1c7551f70d5d01bf98777078c",
+          "explicit_paths": [],
+          "files_stored": 1,
+          "freshness": "pending",
+          "omitted_count": 0,
+          "repo": "abacusai/abacusai-desktop",
+          "reused": false,
+          "snapshot_id": "8fce056cb8ac87db"
+        },
+        {
+          "commit": "95142d19705ca379815e7fc9493a497ee0504e8d",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "pending",
+          "omitted_count": 27,
+          "repo": "aeonfun/aeon",
+          "reused": false,
+          "snapshot_id": "76226e8365f601b0"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "explicit_paths": [],
+          "files_stored": 6,
+          "freshness": "pending",
+          "omitted_count": 0,
+          "repo": "aetherstudio-cn/aetherstudio",
+          "reused": false,
+          "snapshot_id": "9dbf470b8b2608bc"
+        }
+      ],
+      "started": "2026-09-13T22:45:03+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 15.573,
+        "max_seconds": 480,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.7,
+          "snapshots": 14.867
         }
       }
     }

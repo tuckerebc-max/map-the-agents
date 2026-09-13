@@ -1,12 +1,13 @@
 # 5dive-ai/5dive
 
-Status: discovered - Freshness: pending
+Status: snapshotted - Freshness: pending
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
+Latest snapshot: commit 420651c634b0 @ 00021c2ed875dd28
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Status is `snapshotted`; a snapshot exists but no dossier has been distilled and applied yet.
 
 ## Facets
 

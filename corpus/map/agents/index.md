@@ -1,17 +1,59 @@
 # Agents -- full index
 
-11 repositories.
+53 repositories.
 
 [Back to map index](../index.md)
 
 - [21st-dev/1code](../repos/21st-dev/1code.md) -- status=snapshotted, freshness=pending
-- [5dive-ai/5dive](../repos/5dive-ai/5dive.md) -- status=discovered, freshness=pending
+- [5dive-ai/5dive](../repos/5dive-ai/5dive.md) -- status=snapshotted, freshness=pending
+- [777genius/agent-teams-ai](../repos/777genius/agent-teams-ai.md) -- status=snapshotted, freshness=pending
+- [abacusai/abacusai-desktop](../repos/abacusai/abacusai-desktop.md) -- status=snapshotted, freshness=pending
+- [aeonfun/aeon](../repos/aeonfun/aeon.md) -- status=snapshotted, freshness=pending
+- [aetherstudio-cn/aetherstudio](../repos/aetherstudio-cn/aetherstudio.md) -- status=snapshotted, freshness=pending
+- [agentlas-ai/agentlas-os](../repos/agentlas-ai/agentlas-os.md) -- status=discovered, freshness=pending
+- [agentmd/agent.md](../repos/agentmd/agent.md.md) -- status=discovered, freshness=pending
 - [akarachen/2code](../repos/akarachen/2code.md) -- status=discovered, freshness=pending
 - [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) -- status=discovered, freshness=pending
 - [alpbahadur/49agents](../repos/alpbahadur/49agents.md) -- status=discovered, freshness=pending
+- [aozyildirim/agena](../repos/aozyildirim/agena.md) -- status=discovered, freshness=pending
+- [appgram/agentnotch](../repos/appgram/agentnotch.md) -- status=discovered, freshness=pending
+- [arul28/ade](../repos/arul28/ade.md) -- status=discovered, freshness=pending
+- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) -- status=discovered, freshness=pending
+- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) -- status=discovered, freshness=pending
+- [bonk1t/agentic-platform](../repos/bonk1t/agentic-platform.md) -- status=discovered, freshness=pending
+- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) -- status=discovered, freshness=pending
+- [cortexkit/aft](../repos/cortexkit/aft.md) -- status=discovered, freshness=pending
 - [decolua/9remote](../repos/decolua/9remote.md) -- status=discovered, freshness=pending
+- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) -- status=discovered, freshness=pending
+- [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) -- status=discovered, freshness=pending
+- [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md) -- status=discovered, freshness=pending
+- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) -- status=discovered, freshness=pending
+- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) -- status=discovered, freshness=pending
+- [huangd1999/agentcoder](../repos/huangd1999/agentcoder.md) -- status=discovered, freshness=pending
+- [iamfakeguru/agent-md](../repos/iamfakeguru/agent-md.md) -- status=discovered, freshness=pending
+- [jnmetacode/agency-agents-zh](../repos/jnmetacode/agency-agents-zh.md) -- status=discovered, freshness=pending
+- [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md) -- status=discovered, freshness=pending
+- [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md) -- status=discovered, freshness=pending
+- [lupantech/agentflow](../repos/lupantech/agentflow.md) -- status=discovered, freshness=pending
+- [madarco/agentbox](../repos/madarco/agentbox.md) -- status=discovered, freshness=pending
+- [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md) -- status=discovered, freshness=pending
+- [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md) -- status=discovered, freshness=pending
+- [njbrake/agent-of-empires](../repos/njbrake/agent-of-empires.md) -- status=discovered, freshness=pending
 - [ntegrals/10x](../repos/ntegrals/10x.md) -- status=discovered, freshness=pending
 - [openai/codex](../repos/openai/codex.md) -- status=snapshotted, freshness=pending
+- [openautocoder/agentless](../repos/openautocoder/agentless.md) -- status=discovered, freshness=pending
 - [packtpublishing/30-agents-every-ai-engineer-must-build](../repos/packtpublishing/30-agents-every-ai-engineer-must-build.md) -- status=discovered, freshness=pending
+- [packtpublishing/agentic-coding-with-claude-code](../repos/packtpublishing/agentic-coding-with-claude-code.md) -- status=discovered, freshness=pending
 - [perrypixel/10x-tool-calls](../repos/perrypixel/10x-tool-calls.md) -- status=discovered, freshness=pending
+- [saadnvd1/agent-os](../repos/saadnvd1/agent-os.md) -- status=discovered, freshness=pending
+- [seandavi/agentic-coding-intro](../repos/seandavi/agentic-coding-intro.md) -- status=discovered, freshness=pending
+- [shinpr/agentic-code](../repos/shinpr/agentic-code.md) -- status=discovered, freshness=pending
+- [sylphai-inc/adal-cli](../repos/sylphai-inc/adal-cli.md) -- status=discovered, freshness=pending
+- [taewooopark/agent-blackbox](../repos/taewooopark/agent-blackbox.md) -- status=discovered, freshness=pending
+- [thixpin/agentic-coding-basic](../repos/thixpin/agentic-coding-basic.md) -- status=discovered, freshness=pending
+- [untrivial-ai/agent-orchestrator](../repos/untrivial-ai/agent-orchestrator.md) -- status=discovered, freshness=pending
+- [vishal2612200/agentpack](../repos/vishal2612200/agentpack.md) -- status=discovered, freshness=pending
+- [willynikes2/agent-orchestrator](../repos/willynikes2/agent-orchestrator.md) -- status=discovered, freshness=pending
+- [yasinonline/agenticai](../repos/yasinonline/agenticai.md) -- status=discovered, freshness=pending
+- [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md) -- status=discovered, freshness=pending
 - [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md) -- status=discovered, freshness=pending

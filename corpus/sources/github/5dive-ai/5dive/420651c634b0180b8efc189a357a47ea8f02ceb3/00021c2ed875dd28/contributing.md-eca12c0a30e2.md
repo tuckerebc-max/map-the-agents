@@ -1,0 +1,184 @@
+# Contributing to 5dive
+
+Thanks for the interest. This is a solo-maintained project — reviews can be
+slow, and not every idea will land. If you're planning more than a small
+fix, open an issue first so we can sanity-check fit before you sink time
+into it.
+
+## Scope
+
+5dive's core mission is **spawning and managing AI coding agents on a
+host**. Features that directly serve that (new agent types, better
+isolation, better visibility into running agents, smoother install/upgrade)
+are in scope. Features that drift into adjacent territory — full IdP,
+package registries, monitoring stacks, GUI installers — usually aren't,
+and we'll point at upstream tools instead. If you're not sure, ask in an
+issue before building. [ROADMAP.md](ROADMAP.md) shows where the project is
+headed — items there are safe bets for contributions.
+
+## Dev setup
+
+Requirements:
+
+- Linux host (Ubuntu/Debian-flavoured tested; other distros likely work
+  but the installer assumes apt).
+- `bash` 4.x+, `git`, `jq`, `sqlite3` (the unit tests need the last two).
+- Optional: `bun` (only if you're touching channel/plugin wiring), and a
+  throwaway VM if you're touching the install path — see Testing below.
+
+Clone and build the CLI bundle:
+
+```bash
+git clone https://github.com/5dive-ai/5dive.git
+cd 5dive
+./build.sh        # concatenates src/ into the single-file `5dive` bundle
+bash -n 5dive     # syntax-check the bundle
+```
+
+## Project layout
+
+```
+src/              # CLI source — split for readability
+  header.sh       # set -euo pipefail, globals, declare -A maps (must be first)
+  lib/*.sh        # error_codes, output, validation, state/audit/registry, agent_setup
+  cmd_*.sh        # one file per top-level subcommand
+  main.sh         # usage(), main(), EXIT trap (must be last)
+5dive             # built bundle — committed, kept in sync with src/ by CI
+tests/            # unit harnesses — run by the unit-tests CI job (see Testing)
+install.sh        # one-liner installer fetched by curl
+systemd/          # unit files installed for agents
+hooks/            # shell hooks the CLI drops into the user's $HOME
+docker/           # demo container for tire-kickers
+skills/           # agent skills installed alongside the CLI
+docs/             # design notes and the quickstart assets
+.github/workflows # CI
+```
+
+A few files sit loose at the repo root (`5dive-agent-start`, the
+`5dive-refresh-*.sh` helpers, `*-CLAUDE.md` templates, `cos-*.ts`) because
+`install.sh` and the CLI fetch them by raw URL at install/update time —
+they're install-time assets, not leftovers. Don't move them without
+updating every fetch path.
+
+See the README's **Contributing** section for the rationale behind the
+single-file bundle and `./build.sh`.
+
+## The bundle rule (please read)
+
+`./build.sh` concatenates `src/` into the committed `5dive` bundle. **Both
+files are tracked** — CI's `bundle-drift` job runs `./build.sh && git diff
+--exit-code 5dive` and fails any PR where they disagree. Two rules:
+
+- Edit `src/`, never the bundle. The bundle is generated.
+- After editing `src/`, run `./build.sh` and commit the regenerated `5dive`
+  in the same PR.
+
+If `bundle-drift` fails, you forgot the rebuild. Run `./build.sh`, commit,
+push again.
+
+## Testing
+
+Lightweight checks (always run before opening a PR):
+
+```bash
+./build.sh        # rebuilds the bundle
+bash -n 5dive     # bundle syntax check
+for t in tests/*.sh; do bash "$t" || echo "FAILED: $t"; done   # unit harnesses
+```
+
+The `tests/` harnesses need no root and no network: each one sources
+`src/` directly into a throwaway state dir, so the live agent registry and
+task DB are never touched. CI (`unit-tests`) runs all of them on every PR —
+if you add or change behavior in a covered area (task gates, loops,
+secret drop, supervisor), extend the matching harness in the same PR. New
+harnesses that follow the same pattern are very welcome; the biggest
+uncovered surfaces are the task core verbs and the agent lifecycle.
+
+**If you add a harness, it must name the tree it grades.** Every harness reads
+`src/` from the working tree by relative path, so a green log is a claim about
+whatever is on disk, not about a commit: a run against a stale checkout and a
+run against `origin/main` produce byte-identical output. Paste this immediately
+after `set -uo pipefail` in your new file (copy it verbatim from any existing
+harness, e.g. `tests/usage_coverage_unit.sh`):
+
+```bash
+# DIVE-2211: name the tree this harness grades (tests/lib/grading_tree.sh).
+. "$(dirname "${BASH_SOURCE[0]}")/lib/grading_tree.sh" \
+  || printf 'grading tree: UNRESOLVED (tests/lib/grading_tree.sh not reachable; no tree named)\n' >&2
+```
+
+Keep the **absence** of `2>/dev/null` on that line, and keep the comment block
+that explains why: the helper writes its one line to stderr by design, so
+redirecting the source's stderr to hide bash's "No such file" also swallows the
+payload, silently, across the whole corpus.
+
+`tests/names_the_tree_contract_unit.sh` enforces this over `tests/*.sh` and
+prints the exact block to paste when it fails. Note that it is a **merge-order
+hazard**: it enumerates the corpus rather than a fixed list, so two PRs that are
+each green in isolation can red on merge, and whoever merges second inherits the
+failure. If CI reds on a harness you did not touch, rebase on `main` and add the
+block to the new file; that is the whole fix.
+
+Heavyweight smoke test: if you touched `install.sh`, `src/cmd_agent.sh`,
+`src/lib/agent_setup.sh`, or anything else on the agent-create path, a
+maintainer will run a full-VM smoke (provisions a real cloud box, runs the
+agent matrix, purges) before merging. Flag the affected path in the PR
+description so it doesn't get missed.
+
+If you have a throwaway VM of your own, the manual equivalent is: run
+`install.sh` against a fresh box, then `5dive agent create test --type=claude`
+and `5dive doctor`. Anything red there is what the smoke test would have
+caught.
+
+## Pull requests
+
+- One concern per PR. Reviewers spend more time on a 200-line PR with mixed
+  concerns than on two 100-line PRs.
+- **Start the PR title with a conventional type — it is checked, and it picks
+  the next version number.** main takes squash merges, so the PR title becomes
+  the commit subject, and `release-cut` reads those subjects to decide the
+  level of the next release:
+
+  | title starts with | the next release is |
+  | --- | --- |
+  | `feat:` / `feat(scope):` | a **minor** (`0.x`) |
+  | any type with `!:`, or a `BREAKING CHANGE` trailer | a **major** |
+  | `fix` `test` `chore` `docs` `refactor` `ci` `perf` | a **patch** (`0.x.x`) |
+
+  So `feat` is a release decision rather than a label — nobody passes a version
+  level by hand any more (DIVE-4086). Do NOT copy the older prefixes still
+  visible in `git log` (`cli:`, `ui:`, `install:`, `build:`, or a bare
+  `DIVE-1234:`): 30 of the 60 merges before this rule landed carry no type at
+  all, which is exactly why the check exists. Follow the table, not the log.
+- After the title, a one-line summary and then a paragraph on the *why* if it
+  isn't obvious.
+- No `--no-verify` on commits — CI runs the same checks anyway, you'll
+  just learn about the failure later.
+- Never bump the version — not in your PR, and not on `main` either. Since
+  DIVE-2247 `FIVE_VERSION` is assigned at **tag time**, by `release-cut.yml`,
+  onto the release commit it builds. `main` carries the sentinel
+  `0.0.0-dev` and no branch ever carries a real version. This replaced
+  assignment-at-merge, which needed a bot push to protected `main` that
+  branch protection rejects — so for three days every version was assigned by
+  hand. If you find yourself editing `FIVE_VERSION`, something is wrong;
+  nothing outside `release-cut.yml` should write it.
+- You also don't commit the bundle. `5dive` and `5dive.sha256` are generated
+  at tag time (DIVE-2091) and are not tracked on `main`; `bundle-drift` CI
+  checks that `build.sh` is reproducible from `src/`, not that a committed
+  bundle matches.
+- Changelog entry: editing the top of `CHANGELOG.md` directly still works, but
+  every PR that does it collides with every other open PR touching the same
+  spot (DIVE-2582). Prefer adding `changelog.d/<ident>.md` instead — see
+  `changelog.d/README.md` — it never conflicts, and folds into `CHANGELOG.md`
+  automatically at the next release cut.
+
+## Reporting bugs / requesting features
+
+Open a GitHub issue. For security issues, use [GitHub's private vulnerability
+reporting](https://github.com/5dive-ai/5dive/security/advisories/new) —
+**do not** open a public issue for a vulnerability.
+
+## License
+
+By contributing, you agree your contributions are licensed under the
+project's [MIT license](LICENSE).
