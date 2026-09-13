@@ -1,4 +1,4 @@
-"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot,prepare,apply,audit}. JSON stdout, nonzero on error."""
+"""CLI: python -m map_agents --root PATH {init,intake,status,catalog,snapshot,prepare,apply,audit,build,query,maintain,worker}."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import collect, core, intake, maps, wiki
+from . import collect, core, intake, maps, wiki, workers
 
 EXIT_EMPTY = 4
 EXIT_AUDIT_FAILED = 3  # mirrors the kernel's audit exit status
@@ -52,6 +52,19 @@ def build_parser() -> argparse.ArgumentParser:
     p_qry.add_argument("--limit", type=int, default=10)
     p_qry.add_argument("--max-chars", type=int, default=4000)
     p_qry.add_argument("--include-archive", action="store_true", help="also search the kernel's wiki/pages/ archive")
+    p_mnt = sub.add_parser("maintain", help="bounded model-free refresh: catalog leads, fair snapshot queue, needs-distillation")
+    p_wrk = sub.add_parser("worker", help="distill one repository through a trusted worker argv given after `--` (none: manual envelope)")
+    p_wrk.add_argument("--repo", help="owner/repo (default: next repository needing distillation)")
+    p_wrk.add_argument("--no-build", action="store_true", help="skip the map rebuild after a successful apply")
+    p_wrk.add_argument("argv", nargs=argparse.REMAINDER, help="-- trusted worker command and arguments")
+    for sp in (p_mnt, p_wrk):
+        sp.add_argument("--retry-parked", action="store_true", help="retry repositories parked after repeated failures")
+        for name, fld in (("max-repos", "max_repos"), ("max-files", "max_files"), ("max-bytes", "max_bytes"),
+                          ("catalog-entries", "catalog_entries"), ("net-bytes", "net_bytes"), ("net-requests", "net_requests"),
+                          ("max-failures", "max_failures"), ("max-proposal-bytes", "max_proposal_bytes")):
+            sp.add_argument(f"--{name}", dest=fld, type=int, default=getattr(workers.Limits, fld))
+        for name, fld in (("net-seconds", "net_seconds"), ("max-seconds", "max_seconds"), ("worker-seconds", "worker_seconds")):
+            sp.add_argument(f"--{name}", dest=fld, type=float, default=getattr(workers.Limits, fld))
     for sp in (p_cat, p_snap):
         sp.add_argument("--net-bytes", type=int, default=collect.Budget.max_bytes, help="network byte budget")
         sp.add_argument("--net-seconds", type=float, default=collect.Budget.max_seconds, help="network time budget")
@@ -65,6 +78,11 @@ def _read_input(args: argparse.Namespace) -> str:
         with open(args.file, "rb") as fh:
             return intake.read_bounded(fh, args.max_bytes, str(args.file))
     return intake.read_bounded(sys.stdin.buffer, args.max_bytes, "stdin")
+
+
+def _limits(args: argparse.Namespace) -> workers.Limits:
+    fields = {k: getattr(args, k) for k in workers.Limits.__dataclass_fields__ if hasattr(args, k)}
+    return workers.Limits(**fields, build=not getattr(args, "no_build", False))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -101,6 +119,12 @@ def main(argv: list[str] | None = None) -> int:
                 return EXIT_AUDIT_FAILED
         elif args.command == "build":
             _emit(maps.build(args.root))
+        elif args.command == "maintain":
+            _emit(workers.maintain(args.root, _limits(args), retry_parked=args.retry_parked))
+        elif args.command == "worker":
+            argv = args.argv[1:] if args.argv[:1] == ["--"] else list(args.argv)  # strip only the parser delimiter
+            argv = argv or None
+            _emit(workers.run_worker(args.root, argv, _limits(args), repo=args.repo, retry_parked=args.retry_parked))
         elif args.command == "query":
             _emit(maps.query(args.root, args.text, limit=args.limit, max_chars=args.max_chars,
                               include_archive=args.include_archive))

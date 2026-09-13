@@ -83,6 +83,10 @@ class IntegrityError(CollectError):
     pass
 
 
+class BudgetGap(CollectError):
+    """An explicit selection cannot fit the configured ceilings; prior evidence is kept."""
+
+
 class TransportError(Exception):
     """Raised by a transport for connection-level failures; retried within the budget."""
 
@@ -284,8 +288,10 @@ def _published(fetch: Fetcher, backing_entries: int) -> dict:
 
 
 def catalog(root: Path, limit: int, transport=None, budget: Budget | None = None, published: bool = False) -> dict:
-    """Process up to `limit` backing-catalog entries per call, resuming from state/catalog-cursor.json.
+    """Process up to `limit` pending backing-catalog entries per call, resuming from state/catalog-cursor.json.
 
+    An entry is pending until its fingerprint (whole entry, any feed commit) has been recorded; unchanged
+    entries need no new intake, changed or new entries re-queue, and a quiescent feed reaches backlog 0.
     All fetches (head, feed, optional published index) complete before any canonical write. A failed
     optional published fetch is reported in `published` with ok=false; the backing intake still lands.
     """
@@ -320,11 +326,20 @@ def catalog(root: Path, limit: int, transport=None, budget: Budget | None = None
                 "bytes": len(raw), "entries": len(entries),
                 "locator": f"https://github.com/{CATALOG_REPO}/blob/{sha}/{CATALOG_PATH}"}))
         version_changed = cursor.get("commit") != sha
-        if version_changed:
-            cursor = {"repo": CATALOG_REPO, "path": CATALOG_PATH, "commit": sha, "digest": digest,
-                      "entries": len(entries), "next_index": 0}
-        start = int(cursor.get("next_index", 0))
-        batch = entries[start:start + limit]
+        # Fairness across evolving feed commits: every entry keeps a persistent fingerprint, so a new head
+        # SHA re-queues only changed or new entries, and a fair round-robin position survives the change.
+        fingerprints = cursor.get("fingerprints") if isinstance(cursor.get("fingerprints"), dict) else {}
+        current = {e["slug"]: _sha256(core.dump_json(e)) for e in entries}
+        dropped = sum(1 for slug in fingerprints if slug not in current)
+        fingerprints = {slug: fp for slug, fp in fingerprints.items() if slug in current}
+        fingerprints_before = set(fingerprints)
+        pending = [i for i, e in enumerate(entries) if fingerprints.get(e["slug"]) != current[e["slug"]]]
+        start = min(int(cursor.get("next_index", 0)), len(entries))
+        order = [i for i in pending if i >= start] + [i for i in pending if i < start]
+        picked = order[:limit]
+        batch = [entries[i] for i in picked]
+        cursor = {"repo": CATALOG_REPO, "path": CATALOG_PATH, "commit": sha, "digest": digest, "entries": len(entries),
+                  "next_index": (picked[-1] + 1) if picked else start, "fingerprints": fingerprints}
         by_category: dict[str, int] = {}
         keys = {e["slug"]: _entry_key(e) for e in entries}
         for entry in entries:
@@ -359,7 +374,8 @@ def catalog(root: Path, limit: int, transport=None, budget: Budget | None = None
             else:
                 record["sources"][slot] = source
             processed["attached"] += 1
-        cursor["next_index"] = start + len(batch)
+        for entry in batch:
+            fingerprints[entry["slug"]] = current[entry["slug"]]
         changed = core.save_repos(root, repos)
         core.write_if_changed(root / CURSOR_FILE, core.dump_json(cursor))
         if pub and pub["ok"]:
@@ -369,7 +385,9 @@ def catalog(root: Path, limit: int, transport=None, budget: Budget | None = None
         result = {
             "root": str(root), "catalog": CATALOG_LABEL, "commit": sha, "branch": branch, "digest": digest,
             "feed": (feed_path.relative_to(root)).as_posix(), "feed_cached": cached, "version_changed": version_changed,
-            "processed": len(batch), "range": [start, start + len(batch)], "backlog": len(entries) - cursor["next_index"],
+            "processed": len(batch), "range": [min(picked), max(picked) + 1] if picked else [start, start],
+            "slugs": [e["slug"] for e in batch], "backlog": len(pending) - len(batch),
+            "refreshed": sum(1 for e in batch if e["slug"] in fingerprints_before), "dropped": dropped,
             "batch": processed, "totals": totals, "changed": changed, "budget": fetch.budget.summary(),
         }
         if pub is not None:
@@ -481,7 +499,8 @@ def _obtain_blob(root: Path, fetch: Fetcher, full_name: str, sha: str, path: str
     return data
 
 
-def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_bytes: int, explicit: list[str]) -> dict:
+def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_bytes: int, explicit: list[str],
+                      strict_explicit: bool = False) -> dict:
     owner, name = key.split("/")
     meta, branch, sha, date = _resolve_head(fetch, key)
     full_name = meta.get("full_name", key)
@@ -497,6 +516,10 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
         if path not in blobs:
             raise InvalidPath(f"path not in tree (truncated={truncated}): {path}")
     selected, omitted = _select(blobs, explicit, max_files, max_bytes)
+    if strict_explicit:
+        for o in omitted:
+            if o["path"] in explicit:  # an explicit selection that no longer fits is a reported gap, not a docs-only capture
+                raise BudgetGap(f"explicit path {o['path']} ({o['size']} bytes) does not fit max_files={max_files}/max_bytes={max_bytes}: {o['reason']}")
     commit_dir = root / SOURCE_DIR / owner / name / sha
     _safe_storage(root, commit_dir)
     known_bad: set[str] = set()
@@ -570,8 +593,11 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
 
 
 def snapshot(root: Path, repo: str, max_files: int, max_bytes: int, paths: list[str] | None = None,
-             transport=None, budget: Budget | None = None) -> dict:
-    """Store an immutable, budgeted text snapshot of a public repository's default-branch head."""
+             transport=None, budget: Budget | None = None, strict_explicit: bool = False) -> dict:
+    """Store an immutable, budgeted text snapshot of a public repository's default-branch head.
+
+    strict_explicit=True refuses (BudgetGap) rather than omitting an explicit path that exceeds the ceilings.
+    """
     root = Path(root)
     key, canonical, reason = intake.normalize(f"https://github.com/{repo}")
     if not key:
@@ -585,7 +611,7 @@ def snapshot(root: Path, repo: str, max_files: int, max_bytes: int, paths: list[
         repos = core.load_repos(root)
         record = repos.setdefault(key, intake.new_record(key, canonical))
         try:
-            manifest = _collect_snapshot(root, fetch, key, max_files, max_bytes, explicit)
+            manifest = _collect_snapshot(root, fetch, key, max_files, max_bytes, explicit, strict_explicit)
         except core.WorkbenchError as exc:
             # Prior snapshots stay on disk; the record states that this refresh failed and why.
             record["freshness"] = "refresh-failed"

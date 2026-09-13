@@ -134,13 +134,41 @@ def test_catalog_resumes_fairly_and_repeat_does_not_churn(tmp_path: Path) -> Non
     assert json.loads((tmp_path / collect.CURSOR_FILE).read_text())["next_index"] == 9
 
 
-def test_catalog_version_change_updates_revision_in_place(tmp_path: Path) -> None:
+def test_catalog_version_change_without_entry_changes_is_quiescent(tmp_path: Path) -> None:
     collect.catalog(tmp_path, 10, transport=FakeTransport(catalog_routes(SHA1)))
+    before = repos_bytes(tmp_path)
     result = collect.catalog(tmp_path, 10, transport=FakeTransport(catalog_routes(SHA2)))
     assert result["version_changed"] is True and result["commit"] == SHA2 and result["backlog"] == 0
+    assert result["processed"] == 0 and result["changed"] is False and repos_bytes(tmp_path) == before
     alpha = core.load_repos(tmp_path)["org-a/alpha"]
-    assert len(alpha["sources"]) == 2 and {s["commit"] for s in alpha["sources"]} == {SHA2}
+    assert {s["commit"] for s in alpha["sources"]} == {SHA1}, "unchanged entries keep their pinned provenance"
     assert (tmp_path / collect.FEED_DIR / SHA1 / "agents.json").exists(), "old feed capture kept"
+    assert json.loads((tmp_path / collect.CURSOR_FILE).read_text())["commit"] == SHA2
+
+
+def test_catalog_small_batches_progress_across_evolving_feed_commits(tmp_path: Path) -> None:
+    """Seam regression: limit=1 against successive head SHAs must not stay on the same prefix."""
+    shas = [f"{d}" * 40 for d in "123456789"]
+    seen: list[str] = []
+    for sha in shas:
+        res = collect.catalog(tmp_path, 1, transport=FakeTransport(catalog_routes(sha)))
+        seen += res["slugs"]
+        assert res["version_changed"] is True and res["processed"] == 1
+    assert seen == sorted(e["slug"] for e in ENTRIES) and res["backlog"] == 0
+    assert sum(1 for s in seen if s in ("delta", "foxtrot", "hotel")) == 3, "no-repo entries are counted once, truthfully"
+    quiet = collect.catalog(tmp_path, 1, transport=FakeTransport(catalog_routes("a" * 40)))
+    assert quiet["processed"] == 0 and quiet["backlog"] == 0 and quiet["changed"] is False
+    # An earlier entry changes, one is added and one vanishes: only the two pending entries are refreshed.
+    evolved = [entry("Alpha", "agent", "https://github.com/Org-A/Alpha", description="Now a multiplexer too"),
+               *ENTRIES[1:8], entry("India", "agent", "https://github.com/orgi/india")]
+    first = collect.catalog(tmp_path, 1, transport=FakeTransport(catalog_routes("b" * 40, entries=evolved)))
+    second = collect.catalog(tmp_path, 1, transport=FakeTransport(catalog_routes("b" * 40, entries=evolved)))
+    assert first["backlog"] == 1 and second["backlog"] == 0 and set(first["slugs"] + second["slugs"]) == {"alpha", "india"}
+    assert first["dropped"] + second["dropped"] == 1 and first["refreshed"] + second["refreshed"] == 1
+    repos = core.load_repos(tmp_path)
+    assert repos["org-a/alpha"]["sources"][0]["description"] == "Now a multiplexer too"
+    assert repos["org-a/alpha"]["sources"][0]["commit"] == "b" * 40 and "orgi/india" in repos
+    assert collect.catalog(tmp_path, 5, transport=FakeTransport(catalog_routes("b" * 40, entries=evolved)))["processed"] == 0
 
 
 def test_catalog_malformed_or_failed_feed_preserves_cursor(tmp_path: Path) -> None:
