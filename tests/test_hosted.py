@@ -8,6 +8,7 @@ import pytest
 
 from map_agents import __main__ as cli, automation, collect, core, intake, wiki, workers
 from scripts import run_maintenance as hosted
+from scripts import demo_synthetic as demo
 
 
 def test_partial_refresh_keeps_valid_progress_and_reports_failure(tmp_path):
@@ -64,6 +65,18 @@ def test_demo_refuses_to_remove_existing_data(tmp_path):
 def test_manual_worker_cli_exposes_actual_envelope_cap():
     args = cli.build_parser().parse_args(["worker", "--max-envelope-bytes", "12345"])
     assert cli._limits(args).max_envelope_bytes == 12345
+
+
+def test_unindexed_snapshot_tamper_blocks_publication(tmp_path):
+    root = tmp_path / "c"
+    intake.ingest(root, "https://github.com/" + demo.ALPHA, "test", "navy-yard")
+    snapshot = collect.snapshot(root, demo.ALPHA, 2, 10000, transport=demo.Transport())
+    active = core.load_repos(root)[demo.ALPHA]["latest_snapshot"]
+    record = json.loads((root / active["snapshot"]).read_text())
+    (root / active["dir"] / record["files"][0]["stored"]).write_text("tampered")
+    result = hosted.run(root, tmp_path / "summary.json", limits=workers.Limits(catalog_entries=0, max_repos=0))
+    assert not result["publishable"] and result["stage"] == "verify-sources"
+    assert result["error"] == "SourceIntegrityError"
 
 
 @pytest.mark.parametrize("limit", [True, 1.2, float("inf")])

@@ -30,6 +30,13 @@ def run(root: Path, summary_path: Path, *, event_path: Path | None = None,
                               "stopped": refreshed["stopped"], "parked": len(refreshed["parked"]),
                               "needs_distillation": len(refreshed["needs_distillation"]),
                               "queue": refreshed["queue"], "budget": refreshed["budget"]}
+        summary["stage"] = "verify-sources"
+        verified = 0
+        for key, record in core.load_repos(root).items():
+            if record.get("latest_snapshot"):
+                wiki.verify_snapshot(root, key, record["latest_snapshot"])
+                verified += 1
+        summary["verified_snapshots"] = verified
         summary["stage"] = "build"
         built = maps.build(root)
         summary["map"] = {k: built[k] for k in ("repos", "known", "invalid_dossiers")}
