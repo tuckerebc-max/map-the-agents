@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Storia AI
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Chat with any codebase in under two minutes; runs fully locally (Ollama + Marqo) or via third-party APIs; modular architecture with pluggable embeddings, LLMs, and vector stores; well-documented benchmark experiments comparing retrieval strategies.
-
-(captured site page body (agents/ai-expert-for-codebases.md), not a verified repo-code finding)
-Sage targets the onboarding problem: understanding an unfamiliar codebase takes days, and generic chatbots lack repo-specific context. It indexes a repository into a vector store (Marqo or pluggable alternatives) and answers questions through either lightweight LLM retrieval or full RAG, with embeddings, LLMs, and vector stores all swappable via abstract classes. A fully local mode (Ollama for the LLM, Marqo for vectors) keeps proprietary code on the developer's machine, while a hosted app at sage.storia.ai serves open-source repositories. The project was archived on February 3, 2025 and is read-only.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ai-expert-for-codebases.md)
+(backing feed `description`, not a verified repo-code finding)
+Sage targets the onboarding problem: understanding an unfamiliar codebase takes days, and generic chatbots lack repo-specific context. It indexes a repository into a vector store (Marqo or pluggable a
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

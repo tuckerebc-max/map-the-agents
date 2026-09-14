@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Extremely fast response latency (250ms, 3X faster than competitors); first code completion tool with a 1 million token context window; contextual suggestions that find and use definitions across the entire codebase.
-
-(captured site page body (agents/supermaven.md), not a verified repo-code finding)
-Supermaven competed on inference speed and context reach rather than agency: its serving path delivered suggestions in roughly 250 milliseconds while pulling context from up to a million tokens, so suggestions could reflect definitions spread across an entire codebase. Alongside autocomplete it offered chat with GPT-4o and Claude 3.5 Sonnet, diff review, and one-click error fixes in VS Code, JetBrains IDEs, and Neovim. Anysphere, the company behind Cursor, acquired Supermaven in November 2024 and folded its technology into Cursor, while the standalone site and extensions remained available for a period. Retention on the free tier was limited to seven days, and the product is proprietary throughout — it is a completion utility, not a harness.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/supermaven.md)
+(backing feed `description`, not a verified repo-code finding)
+Supermaven competed on inference speed and context reach rather than agency: its serving path delivered suggestions in roughly 250 milliseconds while pulling context from up to a million tokens, so su
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

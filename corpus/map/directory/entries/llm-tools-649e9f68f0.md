@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: gkorepanov
@@ -22,8 +22,6 @@ Repository map entry: [gkorepanov/llm-tools](../../repos/gkorepanov/llm-tools.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Ad-hoc coding tools for working with LLMs, including a production-ready async text streaming wrapper around LangChain LLMs and tools for translating UI interface texts to multiple languages. Minimal activity (28 commits).
-
-(captured site page body (agents/llm-tools.md), not a verified repo-code finding)
-The repository gathers two utilities its author needed while working with LLMs: an async streaming wrapper that delivers tokens from LangChain chat models incrementally in production settings, and tooling that translates UI interface strings across languages. Neither implements an agent loop, file editing, or any coding-harness behavior; with 28 commits, one stalled PR, and no releases, the repository is a dormant personal toolbox rather than a maintained project.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/llm-tools.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository gathers two utilities its author needed while working with LLMs: an async streaming wrapper that delivers tokens from LangChain chat models incrementally in production settings, and too
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: MaximeRobeyns
@@ -22,8 +22,6 @@ Repository map entry: [maximerobeyns/self_improving_coding_agent](../../repos/ma
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Self-improving coding agent that runs an iterative loop (evaluate on benchmarks, store results, modify its own codebase, repeat), bootstrapping capabilities without human intervention. Research artifact from ICLR 2025 Workshop.
-
-(captured site page body (agents/self-improving-coding-agent.md), not a verified repo-code finding)
-The project operationalizes a simple question: if a coding agent can modify code, what happens when its own source is the task? Each iteration evaluates the current agent on benchmark tasks, stores the results, then has the agent edit its repository to improve, with the loop repeating without human intervention; an ICLR 2025 workshop paper documents the method. The base agent is intentionally minimal — no tree-sitter, LSP, or sophisticated planning — because the point is to observe bootstrapped specialization on the bundled SWE-bench-style tasks, not to ship a product. Everything runs inside a provided Docker image because the agent executes arbitrary shell commands, and the authors are explicit about that safety boundary. Providers span Anthropic, OpenAI, Gemini, Vertex, Fireworks, and DeepSeek. As a frozen two-commit research artifact with a citable paper, its audience is researchers studying self-improvement, not practitioners.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/self-improving-coding-agent.md)
+(published index `description`, not a verified repo-code finding)
+The project operationalizes a simple question: if a coding agent can modify code, what happens when its own source is the task? Each iteration evaluates the current agent on benchmark tasks, stores th
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

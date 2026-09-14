@@ -2,9 +2,6 @@
 
 Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [isrengel/installcursoreditorlinux](../repos/isrengel/installcursoreditorlinux.md) [coverage: complete]
-- [itayinbarr/little-coder](../repos/itayinbarr/little-coder.md) [coverage: partial]
-- [its-maestro-baby/maestro](../repos/its-maestro-baby/maestro.md) [coverage: partial]
 - [itspecialist111/hass-ai-orchestrator](../repos/itspecialist111/hass-ai-orchestrator.md) [coverage: partial]
 - [itwanger/paiagent](../repos/itwanger/paiagent.md) [coverage: partial]
 - [ivan-magda/swift-coding-agent](../repos/ivan-magda/swift-coding-agent.md) [coverage: partial]
@@ -439,3 +436,6 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [the-creator-ai/the-creator-ai](../repos/the-creator-ai/the-creator-ai.md) [coverage: partial]
 - [the-nexus-guard/aip](../repos/the-nexus-guard/aip.md) [coverage: partial]
 - [the-open-agent/openagent](../repos/the-open-agent/openagent.md) [coverage: complete]
+- [the-open-engine/zeroshot](../repos/the-open-engine/zeroshot.md) [coverage: partial]
+- [the-pr-agent/pr-agent](../repos/the-pr-agent/pr-agent.md) [coverage: partial]
+- [thefalc/multi-agent-ai-sdr-flink-orchestrator](../repos/thefalc/multi-agent-ai-sdr-flink-orchestrator.md) [coverage: complete]

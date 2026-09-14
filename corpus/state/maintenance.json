@@ -1,5 +1,5 @@
 {
-  "cursor": "agentsmd/agents.md",
+  "cursor": "ai-genie/chatgpt-vscode",
   "repos": {
     "21st-dev/1code": {
       "failures": 0,
@@ -55,6 +55,31 @@
       "failures": 0,
       "last_at": "2026-09-13T22:46:57+00:00",
       "last_outcome": "snapshotted"
+    },
+    "agentsmesh/agentsmesh": {
+      "failures": 0,
+      "last_at": "2026-09-14T15:53:13+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "agi-is-going-to-arrive/ahadiff": {
+      "failures": 0,
+      "last_at": "2026-09-14T15:53:14+00:00",
+      "last_outcome": "reused"
+    },
+    "agnusdei1207/opencode-orchestrator": {
+      "failures": 0,
+      "last_at": "2026-09-14T15:53:17+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "ahacker-1/cre-acquisition-orchestrator": {
+      "failures": 0,
+      "last_at": "2026-09-14T15:53:20+00:00",
+      "last_outcome": "snapshotted"
+    },
+    "ai-genie/chatgpt-vscode": {
+      "failures": 0,
+      "last_at": "2026-09-14T15:53:21+00:00",
+      "last_outcome": "reused"
     }
   },
   "runs": [
@@ -429,6 +454,106 @@
         "stages": {
           "catalog": 0.539,
           "snapshots": 8.934
+        }
+      }
+    },
+    {
+      "attempted": [
+        "agentsmesh/agentsmesh",
+        "agi-is-going-to-arrive/ahadiff",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator",
+        "ai-genie/chatgpt-vscode"
+      ],
+      "catalog": {
+        "backlog": 0,
+        "changed": false,
+        "commit": "0861b8ee1c271047d55caa72efdfc3a6d2046174",
+        "processed": 0,
+        "slugs": [],
+        "version_changed": true
+      },
+      "failures": [],
+      "finished": "2026-09-14T15:53:21+00:00",
+      "kind": "maintain",
+      "lease_reclaimed": false,
+      "needs_distillation": [
+        "agentsmesh/agentsmesh",
+        "agnusdei1207/opencode-orchestrator",
+        "ahacker-1/cre-acquisition-orchestrator"
+      ],
+      "parked": [],
+      "snapshots": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 14,
+          "repo": "agentsmesh/agentsmesh",
+          "reused": false,
+          "snapshot_id": "fdb5f6b69465f402"
+        },
+        {
+          "commit": "36da35e9fd4092da79c00fadec03f3b62615ba58",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "agi-is-going-to-arrive/ahadiff",
+          "reused": true,
+          "snapshot_id": "6283c64863f1d387"
+        },
+        {
+          "commit": "a8f318192275e255636f10fbb18cd75d7c9c232b",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 28,
+          "repo": "agnusdei1207/opencode-orchestrator",
+          "reused": false,
+          "snapshot_id": "7bfa1754a814c040"
+        },
+        {
+          "commit": "a1cdd7f680a4dcf2f5e70a8380d6eb5eaccda878",
+          "explicit_paths": [],
+          "files_stored": 12,
+          "freshness": "stale",
+          "omitted_count": 39,
+          "repo": "ahacker-1/cre-acquisition-orchestrator",
+          "reused": false,
+          "snapshot_id": "f92f1a7d140c2099"
+        },
+        {
+          "commit": "e6203fb099f36dec65df4bbd7401d919259d6722",
+          "explicit_paths": [],
+          "files_stored": 2,
+          "freshness": "current",
+          "omitted_count": 0,
+          "repo": "ai-genie/chatgpt-vscode",
+          "reused": true,
+          "snapshot_id": "8480da848e15b2dd"
+        }
+      ],
+      "started": "2026-09-14T15:53:10+00:00",
+      "stopped": null,
+      "timing": {
+        "deadline": "cooperative: no stage starts after max_seconds; a running stage finishes under its own timeout",
+        "elapsed": 11.302,
+        "max_seconds": 420,
+        "stage_timeouts": {
+          "build": "local file work, bounded by corpus size, not by time",
+          "kernel_call_seconds": 300.0,
+          "kernel_calls": {
+            "apply": 1,
+            "prepare": 3
+          },
+          "model_seconds": 180.0,
+          "network_seconds": 120.0
+        },
+        "stages": {
+          "catalog": 0.982,
+          "snapshots": 10.274
         }
       }
     }

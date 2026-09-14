@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
-- Category: multiplexer
+- Category: agent
 - Provider/maker: timwuhaotian
 - License: Apache-2.0
 - Language: TypeScript, Rust
@@ -22,12 +22,10 @@ Repository map entry: [timwuhaotian/the-pair](../../repos/timwuhaotian/the-pair.
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=multiplexer, backing=agent, page=multiplexer
+- category: published=multiplexer, backing=agent, page=
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Dual-agent cross-validation desktop app where a read-only Mentor agent plans and reviews everything a separate Executor agent produces, catching AI hallucinations before they reach the codebase. Model-agnostic: mix and match any providers (e.g., Claude as Mentor + Codex as Executor).
-
-(captured site page body (agents/the-pair.md), not a verified repo-code finding)
-The Pair addresses a specific failure mode of single-agent coding tools: one model that both writes code and reviews it will often approve its own hallucinations. Its desktop app (Tauri 2, Rust + React) runs two roles on every task — a Mentor agent with read-only access that plans and reviews, and an Executor agent that writes code and runs commands — looping through mentoring, execution, and review cycles until work completes or a flat 20-iteration default triggers a pause for human inspection. Because the roles are CLI-backed, any combination of opencode, Claude Code, Codex, Gemini/Antigravity, Kimi, or local Ollama models can be assigned per role, letting users cross-validate with different model families; quality gates, stall detection, per-agent resource monitoring, and git-diff tracking round out the harness. It is free Apache-2.0 software for macOS, Windows, and Linux, with a pair-code CLI for terminal use, and users pay only their own provider costs. Developers burned by hallucinated single-agent edits are the intended users.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/the-pair.md)
+(published index `description`, not a verified repo-code finding)
+The Pair addresses a specific failure mode of single-agent coding tools: one model that both writes code and reviews it will often approve its own hallucinations. Its desktop app (Tauri 2, Rust + Reac
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: zhangliang605
@@ -22,8 +22,6 @@ Repository map entry: [zhangliang605/carrycode](../../repos/zhangliang605/carryc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal-native AI coding agent connecting to 17+ LLM providers with beautiful terminal UI (themes, syntax highlighting, code diff previews, Mermaid diagram rendering). Supports MCP protocol (via /mcp), VSCode extension plugin, AGENTS.md project instructions, LSP diagnostics integration, smart context compaction, Skills system compatible with Claude Code, SkillHub integration (Tencent), approval modes for autonomy control. Dual Build and Plan modes.
-
-(captured site page body (agents/carrycode.md), not a verified repo-code finding)
-carrycode is a terminal-first coding agent built in Rust with a TypeScript layer, aimed at developers who live in the shell and want agent capability without leaving it. It renders a rich TUI with themes, syntax-highlighted diffs, and Mermaid diagrams rendered as ASCII, and supports MCP servers, a skills system compatible with Claude Code, AGENTS.md project rules, LSP diagnostics, and context compaction for long sessions. Agent autonomy is governed through explicit modes — a read-only Plan mode for analysis and a Build mode gated by approval levels — and a single-shot CLI mode supports scripting. Model access spans 17+ providers (OpenAI, Anthropic, Gemini, DeepSeek, Kimi, GLM, MiniMax, Qwen, xAI, SiliconFlow, Ollama, vLLM, and OpenAI-compatible endpoints). The project is source-available under a custom license, installs via curl or a VS Code extension, and is actively maintained with frequent releases; a VS Code extension extends the same engine into the editor.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/carrycode.md)
+(published index `description`, not a verified repo-code finding)
+carrycode is a terminal-first coding agent built in Rust with a TypeScript layer, aimed at developers who live in the shell and want agent capability without leaving it. It renders a rich TUI with the
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

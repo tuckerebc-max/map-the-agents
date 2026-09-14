@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: StartupHakk
@@ -22,8 +22,6 @@ Repository map entry: [startuphakk/openmonoagent.ai](../../repos/startuphakk/ope
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): 100% local-first coding agent bundled with llama.cpp in Docker; zero per-token cost, zero data egress. Auto-detects hardware (NVIDIA/CPU/Apple Silicon), supports distributed inference (agent on laptop, inference on remote GPU box), 20 built-in tools with 12-step pipeline, Docker sandboxing, Roslyn + LSP deep code intelligence, self-hosted SearXNG private web search, vision support, and a VS Code/Cursor extension. Philosophy: 'AI as infrastructure ...
-
-(captured site page body (agents/openmonoagentai.md), not a verified repo-code finding)
-Local-first coding agents usually stop at supporting whatever inference server the user happens to run, leaving setup as the user's problem. OpenMono bundles the whole stack: a .NET 10 CLI paired with a llama.cpp server in Docker that auto-detects NVIDIA GPUs, Apple Silicon, or plain CPU and ships Qwen model defaults tuned per backend, so one install script yields a working agent with no API keys and no network egress. Around the core it layers 20 built-in tools, five sub-agents, Docker-sandboxed execution, and Roslyn-powered code intelligence, with OpenAI/Anthropic/Ollama providers marked work-in-progress. A free relay at app.openmonoagent.ai enables distributed inference — the agent on a laptop, compute elsewhere — and iOS, Android, and VS Code/Cursor clients exist alongside the CLI. The project is a public beta under AGPL-3.0 with hardware demands (64 GB RAM recommended on Apple Silicon, 24 GB NVIDIA on Linux). Privacy-sensitive developers and offline environments are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/openmonoagentai.md)
+(published index `description`, not a verified repo-code finding)
+Local-first coding agents usually stop at supporting whatever inference server the user happens to run, leaving setup as the user's problem. OpenMono bundles the whole stack: a .NET 10 CLI paired with
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Snowflake's data-native AI coding agent CLI with 55+ built-in skills spanning SQL, data governance, dynamic tables, ML, streaming, cost intelligence, lineage, dbt, notebooks, and security investigation; lightweight keyword filter runs on every prompt (~50ms, no network) to detect Snowflake intent and auto-route; ships as plugins for Claude Code and Codex.
-
-(captured site page body (agents/cortex-code-cli.md), not a verified repo-code finding)
-Data engineering work - writing SQL, tracing lineage, tuning warehouses, building dbt projects - happens inside Snowflake's governance boundary, where generic coding agents lack both context and permissions. Cortex Code is Snowflake's terminal agent for that domain: it takes natural-language requests, orchestrates over 55 Snowflake-native skills plus MCP tools, shows its reasoning steps, and in plan mode confirms each action before executing. Skills cover catalog discovery, query optimization, dynamic tables, cost intelligence, lineage, dbt projects, and security investigation, and the same skill set installs as plugins for Claude Code, Codex, and Cursor via Snowflake's AI Kit. Access requires a paid Snowflake account with Cortex roles, with usage billed through Snowflake Cortex; Claude and OpenAI models are selectable via /model. Data engineers and analytics teams are the users.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/cortex-code-cli.md)
+(published index `description`, not a verified repo-code finding)
+Data engineering work - writing SQL, tracing lineage, tuning warehouses, building dbt projects - happens inside Snowflake's governance boundary, where generic coding agents lack both context and permi
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

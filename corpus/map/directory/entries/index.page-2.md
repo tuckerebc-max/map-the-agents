@@ -2,335 +2,335 @@
 
 Page 2 of 5. [First page](index.md) | [Previous](index.md) | [Next](index.page-3.md)
 
-- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing+pages
-- [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing+pages
-- [CodeFuse-muAgent (`codefuse-muagent`)](codefuse-muagent-5e8aeb5da3.md) -- published+backing+pages
-- [Codegebragpt (`codegebragpt`)](codegebragpt-72fa6a14c8.md) -- backing+pages
-- [CodeGenHelpers (`codegenhelpers`)](codegenhelpers-49094aa427.md) -- backing+pages
-- [CodeGPT (`codegpt`)](codegpt-9999398602.md) -- published+backing+pages
-- [codehamr (`codehamr`)](codehamr-bd8696dc3b.md) -- published+backing+pages
-- [Codeium (`codeium`)](codeium-0ac0192d44.md) -- published+backing+pages
-- [codeium-react-code-editor (`codeium-react-code-editor`)](codeium-react-code-editor-03ce615d8b.md) -- backing+pages
-- [CodeKanban (`codekanban`)](codekanban-a2486f10fb.md) -- published+backing+pages
-- [Codel (`codel`)](codel-0ef4129c70.md) -- published+backing+pages
-- [CodeLlama (`codellama`)](codellama-5d7269a515.md) -- backing+pages
-- [CodeLLMSurvey (`codellmsurvey`)](codellmsurvey-c756bc9b5c.md) -- backing+pages
-- [CodeMachine-CLI (`codemachine-cli`)](codemachine-cli-39574ac3f9.md) -- published+backing+pages
-- [CodeMate AI - Full Stack Coding Agent (`codemate-ai-full-stack-coding-agent`)](codemate-ai-full-stack-coding-agent-a509beb0c4.md) -- published+backing+pages
-- [Codemini-CLI (`codemini-cli`)](codemini-cli-b3b1f125f4.md) -- published+backing+pages
-- [Codemod (`codemod`)](codemod-62f91ae1fd.md) -- published+backing+pages
-- [CodeNext.ai (`codenextai`)](codenextai-31af82b447.md) -- published+backing+pages
-- [CodeRabbit (`coderabbit`)](coderabbit-fc34547c4b.md) -- published+backing+pages
-- [coderabbit-review-helper (`coderabbit-review-helper`)](coderabbit-review-helper-bc88226e2e.md) -- backing+pages
-- [CodeReview-AI-Agent (`codereview-ai-agent`)](codereview-ai-agent-497031857c.md) -- published+backing+pages
-- [CodeReviewAgent (`codereviewagent`)](codereviewagent-af39be6655.md) -- published+backing+pages
-- [CodeRider (`coderider`)](coderider-b39211dfe6.md) -- published+backing+pages
-- [codeshell-vscode (`codeshell-vscode`)](codeshell-vscode-88332e740f.md) -- backing+pages
-- [Codev (`codev`)](codev-e654cb6610.md) -- backing+pages
-- [codevibes (`codevibes`)](codevibes-dfdcd6b44c.md) -- backing+pages
-- [Codex CLI (`codex-cli`)](codex-cli-a2861dc12c.md) -- published+backing+pages
-- [Codex-JetBrains (`codex-jetbrains`)](codex-jetbrains-4bec627e1c.md) -- published+backing+pages
-- [codex-mobile (`codex-mobile`)](codex-mobile-c56a73ee73.md) -- published+backing+pages
-- [codex-multi-agents (`codex-multi-agents`)](codex-multi-agents-589fa21a16.md) -- published+backing+pages
-- [Codex (OpenAI) (`codex-openai`)](codex-openai-8cec996f7c.md) -- published+backing+pages
-- [codex-profiles (`codex-profiles`)](codex-profiles-bc53aeaee2.md) -- backing+pages
-- [Codex Security (`codex-security`)](codex-security-7b7fe1faf5.md) -- published+backing+pages
-- [Codey (`codey`)](codey-1075e9f416.md) -- published+backing+pages
-- [Codiga (`codiga`)](codiga-63be7276f5.md) -- backing+pages
-- [coding-agent (`coding-agent`)](coding-agent-cc928dc9c6.md) -- published+backing+pages
-- [coding_agent_account_manager (`coding-agent-account-manager`)](coding-agent-account-manager-bca0de7a9f.md) -- backing+pages
-- [coding_agent_session_search (`coding-agent-session-search`)](coding-agent-session-search-a3c158bbc8.md) -- backing+pages
-- [coding-agent-tips (`coding-agent-tips`)](coding-agent-tips-fa75180677.md) -- backing+pages
-- [coding-agents-databricks-apps (`coding-agents-databricks-apps`)](coding-agents-databricks-apps-93e8eccf57.md) -- backing+pages
-- [coding-agents-workshop (`coding-agents-workshop`)](coding-agents-workshop-17607c93a1.md) -- backing+pages
-- [coding-the-coding-agents (`coding-the-coding-agents`)](coding-the-coding-agents-c5adb7cab4.md) -- backing+pages
-- [Coding-Tutor (`coding-tutor`)](coding-tutor-7fe4bbd7a2.md) -- backing+pages
-- [CodingAgentExplorer (`codingagentexplorer`)](codingagentexplorer-e65c783e6c.md) -- backing+pages
-- [CodingIT (`codingit`)](codingit-e57f44bbf2.md) -- published+backing+pages
-- [codinit-dev (`codinit-dev`)](codinit-dev-b8831a75b8.md) -- published+backing+pages
-- [Codirigent (`codirigent`)](codirigent-be56bb030a.md) -- published+backing+pages
-- [Cody by Sourcegraph (`cody-by-sourcegraph`)](cody-by-sourcegraph-193d245ac8.md) -- published+backing+pages
-- [cody-public-snapshot (`cody-public-snapshot`)](cody-public-snapshot-f43138b78f.md) -- published+backing+pages
-- [Cody (Sourcegraph) (`cody-sourcegraph`)](cody-sourcegraph-72e877b87b.md) -- published+backing+pages
-- [colony repo (`colony-repo`)](colony-repo-6f4f359dbd.md) -- backing+pages
-- [Comet (`comet`)](comet-d51f791051.md) -- backing+pages
-- [Comfyui_Workflows (`comfyui-workflows`)](comfyui-workflows-4cd4bc2bc6.md) -- backing+pages
-- [Command Code (`command-code`)](command-code-510abdbcad.md) -- published+backing+pages
-- [companion (`companion`)](companion-c989edf182.md) -- backing+pages
-- [companion-vscode (`companion-vscode`)](companion-vscode-058e8ace88.md) -- backing+pages
-- [conch (`conch`)](conch-5fdde7b0e7.md) -- published+backing+pages
-- [Concord (`concord-mcp`)](concord-mcp-1bb70bdbd3.md) -- backing+pages
-- [Conductor (`conductor`)](conductor-0380db97ec.md) -- published+backing+pages
-- [conduit-release (`conduit-release`)](conduit-release-b93fa9513c.md) -- published+backing+pages
-- [construct (`construct`)](construct-b252d4eb5a.md) -- published+backing+pages
-- [context-engine-ai (`context-engine-ai`)](context-engine-ai-62e690d0f5.md) -- backing+pages
-- [context-engineering-intro (`context-engineering-intro`)](context-engineering-intro-2aee74570c.md) -- backing+pages
-- [context-hub (`context-hub`)](context-hub-663b92ba0a.md) -- backing+pages
-- [ContextCode by ContextStream (`contextcode-by-contextstream`)](contextcode-by-contextstream-bafbba530a.md) -- backing+pages
-- [contextvc (`contextvc`)](contextvc-71236aef99.md) -- backing+pages
-- [Continous AI (`continous-ai`)](continous-ai-f73eee736c.md) -- backing+pages
-- [Continue (`continue`)](continue-e256ee8e7a.md) -- published+backing+pages
-- [Contral (`contral`)](contral-f2eb735ab0.md) -- published+backing+pages
-- [Copilot Workspace (`copilot-workspace`)](copilot-workspace-abb10e3a29.md) -- published+backing+pages
-- [CORAL (`coral`)](coral-f39fd90734.md) -- backing+pages
-- [core-termux (`core-termux`)](core-termux-24049b06b8.md) -- backing+pages
-- [CoreCoder (`corecoder`)](corecoder-12f0b02b5d.md) -- published+backing+pages
-- [Corgea (`corgea`)](corgea-49b3b74133.md) -- published+backing+pages
-- [CornMCP (`cornmcp`)](cornmcp-809100cc6b.md) -- backing+pages
-- [Coro Code (`coro-code`)](coro-code-d6f7b8cdff.md) -- published+backing+pages
-- [cortex (`cortex`)](cortex-1ee11af4ed.md) -- backing+pages
-- [Cortex Code CLI (`cortex-code-cli`)](cortex-code-cli-9cae66ca22.md) -- published+backing+pages
-- [Cosmo (`cosmo`)](cosmo-98f4270f09.md) -- backing+pages
-- [Coven (`coven`)](coven-eb30e82be2.md) -- published+pages
-- [Coven Gateway (`coven-gateway`)](coven-gateway-c70ff94a93.md) -- pages-only
-- [cowork-to-code-bridge (`cowork-to-code-bridge`)](cowork-to-code-bridge-efa3032906.md) -- backing+pages
-- [coze-studio (`coze-studio`)](coze-studio-47d58acde7.md) -- backing+pages
-- [cre-acquisition-orchestrator (`cre-acquisition-orchestrator`)](cre-acquisition-orchestrator-b28e102612.md) -- backing+pages
-- [Create-Actionsprs (`create-actionsprs`)](create-actionsprs-f12f24fb31.md) -- backing+pages
-- [Create.xyz (`createxyz`)](createxyz-05ea2f34f3.md) -- published+backing+pages
-- [Creatr (`creatr`)](creatr-d92312626d.md) -- published+backing+pages
-- [Crew44 (`crew44`)](crew44-983aec9c99.md) -- published+backing+pages
-- [CrewAI (`crewai`)](crewai-57090017a8.md) -- published+backing+pages
-- [Crewai-101 (`crewai-101`)](crewai-101-3829d2859f.md) -- backing+pages
-- [CrewArgo (`crewargo`)](crewargo-02cbf46292.md) -- published+backing+pages
-- [Crewplane (`crewplane`)](crewplane-068742bbba.md) -- published+backing+pages
-- [CrickCoder AI IDE (`crickcoder-ai-ide`)](crickcoder-ai-ide-39845e567d.md) -- published+backing+pages
-- [Crispy (`crispy`)](crispy-127c2817bd.md) -- published+backing+pages
-- [Crush (`crush`)](crush-daecc0bd28.md) -- published+backing+pages
-- [Crystal (`crystal`)](crystal-60a0f78b50.md) -- published+backing+pages
-- [crystl (`crystl`)](crystl-161e855d78.md) -- published+backing+pages
-- [CS146S_CN (`cs146s-cn`)](cs146s-cn-03abd06617.md) -- backing+pages
-- [cto.new (`ctonew`)](ctonew-594305ef75.md) -- published+backing+pages
-- [cuga-agent (`cuga-agent`)](cuga-agent-b8ff91417e.md) -- published+backing+pages
-- [Cursor (`cursor`)](cursor-46a4eebd20.md) -- published+backing+pages
-- [cursor-agent (`cursor-agent`)](cursor-agent-4bae6fa054.md) -- published+backing+pages
-- [Cursor AI Automated Team (`cursor-ai-automated-team`)](cursor-ai-automated-team-49307ac658.md) -- backing+pages
-- [Cursor-AI-Pro-Download-2026 (`cursor-ai-pro-download-2026`)](cursor-ai-pro-download-2026-a11a7f74f6.md) -- backing+pages
-- [cursor-bridge (`cursor-bridge`)](cursor-bridge-797ce8126a.md) -- backing+pages
-- [cursor-in-browser (`cursor-in-browser`)](cursor-in-browser-7ab42a72b9.md) -- backing+pages
-- [Cursor Memories / Automations (CMA) (`cursor-memories-automations-cma`)](cursor-memories-automations-cma-3337385c28.md) -- backing+pages
-- [CybeDefend (`cybedefend`)](cybedefend-1013dce338.md) -- published+backing+pages
-- [Cyclops (`cyclops`)](cyclops-9ad08878dc.md) -- published+backing+pages
-- [CyCode (`cycode`)](cycode-5d776c6bd1.md) -- published+backing+pages
-- [Cykel (`cykel`)](cykel-75ff5eb0a4.md) -- backing+pages
-- [Dagger (`dagger`)](dagger-6415fae65a.md) -- backing+pages
-- [damocles (`damocles`)](damocles-bb4ef13a39.md) -- published+backing+pages
-- [Dance-Ai-Research-Project (`dance-ai-research-project`)](dance-ai-research-project-3c395dc869.md) -- backing+pages
-- [Darce (`darce`)](darce-c30bddcbda.md) -- published+backing+pages
-- [Databutton (`databutton`)](databutton-e785523bad.md) -- published+backing+pages
-- [dbt Copilot (`dbt-copilot`)](dbt-copilot-e32017cadd.md) -- published+backing+pages
-- [DD Code GUI (`dd-code-gui`)](dd-code-gui-7ed3b3ccc4.md) -- published+backing+pages
-- [debroid (`debroid`)](debroid-d508741387.md) -- backing+pages
-- [Debugai (`debugai`)](debugai-1e5dbd0734.md) -- backing+pages
-- [Deep Agents Code (`deep-agents-code`)](deep-agents-code-c38b541e8a.md) -- published+backing+pages
-- [deep-swe (`deep-swe`)](deep-swe-05e5f66593.md) -- backing+pages
-- [deepagent-code (`deepagent-code`)](deepagent-code-b3b10578e7.md) -- published+backing+pages
-- [deepclaude (`deepclaude`)](deepclaude-956eb3c4a4.md) -- backing+pages
-- [DeepCode (`deepcode`)](deepcode-392bc5840b.md) -- published+backing+pages
-- [DeepCode (Snyk) (`deepcode-snyk`)](deepcode-snyk-cfa1b3c841.md) -- backing+pages
-- [DeepCopilot (`deepcopilot`)](deepcopilot-4c4213b1ed.md) -- published+backing+pages
-- [DeepGame (`deepgame`)](deepgame-240494207d.md) -- backing+pages
-- [deepsec (`deepsec`)](deepsec-2530a97db1.md) -- backing+pages
-- [deepseek-cli (`deepseek-cli`)](deepseek-cli-0720c33a76.md) -- published+backing+pages
-- [DeepSeek Coder (`deepseek-coder`)](deepseek-coder-b8f4b7a28d.md) -- backing+pages
-- [deepseek-engineer (`deepseek-engineer`)](deepseek-engineer-918f89117d.md) -- published+backing+pages
-- [DeepSeek Harness WebUI (`deepseek-harness-webui`)](deepseek-harness-webui-78ea433268.md) -- published+backing+pages
-- [DeepSeek Reasonix (`deepseek-reasonix`)](deepseek-reasonix-58bea66dfd.md) -- published+backing+pages
-- [DeepSeek-TUI (`deepseek-tui`)](deepseek-tui-711e3a5b05.md) -- published+backing+pages
-- [DeepSite (`deepsite`)](deepsite-bac257eaad.md) -- published+backing+pages
-- [deeptide (`deeptide`)](deeptide-2f37cef598.md) -- published+backing+pages
-- [Deepunit (`deepunit`)](deepunit-5e03893bd0.md) -- published+backing+pages
-- [DeerFlow (`deerflow`)](deerflow-ea44dcc436.md) -- published+backing+pages
-- [Delphi-AI-Developer (`delphi-ai-developer`)](delphi-ai-developer-b3b031d9c2.md) -- published+backing+pages
-- [demo (`demo`)](demo-2a97516c35.md) -- backing+pages
-- [demo2apk (`demo2apk`)](demo2apk-e607f56eef.md) -- backing+pages
-- [DenchClaw (`denchclaw`)](denchclaw-a6aa798f6d.md) -- backing+pages
-- [dev-3.0 (`dev-30`)](dev-30-4e32359ec9.md) -- published+backing+pages
-- [Dev Agent (小D同学) (`dev-agent`)](dev-agent-7e542874da.md) -- published+backing+pages
-- [devctx (`devctx`)](devctx-20890aed4f.md) -- backing+pages
-- [DevEco CodeGenie (`deveco-codegenie`)](deveco-codegenie-9cba86d62c.md) -- published+backing+pages
-- [DevGPT (`devgpt`)](devgpt-4ca782343a.md) -- published+backing+pages
-- [Devika (`devika`)](devika-d9c08cf3e5.md) -- published+backing+pages
-- [Devin AI (`devin-ai`)](devin-ai-41d363cee0.md) -- published+backing+pages
-- [Devin Sessions (`devin-sessions`)](devin-sessions-6b04390765.md) -- published+backing+pages
-- [Devle (`devle`)](devle-475e7d57a8.md) -- backing+pages
-- [Devlo (`devlo`)](devlo-6d8326e48c.md) -- published+backing+pages
-- [Devon (`devon`)](devon-742639f0f3.md) -- published+backing+pages
-- [DevOpsGPT (`devopsgpt`)](devopsgpt-a2b2b15b1e.md) -- published+backing+pages
-- [DevoxxGenie (`devoxxgenie`)](devoxxgenie-c8c24881d3.md) -- published+backing+pages
-- [Devra (`devra`)](devra-ea545e103a.md) -- published+backing+pages
-- [devstral2 (`devstral2`)](devstral2-d5306077b9.md) -- published+backing+pages
-- [Devstream (`devstream`)](devstream-2fe248390a.md) -- published+backing+pages
-- [Dexto (`dexto`)](dexto-91da8d3ba1.md) -- published+backing+pages
-- [Dia (`dia`)](dia-0addcc1de2.md) -- backing+pages
-- [Dify (`dify`)](dify-dba3ebfefb.md) -- backing+pages
-- [dinotty (`dinotty`)](dinotty-6f7cd41cc2.md) -- published+backing+pages
-- [Dippin (`dippin-lang`)](dippin-lang-f651643883.md) -- published+pages
-- [discord (`discord`)](discord-e1ba4807a1.md) -- backing+pages
-- [django-completion (`django-completion`)](django-completion-a64a706788.md) -- backing+pages
-- [dmux (`dmux`)](dmux-3a659bb92a.md) -- published+backing+pages
-- [Doable (`doable`)](doable-158da069ef.md) -- published+backing+pages
-- [docs (`docs`)](docs-46b42b4229.md) -- backing+pages
-- [dora (`dora`)](dora-69db31976e.md) -- backing+pages
-- [Doubao-Seed-Code (`doubao-seed-code`)](doubao-seed-code-77047a9541.md) -- backing+pages
-- [dream (`dream`)](dream-30fde358b3.md) -- published+backing+pages
-- [Droid (`droid`)](droid-fab16132ae.md) -- published+backing+pages
-- [druk (`druk`)](druk-63e00133ba.md) -- backing+pages
-- [dspy-compounding-engineering (`dspy-compounding-engineering`)](dspy-compounding-engineering-2e4ca10fb4.md) -- published+backing+pages
-- [Ducky (`ducky`)](ducky-5bee6bcf8d.md) -- backing+pages
-- [DuetGPT (`duetgpt`)](duetgpt-2a7500cb25.md) -- published+backing+pages
-- [dunk (`dunk`)](dunk-bbf91f2ba1.md) -- backing+pages
-- [dux (`dux`)](dux-5805f20370.md) -- published+backing+pages
-- [Dyad (`dyad`)](dyad-820b4bc578.md) -- published+backing+pages
-- [easy-coding-agents (`easy-coding-agents`)](easy-coding-agents-193c396eaa.md) -- published+backing+pages
-- [EasyAgent (`easyagent`)](easyagent-d930dec0a6.md) -- published+backing+pages
-- [EasyCode (`easycode`)](easycode-10a196b61b.md) -- published+backing+pages
-- [eca (`eca`)](eca-a278ff5c27.md) -- published+backing+pages
-- [EchoCoding (`echocoding`)](echocoding-46d7e5e2b3.md) -- backing+pages
-- [edge-pi (`edge-pi`)](edge-pi-e63d6336e5.md) -- published+backing+pages
-- [EggShell (`eggshell`)](eggshell-f927d76c8d.md) -- published+backing+pages
-- [Eigent AI (`eigent-ai`)](eigent-ai-a0ee1b338e.md) -- published+backing+pages
-- [electric (`electric`)](electric-44b3c5003d.md) -- backing+pages
-- [Eloquent (`eloquent`)](eloquent-b89f45bfe5.md) -- published+backing+pages
-- [Emdash (`emdash`)](emdash-ba1061ee5c.md) -- published+backing+pages
-- [Emergent (`emergent`)](emergent-026c3bd4be.md) -- published+backing+pages
-- [Empryo (`empryo`)](empryo-cef249978f.md) -- published+backing+pages
-- [Engine (`engine`)](engine-ed9f6f2506.md) -- published+backing+pages
-- [enola (`enola`)](enola-92a2878459.md) -- backing+pages
-- [Entroly (`entroly`)](entroly-af870dc348.md) -- backing+pages
-- [EntwineLLM (`entwinellm`)](entwinellm-909878dc20.md) -- published+backing+pages
-- [Episko (`episko`)](episko-64f465d9c4.md) -- published+backing+pages
-- [Erdos (`erdos`)](erdos-5f80c8e3fa.md) -- published+backing+pages
-- [Even (`even`)](even-ec38063c88.md) -- published+backing+pages
-- [Evener (`evener`)](evener-8039245d0a.md) -- published+backing+pages
-- [EvoNinja (`evoninja`)](evoninja-76a26784bd.md) -- published+backing+pages
-- [ExAgent (`exagent`)](exagent-3f714de5ee.md) -- published+backing+pages
-- [Exaone-3.0 (`exaone-30`)](exaone-30-4f4a776b17.md) -- backing+pages
-- [Explorer (`explorer`)](explorer-1c467339c9.md) -- backing+pages
-- [Explyt AI Agent (`explyt-ai-agent`)](explyt-ai-agent-316ea1a342.md) -- published+backing+pages
-- [Exponent (`exponent`)](exponent-2718963494.md) -- published+backing+pages
-- [Extension-Ci-Tools (`extension-ci-tools`)](extension-ci-tools-3dced4ac9f.md) -- backing+pages
-- [fab-kit (`fab-kit`)](fab-kit-0c46832169.md) -- backing+pages
-- [fable5-opus5-orchestrator (`fable5-opus5-orchestrator`)](fable5-opus5-orchestrator-393f749cfc.md) -- published+backing+pages
-- [Factory (`factory`)](factory-06c8aaa93d.md) -- published+backing+pages
-- [failproofai (`failproofai`)](failproofai-5296f2991a.md) -- backing+pages
-- [Famous (`famous`)](famous-79b1bc8131.md) -- published+backing+pages
-- [fanbox (`fanbox`)](fanbox-8d51dba3a7.md) -- published+backing+pages
-- [Fantastty (`fantastty`)](fantastty-c2d631aee9.md) -- backing+pages
-- [Fantasy (`fantasy`)](fantasy-5292f27501.md) -- published+backing+pages
-- [FastAgency (`fastagency`)](fastagency-78d668612d.md) -- published+backing+pages
-- [FetchCoder (`fetchcoder`)](fetchcoder-fa9c95fcba.md) -- published+backing+pages
-- [Figma Make (`figma-make`)](figma-make-ea11f341d3.md) -- published+backing+pages
-- [Figstack (`figstack`)](figstack-4bd542e491.md) -- backing+pages
-- [FinRobot (`finrobot`)](finrobot-ac611edc4e.md) -- backing+pages
-- [Firebase Studio (`firebase-studio`)](firebase-studio-39bed1ecd3.md) -- published+backing+pages
-- [Firebender (`firebender`)](firebender-d5f7bfa763.md) -- published+backing+pages
-- [FireConnect (`fireconnect`)](fireconnect-6409600bbc.md) -- backing+pages
-- [fireproof (`fireproof`)](fireproof-366b6ac67e.md) -- backing+pages
-- [Fitten Code (`fitten-code`)](fitten-code-f377659cff.md) -- published+backing+pages
-- [Flare (`flare`)](flare-7797993a4b.md) -- backing+pages
-- [Fleet Control (`fleet-control`)](fleet-control-301a60aa68.md) -- published+pages
-- [FLEX (`flex`)](flex-222f930b87.md) -- backing+pages
-- [Floot (`floot`)](floot-764aab4b7f.md) -- published+backing+pages
-- [flounder (`flounder`)](flounder-8802c7af09.md) -- backing+pages
-- [Flue (`flue`)](flue-6cbb89436a.md) -- published+backing+pages
-- [Forge (`forge`)](forge-71b41d6dd4.md) -- backing+pages
-- [Forge-Agentic-Coding-CLI (`forge-agentic-coding-cli`)](forge-agentic-coding-cli-264d9ac99a.md) -- published+backing+pages
-- [Forge (Norvia Labs) (`forge-norvia-labs`)](forge-norvia-labs-0dffe5038b.md) -- published+backing+pages
-- [forge-orchestrator (`forge-orchestrator`)](forge-orchestrator-0ca3272b89.md) -- published+backing+pages
-- [ForgeCode (`forgecode`)](forgecode-4fc3b33313.md) -- published+backing+pages
-- [forgeo (`forgeo`)](forgeo-62e8b50f2d.md) -- published+backing+pages
-- [formax (`formax`)](formax-b15ef67b02.md) -- published+backing+pages
-- [fractal (`fractal`)](fractal-60f4bf5ace.md) -- published+backing+pages
-- [frankenterm (`frankenterm`)](frankenterm-fac404cfda.md) -- published+backing+pages
-- [free-ai-coding (`free-ai-coding`)](free-ai-coding-06baf194df.md) -- backing+pages
-- [Free Repo Agent (`free-repo-agent`)](free-repo-agent-14671883bd.md) -- published+backing+pages
-- [freshell (`freshell`)](freshell-9d4f5269c0.md) -- published+backing+pages
-- [Fullstack-Nextjs-App-Generator (`fullstack-nextjs-app-generator`)](fullstack-nextjs-app-generator-df4205ee3f.md) -- published+backing+pages
-- [Fume (`fume`)](fume-ab9eb089b7.md) -- backing+pages
-- [fusil (`fusil`)](fusil-595c64e5ec.md) -- backing+pages
-- [Fuxi (`fuxi`)](fuxi-27f9aff7c3.md) -- published+backing+pages
-- [fx (`fx`)](fx-6956e1dffd.md) -- published+backing+pages
-- [Gadfly (`gadfly`)](gadfly-3ef17c290e.md) -- backing+pages
-- [Gaia-Meme-Coin-Generator (`gaia-meme-coin-generator`)](gaia-meme-coin-generator-fbf33256b4.md) -- backing+pages
-- [Galley (`galley`)](galley-dd3458ae5f.md) -- published+backing+pages
-- [Gambit (`gambit`)](gambit-5e05cb515b.md) -- backing+pages
-- [Garcon (`garcon`)](garcon-627182d77d.md) -- published+backing+pages
-- [gastown (`gastown`)](gastown-d40fe73ab6.md) -- published+backing+pages
-- [Gemini CLI (`gemini-cli`)](gemini-cli-e726ab7db4.md) -- published+backing+pages
-- [gemini-code (`gemini-code`)](gemini-code-4843140067.md) -- published+backing+pages
-- [Gemini Code Assist (`gemini-code-assist`)](gemini-code-assist-1ee1cb72a5.md) -- published+backing+pages
-- [GeniA (`genia`)](genia-b88ca7310c.md) -- published+backing+pages
-- [Genie (Cosine) (`genie-cosine`)](genie-cosine-93d2b57c55.md) -- published+backing+pages
-- [GenoMAS (`genomas`)](genomas-3b7ff421ab.md) -- backing+pages
-- [Genspark AI Developer (`genspark-ai-developer`)](genspark-ai-developer-2cc448e655.md) -- published+backing+pages
-- [ggez (`ggez`)](ggez-f3cfc66fb3.md) -- backing+pages
-- [GigaChat (`gigachat`)](gigachat-4a96600d6c.md) -- backing+pages
-- [giselle (`giselle`)](giselle-b6f2418fb5.md) -- published+backing+pages
-- [Git-Collaboration (`git-collaboration`)](git-collaboration-963208b8f0.md) -- backing+pages
-- [Gitar (`gitar`)](gitar-b70f7c27b1.md) -- published+backing+pages
-- [github (`github`)](github-c0b0109d94.md) -- backing+pages
-- [GitHub Copilot (`github-copilot`)](github-copilot-2562cef034.md) -- published+backing+pages
-- [GitHub Copilot CLI (`github-copilot-cli`)](github-copilot-cli-00932a107b.md) -- published+backing+pages
-- [github profile (`github-profile`)](github-profile-c8411c5716.md) -- backing+pages
-- [GitIngest (`gitingest`)](gitingest-db03db8a27.md) -- backing+pages
-- [gitlab-copilot-coding-agent (`gitlab-copilot-coding-agent`)](gitlab-copilot-coding-agent-18f4e1cc47.md) -- backing+pages
-- [GitLab Duo (`gitlab-duo`)](gitlab-duo-9184d9a4ee.md) -- published+backing+pages
-- [GLM-5 (`glm-5`)](glm-5-343fb7bd0d.md) -- backing+pages
-- [GLM Coding Plan (`glm-coding-plan`)](glm-coding-plan-83332da5a2.md) -- backing+pages
-- [GoCodeo (`gocodeo`)](gocodeo-4cc659696f.md) -- published+backing+pages
-- [golutra (`golutra`)](golutra-b364c2bcc9.md) -- published+backing+pages
-- [Google AI Studio Build (`google-ai-studio-build`)](google-ai-studio-build-20a348204f.md) -- published+backing+pages
-- [Goose (`goose`)](goose-c2d37dd057.md) -- published+backing+pages
-- [Gossip (`gossip`)](gossip-dd73a2f7c7.md) -- pages-only
-- [gpt-all-star (`gpt-all-star`)](gpt-all-star-bb65f2277a.md) -- published+backing+pages
-- [Gpt-Code-Assistant (`gpt-code-assistant`)](gpt-code-assistant-ba95b46eeb.md) -- backing+pages
-- [gpt-coder (`gpt-coder`)](gpt-coder-7400aa4555.md) -- published+backing+pages
-- [GPT Engineer (`gpt-engineer`)](gpt-engineer-b4f13b78fd.md) -- published+backing+pages
-- [GPT Migrate (`gpt-migrate`)](gpt-migrate-67dac276db.md) -- published+backing+pages
-- [GPT Pilot (`gpt-pilot`)](gpt-pilot-ff78db22bb.md) -- published+backing+pages
-- [gpt-rag-orchestrator (`gpt-rag-orchestrator`)](gpt-rag-orchestrator-bea0ae151b.md) -- backing+pages
-- [GPTeam (`gpteam`)](gpteam-21881c74d7.md) -- backing+pages
-- [gptme (`gptme`)](gptme-530e41180a.md) -- published+backing+pages
-- [Graft (`graft`)](graft-4e762e9903.md) -- backing+pages
-- [GrapeRoot (`graperoot`)](graperoot-c90edbe12b.md) -- backing+pages
-- [Graphql-Cli (`graphql-cli`)](graphql-cli-84931d0e4c.md) -- backing+pages
-- [Graphql-Playground (`graphql-playground`)](graphql-playground-507c3c20e2.md) -- backing+pages
-- [great_cto (`great-cto`)](great-cto-a3b043465b.md) -- published+backing+pages
-- [Greptile (`greptile`)](greptile-b282d274eb.md) -- published+backing+pages
-- [Grinta (`grinta`)](grinta-8df5e1ab5d.md) -- published+backing+pages
-- [Grok Build (`grok-build`)](grok-build-145a4e5cb6.md) -- published+backing+pages
-- [Grok Build (xAI) (`grok-build-xai`)](grok-build-xai-f8b0d2e3af.md) -- backing+pages
-- [Grok CLI (`grok-cli`)](grok-cli-91890f641d.md) -- published+backing+pages
-- [Grok Studio (`grok-studio`)](grok-studio-d3dcd09d16.md) -- backing+pages
-- [Groq (`groq`)](groq-0b79cf2de0.md) -- backing+pages
-- [Groq Code CLI (`groq-code-cli`)](groq-code-cli-c769723b54.md) -- published+backing+pages
-- [groundhog (`groundhog`)](groundhog-3b6435145e.md) -- backing+pages
-- [guidance-for-multi-agent-orchestration-on-aws (`guidance-for-multi-agent-orchestration-on-aws`)](guidance-for-multi-agent-orchestration-on-aws-43411dd9ec.md) -- backing+pages
-- [Guidewire AI Agent (`guidewire-ai-agent`)](guidewire-ai-agent-ae95f318d0.md) -- published+backing+pages
-- [gwq (`gwq`)](gwq-28b19240f9.md) -- backing+pages
-- [h5i (`h5i`)](h5i-6d993d4705.md) -- backing+pages
-- [hal-9000 (`hal-9000`)](hal-9000-be0b72f095.md) -- backing+pages
-- [HALO (`halo`)](halo-a4e63bcacf.md) -- backing+pages
-- [handoff (`handoff`)](handoff-249215fed8.md) -- published+backing+pages
-- [hapi (`hapi`)](hapi-0a98f7946d.md) -- published+backing+pages
-- [harness-engineering-from-cc-to-ai-coding (`harness-engineering-from-cc-to-ai-coding`)](harness-engineering-from-cc-to-ai-coding-5982fd9cf5.md) -- backing+pages
-- [Harness Starter Kit (`harness-starter-kit`)](harness-starter-kit-4c9cb1307d.md) -- backing+pages
-- [harness-terminal (`harness-terminal`)](harness-terminal-5c5713b79c.md) -- published+backing+pages
-- [HarnessRouter (`harnessrouter`)](harnessrouter-f947b974b8.md) -- published+backing+pages
-- [harnss (`harnss`)](harnss-0ca4aaf355.md) -- published+backing+pages
-- [HashAgent (`hashagent`)](hashagent-ae64cb3251.md) -- backing+pages
-- [HASS-AI-Orchestrator (`hass-ai-orchestrator`)](hass-ai-orchestrator-52afdfa78e.md) -- backing+pages
-- [hax (`hax`)](hax-e6ffaf87ee.md) -- published+backing+pages
-- [hcf (`hcf`)](hcf-08d914300f.md) -- backing+pages
-- [hcom (`hcom`)](hcom-7e11a79610.md) -- published+backing+pages
-- [HCS (Hashgraph Consensus Service) (`hcs-hashgraph-consensus-service`)](hcs-hashgraph-consensus-service-5c49f37849.md) -- backing+pages
-- [helixent (`helixent`)](helixent-cbd02b8e8b.md) -- published+backing+pages
-- [herdr (`herdr`)](herdr-78193ef266.md) -- published+backing+pages
-- [herdrm (`herdrm`)](herdrm-767da0e0d5.md) -- published+backing+pages
-- [herm (`herm`)](herm-26bbd553cc.md) -- published+backing+pages
-- [Hex (`hex`)](hex-128df13c1e.md) -- published+pages
-- [hey (`hey`)](hey-fa690b8206.md) -- backing+pages
-- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing+pages
-- [hitch (`hitch`)](hitch-82e910cddf.md) -- backing+pages
-- [hive (`hive`)](hive-7640da4029.md) -- published+backing+pages
+- [CodeFuse-muAgent (`codefuse-muagent`)](codefuse-muagent-5e8aeb5da3.md) -- published+backing
+- [Codegebragpt (`codegebragpt`)](codegebragpt-72fa6a14c8.md) -- backing-only
+- [CodeGenHelpers (`codegenhelpers`)](codegenhelpers-49094aa427.md) -- backing-only
+- [CodeGPT (`codegpt`)](codegpt-9999398602.md) -- published+backing
+- [codehamr (`codehamr`)](codehamr-bd8696dc3b.md) -- published+backing
+- [Codeium (`codeium`)](codeium-0ac0192d44.md) -- published+backing
+- [codeium-react-code-editor (`codeium-react-code-editor`)](codeium-react-code-editor-03ce615d8b.md) -- backing-only
+- [CodeKanban (`codekanban`)](codekanban-a2486f10fb.md) -- published+backing
+- [Codel (`codel`)](codel-0ef4129c70.md) -- published+backing
+- [CodeLlama (`codellama`)](codellama-5d7269a515.md) -- backing-only
+- [CodeLLMSurvey (`codellmsurvey`)](codellmsurvey-c756bc9b5c.md) -- backing-only
+- [CodeMachine-CLI (`codemachine-cli`)](codemachine-cli-39574ac3f9.md) -- published+backing
+- [CodeMate AI - Full Stack Coding Agent (`codemate-ai-full-stack-coding-agent`)](codemate-ai-full-stack-coding-agent-a509beb0c4.md) -- published+backing
+- [Codemini-CLI (`codemini-cli`)](codemini-cli-b3b1f125f4.md) -- published+backing
+- [Codemod (`codemod`)](codemod-62f91ae1fd.md) -- published+backing
+- [CodeNext.ai (`codenextai`)](codenextai-31af82b447.md) -- published+backing
+- [CodeRabbit (`coderabbit`)](coderabbit-fc34547c4b.md) -- published+backing
+- [coderabbit-review-helper (`coderabbit-review-helper`)](coderabbit-review-helper-bc88226e2e.md) -- backing-only
+- [CodeReview-AI-Agent (`codereview-ai-agent`)](codereview-ai-agent-497031857c.md) -- published+backing
+- [CodeReviewAgent (`codereviewagent`)](codereviewagent-af39be6655.md) -- published+backing
+- [CodeRider (`coderider`)](coderider-b39211dfe6.md) -- published+backing
+- [codeshell-vscode (`codeshell-vscode`)](codeshell-vscode-88332e740f.md) -- backing-only
+- [Codev (`codev`)](codev-e654cb6610.md) -- backing-only
+- [codevibes (`codevibes`)](codevibes-dfdcd6b44c.md) -- backing-only
+- [Codex CLI (`codex-cli`)](codex-cli-a2861dc12c.md) -- published+backing
+- [Codex-JetBrains (`codex-jetbrains`)](codex-jetbrains-4bec627e1c.md) -- published+backing
+- [codex-mobile (`codex-mobile`)](codex-mobile-c56a73ee73.md) -- published+backing
+- [codex-multi-agents (`codex-multi-agents`)](codex-multi-agents-589fa21a16.md) -- published+backing
+- [Codex (OpenAI) (`codex-openai`)](codex-openai-8cec996f7c.md) -- published+backing
+- [codex-profiles (`codex-profiles`)](codex-profiles-bc53aeaee2.md) -- backing-only
+- [Codex Security (`codex-security`)](codex-security-7b7fe1faf5.md) -- published+backing
+- [Codey (`codey`)](codey-1075e9f416.md) -- published+backing
+- [Codiga (`codiga`)](codiga-63be7276f5.md) -- backing-only
+- [coding-agent (`coding-agent`)](coding-agent-cc928dc9c6.md) -- published+backing
+- [coding_agent_account_manager (`coding-agent-account-manager`)](coding-agent-account-manager-bca0de7a9f.md) -- backing-only
+- [coding_agent_session_search (`coding-agent-session-search`)](coding-agent-session-search-a3c158bbc8.md) -- backing-only
+- [coding-agent-tips (`coding-agent-tips`)](coding-agent-tips-fa75180677.md) -- backing-only
+- [coding-agents-databricks-apps (`coding-agents-databricks-apps`)](coding-agents-databricks-apps-93e8eccf57.md) -- backing-only
+- [coding-agents-workshop (`coding-agents-workshop`)](coding-agents-workshop-17607c93a1.md) -- backing-only
+- [coding-the-coding-agents (`coding-the-coding-agents`)](coding-the-coding-agents-c5adb7cab4.md) -- backing-only
+- [Coding-Tutor (`coding-tutor`)](coding-tutor-7fe4bbd7a2.md) -- backing-only
+- [CodingAgentExplorer (`codingagentexplorer`)](codingagentexplorer-e65c783e6c.md) -- backing-only
+- [CodingIT (`codingit`)](codingit-e57f44bbf2.md) -- published+backing
+- [codinit-dev (`codinit-dev`)](codinit-dev-b8831a75b8.md) -- published+backing
+- [Codirigent (`codirigent`)](codirigent-be56bb030a.md) -- published+backing
+- [Cody by Sourcegraph (`cody-by-sourcegraph`)](cody-by-sourcegraph-193d245ac8.md) -- published+backing
+- [cody-public-snapshot (`cody-public-snapshot`)](cody-public-snapshot-f43138b78f.md) -- published+backing
+- [Cody (Sourcegraph) (`cody-sourcegraph`)](cody-sourcegraph-72e877b87b.md) -- published+backing
+- [colony repo (`colony-repo`)](colony-repo-6f4f359dbd.md) -- backing-only
+- [Comet (`comet`)](comet-d51f791051.md) -- backing-only
+- [Comfyui_Workflows (`comfyui-workflows`)](comfyui-workflows-4cd4bc2bc6.md) -- backing-only
+- [Command Code (`command-code`)](command-code-510abdbcad.md) -- published+backing
+- [companion (`companion`)](companion-c989edf182.md) -- backing-only
+- [companion-vscode (`companion-vscode`)](companion-vscode-058e8ace88.md) -- backing-only
+- [conch (`conch`)](conch-5fdde7b0e7.md) -- published+backing
+- [Concord (`concord-mcp`)](concord-mcp-1bb70bdbd3.md) -- backing-only
+- [Conductor (`conductor`)](conductor-0380db97ec.md) -- published+backing
+- [conduit-release (`conduit-release`)](conduit-release-b93fa9513c.md) -- published+backing
+- [construct (`construct`)](construct-b252d4eb5a.md) -- published+backing
+- [context-engine-ai (`context-engine-ai`)](context-engine-ai-62e690d0f5.md) -- backing-only
+- [context-engineering-intro (`context-engineering-intro`)](context-engineering-intro-2aee74570c.md) -- backing-only
+- [context-hub (`context-hub`)](context-hub-663b92ba0a.md) -- backing-only
+- [ContextCode by ContextStream (`contextcode-by-contextstream`)](contextcode-by-contextstream-bafbba530a.md) -- backing-only
+- [contextvc (`contextvc`)](contextvc-71236aef99.md) -- backing-only
+- [Continous AI (`continous-ai`)](continous-ai-f73eee736c.md) -- backing-only
+- [Continue (`continue`)](continue-e256ee8e7a.md) -- published+backing
+- [Contral (`contral`)](contral-f2eb735ab0.md) -- published+backing
+- [Copilot Workspace (`copilot-workspace`)](copilot-workspace-abb10e3a29.md) -- published+backing
+- [CORAL (`coral`)](coral-f39fd90734.md) -- backing-only
+- [core-termux (`core-termux`)](core-termux-24049b06b8.md) -- backing-only
+- [CoreCoder (`corecoder`)](corecoder-12f0b02b5d.md) -- published+backing
+- [Corgea (`corgea`)](corgea-49b3b74133.md) -- published+backing
+- [CornMCP (`cornmcp`)](cornmcp-809100cc6b.md) -- backing-only
+- [Coro Code (`coro-code`)](coro-code-d6f7b8cdff.md) -- published+backing
+- [cortex (`cortex`)](cortex-1ee11af4ed.md) -- backing-only
+- [Cortex Code CLI (`cortex-code-cli`)](cortex-code-cli-9cae66ca22.md) -- published+backing
+- [Cosmo (`cosmo`)](cosmo-98f4270f09.md) -- backing-only
+- [Coven (`coven`)](coven-eb30e82be2.md) -- published-only
+- [cowork-to-code-bridge (`cowork-to-code-bridge`)](cowork-to-code-bridge-efa3032906.md) -- backing-only
+- [coze-studio (`coze-studio`)](coze-studio-47d58acde7.md) -- backing-only
+- [cre-acquisition-orchestrator (`cre-acquisition-orchestrator`)](cre-acquisition-orchestrator-b28e102612.md) -- backing-only
+- [Create-Actionsprs (`create-actionsprs`)](create-actionsprs-f12f24fb31.md) -- backing-only
+- [Create.xyz (`createxyz`)](createxyz-05ea2f34f3.md) -- published+backing
+- [Creatr (`creatr`)](creatr-d92312626d.md) -- published+backing
+- [Crew44 (`crew44`)](crew44-983aec9c99.md) -- published+backing
+- [CrewAI (`crewai`)](crewai-57090017a8.md) -- published+backing
+- [Crewai-101 (`crewai-101`)](crewai-101-3829d2859f.md) -- backing-only
+- [CrewArgo (`crewargo`)](crewargo-02cbf46292.md) -- published+backing
+- [Crewplane (`crewplane`)](crewplane-068742bbba.md) -- published+backing
+- [CrickCoder AI IDE (`crickcoder-ai-ide`)](crickcoder-ai-ide-39845e567d.md) -- published+backing
+- [Crispy (`crispy`)](crispy-127c2817bd.md) -- published+backing
+- [Crush (`crush`)](crush-daecc0bd28.md) -- published+backing
+- [Crystal (`crystal`)](crystal-60a0f78b50.md) -- published+backing
+- [crystl (`crystl`)](crystl-161e855d78.md) -- published+backing
+- [CS146S_CN (`cs146s-cn`)](cs146s-cn-03abd06617.md) -- backing-only
+- [cto.new (`ctonew`)](ctonew-594305ef75.md) -- published+backing
+- [cuga-agent (`cuga-agent`)](cuga-agent-b8ff91417e.md) -- published+backing
+- [Cursor (`cursor`)](cursor-46a4eebd20.md) -- published+backing
+- [cursor-agent (`cursor-agent`)](cursor-agent-4bae6fa054.md) -- published+backing
+- [Cursor AI Automated Team (`cursor-ai-automated-team`)](cursor-ai-automated-team-49307ac658.md) -- backing-only
+- [Cursor-AI-Pro-Download-2026 (`cursor-ai-pro-download-2026`)](cursor-ai-pro-download-2026-a11a7f74f6.md) -- backing-only
+- [cursor-bridge (`cursor-bridge`)](cursor-bridge-797ce8126a.md) -- backing-only
+- [cursor-in-browser (`cursor-in-browser`)](cursor-in-browser-7ab42a72b9.md) -- backing-only
+- [Cursor Memories / Automations (CMA) (`cursor-memories-automations-cma`)](cursor-memories-automations-cma-3337385c28.md) -- backing-only
+- [CybeDefend (`cybedefend`)](cybedefend-1013dce338.md) -- published+backing
+- [Cyclops (`cyclops`)](cyclops-9ad08878dc.md) -- published+backing
+- [CyCode (`cycode`)](cycode-5d776c6bd1.md) -- published+backing
+- [Cykel (`cykel`)](cykel-75ff5eb0a4.md) -- backing-only
+- [Dagger (`dagger`)](dagger-6415fae65a.md) -- backing-only
+- [damocles (`damocles`)](damocles-bb4ef13a39.md) -- published+backing
+- [Dance-Ai-Research-Project (`dance-ai-research-project`)](dance-ai-research-project-3c395dc869.md) -- backing-only
+- [Darce (`darce`)](darce-c30bddcbda.md) -- published+backing
+- [Databutton (`databutton`)](databutton-e785523bad.md) -- published+backing
+- [Datasette Agent (`datasette-agent`)](datasette-agent-8fe9ea43bb.md) -- published-only
+- [dbt Copilot (`dbt-copilot`)](dbt-copilot-e32017cadd.md) -- published+backing
+- [DD Code GUI (`dd-code-gui`)](dd-code-gui-7ed3b3ccc4.md) -- published+backing
+- [debroid (`debroid`)](debroid-d508741387.md) -- backing-only
+- [Debugai (`debugai`)](debugai-1e5dbd0734.md) -- backing-only
+- [Deep Agents Code (`deep-agents-code`)](deep-agents-code-c38b541e8a.md) -- published+backing
+- [deep-swe (`deep-swe`)](deep-swe-05e5f66593.md) -- backing-only
+- [deepagent-code (`deepagent-code`)](deepagent-code-b3b10578e7.md) -- published+backing
+- [deepclaude (`deepclaude`)](deepclaude-956eb3c4a4.md) -- backing-only
+- [DeepCode (`deepcode`)](deepcode-392bc5840b.md) -- published+backing
+- [DeepCode (Snyk) (`deepcode-snyk`)](deepcode-snyk-cfa1b3c841.md) -- backing-only
+- [DeepCopilot (`deepcopilot`)](deepcopilot-4c4213b1ed.md) -- published+backing
+- [DeepGame (`deepgame`)](deepgame-240494207d.md) -- backing-only
+- [deepsec (`deepsec`)](deepsec-2530a97db1.md) -- backing-only
+- [deepseek-cli (`deepseek-cli`)](deepseek-cli-0720c33a76.md) -- published+backing
+- [DeepSeek Coder (`deepseek-coder`)](deepseek-coder-b8f4b7a28d.md) -- backing-only
+- [deepseek-engineer (`deepseek-engineer`)](deepseek-engineer-918f89117d.md) -- published+backing
+- [DeepSeek Harness WebUI (`deepseek-harness-webui`)](deepseek-harness-webui-78ea433268.md) -- published+backing
+- [DeepSeek Reasonix (`deepseek-reasonix`)](deepseek-reasonix-58bea66dfd.md) -- published+backing
+- [DeepSeek-TUI (`deepseek-tui`)](deepseek-tui-711e3a5b05.md) -- published+backing
+- [DeepSite (`deepsite`)](deepsite-bac257eaad.md) -- published+backing
+- [deeptide (`deeptide`)](deeptide-2f37cef598.md) -- published+backing
+- [Deepunit (`deepunit`)](deepunit-5e03893bd0.md) -- published+backing
+- [DeerFlow (`deerflow`)](deerflow-ea44dcc436.md) -- published+backing
+- [Delphi-AI-Developer (`delphi-ai-developer`)](delphi-ai-developer-b3b031d9c2.md) -- published+backing
+- [demo (`demo`)](demo-2a97516c35.md) -- backing-only
+- [demo2apk (`demo2apk`)](demo2apk-e607f56eef.md) -- backing-only
+- [DenchClaw (`denchclaw`)](denchclaw-a6aa798f6d.md) -- backing-only
+- [dev-3.0 (`dev-30`)](dev-30-4e32359ec9.md) -- published+backing
+- [Dev Agent (小D同学) (`dev-agent`)](dev-agent-7e542874da.md) -- published+backing
+- [devctx (`devctx`)](devctx-20890aed4f.md) -- backing-only
+- [DevEco CodeGenie (`deveco-codegenie`)](deveco-codegenie-9cba86d62c.md) -- published+backing
+- [DevGPT (`devgpt`)](devgpt-4ca782343a.md) -- published+backing
+- [Devika (`devika`)](devika-d9c08cf3e5.md) -- published+backing
+- [Devin AI (`devin-ai`)](devin-ai-41d363cee0.md) -- published+backing
+- [Devin Sessions (`devin-sessions`)](devin-sessions-6b04390765.md) -- published+backing
+- [Devle (`devle`)](devle-475e7d57a8.md) -- backing-only
+- [Devlo (`devlo`)](devlo-6d8326e48c.md) -- published+backing
+- [Devon (`devon`)](devon-742639f0f3.md) -- published+backing
+- [DevOpsGPT (`devopsgpt`)](devopsgpt-a2b2b15b1e.md) -- published+backing
+- [DevoxxGenie (`devoxxgenie`)](devoxxgenie-c8c24881d3.md) -- published+backing
+- [Devra (`devra`)](devra-ea545e103a.md) -- published+backing
+- [devstral2 (`devstral2`)](devstral2-d5306077b9.md) -- published+backing
+- [Devstream (`devstream`)](devstream-2fe248390a.md) -- published+backing
+- [Dexto (`dexto`)](dexto-91da8d3ba1.md) -- published+backing
+- [Dia (`dia`)](dia-0addcc1de2.md) -- backing-only
+- [Dify (`dify`)](dify-dba3ebfefb.md) -- backing-only
+- [dinotty (`dinotty`)](dinotty-6f7cd41cc2.md) -- published+backing
+- [Dippin (`dippin-lang`)](dippin-lang-f651643883.md) -- published-only
+- [discord (`discord`)](discord-e1ba4807a1.md) -- backing-only
+- [django-completion (`django-completion`)](django-completion-a64a706788.md) -- backing-only
+- [dmux (`dmux`)](dmux-3a659bb92a.md) -- published+backing
+- [Doable (`doable`)](doable-158da069ef.md) -- published+backing
+- [docs (`docs`)](docs-46b42b4229.md) -- backing-only
+- [dora (`dora`)](dora-69db31976e.md) -- backing-only
+- [Doubao-Seed-Code (`doubao-seed-code`)](doubao-seed-code-77047a9541.md) -- backing-only
+- [dream (`dream`)](dream-30fde358b3.md) -- published+backing
+- [Droid (`droid`)](droid-fab16132ae.md) -- published+backing
+- [druk (`druk`)](druk-63e00133ba.md) -- backing-only
+- [dspy-compounding-engineering (`dspy-compounding-engineering`)](dspy-compounding-engineering-2e4ca10fb4.md) -- published+backing
+- [Ducky (`ducky`)](ducky-5bee6bcf8d.md) -- backing-only
+- [DuetGPT (`duetgpt`)](duetgpt-2a7500cb25.md) -- published+backing
+- [dunk (`dunk`)](dunk-bbf91f2ba1.md) -- backing-only
+- [dux (`dux`)](dux-5805f20370.md) -- published+backing
+- [Dyad (`dyad`)](dyad-820b4bc578.md) -- published+backing
+- [easy-coding-agents (`easy-coding-agents`)](easy-coding-agents-193c396eaa.md) -- published+backing
+- [EasyAgent (`easyagent`)](easyagent-d930dec0a6.md) -- published+backing
+- [EasyCode (`easycode`)](easycode-10a196b61b.md) -- published+backing
+- [eca (`eca`)](eca-a278ff5c27.md) -- published+backing
+- [EchoCoding (`echocoding`)](echocoding-46d7e5e2b3.md) -- backing-only
+- [edge-pi (`edge-pi`)](edge-pi-e63d6336e5.md) -- published+backing
+- [EggShell (`eggshell`)](eggshell-f927d76c8d.md) -- published+backing
+- [Eigent AI (`eigent-ai`)](eigent-ai-a0ee1b338e.md) -- published+backing
+- [electric (`electric`)](electric-44b3c5003d.md) -- backing-only
+- [Eloquent (`eloquent`)](eloquent-b89f45bfe5.md) -- published+backing
+- [Emdash (`emdash`)](emdash-ba1061ee5c.md) -- published+backing
+- [Emergent (`emergent`)](emergent-026c3bd4be.md) -- published+backing
+- [Empryo (`empryo`)](empryo-cef249978f.md) -- published+backing
+- [Engine (`engine`)](engine-ed9f6f2506.md) -- published+backing
+- [enola (`enola`)](enola-92a2878459.md) -- backing-only
+- [Entroly (`entroly`)](entroly-af870dc348.md) -- backing-only
+- [EntwineLLM (`entwinellm`)](entwinellm-909878dc20.md) -- published+backing
+- [Episko (`episko`)](episko-64f465d9c4.md) -- published+backing
+- [Erdos (`erdos`)](erdos-5f80c8e3fa.md) -- published+backing
+- [Even (`even`)](even-ec38063c88.md) -- published+backing
+- [Evener (`evener`)](evener-8039245d0a.md) -- published+backing
+- [EvoNinja (`evoninja`)](evoninja-76a26784bd.md) -- published+backing
+- [ExAgent (`exagent`)](exagent-3f714de5ee.md) -- published+backing
+- [Exaone-3.0 (`exaone-30`)](exaone-30-4f4a776b17.md) -- backing-only
+- [Explorer (`explorer`)](explorer-1c467339c9.md) -- backing-only
+- [Explyt AI Agent (`explyt-ai-agent`)](explyt-ai-agent-316ea1a342.md) -- published+backing
+- [Exponent (`exponent`)](exponent-2718963494.md) -- published+backing
+- [Extension-Ci-Tools (`extension-ci-tools`)](extension-ci-tools-3dced4ac9f.md) -- backing-only
+- [fab-kit (`fab-kit`)](fab-kit-0c46832169.md) -- backing-only
+- [fable5-opus5-orchestrator (`fable5-opus5-orchestrator`)](fable5-opus5-orchestrator-393f749cfc.md) -- published+backing
+- [Factory (`factory`)](factory-06c8aaa93d.md) -- published+backing
+- [failproofai (`failproofai`)](failproofai-5296f2991a.md) -- backing-only
+- [Famous (`famous`)](famous-79b1bc8131.md) -- published+backing
+- [fanbox (`fanbox`)](fanbox-8d51dba3a7.md) -- published+backing
+- [Fantastty (`fantastty`)](fantastty-c2d631aee9.md) -- backing-only
+- [Fantasy (`fantasy`)](fantasy-5292f27501.md) -- published+backing
+- [FastAgency (`fastagency`)](fastagency-78d668612d.md) -- published+backing
+- [FetchCoder (`fetchcoder`)](fetchcoder-fa9c95fcba.md) -- published+backing
+- [Figma Make (`figma-make`)](figma-make-ea11f341d3.md) -- published+backing
+- [Figstack (`figstack`)](figstack-4bd542e491.md) -- backing-only
+- [FinRobot (`finrobot`)](finrobot-ac611edc4e.md) -- backing-only
+- [Firebase Studio (`firebase-studio`)](firebase-studio-39bed1ecd3.md) -- published+backing
+- [Firebender (`firebender`)](firebender-d5f7bfa763.md) -- published+backing
+- [FireConnect (`fireconnect`)](fireconnect-6409600bbc.md) -- backing-only
+- [fireproof (`fireproof`)](fireproof-366b6ac67e.md) -- backing-only
+- [Fitten Code (`fitten-code`)](fitten-code-f377659cff.md) -- published+backing
+- [Flare (`flare`)](flare-7797993a4b.md) -- backing-only
+- [Fleet Control (`fleet-control`)](fleet-control-301a60aa68.md) -- published-only
+- [FLEX (`flex`)](flex-222f930b87.md) -- backing-only
+- [Floot (`floot`)](floot-764aab4b7f.md) -- published+backing
+- [flounder (`flounder`)](flounder-8802c7af09.md) -- backing-only
+- [Flue (`flue`)](flue-6cbb89436a.md) -- published+backing
+- [Forge (`forge`)](forge-71b41d6dd4.md) -- backing-only
+- [Forge-Agentic-Coding-CLI (`forge-agentic-coding-cli`)](forge-agentic-coding-cli-264d9ac99a.md) -- published+backing
+- [Forge (Norvia Labs) (`forge-norvia-labs`)](forge-norvia-labs-0dffe5038b.md) -- published+backing
+- [forge-orchestrator (`forge-orchestrator`)](forge-orchestrator-0ca3272b89.md) -- published+backing
+- [ForgeCode (`forgecode`)](forgecode-4fc3b33313.md) -- published+backing
+- [forgeo (`forgeo`)](forgeo-62e8b50f2d.md) -- published+backing
+- [formax (`formax`)](formax-b15ef67b02.md) -- published+backing
+- [fractal (`fractal`)](fractal-60f4bf5ace.md) -- published+backing
+- [frankenterm (`frankenterm`)](frankenterm-fac404cfda.md) -- published+backing
+- [free-ai-coding (`free-ai-coding`)](free-ai-coding-06baf194df.md) -- backing-only
+- [Free Repo Agent (`free-repo-agent`)](free-repo-agent-14671883bd.md) -- published+backing
+- [freshell (`freshell`)](freshell-9d4f5269c0.md) -- published+backing
+- [Fullstack-Nextjs-App-Generator (`fullstack-nextjs-app-generator`)](fullstack-nextjs-app-generator-df4205ee3f.md) -- published+backing
+- [Fume (`fume`)](fume-ab9eb089b7.md) -- backing-only
+- [fusil (`fusil`)](fusil-595c64e5ec.md) -- backing-only
+- [Fuxi (`fuxi`)](fuxi-27f9aff7c3.md) -- published+backing
+- [fx (`fx`)](fx-6956e1dffd.md) -- published+backing
+- [Gadfly (`gadfly`)](gadfly-3ef17c290e.md) -- backing-only
+- [Gaia-Meme-Coin-Generator (`gaia-meme-coin-generator`)](gaia-meme-coin-generator-fbf33256b4.md) -- backing-only
+- [Galley (`galley`)](galley-dd3458ae5f.md) -- published+backing
+- [Gambit (`gambit`)](gambit-5e05cb515b.md) -- backing-only
+- [Garcon (`garcon`)](garcon-627182d77d.md) -- published+backing
+- [gastown (`gastown`)](gastown-d40fe73ab6.md) -- published+backing
+- [Gemini CLI (`gemini-cli`)](gemini-cli-e726ab7db4.md) -- published+backing
+- [gemini-code (`gemini-code`)](gemini-code-4843140067.md) -- published+backing
+- [Gemini Code Assist (`gemini-code-assist`)](gemini-code-assist-1ee1cb72a5.md) -- published+backing
+- [GeniA (`genia`)](genia-b88ca7310c.md) -- published+backing
+- [Genie (Cosine) (`genie-cosine`)](genie-cosine-93d2b57c55.md) -- published+backing
+- [GenoMAS (`genomas`)](genomas-3b7ff421ab.md) -- backing-only
+- [Genspark AI Developer (`genspark-ai-developer`)](genspark-ai-developer-2cc448e655.md) -- published+backing
+- [ggez (`ggez`)](ggez-f3cfc66fb3.md) -- backing-only
+- [GigaChat (`gigachat`)](gigachat-4a96600d6c.md) -- backing-only
+- [giselle (`giselle`)](giselle-b6f2418fb5.md) -- published+backing
+- [Git-Collaboration (`git-collaboration`)](git-collaboration-963208b8f0.md) -- backing-only
+- [Gitar (`gitar`)](gitar-b70f7c27b1.md) -- published+backing
+- [github (`github`)](github-c0b0109d94.md) -- backing-only
+- [GitHub Copilot (`github-copilot`)](github-copilot-2562cef034.md) -- published+backing
+- [GitHub Copilot CLI (`github-copilot-cli`)](github-copilot-cli-00932a107b.md) -- published+backing
+- [github profile (`github-profile`)](github-profile-c8411c5716.md) -- backing-only
+- [GitIngest (`gitingest`)](gitingest-db03db8a27.md) -- backing-only
+- [gitlab-copilot-coding-agent (`gitlab-copilot-coding-agent`)](gitlab-copilot-coding-agent-18f4e1cc47.md) -- backing-only
+- [GitLab Duo (`gitlab-duo`)](gitlab-duo-9184d9a4ee.md) -- published+backing
+- [GLM-5 (`glm-5`)](glm-5-343fb7bd0d.md) -- backing-only
+- [GLM Coding Plan (`glm-coding-plan`)](glm-coding-plan-83332da5a2.md) -- backing-only
+- [GoCodeo (`gocodeo`)](gocodeo-4cc659696f.md) -- published+backing
+- [golutra (`golutra`)](golutra-b364c2bcc9.md) -- published+backing
+- [Google AI Studio Build (`google-ai-studio-build`)](google-ai-studio-build-20a348204f.md) -- published+backing
+- [Goose (`goose`)](goose-c2d37dd057.md) -- published+backing
+- [gpt-all-star (`gpt-all-star`)](gpt-all-star-bb65f2277a.md) -- published+backing
+- [Gpt-Code-Assistant (`gpt-code-assistant`)](gpt-code-assistant-ba95b46eeb.md) -- backing-only
+- [gpt-coder (`gpt-coder`)](gpt-coder-7400aa4555.md) -- published+backing
+- [GPT Engineer (`gpt-engineer`)](gpt-engineer-b4f13b78fd.md) -- published+backing
+- [GPT Migrate (`gpt-migrate`)](gpt-migrate-67dac276db.md) -- published+backing
+- [GPT Pilot (`gpt-pilot`)](gpt-pilot-ff78db22bb.md) -- published+backing
+- [gpt-rag-orchestrator (`gpt-rag-orchestrator`)](gpt-rag-orchestrator-bea0ae151b.md) -- backing-only
+- [GPTeam (`gpteam`)](gpteam-21881c74d7.md) -- backing-only
+- [gptme (`gptme`)](gptme-530e41180a.md) -- published+backing
+- [Graft (`graft`)](graft-4e762e9903.md) -- backing-only
+- [GrapeRoot (`graperoot`)](graperoot-c90edbe12b.md) -- backing-only
+- [GraphCode (`graphcode`)](graphcode-8f19c93e35.md) -- published-only
+- [Graphql-Cli (`graphql-cli`)](graphql-cli-84931d0e4c.md) -- backing-only
+- [Graphql-Playground (`graphql-playground`)](graphql-playground-507c3c20e2.md) -- backing-only
+- [great_cto (`great-cto`)](great-cto-a3b043465b.md) -- published+backing
+- [Greptile (`greptile`)](greptile-b282d274eb.md) -- published+backing
+- [Grinta (`grinta`)](grinta-8df5e1ab5d.md) -- published+backing
+- [Grok Build (`grok-build`)](grok-build-145a4e5cb6.md) -- published+backing
+- [Grok Build (xAI) (`grok-build-xai`)](grok-build-xai-f8b0d2e3af.md) -- backing-only
+- [Grok CLI (`grok-cli`)](grok-cli-91890f641d.md) -- published+backing
+- [Grok Studio (`grok-studio`)](grok-studio-d3dcd09d16.md) -- backing-only
+- [Groq (`groq`)](groq-0b79cf2de0.md) -- backing-only
+- [Groq Code CLI (`groq-code-cli`)](groq-code-cli-c769723b54.md) -- published+backing
+- [groundhog (`groundhog`)](groundhog-3b6435145e.md) -- backing-only
+- [guidance-for-multi-agent-orchestration-on-aws (`guidance-for-multi-agent-orchestration-on-aws`)](guidance-for-multi-agent-orchestration-on-aws-43411dd9ec.md) -- backing-only
+- [Guidewire AI Agent (`guidewire-ai-agent`)](guidewire-ai-agent-ae95f318d0.md) -- published+backing
+- [gwq (`gwq`)](gwq-28b19240f9.md) -- backing-only
+- [h5i (`h5i`)](h5i-6d993d4705.md) -- backing-only
+- [hal-9000 (`hal-9000`)](hal-9000-be0b72f095.md) -- backing-only
+- [HALO (`halo`)](halo-a4e63bcacf.md) -- backing-only
+- [handoff (`handoff`)](handoff-249215fed8.md) -- published+backing
+- [hapi (`hapi`)](hapi-0a98f7946d.md) -- published+backing
+- [harness-engineering-from-cc-to-ai-coding (`harness-engineering-from-cc-to-ai-coding`)](harness-engineering-from-cc-to-ai-coding-5982fd9cf5.md) -- backing-only
+- [Harness Starter Kit (`harness-starter-kit`)](harness-starter-kit-4c9cb1307d.md) -- backing-only
+- [harness-terminal (`harness-terminal`)](harness-terminal-5c5713b79c.md) -- published+backing
+- [HarnessRouter (`harnessrouter`)](harnessrouter-f947b974b8.md) -- published+backing
+- [harnss (`harnss`)](harnss-0ca4aaf355.md) -- published+backing
+- [HashAgent (`hashagent`)](hashagent-ae64cb3251.md) -- backing-only
+- [HASS-AI-Orchestrator (`hass-ai-orchestrator`)](hass-ai-orchestrator-52afdfa78e.md) -- backing-only
+- [hax (`hax`)](hax-e6ffaf87ee.md) -- published+backing
+- [hcf (`hcf`)](hcf-08d914300f.md) -- backing-only
+- [hcom (`hcom`)](hcom-7e11a79610.md) -- published+backing
+- [HCS (Hashgraph Consensus Service) (`hcs-hashgraph-consensus-service`)](hcs-hashgraph-consensus-service-5c49f37849.md) -- backing-only
+- [helixent (`helixent`)](helixent-cbd02b8e8b.md) -- published+backing
+- [herdr (`herdr`)](herdr-78193ef266.md) -- published+backing
+- [herdrm (`herdrm`)](herdrm-767da0e0d5.md) -- published+backing
+- [herm (`herm`)](herm-26bbd553cc.md) -- published+backing
+- [Hex (`hex`)](hex-128df13c1e.md) -- published-only
+- [hey (`hey`)](hey-fa690b8206.md) -- backing-only
+- [Hindsight (`hindsight`)](hindsight-aa47562598.md) -- backing-only
+- [hitch (`hitch`)](hitch-82e910cddf.md) -- backing-only
+- [hive (`hive`)](hive-7640da4029.md) -- published+backing
+- [Hivelore (`hivelore`)](hivelore-5e12913afc.md) -- backing-only
+- [Hivemoot (`hivemoot`)](hivemoot-9bdccd0c20.md) -- published+backing

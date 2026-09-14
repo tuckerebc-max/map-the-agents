@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: AliHamzaAzam
@@ -22,8 +22,6 @@ Repository map entry: [alihamzaazam/repomon](../../repos/alihamzaazam/repomon.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Mission control for managing a fleet of AI coding agents across many repos x many worktrees x many agents simultaneously. Unlike tools that run parallel agents in one repo, repomon is built for developers juggling 5-15 active projects with a fleet of agents running at once. Durable tmux-backed runtime, desktop app and TUI clients, git explorer, in-app editor, fleet mail ...
-
-(captured site page body (agents/repomon.md), not a verified repo-code finding)
-Running five agents in five repos means five terminals, five notification streams, and no overview of which one is blocked; repomon exists to collapse that into one screen. A single daemon backs a Tauri desktop app and a Rust TUI with four zoom levels, from a fleet overview down to a single agent's scrollback, with agents waiting on the human floated to the top. Fleet mail routes messages between agents per lane or broadcast, a git explorer and editor resolve merge conflicts in place, and a token-gated WebSocket bridge exposes the whole board over Tailscale for remote access. It is aimed at developers who treat multiple agent sessions as a permanent part of their workflow rather than an experiment.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/repomon.md)
+(published index `description`, not a verified repo-code finding)
+Running five agents in five repos means five terminals, five notification streams, and no overview of which one is blocked; repomon exists to collapse that into one screen. A single daemon backs a Tau
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

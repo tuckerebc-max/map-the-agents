@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: proxysoul
@@ -22,8 +22,6 @@ Repository map entry: [proxysoul/empryo](../../repos/proxysoul/empryo.md) (sourc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI coding agent that builds a live dependency graph (genome) of the repo using tree-sitter, then edits code through AST symbol-level operations rather than find-and-replace strings. 65+ atomic AST operations with rollback across 30+ languages, blast-radius analysis before edits, 5.7x fewer input tokens than competitors, time machine (git checkpoint per prompt), and free structural context compaction (no LLM call). Three ...
-
-(captured site page body (agents/empryo.md), not a verified repo-code finding)
-Empryo (successor to SoulForge) was built around the observation that string-level find-and-replace edits are the dominant failure mode of LLM coding agents. On launch it parses the repository with tree-sitter into a live graph of symbols, imports, and call sites, ranked by PageRank and git co-change frequency to estimate blast radius, and graph queries run locally at zero token cost. Edits are batches of atomic symbol-level operations with all-or-nothing rollback and a typecheck gate, and a multi-agent layer routes ten roles (brain, spark, explore, verify, and others) across 22 model providers so cheap models scout while strong models write. It ships as CLI, TUI, desktop app, and headless CLI on macOS, Linux, and Windows, with any MCP server and 576+ LSP servers attachable.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/empryo.md)
+(published index `description`, not a verified repo-code finding)
+Empryo (successor to SoulForge) was built around the observation that string-level find-and-replace edits are the dominant failure mode of LLM coding agents. On launch it parses the repository with tr
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

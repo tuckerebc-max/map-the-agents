@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Lekssays
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [lekssays/codebadger](https://gith
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Bridges Joern Code Property Graphs with LLMs via MCP - enables AI agents to run CPGQL queries, trace data flow/taint, slice programs, and hunt vulnerabilities across 13+ languages. Scales with per-CPG worker pools, memory-aware scheduling, Postgres/Redis backend. Accepted at ICSE 2026 Software Vulnerability Management Workshop.
-
-(captured site page body (agents/codebadger.md), not a verified repo-code finding)
-Codebadger, built at QCRI, gives LLM agents structured access to program analysis that plain code reading cannot provide. It constructs Joern Code Property Graphs from a git repository, local path, or pasted snippet, then exposes them over MCP so an external agent can run CPGQL queries, follow data-flow and taint paths, slice programs, and develop vulnerability proofs of concept across 13+ languages including Java, C/C++, Go, and Swift. The service scales through per-CPG worker pools with memory-aware scheduling on a Postgres and Redis backend, and documents an LLM workflow guide plus a security threat model for the analysis pipeline. It is a tools supplier rather than an agent: the repository is explicitly packaged as an MCP server (Dockerfile.mcp), with agents running externally, and it was published at the ICSE 2026 Software Vulnerability Management Workshop.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/codebadger.md)
+(backing feed `description`, not a verified repo-code finding)
+Codebadger, built at QCRI, gives LLM agents structured access to program analysis that plain code reading cannot provide. It constructs Joern Code Property Graphs from a git repository, local path, or
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

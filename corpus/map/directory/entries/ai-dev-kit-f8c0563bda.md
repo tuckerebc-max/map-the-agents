@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: databricks-solutions
@@ -22,8 +22,6 @@ Repository map entry: [databricks-solutions/ai-dev-kit](../../repos/databricks-s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Curated by Databricks Field Engineering, brings Databricks-specific patterns/skills to any AI coding agent with a Visual Builder App with Claude Code integration. Includes a standalone MCP server exposing 40+ Databricks tools. Certified Gold Project; works across 9+ AI coding tools with a single install.
-
-(captured site page body (agents/ai-dev-kit.md), not a verified repo-code finding)
-Building on Databricks means knowing house patterns for Unity Catalog, Spark Declarative Pipelines, AI/BI dashboards, and Genie spaces — knowledge generic coding agents lack. The AI Dev Kit ships those patterns as agent skills installable into Claude Code, Cursor, Codex, Gemini CLI, Copilot, and Windsurf, with distribution now delegated to the official databricks/databricks-agent-skills repo through the Databricks CLI and tracked in a skills.lock file. A standalone MCP server exposes over 40 Databricks operations to any MCP client, and a full-stack Visual Builder app provides chat-driven Databricks development that can itself run as an MCP server. Installation is a one-liner per platform that delegates to the Databricks CLI. It is aimed at developers building Databricks assets with any coding agent, under the Databricks source license rather than an OSI license.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ai-dev-kit.md)
+(backing feed `description`, not a verified repo-code finding)
+Building on Databricks means knowing house patterns for Unity Catalog, Spark Declarative Pipelines, AI/BI dashboards, and Genie spaces — knowledge generic coding agents lack. The AI Dev Kit ships thos
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: cline
@@ -22,8 +22,6 @@ Repository map entry: [cline/cline](../../repos/cline/cline.md) (source: backing
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Autonomous coding agent available as SDK, IDE extension, or CLI. Features Plan/Act modes, multi-agent teams with coordinator delegating to specialist agents, kanban-style parallel agent task boards, scheduled agents, messaging integrations (Slack, Telegram, Discord), and headless CI/CD mode.
-
-(captured site page body (agents/cline.md), not a verified repo-code finding)
-Cline's design premise is that autonomy must remain inspectable: every edit appears as a diff, every command can require approval, and checkpoints allow undo, which separates it from fire-and-forget agents. Plan/Act separation lets users review strategy before execution, and the same core powers an IDE extension, a headless CLI for pipelines, and an SDK for building custom agents, all reading the same .clinerules. Multi-agent teams coordinate through a coordinator that delegates to specialists with their own tools, and scheduled agents run recurring jobs like dependency checks. Apache-2.0 and model-agnostic across all major providers plus local runtimes, it is one of the most widely adopted open-source agents in this census.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/cline.md)
+(published index `description`, not a verified repo-code finding)
+Cline's design premise is that autonomy must remain inspectable: every edit appears as a diff, every command can require approval, and checkpoints allow undo, which separates it from fire-and-forget a
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

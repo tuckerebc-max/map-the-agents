@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: rustykuntz
@@ -22,8 +22,6 @@ Repository map entry: [rustykuntz/clideck](../../repos/rustykuntz/clideck.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local dashboard for running and coordinating multiple AI CLI coding agents (Claude Code, Codex, Gemini CLI, OpenCode, Pi) in one browser window with chat-style sidebar, live status detection, session resume, inter-agent communication, autopilot routing between agents, projects grouping, prompt library, and an E2E encrypted mobile relay - without sitting between agents rewriting prompts.
-
-(captured site page body (agents/clideck.md), not a verified repo-code finding)
-CliDeck rethinks the tmux pane grid as a chat-style interface: agents keep running in their real terminals, but the dashboard groups them by project, shows live working/idle/waiting status, previews messages, and resumes sessions, all while explicitly not sitting in the middle of the conversation. The ask-another-session feature injects a message into a target agent's terminal and returns the response, giving lightweight cross-agent consultation without an orchestration layer. Everything is local with no data leaving the machine, and a plugin API covers voice input and autopilot. Developers who run several CLIs but dislike pane-based multiplexers are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/clideck.md)
+(published index `description`, not a verified repo-code finding)
+CliDeck rethinks the tmux pane grid as a chat-style interface: agents keep running in their real terminals, but the dashboard groups them by project, shows live working/idle/waiting status, previews m
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

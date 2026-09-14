@@ -1,9 +1,9 @@
 # ahacker-1/cre-acquisition-orchestrator
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit a1cdd7f680a4 @ 071fa960b755d387
+Latest snapshot: commit a1cdd7f680a4 @ f92f1a7d140c2099
 
 ## Summary (orientation draft, not independently verified)
 

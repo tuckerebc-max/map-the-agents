@@ -1,9 +1,9 @@
 # agentsmesh/agentsmesh
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 1f90b14194d0 @ d9e238fa0886609c
+Latest snapshot: commit 1f90b14194d0 @ fdb5f6b69465f402
 
 ## Summary (orientation draft, not independently verified)
 

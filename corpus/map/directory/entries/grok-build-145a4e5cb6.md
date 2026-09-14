@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: xai-org
@@ -22,8 +22,6 @@ Repository map entry: [xai-org/grok-build](../../repos/xai-org/grok-build.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): SpaceXAI's terminal-based AI coding agent running as a full-screen TUI. Understands codebases, edits files, executes shell commands, searches the web, and manages long-running tasks. Can run interactively, headlessly for scripting/CI, or embedded in editors via Agent Client Protocol (ACP). Source synced periodically from the SpaceXAI monorepo.
-
-(captured site page body (agents/grok-build.md), not a verified repo-code finding)
-Grok Build is xAI's official coding agent, distributed as the grok binary and maintained as a periodically synced public mirror of the company's internal monorepo. It presents a full-screen, mouse-interactive terminal UI that reads the codebase, edits files, executes shell commands, performs web searches, and manages long-running tasks, with checkpoints and workspace awareness for safety. The same binary runs interactively, headlessly over stdio for scripts and CI, or embedded in editors through the Agent Client Protocol. The user guide documents MCP servers, plugins, hooks, skills, slash commands, and sandboxing, while authentication is by browser login to an xAI account with no third-party provider support. External contributions are not accepted, and the repository records the internal source revision it was built from.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/grok-build.md)
+(published index `description`, not a verified repo-code finding)
+Grok Build is xAI's official coding agent, distributed as the grok binary and maintained as a periodically synced public mirror of the company's internal monorepo. It presents a full-screen, mouse-int
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

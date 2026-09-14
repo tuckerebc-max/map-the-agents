@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: FareedKhan-dev
@@ -22,8 +22,6 @@ Repository map entry: [fareedkhan-dev/multi-agent-training-grpo](../../repos/far
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Implements GRPO (Generalized Reinforced Policy Optimization) algorithm to train multi-agent systems, improving planning and reducing hallucinations in long-horizon tasks through group-based trajectory evaluation and relative advantage learning.
-
-(captured site page body (agents/multi-agent-training-grpo.md), not a verified repo-code finding)
-The repository teaches a specific technique: reinforcement learning applied to the planning component of an agent system, using GRPO's group-relative advantage computation to improve long-horizon task performance. Three notebooks walk the full path — combining DeepMath-103K math problems with Natural Questions queries into training data, building a Planner/Executor/Verifier agent system over a vLLM-hosted Qwen model with sandboxed Python execution and search tools, and then training the planner with GRPO where GPT-4o scores trajectory outcomes and group-relative advantages drive policy updates through QLoRA on a single A100. The demo deliberately shows the untrained planner hallucinating — wrong tool order, wrong conclusions — before training. It is a blog-post companion from a prolific tutorial author, six commits and dormant, intended for readers learning how RL fits into agentic systems rather than for any production use.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/multi-agent-training-grpo.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository teaches a specific technique: reinforcement learning applied to the planning component of an agent system, using GRPO's group-relative advantage computation to improve long-horizon task
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

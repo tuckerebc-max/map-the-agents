@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: vectorize-io
@@ -22,8 +22,6 @@ Repository map entry: [vectorize-io/hindsight](../../repos/vectorize-io/hindsigh
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Agent memory system using biomimetic data structures (world facts, experiences, observations, mental models) to make agents genuinely learn over time rather than just recall conversation history. Achieves state-of-the-art on LongMemEval with a 2-line LLM wrapper for persistent memory.
-
-(captured site page body (agents/hindsight.md), not a verified repo-code finding)
-Hindsight is a memory service that lets AI agents accumulate durable knowledge instead of treating every session as isolated. It stores memories as world facts, experiences, evidence-backed observations, and auto-refreshing mental models organized into isolated memory banks, exposing three operations: retain (extracting canonical facts from interactions), recall (fusing semantic, BM25, graph, and temporal retrieval with reranking), and reflect (reasoning across memories to derive new connections). Every deployment exposes the same operations over REST, SDKs, an MCP endpoint for coding agents like Claude Code, and LLM wrapper functions, so existing agents pick it up without architectural change. Memory consolidation is evidence-based — observations carry quotes and proof counts and are refined rather than overwritten — and LongMemEval results have been reproduced by third parties. It is used as shared memory across coding agents, with per-repo memory built from git history, and runs self-hosted (PostgreSQL/pgvector) or as a managed cloud.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/hindsight.md)
+(backing feed `description`, not a verified repo-code finding)
+Hindsight is a memory service that lets AI agents accumulate durable knowledge instead of treating every session as isolated. It stores memories as world facts, experiences, evidence-backed observatio
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

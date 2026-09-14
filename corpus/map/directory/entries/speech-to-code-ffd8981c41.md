@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: dharllc
@@ -22,8 +22,6 @@ Repository map entry: [dharllc/speech-to-code](../../repos/dharllc/speech-to-cod
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Web app that converts spoken language into executable code using LLMs; combines speech input, repository files, and manual text into a unified prompt composer. Uses LLM APIs directly to bypass rate limits/outages; includes cost tracking, system prompt management with versioning, and persistent chat sessions. Archived (read-only as of Jun 26, 2026).
-
-(captured site page body (agents/speech-to-code.md), not a verified repo-code finding)
-Speech-To-Code was built for developers who think faster than they type at a keyboard: a browser composer combines real-time speech-to-text, selectable repository files, and manual text into one prompt, then sends it straight to OpenAI, Anthropic, or Google APIs. Generated code is displayed for review and clipboard transfer rather than written back to disk, so the tool sits at the prompt-composition stage of development rather than acting on the repository. The FastAPI backend tracks spend per session, and system prompts are managed with versioning for reuse. The repository was archived read-only in June 2026 after 321 commits, so it remains available as a reference implementation of voice-driven LLM interaction rather than a maintained tool.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/speech-to-code.md)
+(backing feed `description`, not a verified repo-code finding)
+Speech-To-Code was built for developers who think faster than they type at a keyboard: a browser composer combines real-time speech-to-text, selectable repository files, and manual text into one promp
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

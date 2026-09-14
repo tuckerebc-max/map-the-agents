@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Talha-Ali-5365
@@ -22,8 +22,6 @@ Repository map entry: [talha-ali-5365/instantrun](../../repos/talha-ali-5365/ins
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI-powered agent that autonomously deploys any GitHub repository on a user's local machine. Uses LangGraph workflow to clone, set up, and run repos with intelligent error handling and Dockerized environment for isolated execution. Only 6 commits.
-
-(captured site page body (agents/instantrun.md), not a verified repo-code finding)
-InstantRun automates the 'clone it and get it running' chore that costs every developer time on unfamiliar repositories. A LangGraph workflow extracts key files and README setup instructions, drafts a Dockerized build-and-run plan, executes it, and loops failures back through an LLM that edits the Dockerfile or commands before retrying. Output streams through an Alacritty terminal, and execution stays isolated inside a container. It is a solo experiment — six commits, Arch Linux oriented, gpt-4o-mini only — and has been dormant since January 2025, but it documents a complete agentic deploy loop.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/instantrun.md)
+(published index `description`, not a verified repo-code finding)
+InstantRun automates the 'clone it and get it running' chore that costs every developer time on unfamiliar repositories. A LangGraph workflow extracts key files and README setup instructions, drafts a
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

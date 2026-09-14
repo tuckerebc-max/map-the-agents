@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: linghungegeg
@@ -22,8 +22,6 @@ Repository map entry: [linghungegeg/linghun](../../repos/linghungegeg/linghun.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local-first, evidence-first AI coding terminal with an anti-hallucination system enforcing evidence-first engineering (reading facts, verifying, distinguishing verification scopes, refusing unverified claims, and expressing uncertainty as runtime constraints); Chinese and Windows are first-class citizens
-
-(captured site page body (agents/linghun.md), not a verified repo-code finding)
-Linghun's premise is that hallucinated success is the worst failure mode of coding agents, so it enforces evidence as a runtime constraint rather than a prompt instruction: answers are classified PASS/PARTIAL/FAIL against what was actually read and verified, and the final-answer gate refuses unverified claims. The harness adds workspace snapshots, git stable points and worktrees, controlled memory with failure learning, multi-model role routing, and an App Bridge capability runtime for connecting external applications via manifests and local HTTP connectors. Windows, PowerShell, and Chinese paths are first-class, reflecting its user base. It ships as an npm-distributed Apache-2.0 CLI with a published whitepaper in Chinese and English.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/linghun.md)
+(published index `description`, not a verified repo-code finding)
+Linghun's premise is that hallucinated success is the worst failure mode of coding agents, so it enforces evidence as a runtime constraint rather than a prompt instruction: answers are classified PASS
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

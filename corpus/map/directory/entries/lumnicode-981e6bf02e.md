@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: martian56
@@ -22,8 +22,6 @@ Repository map entry: [martian56/lumnicode](../../repos/martian56/lumnicode.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Free web-based BYOK AI code editor/generator using Monaco editor with LangGraph orchestration pipeline (plan-\>config-\>generate-\>finalize) for AI project generation and S3-compatible file storage.
-
-(captured site page body (agents/lumnicode.md), not a verified repo-code finding)
-Lumnicode packages a self-hosted alternative to subscription AI editors: operators deploy it against PostgreSQL and any S3-compatible store (MinIO in development), and users bring their own provider keys, which the backend calls directly so costs track usage and no code or keys are pooled. Project generation runs through a LangGraph state machine - plan the file structure, generate configuration, write source files to S3, finalize - with per-node progress streamed over WebSocket into the editor. For existing code, a Cmd+K palette handles explain, refactor, completion, bug-finding, and test generation. Individual developers and small teams who want editor AI without per-seat pricing or vendor lock-in are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/lumnicode.md)
+(published index `description`, not a verified repo-code finding)
+Lumnicode packages a self-hosted alternative to subscription AI editors: operators deploy it against PostgreSQL and any S3-compatible store (MinIO in development), and users bring their own provider k
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: alfianlosari
@@ -22,8 +22,6 @@ Repository map entry: [alfianlosari/appclipcodegenerator](../../repos/alfianlosa
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Provides a user-friendly SwiftUI graphical interface for the Apple App Clip Generator CLI tool, allowing easy customization and export of App Clip Codes on macOS
-
-(captured site page body (agents/appclipcodegenerator.md), not a verified repo-code finding)
-AppClipCodeGenerator gives Apple's command-line App Clip Code generator a native macOS interface: enter a URL, choose foreground/background colors or Apple templates, select NFC-only or camera-scan-only output, and export SVG or PNG. It requires macOS 11+, Apple's own CLI installed separately, and librsvg for export. The project is a hobby utility by Alfian Losari with exactly two commits, 101 stars, and no updates since May 2022, so it may not track current macOS or Apple CLI changes. Its presence in an AI harness census is purely incidental — there is no model, no agent, and no automation of any kind.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/appclipcodegenerator.md)
+(backing feed `description`, not a verified repo-code finding)
+AppClipCodeGenerator gives Apple's command-line App Clip Code generator a native macOS interface: enter a URL, choose foreground/background colors or Apple templates, select NFC-only or camera-scan-on
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

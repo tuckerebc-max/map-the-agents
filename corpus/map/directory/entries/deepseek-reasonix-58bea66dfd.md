@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: esengine
@@ -22,8 +22,6 @@ Repository map entry: [esengine/deepseek-reasonix](../../repos/esengine/deepseek
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): DeepSeek-native AI coding agent engineered around prefix-cache stability for long-running sessions. Distributed as a self-contained static Go binary. Features plan mode, permissions, workspace sandbox, per-turn checkpoints, config-driven providers/tools/plugins, multi-model support (executor + planner), and Extension Protocol v1 sidecars.
-
-(captured site page body (agents/deepseek-reasonix.md), not a verified repo-code finding)
-Reasonix is a DeepSeek-native coding agent built for long autonomous runs, with mechanics tuned to that goal: cache-aware context maintenance aligned with DeepSeek's prefix-cache pricing, a workspace sandbox, per-turn checkpoints with rewind, and a permission system for unattended operation. It runs as a single static Go binary in terminal/TUI, desktop, browser, or editor via ACP, with a config-driven setup (reasonix.toml), a planner/executor model split, and support for any OpenAI-compatible endpoint. Extensibility goes beyond MCP servers to an Extension Protocol with a Go SDK for sidecars that intercept events and add providers, and subagent profiles are first-class. The project is one of the most popular DeepSeek-focused harnesses (35k+ stars, very active development, bilingual docs, npm/Homebrew/desktop distribution).
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/deepseek-reasonix.md)
+(published index `description`, not a verified repo-code finding)
+Reasonix is a DeepSeek-native coding agent built for long autonomous runs, with mechanics tuned to that goal: cache-aware context maintenance aligned with DeepSeek's prefix-cache pricing, a workspace
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

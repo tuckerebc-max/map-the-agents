@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Arfo-du-blo
@@ -22,8 +22,6 @@ Repository map entry: [arfo-du-blo/cursor-in-browser](../../repos/arfo-du-blo/cu
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Deploys and runs Cursor AI Code Editor directly in a web browser using Docker/KasmVNC; tracks Cursor releases for x64 and arm64
-
-(captured site page body (agents/cursor-in-browser.md), not a verified repo-code finding)
-cursor-in-browser is a containerization project that runs the Cursor AI code editor inside a Docker image and streams its UI to a browser via KasmVNC, modeled on LinuxServer-style remote-desktop images. The image exposes the editor with basic-auth protection and persistent volumes for configuration and Cursor data, and its build scripts pull current Cursor releases for both x64 and arm64, with tags tracking versions from 0.47.7 onward and a 'latest' tag following new releases. All AI functionality remains Cursor's own; the repo contributes only the packaging. It serves developers who want Cursor on Chromebooks, tablets, or locked-down machines where local installation is impractical, and it remains actively maintained with images on Docker Hub and ghcr.io.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/cursor-in-browser.md)
+(backing feed `description`, not a verified repo-code finding)
+cursor-in-browser is a containerization project that runs the Cursor AI code editor inside a Docker image and streams its UI to a browser via KasmVNC, modeled on LinuxServer-style remote-desktop image
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

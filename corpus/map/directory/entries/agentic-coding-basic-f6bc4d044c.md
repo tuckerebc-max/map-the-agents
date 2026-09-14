@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: thixpin
@@ -22,8 +22,6 @@ Repository map entry: [thixpin/agentic-coding-basic](../../repos/thixpin/agentic
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Burmese-language tutorial book teaching agentic coding to junior developers by building a mini ecommerce site (Myanmar-specific twist: orders via Viber screenshots, no backend).
-
-(captured site page body (agents/agentic-coding-basic.md), not a verified repo-code finding)
-Junior developers in Myanmar face two compounding barriers to agentic coding: most material is English-only, and paid API access is out of reach, so this free MIT-licensed book by thixpin (Soe Thura) teaches the practice in Burmese using only a Claude subscription. The nine chapters build a small ecommerce site for a local shop — React, Vite, and Tailwind with no backend, orders relayed to the owner as Viber screenshots, a distinctly Myanmar workaround. Instruction covers the distinction between autocomplete and agents, CLAUDE.md and plan mode, writing reusable SKILL.md skills, regression testing, and seven context/token-economy techniques. A build script compiles the markdown into EPUB and PDF with embedded Noto Sans Myanmar fonts.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agentic-coding-basic.md)
+(backing feed `description`, not a verified repo-code finding)
+Junior developers in Myanmar face two compounding barriers to agentic coding: most material is English-only, and paid API access is out of reach, so this free MIT-licensed book by thixpin (Soe Thura)
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

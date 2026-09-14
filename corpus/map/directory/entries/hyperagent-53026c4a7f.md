@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: FSoft-AI4Code
@@ -22,8 +22,6 @@ Repository map entry: [fsoft-ai4code/hyperagent](../../repos/fsoft-ai4code/hyper
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): First generalist SE agent handling multiple task types (GitHub issue resolution, repo-level code generation, fault localization, program repair) across multiple programming languages (Python & Java). Multi-agent architecture (Planner, Navigator, Code Editor, Executor) mimicking human developer workflows with state-of-the-art results on SWE-Bench Verified (31.4%), RepoExec (53.3% Pass@5), and Defects4J (249 bugs fixed). Last commit November 2024.
-
-(captured site page body (agents/hyperagent.md), not a verified repo-code finding)
-HyperAgent came out of FPT Software's AI4Code research group as a generalist alternative to single-purpose repair or localization systems: one four-agent pipeline switches between patch generation and fault-prediction modes depending on the task. A Planner decomposes the issue, a Navigator locates relevant code using Zoekt and universal-ctags indexes, a Code Editor writes changes, and an Executor runs them in a Jupyter kernel, with each agent configurable to a different LLM. It reported 31.4% on SWE-Bench Verified, 25% on Lite, 53.3% Pass@5 on RepoExec, and 249 fixed Defects4J bugs. The repo has seen no commits since November 2024 and functions as archived research code accompanying the arXiv paper.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/hyperagent.md)
+(published index `description`, not a verified repo-code finding)
+HyperAgent came out of FPT Software's AI4Code research group as a generalist alternative to single-purpose repair or localization systems: one four-agent pipeline switches between patch generation and
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: OpenAutoCoder
@@ -22,8 +22,6 @@ Repository map entry: [openautocoder/live-swe-agent](../../repos/openautocoder/l
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): First runtime self-evolving software engineering agent that treats agents as software systems which can modify their own behavior at runtime; achieves SOTA 79.2% on SWE-bench Verified (Claude Opus 4.5) and 45.8% on SWE-Bench Pro with a minimal open scaffold
-
-(captured site page body (agents/live-swe-agent.md), not a verified repo-code finding)
-Live-SWE-agent rests on the observation that an agent is itself software, so an LLM-driven agent can extend and revise its own behavior while working — the implementation is deliberately a small config delta on mini-swe-agent rather than a new scaffold. Published results claim 79.2% on SWE-bench Verified with Claude Opus 4.5 and 45.8% on SWE-Bench Pro, self-reported through the project's own public leaderboard, which also serves as a platform for apples-to-apples model comparison. Trajectories, patches, and full run artifacts are published on Hugging Face for verification. Agent researchers use it to study runtime self-evolution and as a minimal baseline for fair model comparisons.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/live-swe-agent.md)
+(published index `description`, not a verified repo-code finding)
+Live-SWE-agent rests on the observation that an agent is itself software, so an LLM-driven agent can extend and revise its own behavior while working — the implementation is deliberately a small confi
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: cuga-project
@@ -22,8 +22,6 @@ Repository map entry: [cuga-project/cuga-agent](../../repos/cuga-project/cuga-ag
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): "Open-source generalist agent harness ranked
-
-(captured site page body (agents/cuga-agent.md), not a verified repo-code finding)
-CUGA, developed at IBM Research, targets enterprises that need agents to operate web applications and APIs under policy constraints rather than a developer's local code editor. Its architecture composes tools from OpenAPI specs, MCP servers, and LangChain integrations, layers a five-type policy system and human-in-the-loop approval gates over execution, and can delegate to specialized sub-agents through a supervisor that mixes local and remote A2A agents. The project's benchmark record (top of AppWorld from July 2025 and WebArena from February 2025) anchors its credibility, and deployment paths range from a local uv-managed install to Docker and Helm charts on Kubernetes. Users are enterprise automation teams, with models provisioned through OpenAI-compatible endpoints, watsonx, and other providers.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/cuga-agent.md)
+(published index `description`, not a verified repo-code finding)
+CUGA, developed at IBM Research, targets enterprises that need agents to operate web applications and APIs under policy constraints rather than a developer's local code editor. Its architecture compos
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: harnessworks
@@ -22,8 +22,6 @@ Repository map entry: [harnessworks/harness-starter-kit](../../repos/harnesswork
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Prompt-first starter kit that reframes the problem from 'prompt engineering the agent' to 'engineering the repository'; converts recurring agent failures into durable artifacts (instruction, constraint, check, memory record, drift check) for a continuous improvement loop grounded in repository evidence; separates failure types (functional, schema, workflow, boundary, timeout, hidden-access) instead of reducing to pass/fail; ships runtime-native skills for Codex and Claude ...
-
-(captured site page body (agents/harness-starter-kit.md), not a verified repo-code finding)
-harness-starter-kit applies the idea that a repository itself can be engineered to make coding agents fail less often. Rather than shipping a tool, it provides a structured kit — instructions, constraints, feedback loops, memory files, evaluation tasks, and governance documents — plus router prompts (/harness doctor, adopt, review, update, refresh) that a developer pastes into their existing agent, or installs as a Claude Code or Codex plugin for convenience. The kit's core loop converts each recurring agent failure into a durable artifact: an instruction, an automated check, a failure record, a memory entry, or a benchmark task, with a taxonomy separating functional, schema, workflow, boundary, timeout, and hidden-access failures. It takes an explicit measurement stance that harness health and agent effectiveness are separate metrics and ships templates for both. Teams adopting it range from solo developers to platform groups standardizing how agents interact with their repos.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/harness-starter-kit.md)
+(backing feed `description`, not a verified repo-code finding)
+harness-starter-kit applies the idea that a repository itself can be engineered to make coding agents fail less often. Rather than shipping a tool, it provides a structured kit — instructions, constra
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

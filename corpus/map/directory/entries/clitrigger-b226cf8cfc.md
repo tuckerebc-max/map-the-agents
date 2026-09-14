@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: HyperAITeam
@@ -22,8 +22,6 @@ Repository map entry: [hyperaiteam/clitrigger](../../repos/hyperaiteam/clitrigge
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): An 'IDE for AI CLI agents.' Unifies the AI-coding workflow into a single five-stage pipeline — Docs -\> Plan -\> Terminal -\> Autonomous Tasks -\> Version Control — where each stage inherits the context of the previous one. Runs multiple AI CLIs (Claude Code, Antigravity, Codex) in parallel, each in its own isolated git worktree, with scheduling around rate limits, ...
-
-(captured site page body (agents/clitrigger.md), not a verified repo-code finding)
-CLITrigger's thesis is that the AI-coding workflow scatters across five applications, and that a single workspace where each stage inherits context eliminates the re-explanation tax. Documentation lives in an Obsidian-style vault whose pages can be injected into prompts; planned tasks dispatch to multiple CLI agents in parallel worktrees with cron scheduling and rate-limit retry; multi-agent discussion (architect, developer, reviewer) runs before output reaches a review queue tied to a built-in Git client. An MCP endpoint and optional Cloudflare Tunnel extend it. It wraps the CLIs via adapters and runs no model loop itself. Individual developers managing several agent CLIs are the intended users.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/clitrigger.md)
+(published index `description`, not a verified repo-code finding)
+CLITrigger's thesis is that the AI-coding workflow scatters across five applications, and that a single workspace where each stage inherits context eliminates the re-explanation tax. Documentation liv
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

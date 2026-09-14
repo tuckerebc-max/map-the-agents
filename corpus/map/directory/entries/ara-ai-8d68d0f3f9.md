@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Ara
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Self-driving AI IDE for proactive, autonomous product development. Marketed as 'Your own coding agent, anywhere.' Website is minimal with only a hero section and login link; detailed information not publicly available.
-
-(captured site page body (agents/ara-ai.md), not a verified repo-code finding)
-Ara (ara.so) positions itself as 'the cloud coding agent for software engineers', built on the premise that agents with full computer access — not editor-embedded assistants — unlock real autonomous development. Beyond that positioning the public surface is minimal: a hero section, an early-beta login, and no documentation of how its agents run, what they can access, or what they cost. The product is cloud-hosted (no self-hosting path), closed-source, and gated behind beta signup, so claims about its autonomy cannot be evaluated from outside. Engineers evaluating it today can only request beta access; everything else is undocumented.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ara-ai.md)
+(published index `description`, not a verified repo-code finding)
+Ara (ara.so) positions itself as 'the cloud coding agent for software engineers', built on the premise that agents with full computer access — not editor-embedded assistants — unlock real autonomous d
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: jonrad
@@ -22,8 +22,6 @@ Repository map entry: [jonrad/lsp-mcp](../../repos/jonrad/lsp-mcp.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): MCP server bridging LSP to MCP, giving AI agents real language-aware code analysis (scope, types, shadowing, etc.) instead of relying on text parsing. Dynamically generates supported LSP methods from JSON schema and supports multiple language servers simultaneously; works with Claude Desktop, Cursor, and MCP CLI Client.
-
-(captured site page body (agents/lsp-mcp.md), not a verified repo-code finding)
-AI coding agents working through text search miss the type information, scope analysis, and diagnostics that language servers already compute. lsp-mcp bridges that gap over MCP: agents call tools that proxy into real LSP servers, getting symbol-accurate answers about definitions, references, and errors instead of grep approximations. Because the tool definitions are generated from the LSP JSON Schema, supporting an additional language is configuration rather than new code, and multiple language servers can run side by side with lazy initialization. Claude Desktop, Cursor, and MCP CLI clients are the documented consumers. The author labels it a proof of concept, and development has been minimal since early 2025.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/lsp-mcp.md)
+(backing feed `description`, not a verified repo-code finding)
+AI coding agents working through text search miss the type information, scope analysis, and diagnostics that language servers already compute. lsp-mcp bridges that gap over MCP: agents call tools that
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

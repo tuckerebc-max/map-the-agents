@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: kirill-markin
@@ -22,8 +22,6 @@ Repository map entry: [kirill-markin/repo-to-text](../../repos/kirill-markin/rep
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Generates an XML-formatted text representation of an entire repository (directory tree + file contents) and copies it to the clipboard, optimized for pasting codebases into LLMs for development and debugging.
-
-(captured site page body (agents/repo-to-text.md), not a verified repo-code finding)
-Repo-To-Text exists because pasting a codebase into a chat window loses the structure models need: it walks the repository, emits the directory tree plus file contents wrapped in XML tags, and copies the result to the clipboard or stdout. Selection follows gitignore semantics extended with its own settings file, so generated artifacts and vendored code can be excluded without touching the real .gitignore. A maximum word count per file splits oversized outputs deterministically. Python developers working with chat-based LLMs use it to hand a whole project to a model in one paste, and its Docker packaging lets CI jobs produce the same snapshot reproducibly. It deliberately contains no agent logic — conversion happens once, locally, before any model sees the text.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/repo-to-text.md)
+(backing feed `description`, not a verified repo-code finding)
+Repo-To-Text exists because pasting a codebase into a chat window loses the structure models need: it walks the repository, emits the directory tree plus file contents wrapped in XML tags, and copies
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

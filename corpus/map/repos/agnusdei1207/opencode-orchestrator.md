@@ -1,9 +1,9 @@
 # agnusdei1207/opencode-orchestrator
 
-Status: distilled - Freshness: current
+Status: distilled - Freshness: stale
 Catalog classes: agent
 Origins: alltheagents.org-backing - Projects: none
-Latest snapshot: commit 572c7bef8ca0 @ f055556af9cc5147
+Latest snapshot: commit a8f318192275 @ 7bfa1754a814c040
 
 ## Summary (orientation draft, not independently verified)
 

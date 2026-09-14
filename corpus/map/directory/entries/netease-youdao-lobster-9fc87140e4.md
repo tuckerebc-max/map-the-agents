@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
-- Category: other
+- Category: agent
 - Provider/maker: NetEase
 - License: Proprietary
 - Language: unknown
@@ -20,14 +20,8 @@ Directory membership: backing+pages.
 
 No repository record: repository source unavailable in this directory capture, not an absence of capability.
 
-Discrepancy between directory sources (not overwritten):
-
-- category: published=, backing=agent, page=other
-
 ## Description
 
-Highlight (site page `what_makes_it_special`): NetEase Youdao's 7x24 all-scenario personal assistant agent. Runs via secure local deployment, supports remote control through direct chat, and uses a dual-layer memory system for continuous growth. Supports rich Skills and is based on the 'openclaw framework ecosystem.'
-
-(captured site page body (agents/netease-youdao-lobster.md), not a verified repo-code finding)
-LobsterAI is NetEase Youdao's always-on personal assistant agent, positioned for 7x24 use across general scenarios rather than software development. It installs locally with one click so that user data stays on the machine, connects to mainstream LLM providers, and extends its capabilities through a skills system. A dual-layer memory design lets the agent accumulate context over time, and remote chat control lets the owner direct it when away from the machine. The product is aimed at Chinese consumers rather than developers, and sits within Youdao's broader education and productivity portfolio. Documentation, tutorials, and a changelog are published on the product site.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/netease-youdao-lobster.md)
+(backing feed `description`, not a verified repo-code finding)
+LobsterAI is NetEase Youdao's always-on personal assistant agent, positioned for 7x24 use across general scenarios rather than software development. It installs locally with one click so that user dat
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

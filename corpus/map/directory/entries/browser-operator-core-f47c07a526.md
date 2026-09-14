@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: BrowserOperator
@@ -22,8 +22,6 @@ Repository map entry: [browseroperator/browser-operator-core](../../repos/browse
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source, privacy-focused AI browser running locally on a Chromium fork with a multi-agent platform for autonomous web automation. All processing happens locally; supports complete offline operation via Ollama. Compatible with 100+ AI models. Open-source alternative to ChatGPT Atlas, Perplexity Comet, Dia, and Microsoft Copilot Edge Browser.
-
-(captured site page body (agents/browser-operator-core.md), not a verified repo-code finding)
-browser-operator-core is an open-source AI browser built as a fork of Chromium (28,000+ commits on its main branch), embedding a multi-agent automation platform directly into the browser rather than bolting it on through an extension or Playwright layer. Agents coordinate to complete research, shopping, and business-automation tasks — literature reviews, price tracking, lead generation, compliance audits — using computer-use-style interaction with pages. Model backends are pluggable across OpenRouter, OpenAI, Groq, and LiteLLM-proxied Ollama, so the whole stack can run offline with local models; MCP support allows connecting external tool servers. The project positions itself as an open alternative to ChatGPT Atlas, Perplexity Comet, Dia, and Microsoft's Copilot-bundled Edge, with privacy as the selling point: all inference and automation run locally under BSD-3-Clause licensing. It suits users and teams who need autonomous web work without sending browsing data to a cloud provider.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/browser-operator-core.md)
+(published index `description`, not a verified repo-code finding)
+browser-operator-core is an open-source AI browser built as a fork of Chromium (28,000+ commits on its main branch), embedding a multi-agent automation platform directly into the browser rather than b
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

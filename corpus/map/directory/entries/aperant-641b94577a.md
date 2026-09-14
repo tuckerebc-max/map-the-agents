@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: AndyMik90
@@ -22,8 +22,6 @@ Repository map entry: [andymik90/aperant](../../repos/andymik90/aperant.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Autonomous multi-agent coding framework that plans, builds, and validates software using Claude Code. It runs up to 12 parallel agents in isolated git worktrees with self-validating QA loops, AI-powered merge conflict resolution, and a Kanban board for visual task management.
-
-(captured site page body (agents/aperant.md), not a verified repo-code finding)
-Aperant (formerly Auto Claude) addresses the throughput ceiling of single-agent coding: it decomposes a goal into tasks, runs them concurrently in isolated worktrees, validates each with automated QA, and merges results with AI-assisted conflict resolution, holding session memory across runs and integrating GitHub, GitLab, and Linear. It drives the Claude Code CLI rather than bundling its own model access, so users need a Claude Pro/Max subscription. The AGPL-3.0 desktop app is free with prebuilt binaries for all three platforms; version 3.0 is a ground-up rebuild in a separate repo with cloud features, placing 2.x in maintenance mode with code PRs paused. Around 14.5k stars and an active Discord community, with docs in the repo guides/ and at aperant.com.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/aperant.md)
+(published index `description`, not a verified repo-code finding)
+Aperant (formerly Auto Claude) addresses the throughput ceiling of single-agent coding: it decomposes a goal into tasks, runs them concurrently in isolated worktrees, validates each with automated QA,
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: UniIDE
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [open-ide/debugai](https://github.
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): An AI agent specifically focused on software testing and debugging — a relatively niche use case for AI agents. The repository contains only a LICENSE and README with no source code, indicating very early-stage or abandoned development.
-
-(captured site page body (agents/debugai.md), not a verified repo-code finding)
-DebugAI exists as a repository title and a one-sentence README describing an AI agent for testing and debugging; no source code, documentation, releases, or community activity ever followed. The repository contains exactly two files — the README and a GPL-3.0 LICENSE — in a single commit, with zero stars and no issues or pull requests. It is effectively vaporware or a name reservation. Anyone evaluating coding harnesses should exclude it: there is no evidence the described agent was ever built.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/debugai.md)
+(backing feed `description`, not a verified repo-code finding)
+DebugAI exists as a repository title and a one-sentence README describing an AI agent for testing and debugging; no source code, documentation, releases, or community activity ever followed. The repos
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

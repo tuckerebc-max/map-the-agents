@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: chaterm
@@ -22,8 +22,6 @@ Repository map entry: [chaterm/chaterm](../../repos/chaterm/chaterm.md) (source:
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source AI-native terminal for cloud and infrastructure management that uses natural language to deploy services, troubleshoot, and automate operations across servers and Kubernetes, with a knowledge base and agent skills.
-
-(captured site page body (agents/chaterm.md), not a verified repo-code finding)
-Chaterm is an AI-native terminal built for infrastructure work: engineers describe a task in natural language and the agent plans and executes it across servers and Kubernetes clusters, handling deployment, troubleshooting, and rollback with an auditable trail rather than raw shell commands. Under the hood it combines an agent layer adapted from Cline with a knowledge-base subsystem that ingests technical manuals and internal documentation, retrievable through hybrid vector-plus-keyword search with RRF fusion; a plugin system handles authentication across cloud providers and Kubernetes clusters. It also carries a database workspace for common SQL databases, cross-device session sync, and voice input, positioning itself as an operations console rather than a developer IDE. SRE and infrastructure teams use it to reduce the gap between natural-language intent and multi-host execution, and the project carries OpenSSF Best Practices certification and a CNCF Landscape listing alongside roughly 3,000 stars.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/chaterm.md)
+(published index `description`, not a verified repo-code finding)
+Chaterm is an AI-native terminal built for infrastructure work: engineers describe a task in natural language and the agent plans and executes it across servers and Kubernetes clusters, handling deplo
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

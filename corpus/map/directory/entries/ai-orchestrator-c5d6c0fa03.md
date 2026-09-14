@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: Mybono
@@ -22,8 +22,6 @@ Repository map entry: [mybono/ai-orchestrator](../../repos/mybono/ai-orchestrato
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Zero dependency, portable, role-based local LLM orchestration via Bash, works with any language stack; being rebuilt on a new core engine (not an iteration, a replacement)
-
-(captured site page body (agents/ai-orchestrator.md), not a verified repo-code finding)
-The project paired Claude Code with local Ollama models in defined roles (plan, code, review, commit), aiming for a portable, zero-dependency setup that works against any language stack. That implementation is gone: the repository was reset to a single commit containing LICENSE, community files, and a README announcing a ground-up rebuild on a new engine being developed privately. Nothing is currently installable, and the roughly 100 stars predate the reset. The author has promised an announcement when the replacement ships, so the entry describes the pre-reset design rather than runnable code.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ai-orchestrator.md)
+(published index `description`, not a verified repo-code finding)
+The project paired Claude Code with local Ollama models in defined roles (plan, code, review, commit), aiming for a portable, zero-dependency setup that works against any language stack. That implemen
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

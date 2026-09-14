@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Hardik180704
@@ -22,8 +22,6 @@ Repository map entry: [hardik180704/neocode](../../repos/hardik180704/neocode.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source, terminal-native coding agent (IDE) keeping you in the terminal. NeoLens built-in local codebase explorer visualizes TypeScript dependency graphs, offers read-only file previews, and replays agent activity timelines (tokens, durations, costs) without sending source to cloud. PLAN mode (read-only investigation) and BUILD mode (implementation). MCP integrations via project-local .neocode/mcp.json (stdio and Streamable HTTP transports). Switchable plan/build agents via /agents command.
-
-(captured site page body (agents/neocode.md), not a verified repo-code finding)
-NeoCode targets developers who want an agentic coding loop without leaving the terminal. Sessions run through an OpenTUI interface with streaming responses, persistent re-openable sessions, and a strict separation between read-only PLAN mode and implementation BUILD mode. MCP servers are configured per project and denied by default: each tool gets an explicit read/write/disabled policy, and secrets are passed through environment references without leaving the server process. File contents never leave the machine — the hosted API receives only session activity, never code. The project is a Bun monorepo shipped as self-contained binaries bundling the Bun runtime, with Homebrew and installer-script distribution.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/neocode.md)
+(published index `description`, not a verified repo-code finding)
+NeoCode targets developers who want an agentic coding loop without leaving the terminal. Sessions run through an OpenTUI interface with streaming responses, persistent re-openable sessions, and a stri
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

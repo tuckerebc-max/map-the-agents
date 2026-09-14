@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: tomlin7
@@ -22,8 +22,6 @@ Repository map entry: [tomlin7/biscuit](../../repos/tomlin7/biscuit.md) (source:
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Lightweight (\<20MB), fast native code editor with AI agents, tree-sitter based code intelligence, DAP debugging, extension marketplace, ripgrep-based fast search, vim mode — all in a compact, extensible Python-based editor.
-
-(captured site page body (agents/biscuit.md), not a verified repo-code finding)
-Biscuit targets developers who want a fast, hackable editor without the gigabyte-scale installs of Electron IDEs. Built in Python on Tk, it ships tree-sitter syntax parsing, completions, LSP integration via extensions, ripgrep-powered search, git operations with split diffs, and a DAP debugging client in a package under 20MB installed with pip. Its AI layer supports Gemini and Anthropic models with a planning agent that wields ReadFile, EditFile, Grep, and RunTerminalCmd tools, plus file-attach chat context and LLM calls directly in terminals. An extension marketplace, GUI and CLI-based, adds language servers, debuggers, and themes, and vim mode plus DAP debugging round out the editing core. It is MIT-licensed, actively maintained, and aimed at developers who want a lightweight, extensible editor with built-in agentic assistance.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/biscuit.md)
+(published index `description`, not a verified repo-code finding)
+Biscuit targets developers who want a fast, hackable editor without the gigabyte-scale installs of Electron IDEs. Built in Python on Tk, it ships tree-sitter syntax parsing, completions, LSP integrati
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

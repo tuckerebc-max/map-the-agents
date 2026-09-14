@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: vibheksoni
@@ -22,8 +22,6 @@ Repository map entry: [vibheksoni/verbalcodeai](../../repos/vibheksoni/verbalcod
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI-powered codebase navigation directly in terminal; local-first (Ollama) with privacy focus; intelligent code search via embeddings; agent mode with tool suite; MCP integration for Claude Desktop; git history analysis; memory system.
-
-(captured site page body (agents/verbalcodeai.md), not a verified repo-code finding)
-VerbalCodeAI exists for developers who would rather ask an unfamiliar codebase questions than grep through it, and who do not want that code leaving their machine. It indexes the project locally with embeddings, then answers natural-language questions through semantic search backed by grep and regex fallback; its agent mode adds a broad tool suite — file reading, directory trees, symbol lookup, cross-references, git history, a memory system, web search, and command execution — with an ask_buddy tool that solicits a second model's opinion. An MCP server wraps the HTTP API so Claude Desktop and Cursor can call ask_agent or trigger indexing as external tools, and chat mode streams answers with markdown rendering. Privacy-conscious developers and students running local Ollama models are the primary users; the project is a small hobby-scale effort (36 commits, no releases) with a website at verbalcode.xyz.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/verbalcodeai.md)
+(published index `description`, not a verified repo-code finding)
+VerbalCodeAI exists for developers who would rather ask an unfamiliar codebase questions than grep through it, and who do not want that code leaving their machine. It indexes the project locally with
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

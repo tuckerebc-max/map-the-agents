@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: ofekron
@@ -22,8 +22,6 @@ Repository map entry: [ofekron/better-agent](../../repos/ofekron/better-agent.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Unifies multiple coding agents (Claude, Codex, Gemini, Antigravity) into one durable local workspace with persistent sessions, detached agents surviving restarts, offline-first capture, local inspection of all traces/tool calls, and multi-agent orchestration accessible from browser, desktop, or mobile.
-
-(captured site page body (agents/better-agent.md), not a verified repo-code finding)
-Better Agent addresses a practical pain point: developers running several AI coding agents in parallel lose sessions on restart, lose context across terminals, and have no unified surface to inspect what each agent did. It provides one durable local workspace where Claude Code, Codex, Gemini, and Antigravity agents run as detached processes with persistent sessions that survive restarts, and it captures work offline-first so results survive connectivity loss. Local inspection and reattachment let developers review and resume agent work across restarts. It is a workspace/session multiplexer rather than a coding agent - it manages agents rather than writing code itself. The project is a small free open-source utility, actively iterated, suited to developers running multiple agent CLIs locally.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/better-agent.md)
+(published index `description`, not a verified repo-code finding)
+Better Agent addresses a practical pain point: developers running several AI coding agents in parallel lose sessions on restart, lose context across terminals, and have no unified surface to inspect w
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

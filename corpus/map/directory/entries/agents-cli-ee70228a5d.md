@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: phnx-labs
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [phnx-labs/agents-cli](https://git
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Distributed agent factory — dispatches multiple AI coding agents (Claude, Codex, Antigravity, Grok, etc.) across your own machines in parallel on existing subscriptions. Fleet management, cross-agent session search, performance insights, routines/monitors scheduling, browser automation via your real Chrome, menu-bar fleet control, and one-config-syncs-to-all-agents resource management. Note: repo redirects to phnx-labs/agi-cli.
-
-(captured site page body (agents/agents-cli.md), not a verified repo-code finding)
-Individual developers accumulate subscriptions to several coding agents but can only run one or two at a time on a laptop. agents-cli turns the collection of machines a user already has into a dispatchable fleet: agents.yaml profiles are reconciled onto each device over SSH, OAuth logins stay native per machine rather than being copied, and runs fan out to one device or all of them through the same CLI. Routines (cron-style schedules) and event-driven monitors turn recurring work into scheduled jobs, while the feed, insights, and a macOS menu bar surface every open question across the fleet. Teams run parallel agents in dependency order, each in an isolated worktree, and cloud dispatch can hand tasks to managed providers that open PRs. It is free with no account requirement, licensed under FSL-1.1-Apache-2.0.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agents-cli.md)
+(published index `description`, not a verified repo-code finding)
+Individual developers accumulate subscriptions to several coding agents but can only run one or two at a time on a laptop. agents-cli turns the collection of machines a user already has into a dispatc
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

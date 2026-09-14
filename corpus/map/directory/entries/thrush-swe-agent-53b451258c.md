@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: shoyann
@@ -22,8 +22,6 @@ Repository map entry: [shoyann/thrush-swe-agent](../../repos/shoyann/thrush-swe-
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Dual-mode local SWE agent workbench: Assist mode (agent drafts edits, user approves each one) and Auto mode (runs bundled mini-swe-agent in isolated git worktree, returns report, diff, logs, trajectory without touching main workspace)
-
-(captured site page body (agents/thrush-swe-agent.md), not a verified repo-code finding)
-Thrush is a local, self-hosted workbench for software-engineering agents built around two deliberately different safety postures. In supervised operation the agent inspects the repo, reasons, drafts edits, and asks for confirmation, with every change staged as a pending revision the developer approves before anything touches disk. Delegating a full task instead routes it to a bundled mini-swe-agent instance running inside an isolated git worktree under data/auto-runs, after an Environment Doctor pre-check verifies clean git state, Docker, the model key, and GitHub readiness; the run produces a report, diff, logs, and full trajectory while the main workspace stays untouched, and opening a draft PR remains a manual step. The implementation is Next.js 15 with SQLite, keyed for DeepSeek, OpenAI, or Anthropic, with Windows users directed to WSL. It fits developers who want one local workbench that can switch between reviewed drafting and autonomous runs on throwaway worktrees.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/thrush-swe-agent.md)
+(published index `description`, not a verified repo-code finding)
+Thrush is a local, self-hosted workbench for software-engineering agents built around two deliberately different safety postures. In supervised operation the agent inspects the repo, reasons, drafts e
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

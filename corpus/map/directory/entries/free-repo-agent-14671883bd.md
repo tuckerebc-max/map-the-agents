@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: SUMITKUMARSINGH
@@ -22,8 +22,6 @@ Repository map entry: [sumitsingh4411/repo-agent](../../repos/sumitsingh4411/rep
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Free repo-aware autonomous coding agent (DeepSeek) that edits files and runs commands
-
-(captured site page body (agents/free-repo-agent.md), not a verified repo-code finding)
-The extension targets developers who want Copilot-style autonomous editing without a subscription, using DeepSeek V4 Flash (default, 1M context) or V4 Pro models behind a user-supplied API key, with any OpenAI-compatible provider configurable as a fallback. It indexes the repository and injects relevant files into answers, applies edits across files with Keep/Undo inline controls, and runs shell commands behind an approval gate. After editing, it runs typecheck or build and repairs errors before declaring a task done, and it keeps project context in a memory.md file plus a generated codebase brief. Vision input routes through a free Gemini endpoint by default, and one-click MCP plugins add GitHub, web search, Postgres, Playwright, and filesystem tools.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/free-repo-agent.md)
+(published index `description`, not a verified repo-code finding)
+The extension targets developers who want Copilot-style autonomous editing without a subscription, using DeepSeek V4 Flash (default, 1M context) or V4 Pro models behind a user-supplied API key, with a
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: ramarlina
@@ -22,8 +22,6 @@ Repository map entry: [ramarlina/agx](../../repos/ramarlina/agx.md) (source: bac
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local workspace for running AI coding agents across tickets, repos, and PRs. Runs a ticket -\> implementation -\> PR -\> review loop with human-in-the-loop gates at every step. Fully local execution (code never leaves your machine), checkpointed state that survives restarts with constant-cost resumption, unified workspace where tickets/code/PRs/reviews live in one window, and provider-agnostic switching (Claude \<-\> Codex \<-\> Gemini ...
-
-(captured site page body (agents/agx.md), not a verified repo-code finding)
-Running coding agents ad hoc means state lives in terminal scrollback and review discipline depends on memory. AGX gives every ticket a durable home — objectives, scheduled jobs, chat threads, and terminal sessions under a project, with SQLite (WAL) state that survives restarts — and connects it to Jira or Linear intake. Agents draft implementations in worktree isolation, a reviewer agent does first-pass PR review so humans judge only contested changes, and nothing irreversible proceeds without an explicit approve/reject gate. Agents can be switched mid-thread between Claude, Codex, Gemini, and Ollama, and role-grouped teams route work by tag. The tool ships as a CLI, a Next.js dashboard, and an Electron macOS app, and its own repository documents 167+ merged PRs authored by the agents it manages.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agx.md)
+(published index `description`, not a verified repo-code finding)
+Running coding agents ad hoc means state lives in terminal scrollback and review discipline depends on memory. AGX gives every ticket a durable home — objectives, scheduled jobs, chat threads, and ter
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

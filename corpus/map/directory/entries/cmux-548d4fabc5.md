@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: manaflow-ai
@@ -22,8 +22,6 @@ Repository map entry: [manaflow-ai/cmux](../../repos/manaflow-ai/cmux.md) (sourc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): A native macOS terminal built on libghostty (not Electron) designed specifically for parallel AI coding agent workflows, with a notification system (blue rings around panes), vertical tabs showing git branch/PR status, a built-in scriptable browser, and agent orchestration as native splits.
-
-(captured site page body (agents/cmux.md), not a verified repo-code finding)
-cmux argues that the right primitive for parallel agent work is a terminal that understands agents rather than another orchestrator: panes get attention rings when an agent needs input, tabs surface branch and PR metadata, and agent subagents appear as native panes. It embeds libghostty as a rendering library rather than forking Ghostty, so existing configs carry over, and a scriptable browser pane lets agents verify web UI changes they just made. Sessions restore across restarts, an iOS app allows monitoring from a phone, and a CLI/socket API makes it scriptable. With tens of thousands of stars it is the most prominent macOS-native agent terminal in this census.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/cmux.md)
+(published index `description`, not a verified repo-code finding)
+cmux argues that the right primitive for parallel agent work is a terminal that understands agents rather than another orchestrator: panes get attention rings when an agent needs input, tabs surface b
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

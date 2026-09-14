@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: yusifeng
@@ -22,8 +22,6 @@ Repository map entry: [yusifeng/formax](../../repos/yusifeng/formax.md) (source:
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source implementation of a Claude Code-style AI assistant built 100% with Codex (AI-assisted development traces intentionally kept in repo); implements Claude Code behavior by reverse-engineering/observation; offers both terminal (TUI) and web (GUI) interfaces modeled after the Codex UI. Beta stage, suited for learning/experimentation.
-
-(captured site page body (agents/formax.md), not a verified repo-code finding)
-Claude Code is closed source, and formax exists to answer the question of what a Claude Code-style harness looks like on the inside. The author reconstructed its behavior from network traces and observation, then rebuilt it in a TypeScript/Node monorepo with an Ink-based TUI, a web GUI, and a JSON-RPC app-server with a WebSocket bridge mode. It supports Anthropic and OpenAI-compatible endpoints, mirrors Claude Code workflows such as /init CLAUDE.md generation, plan mode, and sub-agent code review, and documents MCP and hooks as known gaps. The repository deliberately preserves the Codex build artifacts, plans, and docs, which makes it a reference for developers studying how agentic coding harnesses are constructed.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/formax.md)
+(published index `description`, not a verified repo-code finding)
+Claude Code is closed source, and formax exists to answer the question of what a Claude Code-style harness looks like on the inside. The author reconstructed its behavior from network traces and obser
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

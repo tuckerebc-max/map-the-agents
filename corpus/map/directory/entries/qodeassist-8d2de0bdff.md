@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Palm1r
@@ -22,8 +22,6 @@ Repository map entry: [palm1r/qodeassist](../../repos/palm1r/qodeassist.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI-powered coding assistant plugin for Qt Creator providing code completion, chat, quick refactoring, and project-aware tool calling for C++ and QML; dual MCP server/client support; agent skills compatible with Claude Code/Cursor skill format. Winding down / maintenance-only; no new features, issues and PRs closed
-
-(captured site page body (agents/qodeassist.md), not a verified repo-code finding)
-QodeAssist fills a gap most AI coding tools ignore: native AI assistance inside Qt Creator for C++ and QML development. Its chat and quick-refactor modes drive project-aware tools — reading and editing files, searching, building and reading compiler diagnostics, running terminal commands with confirmation, and tracking multi-step work through a todo tool. Unusually for an IDE plugin, it works bidirectionally with MCP: it can serve its project context to external clients like Claude Code or Cursor, and consume tools from external MCP servers itself. It implements the open Agent Skills format, discovering skills from project and global .claude/skills directories compatible with the Claude Code ecosystem. Completion and chat models come from local runtimes (Ollama, llama.cpp, LM Studio) or cloud providers, with FIM completion trigger modes that control API spend. The author has placed the project in maintenance-only status, so it remains useful for Qt developers but is not gaining features.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/qodeassist.md)
+(published index `description`, not a verified repo-code finding)
+QodeAssist fills a gap most AI coding tools ignore: native AI assistance inside Qt Creator for C++ and QML development. Its chat and quick-refactor modes drive project-aware tools — reading and editin
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

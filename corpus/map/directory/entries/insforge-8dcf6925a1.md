@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: InsForge
@@ -22,8 +22,6 @@ Repository map entry: [insforge/insforge](../../repos/insforge/insforge.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): All-in-one open-source backend platform designed specifically for agentic coding, providing AI coding agents with database, auth, storage, compute, hosting, and an AI gateway through MCP server and CLI+Skills interfaces, enabling agents to operate the backend like backend engineers.
-
-(captured site page body (agents/insforge.md), not a verified repo-code finding)
-InsForge inverts the usual relationship between coding agents and backends: instead of the agent writing Supabase glue code, the backend exposes itself as MCP tools and CLI skills the agent calls directly — run migrations, deploy edge functions, create buckets, configure auth, fetch logs. Postgres with pgvector, OAuth-ready auth, S3-compatible storage, Deno edge functions, and an OpenAI-compatible model gateway cover the full-stack surface, and self-hosting is one curl script plus Docker Compose, with Railway, Zeabur, and Sealos templates for one-click deploys. Teams building with Claude Code or Codex use it to let the agent operate infrastructure like a backend engineer rather than generating boilerplate against a foreign API.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/insforge.md)
+(backing feed `description`, not a verified repo-code finding)
+InsForge inverts the usual relationship between coding agents and backends: instead of the agent writing Supabase glue code, the backend exposes itself as MCP tools and CLI skills the agent calls dire
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

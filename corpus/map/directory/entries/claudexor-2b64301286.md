@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: razzant
@@ -22,8 +22,6 @@ Repository map entry: [razzant/claudexor](../../repos/razzant/claudexor.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Multi-harness control plane for AI coding agents that runs them behind one typed interface with quota-aware rotation, shared thread context, and cross-model review; best-of-N races with independent reviewers/arbitration, honest budget/quota accounting (never reports unknown cost as $0), deterministic gates, multi-account credential profiles with live quota tracking, no telemetry
-
-(captured site page body (agents/claudexor.md), not a verified repo-code finding)
-Claudexor targets the practitioner holding several paid agent subscriptions who wants them as interchangeable capacity rather than separate tools. A local daemon routes turns to a chosen harness, resumes native sessions for continuity, and turns write requests into inspectable patches; quota rotation switches accounts only on typed vendor-limit signals, and best-of-N races select winners through independent, ideally cross-family, review rather than self-grading. A --council mode has multiple harnesses draft competing plans that a primary merges. Everything runs locally with file-based artifacts, and the v3.8.0 release's missing signing documents were the one notable supply-chain stumble. Solo power users running multi-agent setups are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/claudexor.md)
+(published index `description`, not a verified repo-code finding)
+Claudexor targets the practitioner holding several paid agent subscriptions who wants them as interchangeable capacity rather than separate tools. A local daemon routes turns to a chosen harness, resu
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

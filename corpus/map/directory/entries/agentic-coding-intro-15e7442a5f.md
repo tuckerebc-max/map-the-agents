@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: seandavi
@@ -22,8 +22,6 @@ Repository map entry: [seandavi/agentic-coding-intro](../../repos/seandavi/agent
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Tutorial/handout introducing agentic coding principles and practice for developers (especially R/Python users) new to AI coding tools; uses Google Antigravity as primary example with four practice projects (Bioconductor repo exploration, messy text parsing, workflow auditing, foundation model survey).
-
-(captured site page body (agents/agentic-coding-intro.md), not a verified repo-code finding)
-Computational researchers in R and Python encounter coding-agent documentation written for web developers, so this handout teaches the same concepts through scientific-computing examples. It covers tokens and context windows, MCP servers, skills, and Markdown instruction files, then applies them in four practice projects: exploring a Bioconductor repository, parsing messy text files, auditing an existing workflow, and surveying foundation models. Google Antigravity serves as the primary demonstrated tool — free but rate-limited — with Claude Code and Gemini CLI covered alongside, including practical cost notes (Claude Pro at $20/month for Claude Code access). NIH U24 grant support and the Bioconductor focus point at biomedical research audiences new to AI coding tools.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agentic-coding-intro.md)
+(backing feed `description`, not a verified repo-code finding)
+Computational researchers in R and Python encounter coding-agent documentation written for web developers, so this handout teaches the same concepts through scientific-computing examples. It covers to
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

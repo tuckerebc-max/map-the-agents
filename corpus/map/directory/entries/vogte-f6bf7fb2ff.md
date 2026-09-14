@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: piqoni
@@ -22,8 +22,6 @@ Repository map entry: [piqoni/vogte](../../repos/piqoni/vogte.md) (source: backi
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Agentic TUI for existing Go codebases that uses AST parsing to extract compressed, relevant context for the LLM. Two-step context approach: first extracts structs/interfaces/methods/signatures, asks LLM which files it needs in full, then provides full content. Runs go vet as a sanity check after patching. Stateless design (each message is a new chat) for cost-effectiveness. Features local PR review and ...
-
-(captured site page body (agents/vogte.md), not a verified repo-code finding)
-vix-like tools send whole repositories to the model; vogte exists to keep context small and Go-specific. It parses a codebase into abstract syntax trees, extracts structs, interfaces, methods, and signatures, and in a first step asks the LLM which files it needs in full before providing their complete contents, treating each request as a fresh one-shot chat rather than a retry-on-failure agentic loop. With the -agent flag it applies line-based patches directly to files and then runs go vet as a sanity check. It works with any OpenAI-compatible API and Anthropic models including via AWS Bedrock. The audience is Go developers maintaining existing codebases who want low-cost, one-shot context delivery rather than long interactive sessions.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/vogte.md)
+(published index `description`, not a verified repo-code finding)
+vix-like tools send whole repositories to the model; vogte exists to keep context small and Go-specific. It parses a codebase into abstract syntax trees, extracts structs, interfaces, methods, and sig
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

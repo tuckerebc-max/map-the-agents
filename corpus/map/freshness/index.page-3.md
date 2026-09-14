@@ -2,9 +2,6 @@
 
 Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 
-- [the-open-engine/zeroshot](../repos/the-open-engine/zeroshot.md) [coverage: partial]
-- [the-pr-agent/pr-agent](../repos/the-pr-agent/pr-agent.md) [coverage: partial]
-- [thefalc/multi-agent-ai-sdr-flink-orchestrator](../repos/thefalc/multi-agent-ai-sdr-flink-orchestrator.md) [coverage: complete]
 - [thelinkapi/vibe-coding](../repos/thelinkapi/vibe-coding.md) [coverage: complete]
 - [theneo-inc/cartlis](../repos/theneo-inc/cartlis.md) [coverage: complete]
 - [thesylvester/crispy](../repos/thesylvester/crispy.md) [coverage: complete]
@@ -132,8 +129,11 @@ Page 3 of 3. [First page](index.md) | [Previous](index.page-2.md)
 ## pending (0)
 
 
-## stale (0)
+## stale (3)
 
+- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
+- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
+- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
 
 ## refresh-failed (62)
 

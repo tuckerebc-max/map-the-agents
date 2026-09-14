@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: limecloud
@@ -22,8 +22,6 @@ Repository map entry: [limecloud/lime](../../repos/limecloud/lime.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source full-stack desktop AI agent combining coding, file operations, terminal commands, tool calls, research, content creation, and multi-agent collaboration in one workspace. Desktop GUI agent with Thread/Turn/Item projections for traceable task chains. Full-stack multimodal (text, code, images, audio, video, PDFs, structured data). Multi-agent coordination delegates research/implementation/testing/documentation to different agents with shared context. Skills system encodes repeatable procedures as reusable execution ...
-
-(captured site page body (agents/lime.md), not a verified repo-code finding)
-Lime packages the agentic loop — context, tools, permissions, verification, delivery — into a desktop application rather than a terminal, so users watch plans, approve actions, and inspect diffs and artifacts in a visual workspace. Tasks are structured as Thread/Turn/Item projections that can be paused, reviewed, restored, and continued, and multi-agent collaboration splits research, implementation, testing, and documentation across agents sharing one context. A Rust app server handles the backend, and a Skills system encodes repeatable procedures as units callable through MCP. It is provider-agnostic with local-by-default data, targets developers and technical users who want a GUI over an agentic loop, and runs on macOS and Windows (Linux builds paused).
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/lime.md)
+(published index `description`, not a verified repo-code finding)
+Lime packages the agentic loop — context, tools, permissions, verification, delivery — into a desktop application rather than a terminal, so users watch plans, approve actions, and inspect diffs and a
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

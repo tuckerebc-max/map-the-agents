@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
-- Category: agent-sdk
+- Category: agent
 - Provider/maker: unknown
 - License: unknown
 - Language: unknown
@@ -22,12 +22,10 @@ Repository map entry: [yasinonline/agenticai](../../repos/yasinonline/agenticai.
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=agent-sdk, backing=agent, page=agent-sdk
+- category: published=agent-sdk, backing=agent, page=
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Was described as a framework for building autonomous decision-making agents integrating reinforcement learning, NLP, and multi-agent systems. GitHub repo (YasinOnline/AgenticAI) is deleted.
-
-(captured site page body (agents/agenticai.md), not a verified repo-code finding)
-The project set out to integrate reinforcement learning, natural language processing, and multi-agent coordination into a single framework for autonomous decision-making. The repository has been deleted, so there is no longer any code, documentation, or commit history to verify what was actually implemented versus described. Nothing about its mechanics, adopters, or maturity can be verified from primary sources. The entry is retained only as a record that the project existed and is now gone.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agenticai.md)
+(published index `description`, not a verified repo-code finding)
+The project set out to integrate reinforcement learning, natural language processing, and multi-agent coordination into a single framework for autonomous decision-making. The repository has been delet
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -8,7 +8,7 @@ Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
 
 Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
-## current (990)
+## current (987)
 
 - [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
 - [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
@@ -62,10 +62,7 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [agentscope-ai/agentscope](../repos/agentscope-ai/agentscope.md) [coverage: partial]
 - [agentscope-ai/agentteams](../repos/agentscope-ai/agentteams.md) [coverage: partial]
 - [agentsmd/agents.md](../repos/agentsmd/agents.md.md) [coverage: complete]
-- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
 - [agi-is-going-to-arrive/ahadiff](../repos/agi-is-going-to-arrive/ahadiff.md) [coverage: complete]
-- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
-- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
 - [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) [coverage: complete]
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) [coverage: complete]
 - [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
@@ -437,3 +434,6 @@ Current means the dossier matches the latest locally collected snapshot. A looku
 - [ise-uiuc/magicoder](../repos/ise-uiuc/magicoder.md) [coverage: complete]
 - [ishandutta2007/awesome-ai-code-editor](../repos/ishandutta2007/awesome-ai-code-editor.md) [coverage: complete]
 - [ismorphism/deepgame](../repos/ismorphism/deepgame.md) [coverage: complete]
+- [isrengel/installcursoreditorlinux](../repos/isrengel/installcursoreditorlinux.md) [coverage: complete]
+- [itayinbarr/little-coder](../repos/itayinbarr/little-coder.md) [coverage: partial]
+- [its-maestro-baby/maestro](../repos/its-maestro-baby/maestro.md) [coverage: partial]

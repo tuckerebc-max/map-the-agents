@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: onllm-dev
@@ -22,8 +22,6 @@ Repository map entry: [onllm-dev/onui](../../repos/onllm-dev/onui.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Annotation-first UI pair programming: a browser extension (Chrome + Edge + Firefox) that lets humans visually mark up UI elements/regions for AI agents via in-page annotation and draw mode; local-only MCP bridge with no cloud backend, privacy-preserving; auto-registers onui-local MCP for Claude Code and Codex; shadow DOM isolation for stable styling; multi-format export (compact to forensic) for varying agent context ...
-
-(captured site page body (agents/onui.md), not a verified repo-code finding)
-onUI addresses the gap between what a developer sees in a browser and what a coding agent can understand from a screenshot or text description. The extension adds annotate and draw modes to any web page, letting users tag elements or regions with intent and severity before exporting structured context at several detail levels. A local MCP server hands that context to agents such as Claude Code or Codex, with no cloud service in the path. Because annotations target the rendered page, no instrumentation of the target application is required, and the extension stays off by default per tab. The project ships as a Chrome, Edge, and Firefox extension with a native bridge for the MCP server.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/onui.md)
+(backing feed `description`, not a verified repo-code finding)
+onUI addresses the gap between what a developer sees in a browser and what a coding agent can understand from a screenshot or text description. The extension adds annotate and draw modes to any web pa
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

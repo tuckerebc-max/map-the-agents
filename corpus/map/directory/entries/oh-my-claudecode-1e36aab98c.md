@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: Yeachan-Heo
@@ -22,8 +22,6 @@ Repository map entry: [yeachan-heo/oh-my-claudecode](../../repos/yeachan-heo/oh-
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Teams-first multi-agent orchestration for Claude Code with zero learning curve, offering multiple orchestration modes (Team, Autopilot, Ralph, Ultrawork, UltraQA, Pipeline), smart model routing for cost savings, and cross-provider orchestration via tmux CLI workers.
-
-(captured site page body (agents/oh-my-claudecode.md), not a verified repo-code finding)
-oh-my-claudecode extends Claude Code with a teams-first orchestration layer: a staged pipeline (plan, PRD, execute, verify, fix) using Claude Code's native agent teams, with autopilot and persistent verify-fix loops for autonomous runs. As a plugin plus companion CLI it also spawns tmux worker panes running Codex, Gemini, Antigravity, Grok, or Cursor CLIs, letting one model review another's output. Smart model routing downgrades cheap tasks to smaller models for token savings, and a skill-learning system extracts reusable procedures into project files. Natural-language shortcuts and zero-config defaults target users who do not want to study Claude Code's internals. Installation is via the Claude Code plugin marketplace or npm, with tmux required for team features.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/oh-my-claudecode.md)
+(published index `description`, not a verified repo-code finding)
+oh-my-claudecode extends Claude Code with a teams-first orchestration layer: a staged pipeline (plan, PRD, execute, verify, fix) using Claude Code's native agent teams, with autopilot and persistent v
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

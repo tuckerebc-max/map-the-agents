@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: zjrosen
@@ -22,8 +22,6 @@ Repository map entry: [zjrosen/perles](../../repos/zjrosen/perles.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal UI for Beads issue tracking with custom BQL (Beads Query Language) supporting boolean logic, date filtering, dependency tree traversal, and customizable kanban board views. Also described as a multi-agent orchestration control plane workflow runner, though specific agent orchestration features are not detailed in the README.
-
-(captured site page body (agents/perles.md), not a verified repo-code finding)
-perles exists for developers who manage their work in Beads, Steve Yegge's local-first issue tracker, and want a richer interface than its CLI offers. The Go-based terminal UI renders issues as customizable kanban boards and supports searching through BQL, a query language with boolean logic, date filtering, and traversal of dependency trees between issues. It runs inside any project containing a .beads directory and requires a beads database of version 0.62 or newer, upgrading via a migration command where needed. The repository's description also references a multi-agent orchestration control plane aspect, with an ORCHESTRATION.md exploring workflow-runner ideas, but the shipped product is the issue TUI. Its users are Beads adopters — often developers running AI coding agents that file and consume Beads issues as their task queue.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/perles.md)
+(backing feed `description`, not a verified repo-code finding)
+perles exists for developers who manage their work in Beads, Steve Yegge's local-first issue tracker, and want a richer interface than its CLI offers. The Go-based terminal UI renders issues as custom
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

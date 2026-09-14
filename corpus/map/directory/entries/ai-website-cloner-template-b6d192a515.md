@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: JCodesMore
@@ -22,8 +22,6 @@ Repository map entry: [jcodesmore/ai-website-cloner-template](../../repos/jcodes
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Clones any website with a single command (/clone-website \<url\>) using AI coding agents, producing a clean Next.js codebase via a multi-phase pipeline (Reconnaissance -\> Foundation -\> Component Specs -\> Parallel Build -\> Assembly & QA) that dispatches parallel builder agents in git worktrees.
-
-(captured site page body (agents/ai-website-cloner-template.md), not a verified repo-code finding)
-Users generate a repo from the template, run npm install, and invoke /clone-website \<url\> inside their preferred agent (Claude Code with Chrome, Codex, Cursor, Gemini CLI, and ten others via synced .claude/.codex/.cursor/ rule directories). The pipeline screenshots and probes the target, extracts fonts, colors, and computed styles into spec files, dispatches builder agents into per-section git worktrees, then merges and visually diffs the result against the original. The stack is Next.js 16, React 19, TypeScript strict mode, and Tailwind v4, with Docker support. It is MIT-licensed, sponsored, and explicitly prohibits phishing and impersonation use.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ai-website-cloner-template.md)
+(backing feed `description`, not a verified repo-code finding)
+Users generate a repo from the template, run npm install, and invoke /clone-website \<url\> inside their preferred agent (Claude Code with Chrome, Codex, Cursor, Gemini CLI, and ten others via synced .c
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

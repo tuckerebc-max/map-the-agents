@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: stravu
@@ -22,8 +22,6 @@ Repository map entry: [stravu/crystal](../../repos/stravu/crystal.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Desktop app (now deprecated, replaced by Nimbalyst) for running multiple Codex and Claude Code sessions in parallel git worktrees to test, compare approaches, and manage AI-assisted development workflows.
-
-(captured site page body (agents/crystal.md), not a verified repo-code finding)
-Crystal solved a specific workflow problem: developers running multiple Claude Code or Codex sessions against the same repository would collide over working-tree state. The Electron app gave every session an isolated git worktree, letting users run competing approaches in parallel, compare diffs, and merge the winner. It was MIT-licensed and gathered about 3,100 stars before development ended. As of February 2026 the project was renamed to Nimbalyst, and the repository now directs users to the successor rather than accepting feature work; existing users can still run Crystal, but active development happens elsewhere.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/crystal.md)
+(published index `description`, not a verified repo-code finding)
+Crystal solved a specific workflow problem: developers running multiple Claude Code or Codex sessions against the same repository would collide over working-tree state. The Electron app gave every ses
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

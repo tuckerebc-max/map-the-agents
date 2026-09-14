@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: khanzzirfan
@@ -22,8 +22,6 @@ Repository map entry: [khanzzirfan/testai-agent](../../repos/khanzzirfan/testai-
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): GitHub Action that uses an AI agent to write automated tests on pull requests. Built on the actions/typescript-action template. 153 commits, 1 star.
-
-(captured site page body (agents/testai-agent.md), not a verified repo-code finding)
-TestAI-Agent packages an AI agent as a GitHub Action whose job is generating automated tests for pull requests, so review pipelines gain tests written by a model rather than relying on authors to supply coverage. The repository is built on the official actions/typescript-action template, with LangGraph noted in the source as the agent framework, and it publishes a marketplace action named testifyai-agent. Documentation is minimal — the README remains largely template boilerplate, inputs and model configuration are inferred from .env.example, and the repo is tiny (1 star, 153 commits). It runs on Node.js 20+ like any TypeScript action, and the MIT-licensed source is available for inspection. The practical audience is hobbyists and early experimenters wiring agent-generated tests into PR workflows; its immaturity is documented as part of the census record.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/testai-agent.md)
+(published index `description`, not a verified repo-code finding)
+TestAI-Agent packages an AI agent as a GitHub Action whose job is generating automated tests for pull requests, so review pipelines gain tests written by a model rather than relying on authors to supp
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

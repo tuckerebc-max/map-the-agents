@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: dbt Labs
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI engineer in dbt for models, tests, docs
-
-(captured site page body (agents/dbt-copilot.md), not a verified repo-code finding)
-dbt Copilot is dbt Labs' AI assistant for analytics engineering, built into the dbt platform to draft SQL models, generate tests, and write documentation that conforms to the existing project structure rather than producing free-floating code. It is part of dbt Cloud (now under the Fivetran-merged dbt), where the advanced tier of Copilot is included in Enterprise and Enterprise+ plans rather than the free Developer or Starter tiers. The feature set positions it as an in-workflow accelerator for teams whose day-to-day output is governed data transformation code. Its users are analytics engineers maintaining dbt projects in dbt Studio or IDEs alongside Cursor, Claude Code, Windsurf, and VS Code integrations.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/dbt-copilot.md)
+(published index `description`, not a verified repo-code finding)
+dbt Copilot is dbt Labs' AI assistant for analytics engineering, built into the dbt platform to draft SQL models, generate tests, and write documentation that conforms to the existing project structur
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

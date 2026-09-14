@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: ZSJ305
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [zsj305/angles-cli](https://github
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal agentic coding assistant compiled into a single 1.6MB static Rust binary (no runtime needed); drives 30+ built-in tools and supports switching between 11 model providers at will; includes a local HTTP gateway (angles serve) with web console and REST API.
-
-(captured site page body (agents/angles-cli.md), not a verified repo-code finding)
-Angles targets minimal-footprint environments: one static binary, five prebuilt platforms, no Node or Python runtime, and a curated angles-* toolset spanning files, terminal, git, and web fetch/search. Reads are unrestricted, writes follow the configured approval policy, and deletions always prompt; the agent can emit operation plans before acting (\`angles plan\`) and serve a local HTTP gateway (angles serve) for browser chat and provider switching. Models are normalized across OpenAI Chat Completions, Anthropic Messages, and Gemini native protocols across OpenAI, Claude, Gemini, DeepSeek, Grok, MiniMax, OpenRouter, Qwen, GLM, Kimi, and custom endpoints. It is very early: 14 commits, 64 stars, no releases — promising on paper, immature in practice.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/angles-cli.md)
+(published index `description`, not a verified repo-code finding)
+Angles targets minimal-footprint environments: one static binary, five prebuilt platforms, no Node or Python runtime, and a curated angles-* toolset spanning files, terminal, git, and web fetch/search
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

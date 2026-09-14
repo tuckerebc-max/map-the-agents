@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: THUDM
@@ -22,8 +22,6 @@ Repository map entry: [thudm/scenegenagent](../../repos/thudm/scenegenagent.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): LLM agent that generates industrial scenes through executable C# code with precise quantitative control (measurements/positioning), structured/calculable format, layout verification, and iterative refinement; ships SceneInstruct, a dataset for fine-tuning open-source LLMs that lifts Llama3.1-70B to approach GPT-4o performance; achieves up to 81.0% success rate on real-world industrial tasks. ACL 2025 Main paper.
-
-(captured site page body (agents/scenegenagent.md), not a verified repo-code finding)
-Industrial scene design — factory floors, equipment layouts — demands numeric precision that free-form LLM output cannot guarantee, so the THUDM agent generates executable C# code whose structure makes every measurement and position explicit and checkable. The loop proposes a layout, verifies it against quantitative constraints, and refines until the scene satisfies the requirements, with results published at ACL 2025 Main. The repository includes the agent framework, the SceneInstruct fine-tuning dataset, and training and inference guides, deployable as a Gradio app against API models or local checkpoints. It is research code — nine commits, no releases — aimed at researchers in layout generation and industrial digital twins rather than production users. The technique generalizes: any domain needing quantitative, verifiable spatial output can adopt the code-as-specification pattern.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/scenegenagent.md)
+(published index `description`, not a verified repo-code finding)
+Industrial scene design — factory floors, equipment layouts — demands numeric precision that free-form LLM output cannot guarantee, so the THUDM agent generates executable C# code whose structure make
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: jazzenchen
@@ -22,8 +22,6 @@ Repository map entry: [jazzenchen/vibearound](../../repos/jazzenchen/vibearound.
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): All-in-one hub that launches multiple AI coding agents (Claude Code, Codex CLI, Gemini CLI, Pi, OpenCode, etc.) from a single UI with an API bridge that translates between incompatible provider protocols (OpenAI Responses, Chat Completions, Anthropic Messages, Gemini Generate Content). Enables session continuity across desktop/CLI/web/mobile/IM channels (Feishu, Discord, Slack, Telegram).
-
-(captured site page body (agents/vibearound.md), not a verified repo-code finding)
-VibeAround exists because the agent ecosystem fragmented: every CLI has its own config format and protocol, subscriptions overlap, and a session is trapped on the device where it started. The hub launches Claude Code, Codex, Gemini CLI, Pi, OpenCode, and desktop variants from one desktop/CLI/web surface with per-agent profiles, workspaces, and terminals, without modifying the agents' own configs. Its standalone API bridge translates between OpenAI Responses, Chat Completions, Anthropic Messages, and Gemini shapes — with model aliases, provider presets, and a live request recorder — and can expose local agents as OpenAI/Anthropic-compatible endpoints. Sessions continue across devices and IM channels (Feishu/Lark, Discord, Slack, Telegram, WeChat) via /pickup handover, with host-side web search injected when a provider lacks it. Individual developers running several agents — largely a single active maintainer's project — use it to keep subscriptions and sessions unified; it is MIT-licensed and local-first.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/vibearound.md)
+(published index `description`, not a verified repo-code finding)
+VibeAround exists because the agent ecosystem fragmented: every CLI has its own config format and protocol, subscriptions overlap, and a session is trapped on the device where it started. The hub laun
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

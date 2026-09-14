@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: minghinmatthewlam
@@ -22,8 +22,6 @@ Repository map entry: [minghinmatthewlam/pi-gui](../../repos/minghinmatthewlam/p
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Native desktop (Electron) shell around the pi coding agent runtime with a Codex-style threaded timeline UI, git worktrees per thread, multi-agent orchestration (supervisor/worker), integrated PTY terminal, and inline diff viewer. Uses pi's JSONL session files as the source of truth via a thin pi-sdk-driver adapter.
-
-(captured site page body (agents/pi-gui.md), not a verified repo-code finding)
-pi-gui exists because pi's terminal-first interface limits visibility once developers run several threads, supervise workers, or review diffs across parallel work. The Electron app wraps the pi runtime without forking it: a Codex-style timeline shows threaded sessions, each thread can run in an isolated git worktree, and an orchestrator thread spawns and supervises worker threads for multi-agent runs. An integrated PTY terminal, inline diff viewer, session archive, and notification system cover the day-to-day loop, while pi's JSONL session files stay the source of truth so CLI and GUI sessions interoperate. Public beta builds ship signed and notarized for Apple Silicon Macs and Linux, with a Homebrew cask and source build for contributors. Its users are pi users who want desktop ergonomics and structured orchestration instead of a raw terminal.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/pi-gui.md)
+(published index `description`, not a verified repo-code finding)
+pi-gui exists because pi's terminal-first interface limits visibility once developers run several threads, supervise workers, or review diffs across parallel work. The Electron app wraps the pi runtim
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

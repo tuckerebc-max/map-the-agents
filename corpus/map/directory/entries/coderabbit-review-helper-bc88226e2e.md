@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: obra
@@ -22,8 +22,6 @@ Repository map entry: [obra/coderabbit-review-helper](../../repos/obra/coderabbi
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Converts CodeRabbit GitHub PR reviews into clean, LLM-friendly text formatted for AI coding agents to automatically apply suggestions; prioritizes AI-actionable items and organizes feedback by file.
-
-(captured site page body (agents/coderabbit-review-helper.md), not a verified repo-code finding)
-CodeRabbit posts rich, structured review comments on pull requests, but their format — HTML, nested threads, interleaved nitpicks and substantive findings — is awkward for AI coding agents to consume. This script pulls a PR's CodeRabbit comments through the GitHub CLI, strips HTML, groups feedback by file, and reorders it so AI-actionable prompts come before informational diffs, emitting plain text suitable for piping into Claude, ChatGPT, or another agent. It is a single Python file depending only on beautifulsoup4 and an authenticated gh CLI, with no published package: users clone the repository and run the script directly. The project dates from September 2025 and has seen only light, occasional maintenance since.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/coderabbit-review-helper.md)
+(backing feed `description`, not a verified repo-code finding)
+CodeRabbit posts rich, structured review comments on pull requests, but their format — HTML, nested threads, interleaved nitpicks and substantive findings — is awkward for AI coding agents to consume.
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

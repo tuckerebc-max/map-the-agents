@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: nexu-io
@@ -22,8 +22,6 @@ Repository map entry: [nexu-io/looper](../../repos/nexu-io/looper.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Loop-based agents with success criteria (not fixed steps); forge is source of truth (no external tracker/YAML); parallel-safe git worktrees; local/inspectable/stoppable daemon; multi-repo support; bring-your-own-agent with no vendor lock-in
-
-(captured site page body (agents/looper.md), not a verified repo-code finding)
-Looper automates the issue-to-merge pipeline for maintainers who cannot babysit every ticket: register a repo, and the looperd daemon polls the forge for assigned or looper-labeled issues, then runs a planner (until the spec is reviewable), a worker (implements the spec when checks pass), and a reviewer-fixer pair that ping-pongs until no actionable threads remain, all gated by a label state machine. A takeover mode drives a single PR through review-and-fix cycles to merge, and a multi-node loopernet mode distributes webhook-driven work. The vendor layer is pluggable - opencode, claude-code, codex, cursor-cli, grok-build, pi, omp - so teams keep their existing agent subscriptions, and everything runs locally as two Go binaries with no hosted control plane. Open-source maintainers drowning in labeled issues are the target user.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/looper.md)
+(published index `description`, not a verified repo-code finding)
+Looper automates the issue-to-merge pipeline for maintainers who cannot babysit every ticket: register a repo, and the looperd daemon polls the forge for assigned or looper-labeled issues, then runs a
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

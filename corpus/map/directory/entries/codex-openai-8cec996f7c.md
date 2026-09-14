@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): OpenAI's coding agent available in ChatGPT, as an IDE extension, and as a CLI; completes engineering tasks end-to-end (features, refactors, migrations, reviews, issue triage, CI/CD).
-
-(captured site page body (agents/codex-openai.md), not a verified repo-code finding)
-Codex is OpenAI's engineering agent, accessible from ChatGPT as a command center, as an IDE extension, and as a terminal CLI, all linked to one ChatGPT account. Tasks — building features, refactoring, migrations, code review, issue triage — run against OpenAI's frontier coding models either locally or in cloud environments, with parallel agents working across isolated worktrees. The product supports skills that encode a team's standards and workflows, and background automation schedules recurring jobs such as issue triage, alert monitoring, and CI/CD tasks. It is positioned as completing engineering work end to end: design, implementation, testing, and review, with results surfacing as pull requests.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/codex-openai.md)
+(published index `description`, not a verified repo-code finding)
+Codex is OpenAI's engineering agent, accessible from ChatGPT as a command center, as an IDE extension, and as a terminal CLI, all linked to one ChatGPT account. Tasks — building features, refactoring,
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

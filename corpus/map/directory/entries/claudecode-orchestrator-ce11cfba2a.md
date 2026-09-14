@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
-- Category: other
+- Category: agent
 - Provider/maker: darrenapfel
 - License: unknown
 - Language: TypeScript, JavaScript (shell script entry point)
@@ -20,14 +20,8 @@ Directory membership: backing+pages.
 
 Repository map entry: [darrenapfel/claudecode-orchestrator](../../repos/darrenapfel/claudecode-orchestrator.md) (source: backing, field: `source_code_url`).
 
-Discrepancy between directory sources (not overwritten):
-
-- category: published=, backing=agent, page=other
-
 ## Description
 
-Highlight (site page `what_makes_it_special`): Orchestration framework that runs Claude Code as a 12-persona software team (Orchestrator, PM, Architect, SWE, UX, SDET, Test, Integration, Performance, Security, DevOps, Docs) working in parallel; enforces evidence-based validation where every task produces an EVIDENCE.md; milestones end with a live, running service started and smoke-tested for the user; documented fix cycles on validation failures; structured human feedback loop. DEPRECATED in ...
-
-(captured site page body (agents/claudecode-orchestrator.md), not a verified repo-code finding)
-The framework imposes software-team process on a single agent: personas with explicit file-ownership boundaries prevent two roles from editing the same area, and the orchestrator is required to dispatch independent work simultaneously, with a parallel-execution detector flagging lapses into sequential behavior. Milestones structure work from discovery through requirements, parallel implementation, integration, validation, and fix cycles, with every task producing evidence files and automatic git commits so progress is auditable. The author has deprecated the project in favor of a commercial successor (limeriq.ai), so it no longer receives maintenance.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/claudecode-orchestrator.md)
+(backing feed `description`, not a verified repo-code finding)
+The framework imposes software-team process on a single agent: personas with explicit file-ownership boundaries prevent two roles from editing the same area, and the orchestrator is required to dispat
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

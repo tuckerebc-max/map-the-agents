@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: feisuanyz
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Chinese agentic coding platform for Java
-
-(captured site page body (agents/calex-javaai.md), not a verified repo-code finding)
-CalEx-JavaAI is a Chinese agentic coding platform for Java development, distributed as a JetBrains Marketplace plugin by Shenzhen vendor feisuanyz and installed over 124,000 times. Its workflow walks a developer from requirement analysis through interface design, table structure design, and processing logic to one-click generation of a complete Java project, rather than offering only line-level completion. Beyond generation, it bundles an AI toolbox for framework migration, OWASP-oriented security fixes, dependency repair, and unit test generation, plus SQL chat that translates natural-language questions into dialect-specific queries for PostgreSQL, MySQL, Oracle, SQL Server, and several Chinese databases. The agent layer adds tool use with memory, terminal command execution, custom agents, planning modes, MCP service support, and code RAG. The product is free, first published to the marketplace in August 2026, and maintained by verified vendor feisuanyz with active weekly updates.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/calex-javaai.md)
+(published index `description`, not a verified repo-code finding)
+CalEx-JavaAI is a Chinese agentic coding platform for Java development, distributed as a JetBrains Marketplace plugin by Shenzhen vendor feisuanyz and installed over 124,000 times. Its workflow walks
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

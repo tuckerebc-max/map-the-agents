@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: trypear
@@ -22,8 +22,6 @@ Repository map entry: [trypear/pearai-app](../../repos/trypear/pearai-app.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open source AI-powered code editor — a fork of VS Code with AI integration. Submodule is a fork of Continue. Stores code context locally. Familiar VS Code feel with AI-powered features. 706 stars on GitHub.
-
-(captured site page body (agents/pearai.md), not a verified repo-code finding)
-PearAI emerged as an open-source answer to the wave of closed AI editors, forking VS Code and building its AI layer on a fork of Continue so that code context stays stored locally rather than on a vendor's servers. The editor ships a chat, an autocomplete layer, and an agent mode powered by Roo Code/Cline that implements features and fixes bugs across files, while PearAI Router selects the strongest available coding model behind a single subscription. The project is YC-backed and developed in the open, with the editor code in the trypear organization and the marketing site in its own repository. Several announced features remain marked as coming soon, and the product has been quieter than competitors since its 2024 launch, but the site and repository remain live. Its users are developers who want a VS Code-familiar AI editor with an open-source license and local context storage.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/pearai.md)
+(published index `description`, not a verified repo-code finding)
+PearAI emerged as an open-source answer to the wave of closed AI editors, forking VS Code and building its AI layer on a fork of Continue so that code context stays stored locally rather than on a ven
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

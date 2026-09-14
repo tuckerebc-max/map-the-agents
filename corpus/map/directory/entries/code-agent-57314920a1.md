@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: potproject
@@ -22,8 +22,6 @@ Repository map entry: [potproject/code-agent](../../repos/potproject/code-agent.
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Bridges Claude Code and Codex into GitHub workflows via slash commands (/claude, /codex) in issue/PR comments; automatically creates PRs or commits from AI-suggested changes and posts AI output as a comment when no code changes; checks user permissions and masks sensitive information in outputs.
-
-(captured site page body (agents/code-agent.md), not a verified repo-code finding)
-The action turns GitHub issues into an interface for coding agents: a maintainer comments /claude fix the failing test, and the agent's work arrives as a commit or pull request with its reasoning posted as a comment, removing the local checkout from the loop entirely. Permission gating prevents unprivileged commenters from triggering runs, and secrets live in repository settings rather than the conversation. It is a thin TypeScript wrapper around the official CLIs in a Docker action, so agent behavior is exactly upstream Claude Code or Codex. Repository maintainers who want asynchronous, issue-driven agent automation rather than interactive sessions are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/code-agent.md)
+(published index `description`, not a verified repo-code finding)
+The action turns GitHub issues into an interface for coding agents: a maintainer comments /claude fix the failing test, and the agent's work arrives as a commit or pull request with its reasoning post
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

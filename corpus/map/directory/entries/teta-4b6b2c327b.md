@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: ondateta
@@ -22,8 +22,6 @@ Repository map entry: [ondateta/teta](../../repos/ondateta/teta.md) (source: bac
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source local AI-powered Flutter mobile app builder. Users build mobile apps by describing them. OSS version is a local editor for a single project declared via .env. Technical preview.
-
-(captured site page body (agents/teta.md), not a verified repo-code finding)
-Teta is an open-source, AI-powered app builder for Flutter, pitched as 'build a mobile app by describing it' and developed by the team behind teta.so. The OSS release is explicitly a technical preview: it consists of a local server (pkgs/server) plus a Flutter desktop editor (apps/desktop) working on a single project declared through a .env file, with the AI generation mechanism itself not documented in the repository. The hosted product builds cross-platform mobile apps from natural-language descriptions, positioning the tool in the prompt-to-app category but with an unusual focus on Flutter rather than web stacks. The AGPL-3.0 license keeps the editor's source open while the broader generation service remains the company's. Developers experimenting with AI-driven Flutter app generation are the current audience, and the platform remains under active development.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/teta.md)
+(published index `description`, not a verified repo-code finding)
+Teta is an open-source, AI-powered app builder for Flutter, pitched as 'build a mobile app by describing it' and developed by the team behind teta.so. The OSS release is explicitly a technical preview
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

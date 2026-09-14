@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: swadhinbiswas
@@ -22,8 +22,6 @@ Repository map entry: [swadhinbiswas/mervelas](../../repos/swadhinbiswas/mervela
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Independent open-source AI coding CLI built for freedom and zero telemetry, local-first, built with Bun and rendered via a custom React Ink abstraction; supports custom local coding agents and MCP integration.
-
-(captured site page body (agents/mervelas.md), not a verified repo-code finding)
-Mervelas exists for developers who reject the telemetry and lock-in of mainstream assistants: it stores session history only in ~/.mervelas/projects/ as JSONL, ships with no analytics, and lets the user point it at OpenAI, OpenRouter, NVIDIA NIM, Qwen, DeepSeek, or locally hosted endpoints. The interface is a terminal UI rendered through a custom React Ink abstraction built on Bun, with commands for configuration, context inspection, agent switching, and MCP server attachment. Custom agents are defined and switched through /agents, letting one binary wrap different local coding agents under a single interface. Distribution is deliberately absent from npm: the README requires cloning, building with Bun, and running the bundle directly, and the repository holds exactly five commits with no releases. Its audience is developers who want provider sovereignty and zero telemetry and are comfortable building a CLI from source; the project is experimental and its trajectory depends on a single maintainer.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/mervelas.md)
+(published index `description`, not a verified repo-code finding)
+Mervelas exists for developers who reject the telemetry and lock-in of mainstream assistants: it stores session history only in ~/.mervelas/projects/ as JSONL, ships with no analytics, and lets the us
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

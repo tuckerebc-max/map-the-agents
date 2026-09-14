@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Pythagora-io
@@ -22,8 +22,6 @@ Repository map entry: [pythagora-io/gpt-pilot](../../repos/pythagora-io/gpt-pilo
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Builds fully working, production-ready apps step-by-step using 11 specialized AI agents (Product Owner, Specification Writer, Architect, Tech Lead, Developer, Code Monkey, Reviewer, Troubleshooter, Debugger, Technical Writer). The repository is explicitly no longer maintained.
-
-(captured site page body (agents/gpt-pilot.md), not a verified repo-code finding)
-GPT Pilot set out to have AI write roughly 95% of an application while a human developer supervised, decomposing work through a pipeline of eleven role agents — specification writing, architecture, development, code review, debugging, documentation — so that each step stayed reviewable. It ran as a Python CLI (also packaged as the Pythagora VS Code extension) against OpenAI, Anthropic, or Groq keys, storing task state in SQLite or PostgreSQL. The repository is now explicitly unmaintained, and a security notice documents a supply-chain worm planted in core/telemetry/ between August 24, 2025 and June 11, 2026, with instructions to rotate credentials and check for indicators of compromise. Its successor is the commercial Pythagora extension, and running the old repo from source is discouraged.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/gpt-pilot.md)
+(published index `description`, not a verified repo-code finding)
+GPT Pilot set out to have AI write roughly 95% of an application while a human developer supervised, decomposing work through a pipeline of eleven role agents — specification writing, architecture, de
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

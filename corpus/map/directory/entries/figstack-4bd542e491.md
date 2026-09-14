@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: Figstack
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): The figstack.com domain now redirects to Mintlify (a docs/knowledge platform); the original Figstack code-explanation product appears defunct/acquired. Not a current coding agent harness.
-
-(captured site page body (agents/figstack.md), not a verified repo-code finding)
-Figstack launched around 2021 as a collection of AI-powered developer utilities: an Explainer that explained code in plain language, a Language Translator between programming languages, a Docstring Writer, and a Time Complexity Analyzer. It was built by the founders of what became Mintlify as an early product in the AI-assisted-development wave that preceded today's agents. The product was eventually discontinued, and figstack.com now serves Mintlify's website entirely — the company pivoted to documentation infrastructure and now markets knowledge infrastructure for AI agents to customers like Anthropic and Coinbase. The census retains Figstack as a historical artifact documenting that lineage rather than a live tool.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/figstack.md)
+(backing feed `description`, not a verified repo-code finding)
+Figstack launched around 2021 as a collection of AI-powered developer utilities: an Explainer that explained code in plain language, a Language Translator between programming languages, a Docstring Wr
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

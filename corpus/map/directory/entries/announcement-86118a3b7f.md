@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): IvyCheck offers an API for real-time AI application safety checks, preventing prompt injection attacks, PII data leakage, and hallucinations
-
-(captured site page body (agents/announcement.md), not a verified repo-code finding)
-IvyCheck, built by YC company Midplane (founders ex-Amazon Core ML, Berlin), addresses the trust gap in production AI applications: user inputs that smuggle prompt injections, PII leaking to model providers, and RAG answers that contradict their retrieved context. It classifies and redacts text in real time with small specialized models deployed on the customer's own infrastructure, making it provider-agnostic and latency-tolerant enough for inline use. The census entry's slug ('announcement') reflects that the URL is the YC launch post rather than a product page; the tool is a monitoring/safety API consumed by AI applications, with no coding-agent functionality, and no public pricing surfaced in the launch material.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/announcement.md)
+(backing feed `description`, not a verified repo-code finding)
+IvyCheck, built by YC company Midplane (founders ex-Amazon Core ML, Berlin), addresses the trust gap in production AI applications: user inputs that smuggle prompt injections, PII leaking to model pro
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

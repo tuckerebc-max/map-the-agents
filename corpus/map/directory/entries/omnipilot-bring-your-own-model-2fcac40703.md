@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Tejas Soni
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Fully autonomous BYO-model AI coding assistant
-
-(captured site page body (agents/omnipilot-bring-your-own-model.md), not a verified repo-code finding)
-OmniPilot embeds an agentic coding assistant into IntelliJ-family IDEs as a marketplace plugin. Agent Mode runs autonomously with granular permission controls over what the assistant may touch, while a chat mode handles conversational coding with markdown rendering. Because the plugin is BYO-model, it works against hosted APIs from OpenAI, Anthropic, or Groq as well as local LM Studio and Ollama endpoints, keeping code and prompts inside the developer's infrastructure. Context selection is automatic, and the plugin maintains persistent state across sessions. The plugin is free and GPL-3.0, distributed through the JetBrains Marketplace with source on GitHub.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/omnipilot-bring-your-own-model.md)
+(published index `description`, not a verified repo-code finding)
+OmniPilot embeds an agentic coding assistant into IntelliJ-family IDEs as a marketplace plugin. Agent Mode runs autonomously with granular permission controls over what the assistant may touch, while
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: sahithvibudhi
@@ -22,8 +22,6 @@ Repository map entry: [sahithvibudhi/vibe-tree](../../repos/sahithvibudhi/vibe-t
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Every AI coding task gets its own isolated git worktree with its own branch and persistent terminal, enabling true parallel agent execution without agents stomping on each other. Supports any terminal-based agent CLI. Usable as desktop app or browser-accessible server (including phone access via QR pairing). One-click disposal of failed experiments.
-
-(captured site page body (agents/vibe-tree.md), not a verified repo-code finding)
-Running several AI agents against one checkout means merge conflicts and clobbered edits, and terminal-based agents die when a window closes. VibeTree gives every task an isolated git worktree with its own branch and a persistent terminal whose scrollback survives reloads and reconnects, so parallel agents never stomp on each other and long-running sessions survive reconnects. A fleet view shows which agents are working, waiting, or done (with a chime when one needs attention), a changes view puts the diff beside the terminal so a comment can be sent back as the agent's next prompt, and dev-server URLs are detected for browser preview. Because it hosts real terminals, it works with claude, codex, gemini, aider, or any shell command, and a standalone server mode adds phone access via QR pairing. Developers running parallel agent tasks use it as a desktop app or self-hosted server; it is MIT-licensed and actively maintained.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/vibe-tree.md)
+(published index `description`, not a verified repo-code finding)
+Running several AI agents against one checkout means merge conflicts and clobbered edits, and terminal-based agents die when a window closes. VibeTree gives every task an isolated git worktree with it
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

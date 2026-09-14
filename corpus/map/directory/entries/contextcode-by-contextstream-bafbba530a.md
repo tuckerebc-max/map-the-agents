@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: contextstream
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Context-native coding agent with memory, model routing, and reviewable output
-
-(captured site page body (agents/contextcode-by-contextstream.md), not a verified repo-code finding)
-AI coding sessions forget what earlier sessions decided, so teams re-explain architecture, re-apply fixed bugs, and re-litigate choices. ContextCode (ContextStream) attaches to agents over MCP as a persistent memory layer: as work happens it records decisions, fixes, and guardrails into a Knowledge Stream ledger and maps them to the files they affect, so the next session starts with relevant project memory loaded before its first edit. Sharing happens through ContextCapsules - scoped, revocable, expiring links that hand a slice of context to a teammate or another agent without exposing the whole store. The vendor publishes audited benchmark results for memory quality and code-search recall, and reports improved agent task success with memory connected. Pricing is tiered from a free Starter plan to Team at $79 per user per month.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/contextcode-by-contextstream.md)
+(backing feed `description`, not a verified repo-code finding)
+AI coding sessions forget what earlier sessions decided, so teams re-explain architecture, re-apply fixed bugs, and re-litigate choices. ContextCode (ContextStream) attaches to agents over MCP as a pe
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

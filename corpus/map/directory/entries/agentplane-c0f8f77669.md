@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: basilisk-labs
@@ -22,8 +22,6 @@ Repository map entry: [basilisk-labs/agentplane](../../repos/basilisk-labs/agent
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Git-native control plane for coding agents that wraps agents like Claude Code, Codex, Cursor, and Aider in an approved, verifiable repository workflow with bounded authority, approval gates, supervisor-observed proof, verification, and closure. Features Task lifecycle management, Agent Change Records (ACR), local context management, recipes (TDD, security review, docs update), two workflow modes (direct and branch_pr), DCO-compliant multi-author commits, SLSA provenance, ...
-
-(captured site page body (agents/agentplane.md), not a verified repo-code finding)
-Teams adopting coding agents need an enforceable record of who did what, not chat transcripts. AgentPlane divides responsibility three ways: humans set outcomes and approve material risk, coding agents do semantic work inside bounded episodes, and the CLI (semantically blind, mechanically authoritative) owns task state, Git/PR routing, and evidence. Each task advance emits a packet with an objective, writable scope, context, and a typed result schema; agents cannot perform lifecycle transitions or claim formal approvals. Workflows run in direct mode for solo reversible work or branch_pr mode with worktrees, branches, and hosted checks. The tool is aimed at engineering teams that want Git itself to be the durable review surface for agent-driven changes.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agentplane.md)
+(published index `description`, not a verified repo-code finding)
+Teams adopting coding agents need an enforceable record of who did what, not chat transcripts. AgentPlane divides responsibility three ways: humans set outcomes and approve material risk, coding agent
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

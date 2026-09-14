@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
-- Category: agent-sdk
+- Category: agent
 - Provider/maker: Rath-Team
 - License: BSD-3-Clause
 - Language: Python
@@ -22,12 +22,10 @@ Repository map entry: [rath-team/openrath](../../repos/rath-team/openrath.md) (s
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=agent-sdk, backing=agent, page=agent-sdk
+- category: published=agent-sdk, backing=agent, page=
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): PyTorch-like runtime for dynamic multi-agent and multi-session workflows — Session as the central flowing value (like a Tensor); composable agents like nn.Linear; durable execution with checkpointing, leases, effect ledgers, and human-in-the-loop interrupts.
-
-(captured site page body (agents/openrath.md), not a verified repo-code finding)
-Multi-agent frameworks typically ask developers to express workflows in graphs or YAML, which hides control flow behind DSLs and makes state hard to inspect. OpenRath instead imports PyTorch's vocabulary: a Session is the value that flows between components the way a Tensor does, agents compose like nn.Linear layers, workflows nest like nn.Module, memories persist like Parameters, and tools are plain callables — while if/while remain ordinary Python, with an LLM-backed Selector handling only genuine routing decisions. Version 2.0 adds production machinery: checkpoints, leases, an effect ledger, human interrupts, and an Agent Server mode backed by PostgreSQL, Redis, and S3. It installs from PyPI (pip install openrath) with optional sandbox and server extras, documents itself at docs.openrath.com, and publishes an arXiv paper. Python engineers building durable multi-session agent applications, rather than terminal coding users, are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/openrath.md)
+(published index `description`, not a verified repo-code finding)
+Multi-agent frameworks typically ask developers to express workflows in graphs or YAML, which hides control flow behind DSLs and makes state hard to inspect. OpenRath instead imports PyTorch's vocabul
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

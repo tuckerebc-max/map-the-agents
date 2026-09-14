@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: sean35mm
@@ -22,8 +22,6 @@ Repository map entry: [sean35mm/weaver](../../repos/sean35mm/weaver.md) (source:
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local-only, serverless coordination layer for multiple AI coding agents in the same repo. Provides cross-agent presence, advisory file claims, durable notes that survive context compaction, recent activity tracking, and live views — all via a small CLI over local SQLite files (~/.weaver/). No telemetry, no account, no network calls. Git remains source of truth; claims are advisory, never blocking. Explicitly ...
-
-(captured site page body (agents/weaver.md), not a verified repo-code finding)
-Weaver solves the problem of multiple AI coding agents (Claude Code, Codex, OpenCode, Pi, or plain terminals) colliding in the same repository without any cloud service. It provides a coordination-lite loop — status, task, claim, done — where advisory, TTL-bound file claims detect overlap (exit 1 signals overlap) and git remains authoritative for code. State lives in a per-repo SQLite database under ~/.weaver/, supplemented by durable Repository Facts that survive context compaction, optional Markdown scratchpads, a loopback-only web dashboard, and a preflight command that verifies claims before commit or push. The CLI installs protocol blocks into CLAUDE.md/AGENTS.md and optional Claude Code hooks or OpenCode plugins. It targets developers running several agents in parallel on one repo, fully locally.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/weaver.md)
+(published index `description`, not a verified repo-code finding)
+Weaver solves the problem of multiple AI coding agents (Claude Code, Codex, OpenCode, Pi, or plain terminals) colliding in the same repository without any cloud service. It provides a coordination-lit
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

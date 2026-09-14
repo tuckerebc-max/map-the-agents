@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: aws-samples
@@ -22,8 +22,6 @@ Repository map entry: [aws-samples/remote-swe-agents](../../repos/aws-samples/re
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Self-hosted, fully open-source autonomous SWE agent on AWS serverless infrastructure — offers a Devin/OpenAI Codex/Google Jules-like experience with no upfront or fixed costs (~$0 when idle). Features web UI, Slack bot, REST API, GitHub Actions integration, per-session isolated EC2 worker VMs, MCP client support, and pay-as-you-go pricing.
-
-(captured site page body (agents/remote-swe-agents.md), not a verified repo-code finding)
-The project exists for teams that want the cloud-agent workflow — delegate a task, get a pull request — without sending code to a hosted service or paying for idle capacity. Messages arrive through Slack or a REST API, flow via AppSync Events into DynamoDB, and a Worker Manager boots an isolated EC2 instance per session that clones the target repository, works with Bedrock models, and pushes branches or pull requests. MCP servers configured through mcp.json extend the agent's tools, and a Next.js dashboard adds session monitoring, cost analytics, and API-key management. Security is treated as a first-class concern: single-tenant deployments, least-privilege IAM with optional egress filtering, and Cognito-gated access. It fits AWS-centric teams and OSS maintainers who need cheap, isolated background agents.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/remote-swe-agents.md)
+(published index `description`, not a verified repo-code finding)
+The project exists for teams that want the cloud-agent workflow — delegate a task, get a pull request — without sending code to a hosted service or paying for idle capacity. Messages arrive through Sl
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

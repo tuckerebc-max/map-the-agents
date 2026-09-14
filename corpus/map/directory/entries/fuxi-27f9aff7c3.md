@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: fuxicodex
@@ -22,8 +22,6 @@ Repository map entry: [fuxicodex/fuxi](../../repos/fuxicodex/fuxi.md) (source: b
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal-first AI coding agent with a Think → Act → Verify loop; cost-aware intelligent routing (complexity-scored model selection with automatic failover); 50+ built-in tools in a single static binary; safety guardrails (AST shell command classifier, explicit permission model); durable sessions & memory with checkpoints and idle 'dreaming' consolidation; self-updating with checksum verification.
-
-(captured site page body (agents/fuxi.md), not a verified repo-code finding)
-FuXi exists as a provider-agnostic alternative to Claude Code: one static Go binary with no runtime dependencies that reads and edits code, runs commands, and verifies its own work in a Think-Act-Verify loop. Model selection is scored by task complexity with failover across any OpenAI-compatible endpoint, Anthropic, Gemini, or Bedrock/Vertex, using either user API keys or a FuXi OAuth login. Extensibility covers hooks, skills, plugins, and slash commands, all hot-reloadable, and the binary can both consume MCP servers and run as one. Sessions checkpoint and consolidate memory during idle periods, updates are checksum-verified, and a plan permission mode gates execution; the binary itself is proprietary freeware with the repository hosting only docs and the issue tracker.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/fuxi.md)
+(published index `description`, not a verified repo-code finding)
+FuXi exists as a provider-agnostic alternative to Claude Code: one static Go binary with no runtime dependencies that reads and edits code, runs commands, and verifies its own work in a Think-Act-Veri
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

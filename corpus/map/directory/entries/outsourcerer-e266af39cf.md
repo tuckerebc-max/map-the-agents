@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: alexgreensh
@@ -22,8 +22,6 @@ Repository map entry: [alexgreensh/outsourcerer](../../repos/alexgreensh/outsour
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Delegates work from your main AI coding session to cheaper models; advisor panels with consensus gating; tracks real savings with 'The Tab'; fanout parallel agents across any backend; runs on local models for $0
-
-(captured site page body (agents/outsourcerer.md), not a verified repo-code finding)
-Coding sessions burn frontier-model tokens on mechanical work — repo mapping, bulk refactors, test loops, wide searches — that cheaper engines handle fine. Outsourcerer, a single self-contained Bash script installed as a Claude Code plugin (with parity installers for Antigravity, Codex, Devin, Hermes, Cursor, and Droid), delegates those tasks to engines the user already pays for while the primary agent keeps orchestration and judgment. Advisor panels of stronger models review results under consensus gating, fanout runs parallel delegates across any backend, and the tool carries the host's skills, plugins, and MCP setup to each delegate so context survives the hop. 'The Tab' tracks real savings in dollars and subscription rate-limit headroom, and a keyless local lane covers zero-cost runs via Ollama or LM Studio. It is one Bash file with no server, proxy, or telemetry, distributed under PolyForm Noncommercial with paid commercial licensing from the author. Cost-conscious Claude Code users running repetitive workloads are the audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/outsourcerer.md)
+(published index `description`, not a verified repo-code finding)
+Coding sessions burn frontier-model tokens on mechanical work — repo mapping, bulk refactors, test loops, wide searches — that cheaper engines handle fine. Outsourcerer, a single self-contained Bash s
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

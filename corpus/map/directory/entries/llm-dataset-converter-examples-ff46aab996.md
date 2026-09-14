@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: waikato-llm
@@ -22,8 +22,6 @@ Repository map entry: [waikato-llm/llm-dataset-converter-examples](../../repos/w
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Examples repository for the llm-dataset-converter libraries, deployed as MkDocs documentation site. Not a coding agent harness.
-
-(captured site page body (agents/llm-dataset-converter-examples.md), not a verified repo-code finding)
-The repository exists to document the Waikato llm-dataset-converter libraries by demonstration: its docs folder holds worked examples of converting datasets between the formats used by different LLM training and evaluation tools, and a GitHub Actions workflow republishes the site whenever the examples change. Researchers working with the converter libraries consult it as reference material for supported transformations rather than installing anything from it. The repo itself contains no software beyond site configuration, and its CC-BY-SA-4.0 content has been static since early 2025.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/llm-dataset-converter-examples.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository exists to document the Waikato llm-dataset-converter libraries by demonstration: its docs folder holds worked examples of converting datasets between the formats used by different LLM t
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

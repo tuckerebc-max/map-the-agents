@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: lucaGazzola
@@ -22,8 +22,6 @@ Repository map entry: [lucagazzola/forgeo](../../repos/lucagazzola/forgeo.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Scheduled, agent-driven software factory layer on top of any coding-agent CLI; maintain a plain-JSON backlog and the daemon autonomously picks tasks, runs the agent, commits directly to main (no branches, no PRs), retries transient failures, and runs a refactoring pass when idle; only escalates to a human for genuine decisions; everything stored in inspectable plain files with automatic backup/restore; supports ...
-
-(captured site page body (agents/forgeo.md), not a verified repo-code finding)
-forgeo serves maintainers who accumulate more well-specified tasks than attention: it reads a backlog from a JSON file or a Jira/GitHub/GitLab/HTTP tracker, selects the oldest OPEN task whose dependencies are complete, and runs the configured agent CLI on it — optionally inside a Docker sandbox with the network off by default — committing the result directly to main. When the backlog empties, the daemon switches to refactoring passes instead of idling. Transient agent failures retry automatically while persistent failures and genuine human decisions escalate via BLOCKER.md. Operationally it stays lightweight: \`forgeo validate\` dry-runs the configuration, backlogs are snapshotted automatically, multiple instances per repository feed one aggregate web dashboard, and a token-protected web UI exposes run status for solo maintainers and small teams.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/forgeo.md)
+(published index `description`, not a verified repo-code finding)
+forgeo serves maintainers who accumulate more well-specified tasks than attention: it reads a backlog from a JSON file or a Jira/GitHub/GitLab/HTTP tracker, selects the oldest OPEN task whose dependen
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: OpenBMB
@@ -22,8 +22,6 @@ Repository map entry: [openbmb/pilotdeck](../../repos/openbmb/pilotdeck.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source agent operating system (by Tsinghua THUNLP/ModelBest/OpenBMB) centered on 'WorkSpace' isolation — each project gets isolated files, memory, and skills. Traceable white-box memory (visible, editable, rollbackable with Dream Mode consolidation). Smart routing auto-detects task difficulty and routes to appropriate models (~70% cost savings). Always-on background execution that breaks the ask-answer loop. Native MCP support, open plugin architecture, lifecycle hooks. Consistent ...
-
-(captured site page body (agents/pilotdeck.md), not a verified repo-code finding)
-PilotDeck, open-sourced in May 2026 by Tsinghua's THUNLP lab with ModelBest and OpenBMB, rethinks agent architecture for people juggling multiple long-running projects, where a single global context window becomes a liability. Each project gets an isolated WorkSpace — its own files, memory store, and accreting skill set — so retrieval stays scoped and parallel projects never pollute each other, and the white-box memory design makes every entry inspectable, editable, and rollbackable, with background Dream Mode consolidating memory during idle windows. Smart Routing classifies task difficulty and dispatches accordingly: complex work goes to a flagship model, routine subtasks to lighter ones, with published figures around 70% cost savings on multi-model workloads. The system runs tasks in the background after sign-off, discovering work and delivering files with summary reports. Native MCP support, lifecycle hooks, and a plugin architecture extend it, and the AGPL-licensed platform targets professional users running multiple concurrent projects.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/pilotdeck.md)
+(published index `description`, not a verified repo-code finding)
+PilotDeck, open-sourced in May 2026 by Tsinghua's THUNLP lab with ModelBest and OpenBMB, rethinks agent architecture for people juggling multiple long-running projects, where a single global context w
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

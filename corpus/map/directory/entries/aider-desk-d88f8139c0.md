@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: hotovo
@@ -22,8 +22,6 @@ Repository map entry: [hotovo/aider-desk](../../repos/hotovo/aider-desk.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source agentic orchestration layer emphasizing Transparency (see every token, context file, proposed change), Control (tool approval gates, fork/duplicate tasks, edit chat history), and Flexibility (works alongside IDE/terminal/Git with no lock-in). Originally a GUI for the Aider CLI, now a full orchestration platform. Git worktrees give each task an isolated directory; built-in merge workflow. Fork tasks to explore alternatives; delete specific ...
-
-(captured site page body (agents/aider-desk.md), not a verified repo-code finding)
-AiderDesk began as an Electron front-end for the Aider CLI and evolved into a full coding platform: tasks with forkable context, git worktrees for isolated experiments, and a diff viewer that shows every proposed change before it lands. Tool approval gates require human authorization for risky operations, and token, cost, and usage dashboards make spending visible per task. An extension system exposes 30+ lifecycle events, custom tools, and React UI injection, with a gallery installable via npx @aiderdesk/extensions; IDE connectors exist for IntelliJ and VS Code. Teams that want agent automation with human checkpoints use it, with local-first storage (LanceDB) and 30+ model providers behind Apache-2.0 licensing.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/aider-desk.md)
+(published index `description`, not a verified repo-code finding)
+AiderDesk began as an Electron front-end for the Aider CLI and evolved into a full coding platform: tasks with forkable context, git worktrees for isolated experiments, and a diff viewer that shows ev
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

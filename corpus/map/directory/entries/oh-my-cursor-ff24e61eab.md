@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
-- Category: other
+- Category: agent
 - Provider/maker: tmcfarlane
 - License: MIT
 - Language: Markdown config, shell scripts
@@ -20,14 +20,8 @@ Directory membership: backing+pages.
 
 Repository map entry: [tmcfarlane/oh-my-cursor](../../repos/tmcfarlane/oh-my-cursor.md) (source: backing, field: `source_code_url`).
 
-Discrepancy between directory sources (not overwritten):
-
-- category: published=, backing=agent, page=other
-
 ## Description
 
-Highlight (site page `what_makes_it_special`): Avatar: The Last Airbender-themed 8-agent team; pure Markdown config with zero runtime/CLI wrapper; per-agent model routing; hooks that deterministically block destructive commands and bad commits; Cactus Juice swarm mode (up to 10 parallel workers); cross-tool support (Cursor/Claude Code/Codex)
-
-(captured site page body (agents/oh-my-cursor.md), not a verified repo-code finding)
-oh-my-cursor turns Cursor's native subagent system into a themed eight-agent team using only Markdown configuration files, hooks, and slash commands — no plugin system or external runtime. Each specialist agent routes to a specific model chosen for its role, such as a multimodal model for image generation work. An orchestrator rule keeps the root thread dispatching while specialists execute, and cactus-juice swarm mode spawns up to ten parallel workers. Hooks deterministically block destructive shell commands and low-quality commits, while a permissions policy reduces approval prompts. The same files can also install for Claude Code and Codex, and a validation culture with per-build model-slug verification guards against Cursor's silent model downgrade behavior.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/oh-my-cursor.md)
+(backing feed `description`, not a verified repo-code finding)
+oh-my-cursor turns Cursor's native subagent system into a themed eight-agent team using only Markdown configuration files, hooks, and slash commands — no plugin system or external runtime. Each specia
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

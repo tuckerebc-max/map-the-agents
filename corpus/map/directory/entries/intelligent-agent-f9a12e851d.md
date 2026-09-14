@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: balaaagi
@@ -22,8 +22,6 @@ Repository map entry: [balaaagi/intelligent-agent](../../repos/balaaagi/intellig
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): NOTE: Not a coding agent harness. University course project that applies knowledge-based AI techniques to solve Raven's Progressive Matrices (visual and verbal psychometric intelligence tests). No LLM, no coding-agent features.
-
-(captured site page body (agents/intelligent-agent.md), not a verified repo-code finding)
-The repository is coursework from Georgia Tech's OMSCS Knowledge-Based AI course, built against the university-provided Java framework for Raven's Progressive Matrices. It applies knowledge-based AI techniques — not language models — to visual and verbal analogy problems, reporting partial scores such as 9/12 on Basic D Visual and 7/12 on Raven's E Visual sets. The reflection PDF and problem folders are its whole output, and the project has been untouched since 2017. It entered the census only because its name matches agent-harness terminology.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/intelligent-agent.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository is coursework from Georgia Tech's OMSCS Knowledge-Based AI course, built against the university-provided Java framework for Raven's Progressive Matrices. It applies knowledge-based AI t
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

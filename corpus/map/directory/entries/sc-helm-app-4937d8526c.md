@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: amsilf
@@ -22,8 +22,6 @@ Repository map entry: [amsilf/sc-helm-app](../../repos/amsilf/sc-helm-app.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Combines Helm deployment with OPA policy verification and AI-assisted auto-remediation: detects policy violations, applies ChatGPT-suggested fixes, creates a new branch, and opens a pull request — automating the full fix workflow.
-
-(captured site page body (agents/sc-helm-app.md), not a verified repo-code finding)
-The repository is an educational reference for wiring policy-as-code into AI-assisted remediation rather than a tool anyone installs. Its pieces are minimal: a Hello-World Nginx Helm chart, Rego policies, a shell script that converts violations to JSON, and an Azure pipeline that calls the OpenAI API with them, then pushes the suggested fix as a branch and PR for human review. Prerequisites are Helm 3, OPA, Python 3, and an OpenAI API key, and the README is the only documentation. There is no license file, no releases, and effectively no adoption (zero stars), with the last meaningful activity some time ago. It is best read as a pattern to copy — policy violation to LLM-suggested patch to reviewable PR — not as software to depend on.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/sc-helm-app.md)
+(backing feed `description`, not a verified repo-code finding)
+The repository is an educational reference for wiring policy-as-code into AI-assisted remediation rather than a tool anyone installs. Its pieces are minimal: a Hello-World Nginx Helm chart, Rego polic
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

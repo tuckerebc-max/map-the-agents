@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: microsoft
@@ -22,8 +22,6 @@ Repository map entry: [microsoft/amplifier](../../repos/microsoft/amplifier.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Microsoft's modular AI development assistant. The CLI is one interface on top of a modular platform — bundles ship focused agents you invoke by name, and the amplifier-agent engine underneath provides the full agent loop with tools, sub-agents, skills, and MCP. Anything that can spawn a subprocess can use the engine. Nine model providers behind one interface with role-based routing ...
-
-(captured site page body (agents/amplifier.md), not a verified repo-code finding)
-Microsoft positions Amplifier as an open research demonstrator for modular agent design: the CLI is explicitly just one interface over a platform intended to grow web, mobile, and IDE surfaces. Bundles compose configuration — the foundation bundle ships filesystem/bash/web/search/task tools, fourteen agents (zen-architect, bug-hunter, modular-builder...), and behaviors like redaction and todo tracking — while external bundles install via amplifier bundle add from any git URL. Sessions persist per project and resume with amplifier continue, and a companion log viewer replays sessions for debugging. Providers are swappable at runtime (Anthropic, OpenAI, Azure OpenAI, Ollama); the MIT-licensed project is an early preview that explicitly warns safety systems are incomplete, is not accepting external contributions, and has 3.1k stars.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/amplifier.md)
+(published index `description`, not a verified repo-code finding)
+Microsoft positions Amplifier as an open research demonstrator for modular agent design: the CLI is explicitly just one interface over a platform intended to grow web, mobile, and IDE surfaces. Bundle
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

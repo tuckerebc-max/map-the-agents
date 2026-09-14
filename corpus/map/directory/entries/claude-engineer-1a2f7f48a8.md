@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Doriandarko
@@ -22,8 +22,6 @@ Repository map entry: [doriandarko/claude-engineer](../../repos/doriandarko/clau
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Self-improving architecture — Claude can autonomously identify capability gaps, design, and implement new tools during conversations, making the framework more powerful with continued use; available as both CLI and web interface.
-
-(captured site page body (agents/claude-engineer.md), not a verified repo-code finding)
-Claude Engineer was an early (2024) demonstration that an agent's toolset could be emergent rather than fixed: when a task exceeds the built-in tools (file operations, E2B code execution, web search), the model designs and implements a new tool during the conversation, and the runtime loads it without restart. Both a web UI and CLI expose the same agent, with image analysis and token-usage visualization. The approach trades reliability for extensibility, since self-written tools vary in quality. It attracted a large following (over 11k stars) as a reference design for self-improving agents, but the maintainer stopped committing in December 2024, leaving many pull requests unmerged.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/claude-engineer.md)
+(published index `description`, not a verified repo-code finding)
+Claude Engineer was an early (2024) demonstration that an agent's toolset could be emergent rather than fixed: when a task exceeds the built-in tools (file operations, E2B code execution, web search),
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

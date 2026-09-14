@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: simonw
@@ -22,8 +22,6 @@ Repository map entry: [simonw/llm-coding-agent](../../repos/simonw/llm-coding-ag
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): LLM plugin that adds an \`llm code\` command for interactive coding-agent sessions; works with any LLM-supported model (provider-agnostic) and leverages LLM's SQLite logging, conversation resume, and plugin architecture; fine-grained approval workflows (y once, a approve similar for session, --yolo auto-approve, --allow pre-approve patterns); security by confinement - all file access sandboxed to a root directory with path-traversal protection; dual CLI ...
-
-(captured site page body (agents/llm-coding-agent.md), not a verified repo-code finding)
-The plugin exists because Willison wanted a minimal, inspectable coding agent on top of the llm CLI's model-agnostic plugin system; the first alpha was itself written by prompting Claude Code through a spec-and-TDD workflow. Read-only tools (numbered read_file, gitignore-aware list_files, ripgrep-backed search) run freely, while write_file, edit_file, and execute_command require approval, with chain_limit bounding tool rounds per run and every session recorded for resume via -c or --cid. File access is confined to the session root, with traversal via .., absolute paths, or symlinks rejected as errors the model can correct. A Python API (CodingAgent, CodingTools) exposes the same loop programmatically, with a pause/resume approval protocol for non-terminal applications.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/llm-coding-agent.md)
+(published index `description`, not a verified repo-code finding)
+The plugin exists because Willison wanted a minimal, inspectable coding agent on top of the llm CLI's model-agnostic plugin system; the first alpha was itself written by prompting Claude Code through
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

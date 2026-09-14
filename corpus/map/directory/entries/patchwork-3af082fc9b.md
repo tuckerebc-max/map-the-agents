@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: patched-codes
@@ -22,8 +22,6 @@ Repository map entry: [patched-codes/patchwork](../../repos/patched-codes/patchw
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Development gruntwork is codified as six predefined 'patchflows' (AutoFix, ResolveIssue, PRReview, GenerateDocstring, GenerateREADME, DependencyUpgrade) built from reusable Steps and prompt templates, runnable locally, in the IDE, or in CI, and extensible by composing new flows from an Apache-2.0 template repo.
-
-(captured site page body (agents/patchwork.md), not a verified repo-code finding)
-Patchwork was built by Patched Codes to automate the repetitive maintenance work — dependency upgrades, PR reviews, docstring generation, security fixes — that piles up between feature projects. Instead of a free-form chat loop, it executes predefined patchflows: pipelines of reusable steps (scan code, call an LLM, edit files, open a PR) driven by customizable prompt templates, with six flows shipped out of the box including AutoFix, PRReview, and DependencyUpgrade. The same patchflows run from the CLI, inside an IDE, or in CI pipelines, and custom patchflows compose existing steps or new ones contributed through an Apache-2.0 template repository, while the core stays AGPL-3.0. Model access is flexible, spanning OpenAI, Gemini, Groq, Together, and local llama.cpp, Ollama, or vLLM endpoints configured by CLI arguments or YAML. Its users are engineering teams automating code-maintenance workflows in CI rather than developers seeking an interactive coding partner.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/patchwork.md)
+(published index `description`, not a verified repo-code finding)
+Patchwork was built by Patched Codes to automate the repetitive maintenance work — dependency upgrades, PR reviews, docstring generation, security fixes — that piles up between feature projects. Inste
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

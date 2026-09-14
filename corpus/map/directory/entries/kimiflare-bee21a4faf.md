@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: sinameraji
@@ -22,8 +22,6 @@ Repository map entry: [sinameraji/kimiflare](../../repos/sinameraji/kimiflare.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal coding agent running entirely on your own Cloudflare account via Workers AI; 262k context window, AI Gateway-confirmed cost tracking, local SQLite+embeddings memory, image understanding, OS-aware shell (Windows support), headless SDK + RPC mode; 5 hook events (PreToolUse, PostToolUse, UserPromptSubmit, Stop, PreCompact).
-
-(captured site page body (agents/kimiflare.md), not a verified repo-code finding)
-Kimiflare addresses token-cost opacity by running inference on the user's own Cloudflare Workers AI account and routing traffic through Cloudflare AI Gateway, which returns authoritative per-turn costs, cache-hit ratios, and per-feature breakdowns instead of estimates. The agent ships 262k-context models, image understanding, MCP tool extension, LSP integration, local SQLite memory, and veto-capable hooks at five lifecycle points managed through a /hooks catalog. Modes cycle between plan (read-only research), edit (approval per mutation), and auto. Individual developers and small teams use it to keep coding-agent spend inside a Cloudflare bill they already control.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/kimiflare.md)
+(published index `description`, not a verified repo-code finding)
+Kimiflare addresses token-cost opacity by running inference on the user's own Cloudflare Workers AI account and routing traffic through Cloudflare AI Gateway, which returns authoritative per-turn cost
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

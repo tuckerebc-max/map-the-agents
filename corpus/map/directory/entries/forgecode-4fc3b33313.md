@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: tailcallhq
@@ -22,8 +22,6 @@ Repository map entry: [tailcallhq/forgecode](../../repos/tailcallhq/forgecode.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): ZSH plugin with colon prefix system (use AI without leaving shell), three-mode architecture (TUI/CLI one-shot/ZSH plugin), semantic code search, conversation management with branching/cloning, sandbox mode via git worktrees, custom agents/skills/commands system, 300+ models.
-
-(captured site page body (agents/forgecode.md), not a verified repo-code finding)
-ForgeCode, built by Tailcall HQ, offers three surfaces over one Rust core: an interactive TUI, a one-shot CLI (\`forge -p\` for prompts, \`forge commit\` for AI commit messages, \`forge suggest\` for natural-language shell commands), and a ZSH plugin where colon-prefixed commands invoke agents without leaving the shell. Three built-in agents divide labor — forge implements code, sage researches read-only, muse writes plans — drawing on 300+ models across OpenAI, Anthropic, Google Vertex AI, Bedrock, OpenRouter, Groq, and OpenAI-compatible endpoints. Conversations persist with resume, clone, and compact operations, semantic workspace indexing speeds context assembly, and forge.yaml plus AGENTS.md configure rules and tool limits. A sandboxed git-worktree mode and restricted shell give teams a safety story for daily-driver adoption.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/forgecode.md)
+(published index `description`, not a verified repo-code finding)
+ForgeCode, built by Tailcall HQ, offers three surfaces over one Rust core: an interactive TUI, a one-shot CLI (\`forge -p\` for prompts, \`forge commit\` for AI commit messages, \`forge suggest\` for natura
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

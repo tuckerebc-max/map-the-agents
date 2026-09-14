@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: haasonsaas
@@ -22,8 +22,6 @@ Repository map entry: [haasonsaas/ocode](../../repos/haasonsaas/ocode.md) (sourc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal-native AI coding assistant powered by local Ollama models; 19+ specialized tools; full MCP server support (resources, tools, prompts); agent tool delegates complex tasks to specialized agents; fully offline and self-hosted
-
-(captured site page body (agents/ocode.md), not a verified repo-code finding)
-ocode is a terminal-native coding assistant that streams from a local Ollama instance, requiring no API keys or cloud proxies. It ships nineteen specialized tools covering file operations, grep and diff, git, shell execution, Jupyter notebooks, and architecture analysis, with a smart tool-selection layer that detects multi-action requests. An agent tool delegates complex tasks to specialized subagents for multi-step work. Full MCP support lets it expose resources, tools, and prompts as a server as well as consume them. The permission system is whitelist-first with sandboxed shell execution and blocked paths by default, reflecting a security-first posture rare in solo hobby agents.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ocode.md)
+(published index `description`, not a verified repo-code finding)
+ocode is a terminal-native coding assistant that streams from a local Ollama instance, requiring no API keys or cloud proxies. It ships nineteen specialized tools covering file operations, grep and di
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

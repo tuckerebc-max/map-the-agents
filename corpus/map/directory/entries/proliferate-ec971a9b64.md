@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: proliferate-ai
@@ -22,8 +22,6 @@ Repository map entry: [proliferate-ai/proliferate](../../repos/proliferate-ai/pr
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): An open-source AI IDE that runs Claude Code, Codex, OpenCode, Cursor, and Grok in parallel through their native harnesses, giving every task an isolated git worktree with its own branch, terminal, conversation, and review state, plus recurring and event-driven workflows — self-hostable all the way to air-gapped operation.
-
-(captured site page body (agents/proliferate.md), not a verified repo-code finding)
-Proliferate is a workspace for running many coding agents at once rather than a coding agent itself: each task gets an isolated git worktree and the agent of your choice drives it through its native harness, so subscriptions, logins, and MCP servers stay as configured. The control plane is fully self-hostable — Docker Compose, one-click AWS, GCP, Azure, Kubernetes, or air-gapped — with a macOS desktop app for local use, and the runtime itself is Rust with a TypeScript/Node frontend. Beyond parallel sessions it supports subagent delegation, integrations including MCP, skills, computer and browser use, and custom tools, plus workflows that run agents on schedules or events like nightly reviews and alert triage. Its audience is teams and self-hosters who want a Vercel-style control plane over the agent CLIs they already pay for.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/proliferate.md)
+(published index `description`, not a verified repo-code finding)
+Proliferate is a workspace for running many coding agents at once rather than a coding agent itself: each task gets an isolated git worktree and the agent of your choice drives it through its native h
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

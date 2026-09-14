@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: spikonado
@@ -22,8 +22,6 @@ Repository map entry: [spikonado/sprocket](../../repos/spikonado/sprocket.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Markets itself as the only AI agent for developing both hardware and software: it retrieves best-in-class context from the web, buys parts and subscriptions from any site on request, creates detailed schematics, generates a BOM, and writes assembly instructions.
-
-(captured site page body (agents/sprocket.md), not a verified repo-code finding)
-Sprocket is Spikonado's agent for building complete technology systems — apps, robots, devices, and the glue between them — rather than just code. It retrieves web context for everything it does and can purchase hardware parts or SaaS subscriptions from any website when asked, then produce the concrete artifacts of hardware development: detailed schematics, a bill of materials, and assembly instructions. It runs as a browser-based UI by default (the local app launches a Rust-based server on port 17731), as Electron desktop installers for Linux, macOS, and Windows, or via npx, with state stored locally in $HOME/.sprocket. The repo is public under the Functional Source License, and self-hosted development needs a Convex deployment plus model-provider API keys, so users bear their own model costs.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/sprocket.md)
+(published index `description`, not a verified repo-code finding)
+Sprocket is Spikonado's agent for building complete technology systems — apps, robots, devices, and the glue between them — rather than just code. It retrieves web context for everything it does and c
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

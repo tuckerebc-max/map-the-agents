@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: paean-ai
@@ -22,8 +22,6 @@ Repository map entry: [paean-ai/deeptide](../../repos/paean-ai/deeptide.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Built specifically for DeepSeek models with three flavors (native macOS app, TypeScript/Bun CLI, Rust CLI+GUI) that share configuration, sessions, and tools via a shared interface contract (tide-spec). Includes a local DeepSeek inference runtime (Metal engine + OpenAI/Anthropic-compatible gateway). Hooks engine for pre/post tool, user-prompt, session, and compaction shell hooks.
-
-(captured site page body (agents/deeptide.md), not a verified repo-code finding)
-Deeptide exists because DeepSeek users otherwise have to run general-purpose harnesses tuned for other providers. The three form factors deliberately share one interface contract (tide-spec), so configuration, sessions, and tools carry across the native macOS app, the Bun-based CLI, and the Rust binary. The macOS build embeds a local DeepSeek V4 Flash Metal inference engine with an OpenAI/Anthropic-compatible gateway, which lets the agent run fully on-device. It is aimed at DeepSeek-centric developers who want an agent, REPL, and inference runtime from one project rather than assembling them separately.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/deeptide.md)
+(published index `description`, not a verified repo-code finding)
+Deeptide exists because DeepSeek users otherwise have to run general-purpose harnesses tuned for other providers. The three form factors deliberately share one interface contract (tide-spec), so confi
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

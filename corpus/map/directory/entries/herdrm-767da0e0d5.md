@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: missuo
@@ -22,8 +22,6 @@ Repository map entry: [missuo/herdrm](../../repos/missuo/herdrm.md) (source: bac
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Native macOS console for herdr that aggregates all herdr-managed coding agents across local and remote (SSH) machines in one window with live PTY attachment, notifications, and Cmd-K search; auto-reconnects remote machines via SSH tunneling
-
-(captured site page body (agents/herdrm.md), not a verified repo-code finding)
-herdrm is a native macOS client for herdr, the background daemon that keeps coding-agent sessions alive. It presents one window listing every herdr-managed agent across the local machine and SSH-connected servers, with live status for spaces, agents, and terminals, and Cmd-K search across all devices. Attachment happens over the genuine PTY through a SwiftTerm-based terminal view, preserving the full TUI rendering of Claude Code, Codex, Gemini, Grok, and OpenCode sessions rather than reducing them to a chat-style transcript. Beyond observation it supports interaction: pasting files and images into agents, a two-pane file manager for local and SSH transfers, and system notifications when an agent finishes or blocks. The app is signed and notarized with Sparkle auto-updates, ships as a universal binary, and is explicitly early-stage software under active development.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/herdrm.md)
+(published index `description`, not a verified repo-code finding)
+herdrm is a native macOS client for herdr, the background daemon that keeps coding-agent sessions alive. It presents one window listing every herdr-managed agent across the local machine and SSH-conne
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

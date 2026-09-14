@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: zachblume
@@ -22,8 +22,6 @@ Repository map entry: [zachblume/autospec](../../repos/zachblume/autospec.md) (s
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Open-source AI agent that autonomously explores a web app URL, generates commonsense e2e test specifications, executes them, and saves passing tests as reusable Playwright .spec.js files
-
-(captured site page body (agents/autospec.md), not a verified repo-code finding)
-autospec addresses the bootstrap problem in end-to-end testing: writing the first meaningful Playwright specs for a web app is tedious, so the agent does it. Given just a URL, it crawls up to three pages, generates commonsense test specifications via an LLM, executes them in parallel with semantic browser actions (click by role, fill by label), and judges correctness from accessibility snapshots rather than rigid prior-state comparison. Passing tests are saved as standard Playwright .spec.js files in a trajectories/ folder, ready to run with npx playwright test and extend manually. Model choice (Claude, GPT, Gemini) is pluggable via the Vercel AI SDK, and no configuration beyond a URL and API key is required. QA engineers and developers use it to bootstrap e2e coverage quickly before refining specs by hand.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/autospec.md)
+(published index `description`, not a verified repo-code finding)
+autospec addresses the bootstrap problem in end-to-end testing: writing the first meaningful Playwright specs for a web app is tedious, so the agent does it. Given just a URL, it crawls up to three pa
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

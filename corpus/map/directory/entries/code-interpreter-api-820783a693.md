@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: leezhuuuuu
@@ -22,8 +22,6 @@ Repository map entry: [leezhuuuuu/code-interpreter-api](../../repos/leezhuuuuu/c
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Scheduling center plus sandbox using Docker for safe, isolated Python code execution; stores generated image data in PostgreSQL with API access; designed to accelerate AI agent development by providing a reliable remote code-execution API.
-
-(captured site page body (agents/code-interpreter-api.md), not a verified repo-code finding)
-The service gives LLM applications a safe code-execution backend without exposing the host: each request runs in an isolated Docker container with configurable memory/CPU limits and timeouts, and generated images persist in PostgreSQL for retrieval through a REST endpoint. The scheduling center manages concurrency with queues and semaphores, and a hosted demo integrates with FastGPT, so agent platforms can add code execution without building sandbox infrastructure. It deliberately contains no LLM, planning, or agent logic - it is the tool, not the agent. Development activity ceased in early 2025.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/code-interpreter-api.md)
+(backing feed `description`, not a verified repo-code finding)
+The service gives LLM applications a safe code-execution backend without exposing the host: each request runs in an isolated Docker container with configurable memory/CPU limits and timeouts, and gene
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

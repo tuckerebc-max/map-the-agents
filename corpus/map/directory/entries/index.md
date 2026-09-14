@@ -30,306 +30,306 @@ Page 1 of 5. [First page](index.md) | [Next](index.page-2.md)
 - [Agena (`agena`)](agena-b9f411114d.md) -- published+backing+pages
 - [agency-agents-zh (`agency-agents-zh`)](agency-agents-zh-350e33d48e.md) -- backing+pages
 - [Agent-Blackbox (`agent-blackbox`)](agent-blackbox-28fd7eaee1.md) -- backing+pages
-- [agent-deck (`agent-deck`)](agent-deck-6490e836cf.md) -- published+backing+pages
-- [Agent FM (`agent-fm`)](agent-fm-0c05b4fd26.md) -- published+backing+pages
-- [Agent GUI (`agent-gui`)](agent-gui-b083ab2052.md) -- published+backing+pages
-- [Agent-harness-kit (`agent-harness-kit`)](agent-harness-kit-b31e9280cc.md) -- published+backing+pages
-- [Agent-Manager (`agent-manager`)](agent-manager-3ad8690e9a.md) -- published+backing+pages
-- [agent-md (`agent-md`)](agent-md-4daf77d1d9.md) -- backing+pages
-- [agent-of-empires (`agent-of-empires`)](agent-of-empires-00cf4ad090.md) -- published+backing+pages
-- [agent-orchestrator (`agent-orchestrator`)](agent-orchestrator-8c5aaea139.md) -- published+backing+pages
-- [Agent Orchestrator (AO) (`agent-orchestrator-ao`)](agent-orchestrator-ao-e9edd7901c.md) -- published+backing+pages
-- [agent-os (`agent-os`)](agent-os-c242c43a13.md) -- published+backing+pages
-- [Agent-Repoguardian (`agent-repoguardian`)](agent-repoguardian-9c32c2c5de.md) -- backing+pages
-- [agent-sandbox (`agent-sandbox`)](agent-sandbox-2551521c5c.md) -- backing+pages
-- [agent-sh (`agent-sh`)](agent-sh-93823270ed.md) -- published+backing+pages
-- [Agent Teams AI (`agent-teams-ai`)](agent-teams-ai-a9ac1a4f56.md) -- published+backing+pages
-- [AgentBox (`agentbox`)](agentbox-8f64ae6a4c.md) -- published+backing+pages
-- [agentbridge (`agentbridge`)](agentbridge-ef2c8934eb.md) -- backing+pages
-- [AgentCoder (`agentcoder`)](agentcoder-4f2340a3d1.md) -- published+backing+pages
-- [agentcookie (`agentcookie`)](agentcookie-466d796d6d.md) -- backing+pages
-- [AgentellIJ (`agentellij`)](agentellij-d9ffac3fde.md) -- published+backing+pages
-- [AgentFlow (`agentflow`)](agentflow-a7f7eb9294.md) -- published+backing+pages
-- [Agentforce for Developers (`agentforce-for-developers`)](agentforce-for-developers-32c794c032.md) -- published+backing+pages
-- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing+pages
-- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing+pages
-- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing+pages
-- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing+pages
-- [agentic-coding-basic (`agentic-coding-basic`)](agentic-coding-basic-f6bc4d044c.md) -- backing+pages
-- [agentic-coding-intro (`agentic-coding-intro`)](agentic-coding-intro-15e7442a5f.md) -- backing+pages
-- [agentic-coding-quickstart (`agentic-coding-quickstart`)](agentic-coding-quickstart-5e9704a227.md) -- backing+pages
-- [agentic-coding-tool-eval (`agentic-coding-tool-eval`)](agentic-coding-tool-eval-ad57dc0139.md) -- backing+pages
-- [Agentic-Coding-with-Claude-Code (`agentic-coding-with-claude-code`)](agentic-coding-with-claude-code-079ad7d17c.md) -- backing+pages
-- [Agentic Engineering Framework (`agentic-engineering-framework`)](agentic-engineering-framework-1599bb2c80.md) -- published+backing+pages
-- [Agentic-Platform (`agentic-platform`)](agentic-platform-4f47376f3e.md) -- published+backing+pages
-- [Agenticai (`agenticai`)](agenticai-aae652876a.md) -- published+backing+pages
-- [Agentlas OS (`agentlas-os`)](agentlas-os-fcd34507fe.md) -- backing+pages
-- [Agentless (`agentless`)](agentless-d4da054017.md) -- backing+pages
-- [agent.md (`agentmd`)](agentmd-9e61d90c1f.md) -- backing+pages
-- [agentnotch (`agentnotch`)](agentnotch-511ffb6a05.md) -- backing+pages
-- [AgentPack (`agentpack`)](agentpack-26909bd129.md) -- backing+pages
-- [AgentPlane (`agentplane`)](agentplane-c0f8f77669.md) -- published+backing+pages
-- [AgentPort (`agentport`)](agentport-3c3d8829cc.md) -- published+backing+pages
-- [agentrove (`agentrove`)](agentrove-c8844d6efb.md) -- published+backing+pages
-- [Agents (`agents`)](agents-8c70b25cbb.md) -- published+backing+pages
-- [Agents by Hugging Face (`agents-by-hugging-face`)](agents-by-hugging-face-b4473c9622.md) -- published+backing+pages
-- [agents-cli (`agents-cli`)](agents-cli-ee70228a5d.md) -- published+backing+pages
-- [agents-md (`agents-md`)](agents-md-96957fcd94.md) -- backing+pages
-- [AgentScope (`agentscope`)](agentscope-2651b51fbf.md) -- published+backing+pages
-- [agents.md (`agentsmd`)](agentsmd-74f093134e.md) -- backing+pages
-- [AgentsMesh (`agentsmesh`)](agentsmesh-65db377c11.md) -- published+backing+pages
-- [AgentsView (`agentsview`)](agentsview-b36679a310.md) -- backing+pages
-- [agentsync (`agentsync`)](agentsync-5a5a3198e0.md) -- backing+pages
-- [AgentTeams (`agentteams`)](agentteams-ae3e480a7c.md) -- published+backing+pages
-- [agenttrace (`agenttrace`)](agenttrace-e480f02d22.md) -- backing+pages
-- [Agon (`agon`)](agon-ab7ec08b55.md) -- backing+pages
-- [agx (`agx`)](agx-038cc7a7cb.md) -- published+backing+pages
-- [ahadiff (`ahadiff`)](ahadiff-1b22943373.md) -- backing+pages
-- [AI Agent CLI Bridge (`ai-agent-cli-bridge`)](ai-agent-cli-bridge-8fabd2c842.md) -- published+backing+pages
-- [Ai-Agent-Lab (`ai-agent-lab`)](ai-agent-lab-8eb96db62c.md) -- backing+pages
-- [Ai-Agent-Playground (`ai-agent-playground`)](ai-agent-playground-ea610a1ff2.md) -- backing+pages
-- [Ai-Agent-Security (`ai-agent-security`)](ai-agent-security-a4a9803cc7.md) -- backing+pages
-- [Ai-Agent-Test (`ai-agent-test`)](ai-agent-test-402119b9f0.md) -- backing+pages
-- [Ai-Agents-Tool-Dev (`ai-agents-tool-dev`)](ai-agents-tool-dev-160229d63c.md) -- published+backing+pages
-- [AI Assistant by JetBrains (`ai-assistant-by-jetbrains`)](ai-assistant-by-jetbrains-a02e84a3e7.md) -- published+backing+pages
-- [AI-Builders-Bootcamp-1 (`ai-builders-bootcamp-1`)](ai-builders-bootcamp-1-f6434c33bc.md) -- backing+pages
-- [AI-Builders-Bootcamp-2 (`ai-builders-bootcamp-2`)](ai-builders-bootcamp-2-4c692878fa.md) -- backing+pages
-- [AI Code Editors(All kinds) (`ai-code-editorsall-kinds`)](ai-code-editorsall-kinds-9e6a008b71.md) -- backing+pages
-- [Ai-Code-Gen (`ai-code-gen`)](ai-code-gen-f6ac0d3b22.md) -- backing+pages
-- [ai-code-review-helper (`ai-code-review-helper`)](ai-code-review-helper-933a07d6d4.md) -- backing+pages
-- [AI Coding Assistant (`ai-coding-assistant`)](ai-coding-assistant-f0b80f918e.md) -- published+backing+pages
-- [AI-Coding-Style-Guides (`ai-coding-style-guides`)](ai-coding-style-guides-fc28222e55.md) -- backing+pages
-- [ai-data-extractor (`ai-data-extractor`)](ai-data-extractor-1add929798.md) -- backing+pages
-- [Ai-Dev-Agent-Test (`ai-dev-agent-test`)](ai-dev-agent-test-ef2cd46f8e.md) -- backing+pages
-- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing+pages
-- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing+pages
-- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing+pages
-- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing+pages
-- [AI-Engineer (`ai-engineer`)](ai-engineer-cb524c197c.md) -- backing+pages
-- [ai-engineer-toolkit (`ai-engineer-toolkit`)](ai-engineer-toolkit-c889031425.md) -- backing+pages
-- [Ai-Engineering-Roadmap (`ai-engineering-roadmap`)](ai-engineering-roadmap-e81f258322.md) -- backing+pages
-- [ai-engineering-toolkit (`ai-engineering-toolkit`)](ai-engineering-toolkit-461875aa28.md) -- backing+pages
-- [AI expert for codebases (`ai-expert-for-codebases`)](ai-expert-for-codebases-d6bbcfc3f3.md) -- backing+pages
-- [ai-for-software-engineers (`ai-for-software-engineers`)](ai-for-software-engineers-892fab3d83.md) -- backing+pages
-- [AI Free Chat & Agent (`ai-free-chat-agent`)](ai-free-chat-agent-d723018f40.md) -- published+backing+pages
-- [ai_game_base_analysis_cli_mcp_tool (`ai-game-base-analysis-cli-mcp-tool`)](ai-game-base-analysis-cli-mcp-tool-03ac203404.md) -- backing+pages
-- [Ai_Gdpr (`ai-gdpr`)](ai-gdpr-a449cf2e7f.md) -- backing+pages
-- [ai-orchestrator (`ai-orchestrator`)](ai-orchestrator-c5d6c0fa03.md) -- published+backing+pages
-- [Ai-Powered-Chatbot-Generator (`ai-powered-chatbot-generator`)](ai-powered-chatbot-generator-5c88dc0390.md) -- backing+pages
-- [AI-Powered-Vulnerability-Impact-Analyzer (`ai-powered-vulnerability-impact-analyzer`)](ai-powered-vulnerability-impact-analyzer-2c34c096dc.md) -- backing+pages
-- [Ai-Testing-Agent (`ai-testing-agent`)](ai-testing-agent-4f567cd7b8.md) -- published+backing+pages
-- [ai-vibe-coding-notes-form-threads (`ai-vibe-coding-notes-form-threads`)](ai-vibe-coding-notes-form-threads-53e49ae7a5.md) -- backing+pages
-- [ai-website-builder (`ai-website-builder`)](ai-website-builder-ec53264f9e.md) -- backing+pages
-- [ai-website-cloner-template (`ai-website-cloner-template`)](ai-website-cloner-template-b6d192a515.md) -- backing+pages
-- [ai4j (`ai4j`)](ai4j-0ddcf890aa.md) -- published+backing+pages
-- [Aider (`aider`)](aider-ebde709e30.md) -- published+backing+pages
-- [aider-desk (`aider-desk`)](aider-desk-d88f8139c0.md) -- published+backing+pages
-- [aidermacs (`aidermacs`)](aidermacs-d66b68d181.md) -- backing+pages
-- [Aikido Autofix (`aikido-autofix`)](aikido-autofix-6cae53a7bd.md) -- published+backing+pages
-- [Aimultiagents (`aimultiagents`)](aimultiagents-ecfb4c23f0.md) -- backing+pages
-- [Aip-Identity (`aip-identity`)](aip-identity-dc11985fa2.md) -- backing+pages
-- [aipexbase (`aipexbase`)](aipexbase-ac9bfedfa2.md) -- backing+pages
-- [AIVory Genie (`aivory-genie`)](aivory-genie-729144dec0.md) -- published+backing+pages
-- [aiXcoder (`aixcoder`)](aixcoder-38d94122ab.md) -- published+backing+pages
-- [aizen (`aizen`)](aizen-e2f1261da7.md) -- published+backing+pages
-- [Albatross (`albatross`)](albatross-24f93dc159.md) -- published+backing+pages
-- [Alex Sidebar (`alex-sidebar`)](alex-sidebar-ea03c9e262.md) -- published+backing+pages
-- [Alfred-Calculate-Anything (`alfred-calculate-anything`)](alfred-calculate-anything-175dfa0a31.md) -- backing+pages
-- [AliFullStack (`alifullstack`)](alifullstack-3dec4e9810.md) -- published+backing+pages
-- [alive-analysis (`alive-analysis`)](alive-analysis-6b2d92032d.md) -- backing+pages
-- [am-i-vibing (`am-i-vibing`)](am-i-vibing-b13e97e13e.md) -- backing+pages
-- [Amazon-Mwaa-Examples (`amazon-mwaa-examples`)](amazon-mwaa-examples-11c5453579.md) -- backing+pages
-- [Amazon Q Developer CLI (`amazon-q-developer-cli`)](amazon-q-developer-cli-e6e5203be1.md) -- published+backing+pages
-- [Amp (`amp`)](amp-46855b3906.md) -- published+backing+pages
-- [Amplifier (`amplifier`)](amplifier-9c476d20ba.md) -- published+backing+pages
-- [Amplify Security (`amplify-security`)](amplify-security-76a764c817.md) -- published+backing+pages
-- [amux (`amux`)](amux-fdc6912716.md) -- published+backing+pages
-- [angles-cli (`angles-cli`)](angles-cli-b823c1fc29.md) -- published+backing+pages
-- [Anima (`anima`)](anima-8c2dda2f00.md) -- backing+pages
-- [announcement (`announcement`)](announcement-86118a3b7f.md) -- backing+pages
-- [Ante (`ante`)](ante-d968e224a0.md) -- published+backing+pages
-- [Antigravity CLI (`antigravity-cli`)](antigravity-cli-744c585fa1.md) -- published+backing+pages
-- [Antigravity for VS Code (`antigravity-for-vs-code`)](antigravity-for-vs-code-52c7fc567c.md) -- published+backing+pages
-- [antigravity-jules-orchestration (`antigravity-jules-orchestration`)](antigravity-jules-orchestration-391946c4c0.md) -- backing+pages
-- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing+pages
-- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing+pages
-- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing+pages
-- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing+pages
-- [AppAgent (`appagent`)](appagent-a89cb5a680.md) -- backing+pages
-- [AppClipCodeGenerator (`appclipcodegenerator`)](appclipcodegenerator-2426ed2661.md) -- backing+pages
-- [Ara AI (`ara-ai`)](ara-ai-8d68d0f3f9.md) -- published+backing+pages
-- [arbor (`arbor`)](arbor-b86c24fb62.md) -- published+backing+pages
-- [arc-kit (`arc-kit`)](arc-kit-521c9deae9.md) -- backing+pages
-- [Arcgentic (`arcgentic`)](arcgentic-19cb692c1d.md) -- backing+pages
-- [Archon (`archon`)](archon-8f61a067f9.md) -- published+backing+pages
-- [Are-Copilots-Local-Yet (`are-copilots-local-yet`)](are-copilots-local-yet-d6fbe46b1a.md) -- backing+pages
-- [AskCodi (`askcodi`)](askcodi-1ff7dc8439.md) -- published+backing+pages
-- [Async (`async`)](async-2d4a6334d2.md) -- published+backing+pages
-- [athas (`athas`)](athas-bd3d85d2d2.md) -- published+backing+pages
-- [Athena by LuckeySystems (`athena-by-luckeysystems`)](athena-by-luckeysystems-2c821f691d.md) -- published+backing+pages
-- [Atlarix (`atlarix`)](atlarix-55c137e022.md) -- published+backing+pages
-- [atmosphere (`atmosphere`)](atmosphere-bfd5a8ed73.md) -- published+backing+pages
-- [atomcode (`atomcode`)](atomcode-91d68a6b91.md) -- published+backing+pages
-- [atomic (`atomic`)](atomic-fd43322a4d.md) -- published+backing+pages
-- [Auggie (`auggie`)](auggie-9849945b38.md) -- published+backing+pages
-- [Augment Code (`augment-code`)](augment-code-f980a0970a.md) -- published+backing+pages
-- [auto-co (`auto-co`)](auto-co-b2b040b7d0.md) -- backing+pages
-- [auto-company (`auto-company`)](auto-company-fb0fffd78a.md) -- backing+pages
-- [auto-dev (`auto-dev`)](auto-dev-c9c38ccd0a.md) -- published+backing+pages
-- [AutoBE (`autobe`)](autobe-505f016f56.md) -- published+backing+pages
-- [AutoDev (`autodev`)](autodev-27459982c1.md) -- published+backing+pages
-- [AutoGen (`autogen`)](autogen-378d204807.md) -- published+backing+pages
-- [Autohand Code CLI (`autohand-code-cli`)](autohand-code-cli-620fb6e518.md) -- published+backing+pages
-- [Automata (`automata`)](automata-dc7448c392.md) -- published+backing+pages
-- [Autonoma (`autonoma`)](autonoma-857e1d32b8.md) -- published+backing+pages
-- [AutoPR (`autopr`)](autopr-f75d8f0d0e.md) -- published+backing+pages
-- [Autospec (`autospec`)](autospec-55e8b355df.md) -- published+backing+pages
-- [AutoStartup (`autostartup`)](autostartup-bab4d0a181.md) -- published+backing+pages
-- [Awel (`awel`)](awel-7dedcada4e.md) -- published+backing+pages
-- [Aws-Mwaa-Local-Runner (`aws-mwaa-local-runner`)](aws-mwaa-local-runner-ef5748deeb.md) -- backing+pages
-- [AWS Transform (`aws-transform`)](aws-transform-78d00ca2e4.md) -- published+backing+pages
-- [Axflow (`axflow`)](axflow-42c9e35a8c.md) -- backing+pages
-- [Azad Coder (`azad-coder`)](azad-coder-6a1758703a.md) -- published+backing+pages
-- [Azure-AI-Engineer-Associate-Notes (`azure-ai-engineer-associate-notes`)](azure-ai-engineer-associate-notes-4c75280d92.md) -- backing+pages
-- [Baidu Comate (`baidu-comate`)](baidu-comate-5c00ac3c1b.md) -- published+backing+pages
-- [Baidu Miaoda (`baidu-miaoda`)](baidu-miaoda-e51547c442.md) -- published+backing+pages
-- [Bandit Stealth (`bandit-stealth`)](bandit-stealth-8eb9f00177.md) -- published+backing+pages
-- [Bardeen (`bardeen`)](bardeen-0a9ee5a4f4.md) -- backing+pages
-- [baro (`baro`)](baro-269b0f5338.md) -- published+backing+pages
-- [Base 44 (`base-44`)](base-44-a62741c71c.md) -- published+backing+pages
-- [Bazed (`bazed`)](bazed-55d6d197d5.md) -- published+backing+pages
-- [bb (`bb`)](bb-3b64db95cb.md) -- published+backing+pages
-- [bbarit-agent-oss (`bbarit-agent-oss`)](bbarit-agent-oss-2ae584d5d2.md) -- published+backing+pages
-- [beehive (`beehive`)](beehive-90de6401a4.md) -- published+backing+pages
-- [Benzi (`benzi`)](benzi-b3b70aa9d9.md) -- published+backing+pages
-- [Bernstein (`bernstein`)](bernstein-2bf5a223d6.md) -- published+backing+pages
-- [betool - AI Code Assistant (`betool-ai-code-assistant`)](betool-ai-code-assistant-69b488a0e7.md) -- published+backing+pages
-- [Better Agent (`better-agent`)](better-agent-c1b96ad096.md) -- published+backing+pages
-- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing+pages
-- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing+pages
-- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing+pages
-- [Binary RE (`binary-re`)](binary-re-0ea75eaa69.md) -- pages-only
-- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing+pages
-- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing+pages
-- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing+pages
-- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing+pages
-- [Bito (`bito`)](bito-200ae7adee.md) -- backing+pages
-- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing+pages
-- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing+pages
-- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing+pages
-- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing+pages
-- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing+pages
-- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing+pages
-- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing+pages
-- [BMAD-METHOD (`bmad-method`)](bmad-method-40a1d375df.md) -- backing+pages
-- [Bolt.new (`boltnew`)](boltnew-a43d82626c.md) -- published+backing+pages
-- [Breakaway Agent (`breakaway-agent`)](breakaway-agent-ea58f4190f.md) -- published+pages
-- [Brokies-AI-Foundry (`brokies-ai-foundry`)](brokies-ai-foundry-4481233071.md) -- backing+pages
-- [brood-box (`brood-box`)](brood-box-ec4f8f3320.md) -- published+backing+pages
-- [browser-operator-core (`browser-operator-core`)](browser-operator-core-f47c07a526.md) -- published+backing+pages
-- [Browserbase (`browserbase`)](browserbase-9d800b766e.md) -- backing+pages
-- [Bubble (`bubble`)](bubble-df4ac41625.md) -- backing+pages
-- [build-your-own-coding-agent (`build-your-own-coding-agent`)](build-your-own-coding-agent-6637f1dd06.md) -- backing+pages
-- [Builder.io Fusion (`builderio-fusion`)](builderio-fusion-5052f6978c.md) -- published+backing+pages
-- [building-intelligent-apps-with-anaconda (`building-intelligent-apps-with-anaconda`)](building-intelligent-apps-with-anaconda-365c76c0dd.md) -- backing+pages
-- [buildware-ai (`buildware-ai`)](buildware-ai-ffc938caee.md) -- published+backing+pages
-- [Bullet (`bullet`)](bullet-ed12eb2000.md) -- published+backing+pages
-- [bumpgen (`bumpgen`)](bumpgen-1776b2cf84.md) -- published+backing+pages
-- [Bwee (`bwee`)](bwee-c9c823001a.md) -- published+backing+pages
-- [CalEx-JavaAI (`calex-javaai`)](calex-javaai-ae41365bce.md) -- published+backing+pages
-- [call.md (`callmd`)](callmd-26b586ce00.md) -- backing+pages
-- [Calyx (`calyx`)](calyx-f34d4293c3.md) -- published+backing+pages
-- [camelAI (`camelai`)](camelai-d5e34e992e.md) -- published+backing+pages
-- [Canva AI Coding (`canva-ai-coding`)](canva-ai-coding-41c840f015.md) -- backing+pages
-- [Canva Code (`canva-code`)](canva-code-14f1c66f2a.md) -- backing+pages
-- [carrycode (`carrycode`)](carrycode-44cf069857.md) -- published+backing+pages
-- [Cartlis (`cartlis`)](cartlis-b42ca4efc7.md) -- backing+pages
-- [cascadeflow (`cascadeflow`)](cascadeflow-3a559be66e.md) -- backing+pages
-- [Catnip (`catnip`)](catnip-eb1b94cfd6.md) -- published+backing+pages
-- [CatPaw (`catpaw`)](catpaw-9b3f33d40f.md) -- published+backing+pages
-- [caveman-code (`caveman-code`)](caveman-code-0530562837.md) -- published+backing+pages
-- [cavemem (`cavemem`)](cavemem-725057beda.md) -- backing+pages
-- [Celebrimbot (`celebrimbot`)](celebrimbot-4637ad2a11.md) -- published+backing+pages
-- [cersei (`cersei`)](cersei-557ae9fcd0.md) -- published+backing+pages
-- [ChainlessChain IDE Bridge (`chainlesschain-ide-bridge`)](chainlesschain-ide-bridge-2bf7e91340.md) -- published+backing+pages
-- [Chamberlain_Multimodal_Multiagent_Chatbot (`chamberlain-multimodal-multiagent-chatbot`)](chamberlain-multimodal-multiagent-chatbot-00e974f31b.md) -- backing+pages
-- [Charlie Labs (`charlie-labs`)](charlie-labs-4502c20eeb.md) -- published+backing+pages
-- [ChartGPT (`chartgpt`)](chartgpt-03323b1877.md) -- backing+pages
-- [ChatDev (`chatdev`)](chatdev-dc8d2c750f.md) -- published+backing+pages
-- [Chaterm (`chaterm`)](chaterm-d6a9b29328.md) -- published+backing+pages
-- [chatgpt-vscode (`chatgpt-vscode`)](chatgpt-vscode-a56a1fe5d5.md) -- backing+pages
-- [chef (`chef`)](chef-f59ac0828b.md) -- published+backing+pages
-- [Cherry Studio (`cherry-studio`)](cherry-studio-debe5096be.md) -- backing+pages
-- [Clacky (`clacky`)](clacky-feff48d00e.md) -- published+backing+pages
-- [Claude Agent SDK (Python) (`claude-agent-sdk-python`)](claude-agent-sdk-python-dfef51e5f5.md) -- published+backing+pages
-- [Claude Agent SDK (TypeScript) (`claude-agent-sdk-typescript`)](claude-agent-sdk-typescript-b52c0c1f60.md) -- published+backing+pages
-- [Claude Autopilot (`claude-autopilot`)](claude-autopilot-b9479eeb3a.md) -- published+backing+pages
-- [Claude Code (`claude-code`)](claude-code-28e1743960.md) -- published+backing+pages
-- [claude-code-merge-queue (`claude-code-merge-queue`)](claude-code-merge-queue-52bc0b66c6.md) -- backing+pages
-- [Claude-Code-Multi-Agent (`claude-code-multi-agent`)](claude-code-multi-agent-cb55914b6f.md) -- backing+pages
-- [claude-code-plus (`claude-code-plus`)](claude-code-plus-1138752517.md) -- published+backing+pages
-- [claude-code (`claude-code-skeleton`)](claude-code-skeleton-19304317c3.md) -- backing+pages
-- [claude_code_sub_agents (`claude-code-sub-agents`)](claude-code-sub-agents-a64eb86355.md) -- backing+pages
-- [Claude Code Tools (`claude-code-tools`)](claude-code-tools-657313a770.md) -- backing+pages
-- [claude-code-viewer (`claude-code-viewer`)](claude-code-viewer-2453448258.md) -- published+backing+pages
-- [claude_codex_bridge (`claude-codex-bridge`)](claude-codex-bridge-9d315f5fc5.md) -- published+backing+pages
-- [Claude Engineer (`claude-engineer`)](claude-engineer-1a2f7f48a8.md) -- published+backing+pages
-- [claude-flow (`claude-flow`)](claude-flow-e5c9870fa9.md) -- published+backing+pages
-- [Claude-Html-Test (`claude-html-test`)](claude-html-test-dfaa817a91.md) -- backing+pages
-- [claude-memory-compiler (`claude-memory-compiler`)](claude-memory-compiler-2bdfb94452.md) -- backing+pages
-- [claude-northstar (`claude-northstar`)](claude-northstar-412cb1adbe.md) -- backing+pages
-- [claude-orchestration (`claude-orchestration`)](claude-orchestration-11cfd64b80.md) -- backing+pages
-- [2389 Claude Plugins (`claude-plugins-2389`)](claude-plugins-2389-b2e1eba16a.md) -- pages-only
-- [Claude Squad (`claude-squad`)](claude-squad-67acc7bb84.md) -- published+backing+pages
-- [Claude Subscription ACP Agent (`claude-subscription-acp-agent`)](claude-subscription-acp-agent-4a937becf7.md) -- published+backing+pages
-- [claude-swarm (`claude-swarm`)](claude-swarm-11b9095d66.md) -- published+backing+pages
-- [claudecode-orchestrator (`claudecode-orchestrator`)](claudecode-orchestrator-ce11cfba2a.md) -- backing+pages
-- [claudemacs (`claudemacs`)](claudemacs-d58e855cf9.md) -- backing+pages
-- [claude.vim (`claudevim`)](claudevim-1127386f3a.md) -- published+backing+pages
-- [Claudexor (`claudexor`)](claudexor-2b64301286.md) -- published+backing+pages
-- [Claudraband (`claudraband`)](claudraband-853186ab4d.md) -- published+backing+pages
-- [Claurst (`claurst`)](claurst-3b24d6f8f1.md) -- published+backing+pages
-- [Claw Code (`claw-code`)](claw-code-959f9d8922.md) -- published+backing+pages
-- [claw-code-agent (`claw-code-agent`)](claw-code-agent-8464312501.md) -- published+backing+pages
-- [clawcodex (`clawcodex`)](clawcodex-d7ca84ab1c.md) -- published+backing+pages
-- [Clawde_Code (`clawde-code`)](clawde-code-a5efdff06a.md) -- backing+pages
-- [clawdstrike (`clawdstrike`)](clawdstrike-ab34fbd603.md) -- backing+pages
-- [CLI Agent Dock (`cli-agent-dock`)](cli-agent-dock-9adf6b0dd7.md) -- published+backing+pages
-- [CLI Agent Orchestrator (CAO) (`cli-agent-orchestrator-cao`)](cli-agent-orchestrator-cao-a6324bebeb.md) -- published+backing+pages
-- [cli-llm-coding (`cli-llm-coding`)](cli-llm-coding-2507787da5.md) -- backing+pages
-- [CLI Manager (`cli-manager`)](cli-manager-689d4cd6d2.md) -- published+backing+pages
-- [cliclaw (`cliclaw`)](cliclaw-2ff68be93c.md) -- published+backing+pages
-- [CliDeck (`clideck`)](clideck-5a9e5e1553.md) -- published+backing+pages
-- [Cline (`cline`)](cline-84829dbd81.md) -- published+backing+pages
-- [clio (`clio`)](clio-c38c694be0.md) -- published+backing+pages
-- [CLITrigger (`clitrigger`)](clitrigger-b226cf8cfc.md) -- published+backing+pages
-- [clodex-ide (`clodex-ide`)](clodex-ide-082b969807.md) -- published+backing+pages
-- [cloi (`cloi`)](cloi-1181f0a25f.md) -- published+backing+pages
-- [clu (`clu`)](clu-04361edad3.md) -- backing+pages
-- [Cluely (`cluely`)](cluely-18758646e2.md) -- backing+pages
-- [cmux (`cmux`)](cmux-548d4fabc5.md) -- published+backing+pages
-- [codai (`codai`)](codai-fa535ba818.md) -- published+backing+pages
-- [codayinid (`codayinid`)](codayinid-0106d1c88f.md) -- published+backing+pages
-- [code-agent (`code-agent`)](code-agent-57314920a1.md) -- published+backing+pages
-- [Code-Agent-Survey (`code-agent-survey`)](code-agent-survey-cfbd745b28.md) -- backing+pages
-- [code-assistant (`code-assistant`)](code-assistant-bb67f42f1a.md) -- published+backing+pages
-- [Code-Interpreter (`code-interpreter`)](code-interpreter-2287a5a76a.md) -- published+backing+pages
-- [Code-Interpreter-Api (`code-interpreter-api`)](code-interpreter-api-820783a693.md) -- backing+pages
-- [Code Metal (`code-metal`)](code-metal-47a4723b46.md) -- published+backing+pages
-- [code-review (`code-review`)](code-review-717d32bb32.md) -- backing+pages
-- [Code2Prompt (`code2prompt`)](code2prompt-1cd55f951d.md) -- backing+pages
-- [CodeActAgent (`codeactagent`)](codeactagent-b9323aefee.md) -- published+backing+pages
-- [CodeAGI (`codeagi`)](codeagi-f6026b7cca.md) -- backing+pages
-- [codealmanac (`codealmanac`)](codealmanac-d33cea4b20.md) -- backing+pages
-- [CodeAlta (`codealta`)](codealta-3092151208.md) -- published+backing+pages
-- [codeany (`codeany`)](codeany-dc633210b8.md) -- published+backing+pages
-- [codeassist (`codeassist`)](codeassist-0a73f164de.md) -- backing+pages
-- [codebadger (`codebadger`)](codebadger-7d610dee00.md) -- backing+pages
-- [codebase-argus (`codebase-argus`)](codebase-argus-58e8de5b97.md) -- published+backing+pages
-- [codebase-index-cli (`codebase-index-cli`)](codebase-index-cli-9b13e566be.md) -- backing+pages
-- [codebuddy (`codebuddy`)](codebuddy-580683fe55.md) -- published+backing+pages
-- [Codebuff (`codebuff`)](codebuff-35484aa117.md) -- published+backing+pages
-- [CodeClinicR (`codeclinicr`)](codeclinicr-835d38591c.md) -- backing+pages
-- [CodeContests (`codecontests`)](codecontests-b8e5aab8bd.md) -- backing+pages
-- [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing+pages
-- [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing+pages
+- [agent-deck (`agent-deck`)](agent-deck-6490e836cf.md) -- published+backing
+- [Agent FM (`agent-fm`)](agent-fm-0c05b4fd26.md) -- published+backing
+- [Agent GUI (`agent-gui`)](agent-gui-b083ab2052.md) -- published+backing
+- [Agent-harness-kit (`agent-harness-kit`)](agent-harness-kit-b31e9280cc.md) -- published+backing
+- [Agent-Manager (`agent-manager`)](agent-manager-3ad8690e9a.md) -- published+backing
+- [agent-md (`agent-md`)](agent-md-4daf77d1d9.md) -- backing-only
+- [agent-of-empires (`agent-of-empires`)](agent-of-empires-00cf4ad090.md) -- published+backing
+- [agent-orchestrator (`agent-orchestrator`)](agent-orchestrator-8c5aaea139.md) -- published+backing
+- [Agent Orchestrator (AO) (`agent-orchestrator-ao`)](agent-orchestrator-ao-e9edd7901c.md) -- published+backing
+- [agent-os (`agent-os`)](agent-os-c242c43a13.md) -- published+backing
+- [Agent-Repoguardian (`agent-repoguardian`)](agent-repoguardian-9c32c2c5de.md) -- backing-only
+- [agent-sandbox (`agent-sandbox`)](agent-sandbox-2551521c5c.md) -- backing-only
+- [agent-sh (`agent-sh`)](agent-sh-93823270ed.md) -- published+backing
+- [Agent Teams AI (`agent-teams-ai`)](agent-teams-ai-a9ac1a4f56.md) -- published+backing
+- [AgentBox (`agentbox`)](agentbox-8f64ae6a4c.md) -- published+backing
+- [agentbridge (`agentbridge`)](agentbridge-ef2c8934eb.md) -- backing-only
+- [AgentCoder (`agentcoder`)](agentcoder-4f2340a3d1.md) -- published+backing
+- [agentcookie (`agentcookie`)](agentcookie-466d796d6d.md) -- backing-only
+- [AgentellIJ (`agentellij`)](agentellij-d9ffac3fde.md) -- published+backing
+- [AgentFlow (`agentflow`)](agentflow-a7f7eb9294.md) -- published+backing
+- [Agentforce for Developers (`agentforce-for-developers`)](agentforce-for-developers-32c794c032.md) -- published+backing
+- [Agentforce Vibes (`agentforce-vibes`)](agentforce-vibes-3e2983300d.md) -- published+backing
+- [AgentHub (`agenthub`)](agenthub-ac7f7a58b8.md) -- published+backing
+- [Agentic-Ai- (`agentic-ai`)](agentic-ai-e424a7d45c.md) -- backing-only
+- [agentic-code (`agentic-code`)](agentic-code-aa8c74b4ea.md) -- backing-only
+- [agentic-coding-basic (`agentic-coding-basic`)](agentic-coding-basic-f6bc4d044c.md) -- backing-only
+- [agentic-coding-intro (`agentic-coding-intro`)](agentic-coding-intro-15e7442a5f.md) -- backing-only
+- [agentic-coding-quickstart (`agentic-coding-quickstart`)](agentic-coding-quickstart-5e9704a227.md) -- backing-only
+- [agentic-coding-tool-eval (`agentic-coding-tool-eval`)](agentic-coding-tool-eval-ad57dc0139.md) -- backing-only
+- [Agentic-Coding-with-Claude-Code (`agentic-coding-with-claude-code`)](agentic-coding-with-claude-code-079ad7d17c.md) -- backing-only
+- [Agentic Engineering Framework (`agentic-engineering-framework`)](agentic-engineering-framework-1599bb2c80.md) -- published+backing
+- [Agentic-Platform (`agentic-platform`)](agentic-platform-4f47376f3e.md) -- published+backing
+- [Agenticai (`agenticai`)](agenticai-aae652876a.md) -- published+backing
+- [Agentlas OS (`agentlas-os`)](agentlas-os-fcd34507fe.md) -- backing-only
+- [Agentless (`agentless`)](agentless-d4da054017.md) -- backing-only
+- [agent.md (`agentmd`)](agentmd-9e61d90c1f.md) -- backing-only
+- [agentnotch (`agentnotch`)](agentnotch-511ffb6a05.md) -- backing-only
+- [AgentPack (`agentpack`)](agentpack-26909bd129.md) -- backing-only
+- [AgentPlane (`agentplane`)](agentplane-c0f8f77669.md) -- published+backing
+- [AgentPort (`agentport`)](agentport-3c3d8829cc.md) -- published+backing
+- [agentrove (`agentrove`)](agentrove-c8844d6efb.md) -- published+backing
+- [Agents (`agents`)](agents-8c70b25cbb.md) -- published+backing
+- [Agents by Hugging Face (`agents-by-hugging-face`)](agents-by-hugging-face-b4473c9622.md) -- published+backing
+- [agents-cli (`agents-cli`)](agents-cli-ee70228a5d.md) -- published+backing
+- [agents-md (`agents-md`)](agents-md-96957fcd94.md) -- backing-only
+- [AgentScope (`agentscope`)](agentscope-2651b51fbf.md) -- published+backing
+- [agents.md (`agentsmd`)](agentsmd-74f093134e.md) -- backing-only
+- [AgentsMesh (`agentsmesh`)](agentsmesh-65db377c11.md) -- published+backing
+- [AgentsView (`agentsview`)](agentsview-b36679a310.md) -- backing-only
+- [agentsync (`agentsync`)](agentsync-5a5a3198e0.md) -- backing-only
+- [AgentTeams (`agentteams`)](agentteams-ae3e480a7c.md) -- published+backing
+- [agenttrace (`agenttrace`)](agenttrace-e480f02d22.md) -- backing-only
+- [Agon (`agon`)](agon-ab7ec08b55.md) -- backing-only
+- [agx (`agx`)](agx-038cc7a7cb.md) -- published+backing
+- [ahadiff (`ahadiff`)](ahadiff-1b22943373.md) -- backing-only
+- [AI Agent CLI Bridge (`ai-agent-cli-bridge`)](ai-agent-cli-bridge-8fabd2c842.md) -- published+backing
+- [Ai-Agent-Lab (`ai-agent-lab`)](ai-agent-lab-8eb96db62c.md) -- backing-only
+- [Ai-Agent-Playground (`ai-agent-playground`)](ai-agent-playground-ea610a1ff2.md) -- backing-only
+- [Ai-Agent-Security (`ai-agent-security`)](ai-agent-security-a4a9803cc7.md) -- backing-only
+- [Ai-Agent-Test (`ai-agent-test`)](ai-agent-test-402119b9f0.md) -- backing-only
+- [Ai-Agents-Tool-Dev (`ai-agents-tool-dev`)](ai-agents-tool-dev-160229d63c.md) -- published+backing
+- [AI Assistant by JetBrains (`ai-assistant-by-jetbrains`)](ai-assistant-by-jetbrains-a02e84a3e7.md) -- published+backing
+- [AI-Builders-Bootcamp-1 (`ai-builders-bootcamp-1`)](ai-builders-bootcamp-1-f6434c33bc.md) -- backing-only
+- [AI-Builders-Bootcamp-2 (`ai-builders-bootcamp-2`)](ai-builders-bootcamp-2-4c692878fa.md) -- backing-only
+- [AI Code Editors(All kinds) (`ai-code-editorsall-kinds`)](ai-code-editorsall-kinds-9e6a008b71.md) -- backing-only
+- [Ai-Code-Gen (`ai-code-gen`)](ai-code-gen-f6ac0d3b22.md) -- backing-only
+- [ai-code-review-helper (`ai-code-review-helper`)](ai-code-review-helper-933a07d6d4.md) -- backing-only
+- [AI Coding Assistant (`ai-coding-assistant`)](ai-coding-assistant-f0b80f918e.md) -- published+backing
+- [AI-Coding-Style-Guides (`ai-coding-style-guides`)](ai-coding-style-guides-fc28222e55.md) -- backing-only
+- [ai-data-extractor (`ai-data-extractor`)](ai-data-extractor-1add929798.md) -- backing-only
+- [Ai-Dev-Agent-Test (`ai-dev-agent-test`)](ai-dev-agent-test-ef2cd46f8e.md) -- backing-only
+- [ai-dev-kit (`ai-dev-kit`)](ai-dev-kit-f8c0563bda.md) -- backing-only
+- [ai-dev-tasks (`ai-dev-tasks`)](ai-dev-tasks-7da827f242.md) -- backing-only
+- [ai-devkit (`ai-devkit`)](ai-devkit-583949c88b.md) -- published+backing
+- [ai-doc-gen (`ai-doc-gen`)](ai-doc-gen-fb47375f9b.md) -- backing-only
+- [AI-Engineer (`ai-engineer`)](ai-engineer-cb524c197c.md) -- backing-only
+- [ai-engineer-toolkit (`ai-engineer-toolkit`)](ai-engineer-toolkit-c889031425.md) -- backing-only
+- [Ai-Engineering-Roadmap (`ai-engineering-roadmap`)](ai-engineering-roadmap-e81f258322.md) -- backing-only
+- [ai-engineering-toolkit (`ai-engineering-toolkit`)](ai-engineering-toolkit-461875aa28.md) -- backing-only
+- [AI expert for codebases (`ai-expert-for-codebases`)](ai-expert-for-codebases-d6bbcfc3f3.md) -- backing-only
+- [ai-for-software-engineers (`ai-for-software-engineers`)](ai-for-software-engineers-892fab3d83.md) -- backing-only
+- [AI Free Chat & Agent (`ai-free-chat-agent`)](ai-free-chat-agent-d723018f40.md) -- published+backing
+- [ai_game_base_analysis_cli_mcp_tool (`ai-game-base-analysis-cli-mcp-tool`)](ai-game-base-analysis-cli-mcp-tool-03ac203404.md) -- backing-only
+- [Ai_Gdpr (`ai-gdpr`)](ai-gdpr-a449cf2e7f.md) -- backing-only
+- [ai-orchestrator (`ai-orchestrator`)](ai-orchestrator-c5d6c0fa03.md) -- published+backing
+- [Ai-Powered-Chatbot-Generator (`ai-powered-chatbot-generator`)](ai-powered-chatbot-generator-5c88dc0390.md) -- backing-only
+- [AI-Powered-Vulnerability-Impact-Analyzer (`ai-powered-vulnerability-impact-analyzer`)](ai-powered-vulnerability-impact-analyzer-2c34c096dc.md) -- backing-only
+- [Ai-Testing-Agent (`ai-testing-agent`)](ai-testing-agent-4f567cd7b8.md) -- published+backing
+- [ai-vibe-coding-notes-form-threads (`ai-vibe-coding-notes-form-threads`)](ai-vibe-coding-notes-form-threads-53e49ae7a5.md) -- backing-only
+- [ai-website-builder (`ai-website-builder`)](ai-website-builder-ec53264f9e.md) -- backing-only
+- [ai-website-cloner-template (`ai-website-cloner-template`)](ai-website-cloner-template-b6d192a515.md) -- backing-only
+- [ai4j (`ai4j`)](ai4j-0ddcf890aa.md) -- published+backing
+- [Aider (`aider`)](aider-ebde709e30.md) -- published+backing
+- [aider-desk (`aider-desk`)](aider-desk-d88f8139c0.md) -- published+backing
+- [aidermacs (`aidermacs`)](aidermacs-d66b68d181.md) -- backing-only
+- [Aikido Autofix (`aikido-autofix`)](aikido-autofix-6cae53a7bd.md) -- published+backing
+- [Aimultiagents (`aimultiagents`)](aimultiagents-ecfb4c23f0.md) -- backing-only
+- [Aip-Identity (`aip-identity`)](aip-identity-dc11985fa2.md) -- backing-only
+- [aipexbase (`aipexbase`)](aipexbase-ac9bfedfa2.md) -- backing-only
+- [AIVory Genie (`aivory-genie`)](aivory-genie-729144dec0.md) -- published+backing
+- [aiXcoder (`aixcoder`)](aixcoder-38d94122ab.md) -- published+backing
+- [aizen (`aizen`)](aizen-e2f1261da7.md) -- published+backing
+- [Albatross (`albatross`)](albatross-24f93dc159.md) -- published+backing
+- [Alex Sidebar (`alex-sidebar`)](alex-sidebar-ea03c9e262.md) -- published+backing
+- [Alfred-Calculate-Anything (`alfred-calculate-anything`)](alfred-calculate-anything-175dfa0a31.md) -- backing-only
+- [AliFullStack (`alifullstack`)](alifullstack-3dec4e9810.md) -- published+backing
+- [alive-analysis (`alive-analysis`)](alive-analysis-6b2d92032d.md) -- backing-only
+- [am-i-vibing (`am-i-vibing`)](am-i-vibing-b13e97e13e.md) -- backing-only
+- [Amazon-Mwaa-Examples (`amazon-mwaa-examples`)](amazon-mwaa-examples-11c5453579.md) -- backing-only
+- [Amazon Q Developer CLI (`amazon-q-developer-cli`)](amazon-q-developer-cli-e6e5203be1.md) -- published+backing
+- [Amp (`amp`)](amp-46855b3906.md) -- published+backing
+- [Amplifier (`amplifier`)](amplifier-9c476d20ba.md) -- published+backing
+- [Amplify Security (`amplify-security`)](amplify-security-76a764c817.md) -- published+backing
+- [amux (`amux`)](amux-fdc6912716.md) -- published+backing
+- [angles-cli (`angles-cli`)](angles-cli-b823c1fc29.md) -- published+backing
+- [Anima (`anima`)](anima-8c2dda2f00.md) -- backing-only
+- [announcement (`announcement`)](announcement-86118a3b7f.md) -- backing-only
+- [Ante (`ante`)](ante-d968e224a0.md) -- published+backing
+- [Antigravity CLI (`antigravity-cli`)](antigravity-cli-744c585fa1.md) -- published+backing
+- [Antigravity for VS Code (`antigravity-for-vs-code`)](antigravity-for-vs-code-52c7fc567c.md) -- published+backing
+- [antigravity-jules-orchestration (`antigravity-jules-orchestration`)](antigravity-jules-orchestration-391946c4c0.md) -- backing-only
+- [antigravity-nix (`antigravity-nix`)](antigravity-nix-578ba171c3.md) -- backing-only
+- [Aperant (`aperant`)](aperant-641b94577a.md) -- published+backing
+- [App Developer Copilot (`app-developer-copilot`)](app-developer-copilot-ca8c089b2f.md) -- published+backing
+- [Appacella (`appacella`)](appacella-70898980cb.md) -- published+backing
+- [AppAgent (`appagent`)](appagent-a89cb5a680.md) -- backing-only
+- [AppClipCodeGenerator (`appclipcodegenerator`)](appclipcodegenerator-2426ed2661.md) -- backing-only
+- [Ara AI (`ara-ai`)](ara-ai-8d68d0f3f9.md) -- published+backing
+- [arbor (`arbor`)](arbor-b86c24fb62.md) -- published+backing
+- [arc-kit (`arc-kit`)](arc-kit-521c9deae9.md) -- backing-only
+- [Arcgentic (`arcgentic`)](arcgentic-19cb692c1d.md) -- backing-only
+- [Archon (`archon`)](archon-8f61a067f9.md) -- published+backing
+- [Are-Copilots-Local-Yet (`are-copilots-local-yet`)](are-copilots-local-yet-d6fbe46b1a.md) -- backing-only
+- [AskCodi (`askcodi`)](askcodi-1ff7dc8439.md) -- published+backing
+- [Async (`async`)](async-2d4a6334d2.md) -- published+backing
+- [athas (`athas`)](athas-bd3d85d2d2.md) -- published+backing
+- [Athena by LuckeySystems (`athena-by-luckeysystems`)](athena-by-luckeysystems-2c821f691d.md) -- published+backing
+- [Atlarix (`atlarix`)](atlarix-55c137e022.md) -- published+backing
+- [atmosphere (`atmosphere`)](atmosphere-bfd5a8ed73.md) -- published+backing
+- [atomcode (`atomcode`)](atomcode-91d68a6b91.md) -- published+backing
+- [atomic (`atomic`)](atomic-fd43322a4d.md) -- published+backing
+- [Auggie (`auggie`)](auggie-9849945b38.md) -- published+backing
+- [Augment Code (`augment-code`)](augment-code-f980a0970a.md) -- published+backing
+- [auto-co (`auto-co`)](auto-co-b2b040b7d0.md) -- backing-only
+- [auto-company (`auto-company`)](auto-company-fb0fffd78a.md) -- backing-only
+- [auto-dev (`auto-dev`)](auto-dev-c9c38ccd0a.md) -- published+backing
+- [AutoBE (`autobe`)](autobe-505f016f56.md) -- published+backing
+- [AutoDev (`autodev`)](autodev-27459982c1.md) -- published+backing
+- [AutoGen (`autogen`)](autogen-378d204807.md) -- published+backing
+- [Autohand Code CLI (`autohand-code-cli`)](autohand-code-cli-620fb6e518.md) -- published+backing
+- [Automata (`automata`)](automata-dc7448c392.md) -- published+backing
+- [Autonoma (`autonoma`)](autonoma-857e1d32b8.md) -- published+backing
+- [AutoPR (`autopr`)](autopr-f75d8f0d0e.md) -- published+backing
+- [Autospec (`autospec`)](autospec-55e8b355df.md) -- published+backing
+- [AutoStartup (`autostartup`)](autostartup-bab4d0a181.md) -- published+backing
+- [Awel (`awel`)](awel-7dedcada4e.md) -- published+backing
+- [Aws-Mwaa-Local-Runner (`aws-mwaa-local-runner`)](aws-mwaa-local-runner-ef5748deeb.md) -- backing-only
+- [AWS Transform (`aws-transform`)](aws-transform-78d00ca2e4.md) -- published+backing
+- [Axflow (`axflow`)](axflow-42c9e35a8c.md) -- backing-only
+- [Azad Coder (`azad-coder`)](azad-coder-6a1758703a.md) -- published+backing
+- [Azure-AI-Engineer-Associate-Notes (`azure-ai-engineer-associate-notes`)](azure-ai-engineer-associate-notes-4c75280d92.md) -- backing-only
+- [Baidu Comate (`baidu-comate`)](baidu-comate-5c00ac3c1b.md) -- published+backing
+- [Baidu Miaoda (`baidu-miaoda`)](baidu-miaoda-e51547c442.md) -- published+backing
+- [Bandit Stealth (`bandit-stealth`)](bandit-stealth-8eb9f00177.md) -- published+backing
+- [Bardeen (`bardeen`)](bardeen-0a9ee5a4f4.md) -- backing-only
+- [baro (`baro`)](baro-269b0f5338.md) -- published+backing
+- [Base 44 (`base-44`)](base-44-a62741c71c.md) -- published+backing
+- [Bazed (`bazed`)](bazed-55d6d197d5.md) -- published+backing
+- [bb (`bb`)](bb-3b64db95cb.md) -- published+backing
+- [bbarit-agent-oss (`bbarit-agent-oss`)](bbarit-agent-oss-2ae584d5d2.md) -- published+backing
+- [beehive (`beehive`)](beehive-90de6401a4.md) -- published+backing
+- [Benzi (`benzi`)](benzi-b3b70aa9d9.md) -- published+backing
+- [Bernstein (`bernstein`)](bernstein-2bf5a223d6.md) -- published+backing
+- [betool - AI Code Assistant (`betool-ai-code-assistant`)](betool-ai-code-assistant-69b488a0e7.md) -- published+backing
+- [Better Agent (`better-agent`)](better-agent-c1b96ad096.md) -- published+backing
+- [.better-coding-agents (`better-coding-agents`)](better-coding-agents-f3a7853494.md) -- backing-only
+- [BHIL-AI-First-Development-Toolkit (`bhil-ai-first-development-toolkit`)](bhil-ai-first-development-toolkit-c36869d11a.md) -- backing-only
+- [BIM_LLM_code_agent (`bim-llm-code-agent`)](bim-llm-code-agent-6d77be26f5.md) -- published+backing
+- [Binharic (`binharic`)](binharic-43389462d4.md) -- published+backing
+- [biscuit (`biscuit`)](biscuit-660f2dd5a2.md) -- published+backing
+- [Bismuth (`bismuth`)](bismuth-ed23167d44.md) -- published+backing
+- [BitFun (`bitfun`)](bitfun-c081de822c.md) -- published+backing
+- [Bito (`bito`)](bito-200ae7adee.md) -- backing-only
+- [Bits AI (`bits-ai`)](bits-ai-591724f461.md) -- published+backing
+- [BLACKBOX AI (`blackbox-ai`)](blackbox-ai-430d5ae7c2.md) -- published+backing
+- [BLACKBOX.AI (`blackboxai`)](blackboxai-132cb114c8.md) -- backing-only
+- [blade-code (`blade-code`)](blade-code-bc3864d275.md) -- published+backing
+- [Blinky (`blinky`)](blinky-90ada512bb.md) -- published+backing
+- [Blitzy (`blitzy`)](blitzy-15c785fe4b.md) -- published+backing
+- [Blueprints (`blueprints`)](blueprints-28ab7f1620.md) -- backing-only
+- [BMAD-METHOD (`bmad-method`)](bmad-method-40a1d375df.md) -- backing-only
+- [Bolt.new (`boltnew`)](boltnew-a43d82626c.md) -- published+backing
+- [Breakaway Agent (`breakaway-agent`)](breakaway-agent-ea58f4190f.md) -- published-only
+- [Brokies-AI-Foundry (`brokies-ai-foundry`)](brokies-ai-foundry-4481233071.md) -- backing-only
+- [brood-box (`brood-box`)](brood-box-ec4f8f3320.md) -- published+backing
+- [browser-operator-core (`browser-operator-core`)](browser-operator-core-f47c07a526.md) -- published+backing
+- [Browserbase (`browserbase`)](browserbase-9d800b766e.md) -- backing-only
+- [Bubble (`bubble`)](bubble-df4ac41625.md) -- backing-only
+- [build-your-own-coding-agent (`build-your-own-coding-agent`)](build-your-own-coding-agent-6637f1dd06.md) -- backing-only
+- [Builder.io Fusion (`builderio-fusion`)](builderio-fusion-5052f6978c.md) -- published+backing
+- [building-intelligent-apps-with-anaconda (`building-intelligent-apps-with-anaconda`)](building-intelligent-apps-with-anaconda-365c76c0dd.md) -- backing-only
+- [buildware-ai (`buildware-ai`)](buildware-ai-ffc938caee.md) -- published+backing
+- [Bullet (`bullet`)](bullet-ed12eb2000.md) -- published+backing
+- [bumpgen (`bumpgen`)](bumpgen-1776b2cf84.md) -- published+backing
+- [Bwee (`bwee`)](bwee-c9c823001a.md) -- published+backing
+- [CalEx-JavaAI (`calex-javaai`)](calex-javaai-ae41365bce.md) -- published+backing
+- [call.md (`callmd`)](callmd-26b586ce00.md) -- backing-only
+- [Calyx (`calyx`)](calyx-f34d4293c3.md) -- published+backing
+- [camelAI (`camelai`)](camelai-d5e34e992e.md) -- published+backing
+- [Canva AI Coding (`canva-ai-coding`)](canva-ai-coding-41c840f015.md) -- backing-only
+- [Canva Code (`canva-code`)](canva-code-14f1c66f2a.md) -- backing-only
+- [carrycode (`carrycode`)](carrycode-44cf069857.md) -- published+backing
+- [Cartlis (`cartlis`)](cartlis-b42ca4efc7.md) -- backing-only
+- [cascadeflow (`cascadeflow`)](cascadeflow-3a559be66e.md) -- backing-only
+- [Catnip (`catnip`)](catnip-eb1b94cfd6.md) -- published+backing
+- [CatPaw (`catpaw`)](catpaw-9b3f33d40f.md) -- published+backing
+- [caveman-code (`caveman-code`)](caveman-code-0530562837.md) -- published+backing
+- [cavemem (`cavemem`)](cavemem-725057beda.md) -- backing-only
+- [Celebrimbot (`celebrimbot`)](celebrimbot-4637ad2a11.md) -- published+backing
+- [cersei (`cersei`)](cersei-557ae9fcd0.md) -- published+backing
+- [ChainlessChain IDE Bridge (`chainlesschain-ide-bridge`)](chainlesschain-ide-bridge-2bf7e91340.md) -- published+backing
+- [Chamberlain_Multimodal_Multiagent_Chatbot (`chamberlain-multimodal-multiagent-chatbot`)](chamberlain-multimodal-multiagent-chatbot-00e974f31b.md) -- backing-only
+- [Charlie Labs (`charlie-labs`)](charlie-labs-4502c20eeb.md) -- published+backing
+- [ChartGPT (`chartgpt`)](chartgpt-03323b1877.md) -- backing-only
+- [ChatDev (`chatdev`)](chatdev-dc8d2c750f.md) -- published+backing
+- [Chaterm (`chaterm`)](chaterm-d6a9b29328.md) -- published+backing
+- [chatgpt-vscode (`chatgpt-vscode`)](chatgpt-vscode-a56a1fe5d5.md) -- backing-only
+- [chef (`chef`)](chef-f59ac0828b.md) -- published+backing
+- [Cherry Studio (`cherry-studio`)](cherry-studio-debe5096be.md) -- backing-only
+- [Clacky (`clacky`)](clacky-feff48d00e.md) -- published+backing
+- [Claude Agent SDK (Python) (`claude-agent-sdk-python`)](claude-agent-sdk-python-dfef51e5f5.md) -- published+backing
+- [Claude Agent SDK (TypeScript) (`claude-agent-sdk-typescript`)](claude-agent-sdk-typescript-b52c0c1f60.md) -- published+backing
+- [Claude Autopilot (`claude-autopilot`)](claude-autopilot-b9479eeb3a.md) -- published+backing
+- [Claude Code (`claude-code`)](claude-code-28e1743960.md) -- published+backing
+- [claude-code-merge-queue (`claude-code-merge-queue`)](claude-code-merge-queue-52bc0b66c6.md) -- backing-only
+- [Claude-Code-Multi-Agent (`claude-code-multi-agent`)](claude-code-multi-agent-cb55914b6f.md) -- backing-only
+- [claude-code-plus (`claude-code-plus`)](claude-code-plus-1138752517.md) -- published+backing
+- [claude-code (`claude-code-skeleton`)](claude-code-skeleton-19304317c3.md) -- backing-only
+- [claude_code_sub_agents (`claude-code-sub-agents`)](claude-code-sub-agents-a64eb86355.md) -- backing-only
+- [Claude Code Tools (`claude-code-tools`)](claude-code-tools-657313a770.md) -- backing-only
+- [claude-code-viewer (`claude-code-viewer`)](claude-code-viewer-2453448258.md) -- published+backing
+- [claude_codex_bridge (`claude-codex-bridge`)](claude-codex-bridge-9d315f5fc5.md) -- published+backing
+- [Claude Engineer (`claude-engineer`)](claude-engineer-1a2f7f48a8.md) -- published+backing
+- [claude-flow (`claude-flow`)](claude-flow-e5c9870fa9.md) -- published+backing
+- [Claude-Html-Test (`claude-html-test`)](claude-html-test-dfaa817a91.md) -- backing-only
+- [claude-memory-compiler (`claude-memory-compiler`)](claude-memory-compiler-2bdfb94452.md) -- backing-only
+- [claude-northstar (`claude-northstar`)](claude-northstar-412cb1adbe.md) -- backing-only
+- [claude-orchestration (`claude-orchestration`)](claude-orchestration-11cfd64b80.md) -- backing-only
+- [Claude Squad (`claude-squad`)](claude-squad-67acc7bb84.md) -- published+backing
+- [Claude Subscription ACP Agent (`claude-subscription-acp-agent`)](claude-subscription-acp-agent-4a937becf7.md) -- published+backing
+- [claude-swarm (`claude-swarm`)](claude-swarm-11b9095d66.md) -- published+backing
+- [claudecode-orchestrator (`claudecode-orchestrator`)](claudecode-orchestrator-ce11cfba2a.md) -- backing-only
+- [claudemacs (`claudemacs`)](claudemacs-d58e855cf9.md) -- backing-only
+- [claude.vim (`claudevim`)](claudevim-1127386f3a.md) -- published+backing
+- [Claudexor (`claudexor`)](claudexor-2b64301286.md) -- published+backing
+- [Claudraband (`claudraband`)](claudraband-853186ab4d.md) -- published+backing
+- [Claurst (`claurst`)](claurst-3b24d6f8f1.md) -- published+backing
+- [Claw Code (`claw-code`)](claw-code-959f9d8922.md) -- published+backing
+- [claw-code-agent (`claw-code-agent`)](claw-code-agent-8464312501.md) -- published+backing
+- [clawcodex (`clawcodex`)](clawcodex-d7ca84ab1c.md) -- published+backing
+- [Clawde_Code (`clawde-code`)](clawde-code-a5efdff06a.md) -- backing-only
+- [clawdstrike (`clawdstrike`)](clawdstrike-ab34fbd603.md) -- backing-only
+- [CLI Agent Dock (`cli-agent-dock`)](cli-agent-dock-9adf6b0dd7.md) -- published+backing
+- [CLI Agent Orchestrator (CAO) (`cli-agent-orchestrator-cao`)](cli-agent-orchestrator-cao-a6324bebeb.md) -- published+backing
+- [cli-llm-coding (`cli-llm-coding`)](cli-llm-coding-2507787da5.md) -- backing-only
+- [CLI Manager (`cli-manager`)](cli-manager-689d4cd6d2.md) -- published+backing
+- [cliclaw (`cliclaw`)](cliclaw-2ff68be93c.md) -- published+backing
+- [CliDeck (`clideck`)](clideck-5a9e5e1553.md) -- published+backing
+- [Cline (`cline`)](cline-84829dbd81.md) -- published+backing
+- [clio (`clio`)](clio-c38c694be0.md) -- published+backing
+- [CLITrigger (`clitrigger`)](clitrigger-b226cf8cfc.md) -- published+backing
+- [clodex-ide (`clodex-ide`)](clodex-ide-082b969807.md) -- published+backing
+- [cloi (`cloi`)](cloi-1181f0a25f.md) -- published+backing
+- [clu (`clu`)](clu-04361edad3.md) -- backing-only
+- [Cluely (`cluely`)](cluely-18758646e2.md) -- backing-only
+- [cmux (`cmux`)](cmux-548d4fabc5.md) -- published+backing
+- [codai (`codai`)](codai-fa535ba818.md) -- published+backing
+- [codayinid (`codayinid`)](codayinid-0106d1c88f.md) -- published+backing
+- [code-agent (`code-agent`)](code-agent-57314920a1.md) -- published+backing
+- [Code-Agent-Survey (`code-agent-survey`)](code-agent-survey-cfbd745b28.md) -- backing-only
+- [code-assistant (`code-assistant`)](code-assistant-bb67f42f1a.md) -- published+backing
+- [Code-Interpreter (`code-interpreter`)](code-interpreter-2287a5a76a.md) -- published+backing
+- [Code-Interpreter-Api (`code-interpreter-api`)](code-interpreter-api-820783a693.md) -- backing-only
+- [Code Metal (`code-metal`)](code-metal-47a4723b46.md) -- published+backing
+- [code-review (`code-review`)](code-review-717d32bb32.md) -- backing-only
+- [Code2Prompt (`code2prompt`)](code2prompt-1cd55f951d.md) -- backing-only
+- [CodeActAgent (`codeactagent`)](codeactagent-b9323aefee.md) -- published+backing
+- [CodeAGI (`codeagi`)](codeagi-f6026b7cca.md) -- backing-only
+- [codealmanac (`codealmanac`)](codealmanac-d33cea4b20.md) -- backing-only
+- [CodeAlta (`codealta`)](codealta-3092151208.md) -- published+backing
+- [codeany (`codeany`)](codeany-dc633210b8.md) -- published+backing
+- [codeassist (`codeassist`)](codeassist-0a73f164de.md) -- backing-only
+- [codebadger (`codebadger`)](codebadger-7d610dee00.md) -- backing-only
+- [codebase-argus (`codebase-argus`)](codebase-argus-58e8de5b97.md) -- published+backing
+- [codebase-index-cli (`codebase-index-cli`)](codebase-index-cli-9b13e566be.md) -- backing-only
+- [codebuddy (`codebuddy`)](codebuddy-580683fe55.md) -- published+backing
+- [Codebuff (`codebuff`)](codebuff-35484aa117.md) -- published+backing
+- [CodeClinicR (`codeclinicr`)](codeclinicr-835d38591c.md) -- backing-only
+- [CodeContests (`codecontests`)](codecontests-b8e5aab8bd.md) -- backing-only
+- [codedna (`codedna`)](codedna-70c4e6c780.md) -- backing-only
+- [codeflash (`codeflash`)](codeflash-f7c640a5d8.md) -- published+backing
+- [CodeFox-CLI (`codefox-cli`)](codefox-cli-45c05060af.md) -- backing-only
+- [CodeFuse-ChatBot (`codefuse-chatbot`)](codefuse-chatbot-6c64cc0f1e.md) -- published+backing

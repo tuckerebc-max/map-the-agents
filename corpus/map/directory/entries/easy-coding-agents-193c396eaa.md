@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: yushui2022
@@ -22,8 +22,6 @@ Repository map entry: [yushui2022/easy-coding-agents](../../repos/yushui2022/eas
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Evidence-gated memory system that preserves source refs across context wipe; autonomous terminal coding loop with plan/code/chat modes, custom agents, todo discipline, loop/budget guards, and final-answer quality gates; benchmarked against summary, long-context, FTS, and vector RAG memory baselines.
-
-(captured site page body (agents/easy-coding-agents.md), not a verified repo-code finding)
-easy-coding-agents is built around a failure mode common to autonomous loops: the model loses track of what it already established, repeats itself, or declares done without evidence. The engine's guards detect repeated tool calls, over-exploration of simple tasks, and empty responses, while a final-answer quality gate blocks DONE claims that lack verification evidence. The evidence-gated memory layer persists refs, tool logs, and task state across context wipes, and the repo publishes reproducible benchmark snapshots showing memory-subsystem recall after context wipe against summary, FTS, and vector baselines. It is a single-developer research project for people studying agent memory, not a production harness.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/easy-coding-agents.md)
+(published index `description`, not a verified repo-code finding)
+easy-coding-agents is built around a failure mode common to autonomous loops: the model loses track of what it already established, repeats itself, or declares done without evidence. The engine's guar
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

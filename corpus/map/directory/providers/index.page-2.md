@@ -180,6 +180,7 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [databricks-solutions](databricks-solutions-af5217fea1.md) (1 entrie(s))
 - [datacurve-ai](datacurve-ai-3bde9194ac.md) (1 entrie(s))
 - [datasciencemonkey](datasciencemonkey-79520c7a43.md) (1 entrie(s))
+- [datasette](datasette-4b1f40cd27.md) (1 entrie(s))
 - [dazuiba](dazuiba-6913ab846f.md) (1 entrie(s))
 - [dbt Labs](dbt-labs-3aa869c2e2.md) (1 entrie(s))
 - [dcouple](dcouple-32ab1b8ae3.md) (1 entrie(s))
@@ -487,4 +488,3 @@ Page 2 of 3. [First page](index.md) | [Previous](index.md) | [Next](index.page-3
 - [perrypixel](perrypixel-9995d18469.md) (1 entrie(s))
 - [peterfei](peterfei-7bdd63fc87.md) (1 entrie(s))
 - [phnx-labs](phnx-labs-00fe42f3b3.md) (1 entrie(s))
-- [phodal](phodal-78b626388e.md) (3 entrie(s))

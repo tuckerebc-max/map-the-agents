@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: shangyankeji
@@ -22,8 +22,6 @@ Repository map entry: [shangyankeji/super-dev](../../repos/shangyankeji/super-de
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Engineering workflow layer / host coaching system for AI coding tools. Wraps AI coding hosts (Claude Code, Codex, Cursor, etc.) into a standardized, auditable, commercial-grade delivery pipeline: research → docs → spec → frontend → backend → quality gates → delivery. Provides 11 expert agents, knowledge-driven governance (270+ knowledge files), UI design system, quality gate engine (25 YAML rules), and ...
-
-(captured site page body (agents/super-dev.md), not a verified repo-code finding)
-super-dev addresses the gap between an agent that can write code and a delivery process that can ship it: after detecting which of 26 supported hosts (Claude Code, Codex CLI, Cursor, Gemini CLI, and others) is in use, it injects project-level rules, skills, and slash commands that put the host into a staged pipeline with confirmation gates between research, documentation, spec, frontend, backend, quality, and delivery. Eleven expert personas with 350-plus-line playbooks and a 270-file knowledge base drive each stage, while 25 YAML quality-gate rules enforce spec-code consistency, accessibility, and red-team review. Delivery artifacts are traceable proof-packs and release-readiness reports rather than a single diff. It installs via uv as a Python tool, works bilingually in English and Chinese, and suits teams using agent CLIs who need auditable, repeatable engineering process on top.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/super-dev.md)
+(backing feed `description`, not a verified repo-code finding)
+super-dev addresses the gap between an agent that can write code and a delivery process that can ship it: after detecting which of 26 supported hosts (Claude Code, Codex CLI, Cursor, Gemini CLI, and o
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

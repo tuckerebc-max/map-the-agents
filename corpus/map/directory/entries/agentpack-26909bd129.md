@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: vishal2612200
@@ -22,8 +22,6 @@ Repository map entry: [vishal2612200/agentpack](../../repos/vishal2612200/agentp
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local, agent-neutral reliability layer for AI software development — no repository upload required, everything stored locally under .agentpack/. Provides evidence-backed context selection with receipts, cited PR review artifacts, structured handoffs across sessions/agents, and a four-command workflow (work, learn, finish, doctor). Connects project evidence across multiple coding agents without replacing them.
-
-(captured site page body (agents/agentpack.md), not a verified repo-code finding)
-Coding agents lose time rediscovering project structure, ownership rules, and prior decisions on every task, and context injected by generic retrieval is rarely auditable. AgentPack keeps task state, repository rules, prior decisions, and review evidence under .agentpack/ and exposes them through a four-command loop (work, learn, finish, doctor) plus an MCP server that surfaces readiness, related files, and cited PR evidence to agents like Claude Code, Codex, and Cursor. Every context selection is recorded with a receipt explaining inclusion or omission, and a trust order keeps source files, diffs, and test results above any summary it produces. The project publishes measured numbers for what it can prove (file-selection recall and token precision) and explicitly declines to claim improvements it has not benchmarked. Python and JavaScript/TypeScript repositories get the strongest semantic mapping; coordination remains advisory by design.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/agentpack.md)
+(backing feed `description`, not a verified repo-code finding)
+Coding agents lose time rediscovering project structure, ownership rules, and prior decisions on every task, and context injected by generic retrieval is rarely auditable. AgentPack keeps task state,
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

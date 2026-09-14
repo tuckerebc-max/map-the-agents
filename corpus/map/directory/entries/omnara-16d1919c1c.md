@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: omnara-ai
@@ -22,8 +22,6 @@ Repository map entry: [omnara-ai/omnara](../../repos/omnara-ai/omnara.md) (sourc
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Positions itself as the API for production-grade agents — durable agent state committed atomically to Postgres with auto-recovery, hot-add/remove machines mid-run, and direct SQL access to agent state for analytics when self-hosted.
-
-(captured site page body (agents/omnara.md), not a verified repo-code finding)
-Omnara provides the execution and state layer for agents that teams define themselves, separating infrastructure from model choice, tooling, and user interface. Agent state commits atomically to Postgres so runs survive crashes and disconnects, and machines — cloud sandboxes or the operator's own hardware — can join or leave a run without restarts. Tools come from built-ins, custom code, skills, or MCP servers, and access control uses organization and project roles. Teams interact through a dashboard, a Slack connector, or the REST/TypeScript API rather than a chat product. The Apache-2.0 codebase self-hosts via Docker Compose, with a hosted cloud offering alongside it.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/omnara.md)
+(published index `description`, not a verified repo-code finding)
+Omnara provides the execution and state layer for agents that teams define themselves, separating infrastructure from model choice, tooling, and user interface. Agent state commits atomically to Postg
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

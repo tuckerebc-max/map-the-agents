@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: sudo-tee
@@ -22,8 +22,6 @@ Repository map entry: [sudo-tee/opencode.nvim](../../repos/sudo-tee/opencode.nvi
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Tight Neovim integration with the opencode AI agent, capturing rich editor context automatically; snapshot/diff/restore system for safe code changes; support for external/containerized/WSL servers with path mapping.
-
-(captured site page body (agents/opencodenvim.md), not a verified repo-code finding)
-Running opencode in a terminal while editing in Neovim splits attention and loses editor context the agent needs. This Lua plugin, a fork of goose.nvim, embeds the agent in Neovim: a chat panel holds persistent sessions per workspace, and every prompt automatically carries the current file, visual selection, LSP diagnostics, and cursor position, with @-file mentions for explicit references. A snapshot system underpins safety — diffs are reviewable, reverts are one keystroke, and restore points let users back out of unwanted agent edits. It also surfaces opencode's build/plan agents and custom agents, MCP server support, and permission handling, and supports connecting to external, containerized, or WSL opencode servers rather than only a local CLI. Installation is a standard lazy.nvim spec with the opencode CLI (v0.6.3+) required; Apache-2.0 licensed and under active development with 931 stars, though the README warns of breaking changes. Neovim users who want Cursor-grade context sharing with a terminal agent are the audience.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/opencodenvim.md)
+(backing feed `description`, not a verified repo-code finding)
+Running opencode in a terminal while editing in Neovim splits attention and loses editor context the agent needs. This Lua plugin, a fork of goose.nvim, embeds the agent in Neovim: a chat panel holds
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

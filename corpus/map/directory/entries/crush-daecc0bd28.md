@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: charmbracelet
@@ -22,8 +22,6 @@ Repository map entry: [charmbracelet/crush](../../repos/charmbracelet/crush.md) 
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Glamourous terminal-based coding agent by Charmbracelet. Supports multi-model LLMs, session-based contexts, LSP integration, MCP servers (stdio/http/sse with OAuth), agent skills (agentskills.io standard), and preliminary hooks support.
-
-(captured site page body (agents/crush.md), not a verified repo-code finding)
-Crush is Charmbracelet's entry into terminal coding agents, built to run anywhere a terminal exists: macOS, Linux, Windows, BSDs, and even Android. It maintains multiple named sessions per project, enriches model context through language servers, and connects to tools via MCP servers (with OAuth) and the agentskills.io Agent Skills standard, with hooks and configurable permissions including a --yolo bypass. Any OpenAI- or Anthropic-compatible provider works, alongside auto-discovered local models through Ollama or LM Studio, and models can be switched mid-session without losing context. Charm offers its own Hyper subscription as the hosted option, while the agent itself installs through Homebrew, npm, winget, and most system package managers; with about 28,000 GitHub stars it is one of the most widely used open terminal agents.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/crush.md)
+(published index `description`, not a verified repo-code finding)
+Crush is Charmbracelet's entry into terminal coding agents, built to run anywhere a terminal exists: macOS, Linux, Windows, BSDs, and even Android. It maintains multiple named sessions per project, en
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

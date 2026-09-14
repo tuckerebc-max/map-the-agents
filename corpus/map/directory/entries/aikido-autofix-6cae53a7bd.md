@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Aikido Security
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI autofix PRs for vulnerabilities (Belgium)
-
-(captured site page body (agents/aikido-autofix.md), not a verified repo-code finding)
-Aikido is a Belgian application security platform whose AutoFix feature converts scanner findings into pull requests instead of tickets. For dependency CVEs it groups fixes by repo and lockfile; for SAST findings it previews a full diff that can be applied from the IDE or inline in a PR; for containers it generates three to five Dockerfile patch options across base images, stating what each fixes and risks. Developers refine patches conversationally (different error handling, an added test) before merging, with custom branch names and merge rules. Aikido holds read-only repository access and never pushes directly — one customer reports roughly 200 AutoFixes per month against their backlog. Proprietary SaaS with a free tier and docs at help.aikido.dev.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/aikido-autofix.md)
+(published index `description`, not a verified repo-code finding)
+Aikido is a Belgian application security platform whose AutoFix feature converts scanner findings into pull requests instead of tickets. For dependency CVEs it groups fixes by repo and lockfile; for S
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

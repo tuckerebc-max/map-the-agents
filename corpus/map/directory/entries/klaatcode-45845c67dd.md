@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: KlaatAI
@@ -22,8 +22,6 @@ Repository map entry: [klaatai/klaatcode](../../repos/klaatai/klaatcode.md) (sou
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Terminal-native AI coding agent with per-request smart model routing across 6 cost tiers; real code knowledge graph (call graph, semantic search, blast-radius); no Continue button (free unlimited tool rounds); visible cost caps and burn-rate monitoring; compaction with self-check; reproducible benchmarks.
-
-(captured site page body (agents/klaatcode.md), not a verified repo-code finding)
-klaatcode targets the cost problem of terminal coding agents: most tokens are spent re-reading files the agent has already seen. Indexing the project into a call graph with semantic search lets the agent query callers, callees, and blast radius directly, and routing each request through Klaatu-o1 escalates or de-escalates the model tier per task. Tool calls within a request are free; only user messages consume quota, and cost guards with burn-rate monitoring bound runaway sessions. Subagents, lifecycle hooks, plan mode, and MCP presets cover the standard harness surface, and the claimed $0.027-per-solved-task benchmark ships as a reproducible bun run bench script for verification.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/klaatcode.md)
+(published index `description`, not a verified repo-code finding)
+klaatcode targets the cost problem of terminal coding agents: most tokens are spent re-reading files the agent has already seen. Indexing the project into a call graph with semantic search lets the ag
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: looptroop-ai
@@ -22,8 +22,6 @@ Repository map entry: [looptroop-ai/looptroop](../../repos/looptroop-ai/looptroo
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Local GUI orchestrator for long-running, high-correctness AI software delivery; turns a coding ticket into a planned, reviewable, agent-executed PR through three stages (Planning with LLM Council interview/PRD/bead generation, Execution with isolated OpenCode worktrees and multi-loop automated testing, Shipping with final verification); cross-model councils with independent voting
-
-(captured site page body (agents/looptroop.md), not a verified repo-code finding)
-LoopTroop is built for tickets too large for chat-style coding: an interactive interview (allowed to run over an hour) produces a PRD, which decomposes into beads - the smallest independently implementable units, each with acceptance criteria, target files, and validation steps. OpenCode implements each bead in an isolated git worktree, and because worktrees isolate code but not command execution, the project recommends running inside a disposable VM. State lives outside the model in SQLite, JSONL logs, and YAML artifacts, with the agent receiving only the context its current step needs to prevent context rot; runs are expected to take ten or more hours, unattended. Teams with long-horizon, correctness-sensitive feature work who already run OpenCode are the intended users.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/looptroop.md)
+(published index `description`, not a verified repo-code finding)
+LoopTroop is built for tickets too large for chat-style coding: an interactive interview (allowed to run over an hour) produces a PRD, which decomposes into beads - the smallest independently implemen
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

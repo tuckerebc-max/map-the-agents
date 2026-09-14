@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: neovateai
@@ -22,8 +22,6 @@ Repository map entry: [neovateai/neovate-code](../../repos/neovateai/neovate-cod
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Coding agent for generating code, fixing bugs, reviewing code, and adding tests, with both interactive and headless modes and a VSCode extension.
-
-(captured site page body (agents/neovate-code.md), not a verified repo-code finding)
-Neovate Code is a terminal coding agent that proposes edits and tool calls for approval before applying them. Developers pick a provider and model through slash commands, and API keys are read from standard environment variables for every supported provider, avoiding lock-in to one vendor. Work spans code generation, bug fixing, code review, test writing, refactoring, and query optimization. The same npm package covers macOS, Linux, and Windows, and the pnpm monorepo includes an e-commerce-grade test suite with end-to-end tests and a bundled ripgrep. A VS Code extension in the repository brings the agent into the editor alongside the CLI.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/neovate-code.md)
+(published index `description`, not a verified repo-code finding)
+Neovate Code is a terminal coding agent that proposes edits and tool calls for approval before applying them. Developers pick a provider and model through slash commands, and API keys are read from st
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
 - Category: other
 - Provider/maker: bolt-foundry
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [bolt-foundry/gambit](https://gith
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Builds the evidence layer for agent systems: generate and quality-validate realistic scenarios, run any agent against them, grade transcripts from JSONL traces, and promote failures into regression suites gated in CI.
-
-(captured site page body (agents/gambit.md), not a verified repo-code finding)
-Teams shipping agent features lack a systematic way to prove they work, so Bolt Foundry built Gambit around scenario generation, grading, and regression. Agents under test — whether Mastra, LangGraph, OpenAI Agents SDK, or custom stacks — are exercised through one-shot runs, a REPL, or a browser chat with full traces, while Gambit's own 'deck' agents are defined in Markdown or TypeScript with Zod schemas. Grading turns transcripts into pass/fail evidence, and a GitHub Actions example shows scenario grades acting as PR gates. Agents compose through child actions and ctx.spawnAndWait, OpenRouter is the default provider with Claude Code and Codex CLIs as alternative runtimes, and the repository has moved from bolt-foundry to the coworkerprotocol-org.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/gambit.md)
+(backing feed `description`, not a verified repo-code finding)
+Teams shipping agent features lack a systematic way to prove they work, so Bolt Foundry built Gambit around scenario generation, grading, and regression. Agents under test — whether Mastra, LangGraph,
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

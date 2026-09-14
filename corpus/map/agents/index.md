@@ -61,10 +61,10 @@ Page 1 of 4. [First page](index.md) | [Next](index.page-2.md)
 - [agentscope-ai/agentscope](../repos/agentscope-ai/agentscope.md) -- status=distilled, freshness=current
 - [agentscope-ai/agentteams](../repos/agentscope-ai/agentteams.md) -- status=distilled, freshness=current
 - [agentsmd/agents.md](../repos/agentsmd/agents.md.md) -- status=distilled, freshness=current
-- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) -- status=distilled, freshness=current
+- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) -- status=distilled, freshness=stale
 - [agi-is-going-to-arrive/ahadiff](../repos/agi-is-going-to-arrive/ahadiff.md) -- status=distilled, freshness=current
-- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) -- status=distilled, freshness=current
-- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) -- status=distilled, freshness=current
+- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) -- status=distilled, freshness=stale
+- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) -- status=distilled, freshness=stale
 - [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) -- status=distilled, freshness=current
 - [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) -- status=distilled, freshness=current
 - [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) -- status=distilled, freshness=current

@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: gastownhall
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [steveyegge/gastown](https://githu
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Multi-agent orchestration system that coordinates 20-30+ AI coding agents working on different tasks simultaneously, using git-backed hooks for persistent work state that survives agent crashes and restarts, with built-in merge queue, scheduling, escalation, and federation features.
-
-(captured site page body (agents/gastown.md), not a verified repo-code finding)
-Coordinating dozens of coding agents by hand collapses quickly: sessions die, work is lost, and nobody merges anything. Gastown, from steveyegge and now under gastownhall, organizes a workspace into Rigs staffed by persistent worker agents (Polecats) and a Mayor — typically a Claude Code instance — that decomposes work into convoys tracked in the Beads issue ledger. State is git-backed so crashes and restarts lose nothing, a Refinery merge queue serializes landing, and Witness/Deacon watchdogs plus scheduling and federation (Wasteland via DoltHub) handle the operational surface. It is Go, MIT-licensed, installable via brew or go install, and at 17.8k stars with 7,770 commits it is one of the most active multi-agent orchestrators in the ecosystem.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/gastown.md)
+(published index `description`, not a verified repo-code finding)
+Coordinating dozens of coding agents by hand collapses quickly: sessions die, work is lost, and nobody merges anything. Gastown, from steveyegge and now under gastownhall, organizes a workspace into R
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

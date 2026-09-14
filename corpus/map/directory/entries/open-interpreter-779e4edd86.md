@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: openinterpreter
@@ -22,8 +22,6 @@ Repository map entry: [openinterpreter/openinterpreter](../../repos/openinterpre
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Fork of OpenAI's Codex optimized for low-cost models. Features harness emulation (switch between native, claude-code, kimi-code, qwen-code, deepseek-tui, swe-agent harnesses via /harness), native sandboxing on all platforms, ACP agent mode, shared AGENTS.md and .agents/skills standards, and a QA skill for web/native app testing.
-
-(captured site page body (agents/open-interpreter.md), not a verified repo-code finding)
-Cheap and open-weight models underperform in agent harnesses tuned for frontier models, and the gap is often the harness rather than the model. Open Interpreter, a Rust rewrite of OpenAI's Codex with about 68,000 GitHub stars, addresses this by emulating provider-recommended harnesses: /harness switches between native, claude-code, kimi-code, qwen-code, deepseek-tui, swe-agent, and minimal modes, so a cheap model runs under the prompting and tool-calling conventions it was trained against. It supports MCP, skills, hooks, permissions, and AGENTS.md, remains compatible with the Codex SDK through a one-line binary override, and speaks ACP, while a built-in QA skill drives browsers and native applications for computer-use tasks. Installation is a curl script on macOS/Linux or PowerShell on Windows, and the tool is free with BYOK model access. Developers running low-cost models who want frontier-harness behavior without paying frontier prices are its audience.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/open-interpreter.md)
+(published index `description`, not a verified repo-code finding)
+Cheap and open-weight models underperform in agent harnesses tuned for frontier models, and the gap is often the harness rather than the model. Open Interpreter, a Rust rewrite of OpenAI's Codex with
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

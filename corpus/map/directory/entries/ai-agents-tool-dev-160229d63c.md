@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: unknown
@@ -22,8 +22,6 @@ Repository map entry: [aydinfer/ai-agents-tool-dev](../../repos/aydinfer/ai-agen
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Multi-agent AI development system for automated tool creation and testing. The GitHub repository is no longer accessible (returns 404).
-
-(captured site page body (agents/ai-agents-tool-dev.md), not a verified repo-code finding)
-The project was recorded as a multi-agent AI development system for automated tool creation and testing, which would place it among agent frameworks. Its GitHub repository is no longer accessible, returning 404, so the description, code, license, and activity level are all unverifiable. Without the primary source, no field beyond the historical description can be established. The entry stands as a record that the repository existed and is now gone.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/ai-agents-tool-dev.md)
+(published index `description`, not a verified repo-code finding)
+The project was recorded as a multi-agent AI development system for automated tool creation and testing, which would place it among agent frameworks. Its GitHub repository is no longer accessible, ret
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

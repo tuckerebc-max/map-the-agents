@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: Augment Code
@@ -22,8 +22,6 @@ No repository record: repository source unavailable in this directory capture, n
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): AI agent orchestration platform (Cosmos) running an 'always-on software factory' from ticket to code, review, verification, and deployment. Features reusable 'Experts' (subagent templates), MCP Registry, hooks/triggers for GitHub/GitLab/Slack/Jira, plan-before-execute via an 'Advisor', shared memory across agents, and a Context Engine for deep codebase understanding.
-
-(captured site page body (agents/augment-code.md), not a verified repo-code finding)
-Augment Code markets itself as an always-on software factory: an agent orchestration platform (Cosmos) that takes work from ticket to code, review, verification, and deployment with humans at quality gates. Reusable Experts - forkable agent templates with their own environment, capabilities, and memory - encode organizational judgment, so a tuned Deep Code Reviewer or Security Vulnerability Triager improves every future run. The platform runs on laptops, dev VMs, Augment's cloud, or customer cloud, and an MCP Registry plus integrations (Slack, GitHub, Jira, CI) connect agents to the toolchain. Prism auto-routes work across Claude Sonnet 4.6, Opus 4, and Gemini 2.5 Pro, with the loop covering ticket-to-PR, vulnerability remediation, and incident response. A CLI and status page round out the commercial offering, aimed at teams running continuous agent-driven delivery.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/augment-code.md)
+(published index `description`, not a verified repo-code finding)
+Augment Code markets itself as an always-on software factory: an agent orchestration platform (Cosmos) that takes work from ticket to code, review, verification, and deployment with humans at quality
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

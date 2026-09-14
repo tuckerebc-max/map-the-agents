@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: aizen-stack
@@ -22,8 +22,6 @@ Repository map entry (renamed): original lead [aizen-stack/aizen](https://github
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Single 34 MB static binary with zero runtime deps (no Node/Python/Docker/cloud), ~10 ms cold start, runs on 512 MB VPS or Raspberry Pi; verify-gate runs tests/typecheck and fixes failures before reporting done; offline BM25-ranked memory brain + durable SOUL identity persona; OS-level sandbox (Landlock+seccomp on Linux, Seatbelt on macOS, Job-Object on Windows) with deny-by-default networking; phone-controlled remote operation via Telegram/Discord ...
-
-(captured site page body (agents/aizen.md), not a verified repo-code finding)
-Aizen targets the ops-light end of the spectrum: one static binary that runs on a 512 MB VPS or Raspberry Pi with no cloud account, driven by any OpenAI-compatible endpoint (OpenAI, OpenRouter, local llama.cpp/vLLM, Anthropic gateways). The loop pairs a chat REPL with parallel reads, LSP-powered symbolic edits, and a verify gate that must pass tests and typechecks before the agent claims completion; a workflow command fans out role-scoped subagents and synthesizes the result. Sandboxing is layered under approvals — Landlock plus seccomp on Linux, Seatbelt on macOS, Job Objects on Windows — with network denied by default and API keys withheld from child processes. Extras include git-backed /timemachine checkpoints, Telegram/Discord-driven headless mode (aizen serve), and BM25 offline memory; versions after v0.5.5 are Apache-2.0, actively released (v0.6.1).
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/aizen.md)
+(published index `description`, not a verified repo-code finding)
+Aizen targets the ops-light end of the spectrum: one static binary that runs on a 512 MB VPS or Raspberry Pi with no cloud account, driven by any OpenAI-compatible endpoint (OpenAI, OpenRouter, local
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

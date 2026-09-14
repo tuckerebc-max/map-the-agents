@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
-- Category: agent-sdk
+- Category: agent
 - Provider/maker: langchain-ai
 - License: MIT
 - Language: Python
@@ -22,12 +22,10 @@ Repository map entry: [langchain-ai/deepagents](../../repos/langchain-ai/deepage
 
 Discrepancy between directory sources (not overwritten):
 
-- category: published=agent-sdk, backing=agent, page=agent-sdk
+- category: published=agent-sdk, backing=agent, page=
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Batteries-included agent harness built on LangGraph. Provides planning, file system access, context management, sub-agents with isolated context windows, shell access, persistent memory, human-in-the-loop approval, skills, and tool calling. Designed for long-horizon, multi-step work. Also available as deepagents.js (TypeScript).
-
-(captured site page body (agents/deep-agents-code.md), not a verified repo-code finding)
-deepagents exists because teams kept rebuilding the same scaffolding around LLM agents: a planning step, file access, context compaction, and task delegation. The library ships those as defaults inspired by Claude Code — a built-in planning tool, pluggable filesystem (local, sandboxed, or remote backends), sub-agents with isolated context windows, shell access, persistent memory, and human-in-the-loop approval gates — while every component remains replaceable for teams with different needs. It runs on any tool-calling LLM through LangGraph's production features (streaming, checkpointing, persistence) and accepts any MCP server as a tool source. Python and JavaScript teams use it as the foundation for custom agents rather than as an end-user product, with LangSmith available for tracing and evaluation.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/deep-agents-code.md)
+(published index `description`, not a verified repo-code finding)
+deepagents exists because teams kept rebuilding the same scaffolding around LLM agents: a planning step, file access, context compaction, and task delegation. The library ships those as defaults inspi
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

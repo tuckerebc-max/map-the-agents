@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: multiplexer
 - Provider/maker: shrijayan
@@ -22,8 +22,6 @@ Repository map entry: [shrijayan/itwillsync](../../repos/shrijayan/itwillsync.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Syncs any terminal-based AI coding agent to your phone over a local network (WiFi/Tailscale/localhost); privacy-first E2E encrypted with per-session NaCl secretbox tokens, zero cloud/accounts/telemetry; multi-session dashboard with attention detection and sleep prevention; agent-agnostic (works with Claude Code, Aider, Codex, Goose, Cline, Copilot CLI, or any terminal tool).
-
-(captured site page body (agents/itwillsync.md), not a verified repo-code finding)
-itwillsync answers a small but constant pain: your agent is working, but you are not at the desk. It wraps the agent command in a PTY, streams the terminal over an encrypted WebSocket, and renders it in a mobile browser after a QR scan — approve prompts, type commands, and watch output from a phone. A hub daemon tracks all running sessions with attention detection and can keep the machine awake during long runs. Everything stays on the local network or Tailscale, encrypted end-to-end with per-session NaCl keys and no accounts. It is deliberately agent-agnostic plumbing rather than an agent itself.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/itwillsync.md)
+(published index `description`, not a verified repo-code finding)
+itwillsync answers a small but constant pain: your agent is working, but you are not at the desk. It wraps the agent command in a PTY, streams the terminal over an encrypted WebSocket, and renders it
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

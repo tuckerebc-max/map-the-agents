@@ -2,9 +2,9 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: backing+pages.
+Directory membership: backing-only.
 
-- Category: other
+- Category: agent
 - Provider/maker: NikitaDmitrieff
 - License: MIT
 - Language: Bash
@@ -20,14 +20,8 @@ Directory membership: backing+pages.
 
 Repository map entry: [nikitadmitrieff/auto-co-meta](../../repos/nikitadmitrieff/auto-co-meta.md) (source: backing, field: `source_code_url`).
 
-Discrepancy between directory sources (not overwritten):
-
-- category: published=, backing=agent, page=other
-
 ## Description
 
-Highlight (site page `what_makes_it_special`): Run an autonomous AI company from a ~50 line bash loop that calls Claude Code every 2 minutes. 14 expert-modeled agents (Jeff Bezos as CEO, Werner Vogels as CTO, Charlie Munger as Critic, etc.) debate, decide, build, and deploy software 24/7. No database, server, or framework — just files, git, and a loop. State carried via a 'relay baton' markdown ...
-
-(captured site page body (agents/auto-co.md), not a verified repo-code finding)
-auto-co runs an autonomous AI company from the terminal using roughly 50 lines of bash plus markdown state files, with Claude Code as the only real dependency. The auto-loop.sh script (about 3,000 lines with monitoring) reads shared state from memories/consensus.md, builds a prompt, calls claude -p, and updates consensus for the next cycle, with 3-5 of 14 expert-persona agents (Bezos, Vogels, Munger, DHH, Seth Godin) participating per cycle. Safety limits bar deletions, database resets, force pushes, credential leaks, and spending without human approval, with Telegram escalations roughly every 20-30 cycles. State lives in markdown files and JSONL logs rather than a database, and templates cover SaaS, docs-site, and API-backend projects. It is MIT-licensed, free software whose operating cost is Claude API usage, and suits tinkerers running always-on product experiments.
-Sources: [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/auto-co.md)
+(backing feed `description`, not a verified repo-code finding)
+auto-co runs an autonomous AI company from the terminal using roughly 50 lines of bash plus markdown state files, with Claude Code as the only real dependency. The auto-loop.sh script (about 3,000 lin
+Sources: [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)

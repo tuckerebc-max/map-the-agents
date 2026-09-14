@@ -2,7 +2,7 @@
 
 [Back to directory index](../index.md)
 
-Directory membership: published+backing+pages.
+Directory membership: published+backing.
 
 - Category: agent
 - Provider/maker: OrionStarAI
@@ -22,8 +22,6 @@ Repository map entry: [orionstarai/easycode](../../repos/orionstarai/easycode.md
 
 ## Description
 
-Highlight (site page `what_makes_it_special`): Formerly DeepV Code; highly customizable AI coding assistant that understands entire project context, acts as an autonomous agent with Shell/File/Web tools, persistent session management, and serves as an ACP orchestrator that can delegate tasks to local Claude Code or Codex installations
-
-(captured site page body (agents/easycode.md), not a verified repo-code finding)
-EasyCode (OrionStar, formerly DeepV Code) is a Claude Code-style terminal agent built in the open: it plans before editing via /plan, executes through built-in shell, filesystem, and web tools, and keeps sessions that can be saved, restored, and compressed. MCP servers provide project context and third-party tool access, a hooks mechanism injects custom logic at workflow nodes, and a self-hostable server variant lets teams run the backend themselves. Any OpenAI-compatible or Anthropic-format model works, including local Ollama or LM Studio endpoints, with costs paid directly to providers. It targets developers — particularly in the Chinese ecosystem — who want a customizable, self-hostable alternative to Claude Code or Codex.
-Sources: [published index (sha256:ae063493534e)](https://alltheagents.org/agents.json); [backing feed @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/_data/agents.json); [site page @ 0709cccb49af](https://github.com/prime-radiant-inc/alltheagents.org/blob/0709cccb49aff08a4b10beb95a214005a810a363/agents/easycode.md)
+(published index `description`, not a verified repo-code finding)
+EasyCode (OrionStar, formerly DeepV Code) is a Claude Code-style terminal agent built in the open: it plans before editing via /plan, executes through built-in shell, filesystem, and web tools, and ke
+Sources: [published index (sha256:9bbe35d19750)](https://alltheagents.org/agents.json); [backing feed @ 0861b8ee1c27](https://github.com/prime-radiant-inc/alltheagents.org/blob/0861b8ee1c271047d55caa72efdfc3a6d2046174/_data/agents.json)
